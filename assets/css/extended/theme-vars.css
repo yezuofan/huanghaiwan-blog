@@ -1,4 +1,5 @@
-/* 🌊 海洋指南 - 海洋主题配色方案 */
+/* 🌊 海洋指南 - 配色系统
+   灵感：Notion 温暖中性色 + 海洋蓝点缀 */
 
 :root {
     --gap: 28px;
@@ -7,32 +8,59 @@
     --main-width: 760px;
     --header-height: 64px;
     --footer-height: 60px;
-    --radius: 12px;
+    --radius: 14px;
 
-    /* 海洋浅色主题 */
-    --theme: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
-    --entry: rgba(255, 255, 255, 0.85);
-    --primary: #0c4a6e;
-    --secondary: #475569;
-    --tertiary: #bae6fd;
-    --content: #1e293b;
-    --hljs-bg: #1e293b;
-    --code-bg: #f0f9ff;
-    --border: rgba(14, 165, 233, 0.15);
+    /* 浅色主题 - 温暖中性色系 */
+    --theme: rgb(255, 255, 255);
+    --entry: rgba(255, 255, 255, 0.92);
+    --primary: rgba(0, 0, 0, 0.92);        /* 近黑，Notion风格 */
+    --secondary: #615d59;                    /* Notion Warm Gray 500 */
+    --tertiary: #e8e6e3;                    /* 温暖浅灰 */
+    --content: #333333;                      /* 正文色 */
+    --hljs-bg: #f8f7f6;                     /* 代码块背景 - 温润 */
+    --code-bg: #f3f2f0;                     /* 行内代码 - 温润 */
+    --border: rgba(0, 0, 0, 0.06);          /* 极细边框 */
 
-    /* 卡片悬浮效果 */
-    --shadow-sm: 0 1px 3px rgba(14, 165, 233, 0.08);
-    --shadow-md: 0 4px 12px rgba(14, 165, 233, 0.12);
-    --shadow-lg: 0 8px 24px rgba(14, 165, 233, 0.16);
+    /* 圆角 */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+
+    /* 阴影 (Notion多层级) */
+    --shadow-sm: rgba(0, 0, 0, 0.02) 0px 1px 3px, rgba(0, 0, 0, 0.01) 0px 1px 2px;
+    --shadow-md: rgba(0, 0, 0, 0.03) 0px 4px 12px, rgba(0, 0, 0, 0.02) 0px 2px 6px;
+    --shadow-lg: rgba(14, 165, 233, 0.06) 0px 4px 18px, rgba(0, 0, 0, 0.03) 0px 2px 8px, rgba(0, 0, 0, 0.02) 0px 1px 3px;
+
+    /* 海洋蓝点缀 */
+    --ocean-50: #f0f9ff;
+    --ocean-100: #e0f2fe;
+    --ocean-500: #0ea5e9;
+    --ocean-600: #0284c7;
+    --ocean-700: #0369a1;
+    --ocean-900: #0c4a6e;
 }
 
-:root[data-theme="dark"] {
-    --theme: linear-gradient(180deg, #0c1929 0%, #0f2038 100%);
-    --entry: rgba(30, 41, 59, 0.85);
-    --primary: #7dd3fc;
-    --secondary: #94a3b8;
-    --tertiary: #1e3a5f;
-    --content: #e2e8f0;
-    --code-bg: #1e293b;
-    --border: rgba(56, 189, 248, 0.15);
+/* 暗色主题 */
+[data-theme="dark"] {
+    --theme: rgb(18, 20, 23);
+    --entry: rgba(28, 30, 34, 0.92);
+    --primary: rgb(230, 230, 230);
+    --secondary: rgb(148, 147, 145);
+    --tertiary: rgb(48, 50, 54);
+    --content: rgb(200, 200, 200);
+    --hljs-bg: rgb(22, 24, 27);
+    --code-bg: rgb(28, 30, 33);
+    --border: rgba(255, 255, 255, 0.04);
+
+    --ocean-50: #0c1a2e;
+    --ocean-100: #132a44;
+    --ocean-500: #38bdf8;
+    --ocean-600: #7dd3fc;
+    --ocean-700: #0284c7;
+    --ocean-900: #0c4a6e;
+}
+
+.list {
+    background: transparent;
 }

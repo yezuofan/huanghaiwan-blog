@@ -1,6 +1,16 @@
-/* 🌊 海洋指南 - 自定义样式 */
+/* =====================================================
+   🌊 海洋指南 - 完整自定义样式
+   设计哲学：Notion 的温润 + Mintlify 的简洁
+   ===================================================== */
 
-/* ========== 背景波浪装饰 ========== */
+/* ---------- 1. 字体 ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---------- 2. 页面背景装饰 ---------- */
 body::before {
     content: '';
     position: fixed;
@@ -9,148 +19,120 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(ellipse 120% 60% at 50% -10%, rgba(56, 189, 248, 0.06), transparent 60%),
-        radial-gradient(ellipse 80% 40% at 20% 100%, rgba(14, 165, 233, 0.05), transparent 50%),
-        radial-gradient(ellipse 60% 30% at 80% 90%, rgba(6, 182, 212, 0.04), transparent 40%);
+        radial-gradient(ellipse 120% 50% at 50% -5%, rgba(14, 165, 233, 0.04), transparent 60%),
+        radial-gradient(ellipse 80% 30% at 0% 90%, rgba(6, 182, 212, 0.03), transparent 50%),
+        radial-gradient(ellipse 60% 25% at 100% 85%, rgba(56, 189, 248, 0.02), transparent 40%);
     pointer-events: none;
     z-index: -1;
 }
 
-[data-theme="dark"] body::before {
-    background:
-        radial-gradient(ellipse 120% 60% at 50% -10%, rgba(56, 189, 248, 0.04), transparent 60%),
-        radial-gradient(ellipse 80% 40% at 20% 100%, rgba(14, 165, 233, 0.03), transparent 50%),
-        radial-gradient(ellipse 60% 30% at 80% 90%, rgba(6, 182, 212, 0.03), transparent 40%);
-}
-
-/* ========== 导航栏 ========== */
+/* ---------- 3. 导航栏 (Notion结构 + Mintlify毛玻璃) ---------- */
 .nav {
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(14, 165, 233, 0.1);
-    box-shadow: 0 1px 8px rgba(14, 165, 233, 0.06);
-}
-
-[data-theme="dark"] .nav {
-    background: rgba(15, 23, 42, 0.75);
-    border-bottom: 1px solid rgba(56, 189, 248, 0.08);
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    height: 64px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 4px;
+    z-index: 100;
 }
 
 .nav a {
     font-weight: 500;
-    letter-spacing: 0.01em;
+    font-size: 0.94rem;
+    letter-spacing: -0.01em;
+    color: var(--secondary) !important;
     transition: color 0.2s ease;
 }
 
+.nav a:hover {
+    color: var(--primary) !important;
+}
+
 .logo a {
-    font-size: 1.3em !important;
+    font-size: 1.25em !important;
     font-weight: 700 !important;
-    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: -0.03em !important;
+    color: #0c4a6e !important;
+    background: none;
+    -webkit-text-fill-color: #0c4a6e;
+}
+
+/* 暗色导航 */
+[data-theme="dark"] .nav {
+    background: rgba(12, 25, 41, 0.82);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 [data-theme="dark"] .logo a {
-    background: linear-gradient(135deg, #38bdf8, #22d3ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #7dd3fc !important;
+    -webkit-text-fill-color: #7dd3fc;
 }
 
-/* ========== 首页大标题 ========== */
+/* ---------- 4. 首页 (Notion风格) ---------- */
 .home-info {
     padding: 80px 20px 60px;
     text-align: center;
 }
 
 .home-info h1 {
-    font-size: 3.2em !important;
-    font-weight: 800 !important;
-    background: linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 50%, #06b6d4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 3em !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.15 !important;
+    color: var(--primary);
     margin-bottom: 20px !important;
-    line-height: 1.2 !important;
-    letter-spacing: -0.02em;
-}
-
-[data-theme="dark"] .home-info h1 {
-    background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 50%, #22d3ee 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .home-info p {
-    font-size: 1.15em !important;
+    font-size: 1.1em !important;
     color: var(--secondary) !important;
-    max-width: 600px;
+    max-width: 560px;
     margin: 0 auto !important;
     line-height: 1.7 !important;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.005em;
 }
 
-/* ========== 文章卡片 ========== */
+/* ---------- 5. 文章卡片 (Notion温润卡片) ---------- */
 .post-entry {
     background: var(--entry);
-    backdrop-filter: blur(4px);
-    border: 1px solid var(--border);
-    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
     padding: 28px 32px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: var(--shadow-sm);
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow:
+        rgba(0, 0, 0, 0.02) 0px 1px 3px,
+        rgba(0, 0, 0, 0.01) 0px 1px 2px;
     position: relative;
-    overflow: hidden;
-}
-
-.post-entry::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #0ea5e9, #06b6d4, #22d3ee);
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .post-entry:hover {
-    transform: translateY(-4px);
-    border-color: rgba(14, 165, 233, 0.3);
-    box-shadow: var(--shadow-lg);
-}
-
-.post-entry:hover::before {
-    opacity: 1;
+    transform: translateY(-3px);
+    border-color: rgba(14, 165, 233, 0.20);
+    box-shadow:
+        rgba(14, 165, 233, 0.06) 0px 4px 18px,
+        rgba(0, 0, 0, 0.03) 0px 2px 8px,
+        rgba(0, 0, 0, 0.02) 0px 1px 3px;
 }
 
 .post-entry .entry-header h2 {
-    font-size: 1.4em;
-    font-weight: 700;
+    font-size: 1.35em;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    line-height: 1.35;
     color: var(--primary);
-    line-height: 1.4;
     transition: color 0.2s ease;
 }
 
 .post-entry:hover .entry-header h2 {
-    color: #0ea5e9;
-}
-
-.entry-cover {
-    margin-bottom: 16px;
-    border-radius: 12px;
-    overflow: hidden;
+    color: #0284c7;
 }
 
 .entry-content {
     color: var(--secondary);
     font-size: 0.95em;
-    line-height: 1.7;
+    line-height: 1.65;
     margin-top: 10px;
 }
 
@@ -158,127 +140,198 @@ body::before {
     margin-top: 16px;
 }
 
-/* ========== 标签 ========== */
+/* 文章列表间距 */
+.posts {
+    gap: 24px;
+}
+
+/* ---------- 6. 标签 (Mintlify pill风格) ---------- */
 .post-tags a {
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(6, 182, 212, 0.1));
+    background: rgba(14, 165, 233, 0.06);
     color: #0369a1;
-    border: 1px solid rgba(14, 165, 233, 0.2);
-    border-radius: 20px;
-    padding: 4px 14px;
+    border: 1px solid rgba(14, 165, 233, 0.12);
+    border-radius: 9999px;
+    padding: 3px 14px;
     font-size: 0.82em;
     font-weight: 500;
+    letter-spacing: 0.02em;
     transition: all 0.25s ease;
 }
 
-[data-theme="dark"] .post-tags a {
-    background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(34, 211, 238, 0.12));
-    color: #7dd3fc;
-    border-color: rgba(56, 189, 248, 0.2);
-}
-
 .post-tags a:hover {
-    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+    background: #0284c7;
     color: white;
     border-color: transparent;
     transform: translateY(-1px);
 }
 
-/* ========== 文章页面 ========== */
+[data-theme="dark"] .post-tags a {
+    background: rgba(56, 189, 248, 0.08);
+    color: #7dd3fc;
+    border-color: rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .post-tags a:hover {
+    background: #38bdf8;
+    color: #0c1929;
+}
+
+/* ---------- 7. 文章页面 (Notion温润设计) ---------- */
 .post-single {
     background: var(--entry);
-    backdrop-filter: blur(4px);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 40px 44px;
-    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 44px 48px;
+}
+
+[data-theme="dark"] .post-single {
+    border-color: rgba(255, 255, 255, 0.04);
 }
 
 .post-single h1 {
     font-size: 2em;
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
     color: var(--primary);
-    line-height: 1.3;
-    letter-spacing: -0.01em;
 }
 
 .post-single h2 {
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1.45em;
+    font-weight: 650;
+    letter-spacing: -0.015em;
     color: var(--primary);
-    border-bottom: 2px solid rgba(14, 165, 233, 0.1);
-    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
     margin-top: 40px;
 }
 
 .post-single h3 {
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-weight: 600;
     color: var(--primary);
     margin-top: 32px;
 }
 
 .post-single p {
-    line-height: 1.8;
+    line-height: 1.75;
     color: var(--content);
 }
 
 .post-single a {
-    color: #0ea5e9;
+    color: #0284c7;
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
 }
 
 .post-single a:hover {
-    color: #0284c7;
+    color: #0369a1;
 }
 
 .post-single img {
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    margin: 24px 0;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow:
+        rgba(0, 0, 0, 0.04) 0px 4px 18px,
+        rgba(0, 0, 0, 0.03) 0px 2px 8px;
+    margin: 28px 0;
 }
 
-/* ========== 代码块 ========== */
+/* ---------- 8. 代码块 ---------- */
+.highlight {
+    border-radius: 12px;
+}
+
 .highlight pre {
     border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 20px 24px;
+}
+
+code:not(pre code) {
+    background: rgba(14, 165, 233, 0.06);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 0.88em;
+    color: #0c4a6e;
     border: 1px solid rgba(14, 165, 233, 0.08);
 }
 
-code {
-    background: rgba(14, 165, 233, 0.08);
-    border-radius: 6px;
-    padding: 2px 8px;
-    font-size: 0.9em;
-    color: #0c4a6e;
-}
-
-[data-theme="dark"] code {
-    background: rgba(56, 189, 248, 0.1);
+[data-theme="dark"] code:not(pre code) {
+    background: rgba(56, 189, 248, 0.08);
+    border-color: rgba(56, 189, 248, 0.1);
     color: #7dd3fc;
 }
 
-/* ========== 页脚 ========== */
+/* ---------- 9. 目录 (TOC) ---------- */
+.toc {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    background: rgba(14, 165, 233, 0.02);
+}
+
+.toc details summary {
+    font-weight: 600;
+    font-size: 0.95em;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.toc li a {
+    font-size: 0.9em;
+    color: var(--secondary);
+}
+
+.toc li a:hover {
+    color: #0284c7;
+}
+
+/* ---------- 10. 分页 ---------- */
+.paginav {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    margin-top: 32px;
+}
+
+.paginav a {
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: background 0.2s ease;
+}
+
+.paginav a:hover {
+    background: rgba(14, 165, 233, 0.06);
+}
+
+.paginav .page {
+    font-weight: 500;
+}
+
+/* ---------- 11. 页脚 (极简) ---------- */
 .footer {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(8px);
-    border-top: 1px solid rgba(14, 165, 233, 0.08);
-    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 24px 0;
 }
 
 [data-theme="dark"] .footer {
-    background: rgba(15, 23, 42, 0.5);
-    border-top: 1px solid rgba(56, 189, 248, 0.06);
+    background: rgba(12, 25, 41, 0.40);
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .footer span {
     color: var(--secondary);
-    font-size: 0.9em;
+    font-size: 0.88em;
 }
 
-/* ========== 滚动条 ========== */
+/* ---------- 12. 滚动条 ---------- */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -286,33 +339,40 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(14, 165, 233, 0.2), rgba(6, 182, 212, 0.2));
-    border-radius: 4px;
+    background: rgba(14, 165, 233, 0.12);
+    border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(14, 165, 233, 0.3), rgba(6, 182, 212, 0.3));
+    background: rgba(14, 165, 233, 0.20);
 }
 
-/* ========== 响应式优化 ========== */
+/* ---------- 13. 响应式优化 ---------- */
 @media (max-width: 768px) {
     .home-info {
         padding: 50px 16px 40px;
     }
     .home-info h1 {
-        font-size: 2.2em !important;
+        font-size: 2em !important;
     }
     .home-info p {
         font-size: 1em !important;
     }
     .post-entry {
         padding: 20px;
+        border-radius: 12px;
     }
     .post-single {
         padding: 24px 20px;
-        border-radius: 16px;
+        border-radius: 12px;
     }
     .post-single h1 {
         font-size: 1.5em;
+    }
+    .post-single h2 {
+        font-size: 1.25em;
+    }
+    .post-entry .entry-header h2 {
+        font-size: 1.2em;
     }
 }
