@@ -1,6 +1,6 @@
 baseURL: "https://huanghaiwan.com/"
 languageCode: "zh-cn"
-title: "黄海湾 - 机场评测 & AI 工具指南"
+title: "海洋指南 - 机场评测 & AI 工具指南"
 theme: "PaperMod"
 pagination:
   pagerSize: 10
@@ -14,7 +14,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   homeInfoParams:
-    Title: "黄海湾"
+    Title: "海洋指南"
     Content: "机场评测 | AI 工具指南 | 实用教程"
   socialIcons:
     - name: email
