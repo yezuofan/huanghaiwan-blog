@@ -9,7 +9,7 @@ tags: ["机场评测", "瑶瑶领先"]
 
 瑶瑶领先（YaoYao LingXian）是一家主打 SS（Shadowsocks）协议的大流量性价比机场，隶属于 C 组补充的量大便宜路线。平台核心卖点是超低价格+超大流量，适合对网络速度要求不极致、但流量消耗大的用户。本次评测覆盖套餐配置和实际速度表现。
 
-**官网地址：** [https://yyssr.org/auth/register?code=d326dda059](https://yyssr.org/auth/register?code=d326dda059)
+**官网地址：** [👉 访问官网](https://yyssr.org/auth/register?code=d326dda059)
 
 <!--more-->
 

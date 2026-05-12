@@ -9,7 +9,7 @@ tags: ["机场评测", "万达云"]
 
 万达云（WangDaCloud）是一家主打 IEPL 专线 + 住宅IP 的中高端机场，隶属于 B 组有特色梯队。平台核心卖点是住宅IP节点的原生属性，对流媒体和TikTok等平台有天然解锁优势。本次评测覆盖套餐、专线优势及实际使用体验。
 
-**官网地址：** [https://link.wdyserver.com/register?code=6z6PNS5r](https://link.wdyserver.com/register?code=6z6PNS5r)
+**官网地址：** [👉 访问官网](https://link.wdyserver.com/register?code=6z6PNS5r)
 
 <!--more-->
 
