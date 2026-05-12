@@ -9,7 +9,7 @@ tags: ["机场评测", "龙猫云"]
 
 龙猫云（LongMao Cloud）是一家主打全 IPLC 专线的中端机场，隶属于 C 组补充梯队。相比混合线路机场，龙猫云承诺全节点 IPLC 专线接入，不做普通公网中转。平台口号是"无限速"，适合对网络质量有要求但预算有限的用户。本次评测基于标准套餐实测。
 
-**官网：** 龙猫云官网（yi注册，邀请链带AFF）
+**官网地址：** [https://inv06.lmaff01.cc/register?aff=dqNRmvru](https://inv06.lmaff01.cc/register?aff=dqNRmvru)
 
 <!--more-->
 
