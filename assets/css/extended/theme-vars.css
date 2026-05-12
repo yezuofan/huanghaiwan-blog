@@ -1,0 +1,38 @@
+/* 🌊 海洋指南 - 海洋主题配色方案 */
+
+:root {
+    --gap: 28px;
+    --content-gap: 24px;
+    --nav-width: 1100px;
+    --main-width: 760px;
+    --header-height: 64px;
+    --footer-height: 60px;
+    --radius: 12px;
+
+    /* 海洋浅色主题 */
+    --theme: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+    --entry: rgba(255, 255, 255, 0.85);
+    --primary: #0c4a6e;
+    --secondary: #475569;
+    --tertiary: #bae6fd;
+    --content: #1e293b;
+    --hljs-bg: #1e293b;
+    --code-bg: #f0f9ff;
+    --border: rgba(14, 165, 233, 0.15);
+
+    /* 卡片悬浮效果 */
+    --shadow-sm: 0 1px 3px rgba(14, 165, 233, 0.08);
+    --shadow-md: 0 4px 12px rgba(14, 165, 233, 0.12);
+    --shadow-lg: 0 8px 24px rgba(14, 165, 233, 0.16);
+}
+
+:root[data-theme="dark"] {
+    --theme: linear-gradient(180deg, #0c1929 0%, #0f2038 100%);
+    --entry: rgba(30, 41, 59, 0.85);
+    --primary: #7dd3fc;
+    --secondary: #94a3b8;
+    --tertiary: #1e3a5f;
+    --content: #e2e8f0;
+    --code-bg: #1e293b;
+    --border: rgba(56, 189, 248, 0.15);
+}

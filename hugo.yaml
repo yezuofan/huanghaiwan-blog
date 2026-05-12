@@ -2,36 +2,91 @@ baseURL: "https://huanghaiwan.com/"
 languageCode: "zh-cn"
 title: "海洋指南 - 机场评测 & AI 工具指南"
 theme: "PaperMod"
+
+enableEmoji: true
+enableRobotsTXT: true
+
 pagination:
   pagerSize: 10
 
 params:
+  env: production
   description: "可靠的机场评测与AI工具使用指南"
+  keywords: [机场评测, 机场推荐, AI工具, 科学上网, V2Ray, 代理]
+  author: "海洋指南"
+
+  # 外观
+  defaultTheme: auto
+  disableThemeToggle: false
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+
+  # 首页
   homeInfoParams:
-    Title: "海洋指南"
-    Content: "机场评测 | AI 工具指南 | 实用教程"
+    Title: "🌊 海洋指南"
+    Content: |
+      专注于 **机场评测** 与 **AI 工具指南**，帮你找到稳定高速的网络通道。
+
+      实用教程 · 客观评测 · 持续更新
+
+  # 社交
   socialIcons:
     - name: email
       url: "mailto:hi@huanghaiwan.com"
 
+  # SEO
+  canonicalURL: true
+  hidemeta: false
+  hideSummary: false
+
+  # 文章页
+  editPost:
+    URL: "https://github.com/yezuofan/huanghaiwan-blog/tree/main/content"
+    Text: "建议修改"
+    appendFilePath: true
+
+  assets:
+    favicon: "/favicon.svg"
+    favicon16x16: "/favicon.svg"
+    favicon32x32: "/favicon.svg"
+    apple_touch_icon: "/favicon.svg"
+    safari_pinned_tab: "/favicon.svg"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+
 menu:
   main:
     - identifier: "posts"
-      name: "文章"
+      name: "📝 文章"
       url: "/posts/"
       weight: 10
     - identifier: "tags"
-      name: "分类"
+      name: "🏷️ 分类"
       url: "/tags/"
       weight: 20
     - identifier: "about"
-      name: "关于"
+      name: "ℹ️ 关于"
       url: "/about/"
       weight: 30
 
