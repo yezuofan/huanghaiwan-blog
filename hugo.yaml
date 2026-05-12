@@ -81,6 +81,10 @@ menu:
       name: "📝 文章"
       url: "/posts/"
       weight: 10
+    - identifier: "ai"
+      name: "🤖 AI工具"
+      url: "/ai/"
+      weight: 15
     - identifier: "tags"
       name: "🏷️ 分类"
       url: "/tags/"
