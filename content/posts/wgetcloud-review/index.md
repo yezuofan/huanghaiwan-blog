@@ -9,7 +9,7 @@ tags: ["机场评测", "WgetCloud"]
 
 WgetCloud（又称 WgetCloud GlobalNet）是一家主打精品专线的中高端机场，隶属于 A 组推荐梯队。平台提供 29 个节点，覆盖全球主要地区，采用 IEPL/IPLC 专线线路，主打 500Mbps 带宽和流媒体+AI 工具解锁能力。本次评测基于年付套餐深度体验，数据仅供参考。
 
-**官网地址：** [👉 访问官网](https://invite.wgetcloud.ltd/auth/register?code=djq10H)
+**官网地址：** [👉 访问官网](https://wgetcloud.com/web/#/register?code=djq10H)
 
 <!--more-->
 

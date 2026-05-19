@@ -101,7 +101,7 @@ Claude 官网 `claude.ai` 国内无法直接访问，需要用机场走境外节
 
 [👉 龙猫云官网 →](https://inv06.lmaff01.cc/register?aff=dqNRmvru)
 [👉 万达云官网 →](https://link.wdyserver.com/register?code=6z6PNS5r)
-[👉 WgetCloud官网 →](https://invite.wgetcloud.ltd/auth/register?code=djq10H)
+[👉 WgetCloud官网 →](https://wgetcloud.com/web/#/register?code=djq10H)
 
 > 选香港节点连 Claude，首条响应时间1-2秒，体验接近国内网站。
 
