@@ -3,7 +3,7 @@ title: "AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/Cr
 date: 2026-05-27
 slug: ai-agent-frameworks-guide
 tags: ["AI", "教程", "Agent"]
-description: "AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。支持多Agent协作、工具调用、长期记忆。
+description: 'AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。'
 ---
 
 > 2026年，AI Agent（智能体）成为了AI领域最火热的关键词。从OpenAI的Operator到Manus概念，Agent让AI从「你问一句我答一句」的对话助手，变成能够自主规划、调用工具、多Agent协作的智能系统。

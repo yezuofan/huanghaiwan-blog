@@ -5,13 +5,6 @@ slug: notion-ai-guide
 tags: ["AI", "教程", "Notion"]
 description: "Notion AI 完整教程：与笔记深度集成的 AI 助手。写作助手、内容摘要、多语言翻译、代码生成等核心功能详解。国内用户访问方案与实用提示词模板。"
 ---
-
-title: "Notion AI 完全指南：2026年最新教程"
-date: 2026-05-23
-slug: notion-ai-guide
-tags: ["AI", "教程", "Notion"]
-description: "Notion AI 完整教程：与笔记深度集成的 AI 助手。写作助手、内容摘要、多语言翻译、代码生成等核心功能详解。国内用户访问方案与实用提示词模板。"
-
 > 如果你已经在用 Notion 管理笔记和文档，Notion AI 可能是你最容易上手的 AI 工具。
 >
 > 它不是独立的 AI 产品，而是直接嵌入在你每天都在用的笔记软件里。写周报、总结会议纪要、翻译内容、生成代码——都可以在不离开笔记的情况下完成。
