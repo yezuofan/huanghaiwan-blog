@@ -57,6 +57,6 @@ Cyberguard 是一个**偏重稳定性**的机场选择。IEPL 专线 + BGP + QUI
 
 ---
 
-**官网地址：** [👉 访问官网](https://cyberguard.best/#/register?code=8oowDNS8)
+**官网地址：** [👉 访问官网](https://api.huanghaiwan.com/go/Cyberguard)
 
 *本文包含推广链接*
