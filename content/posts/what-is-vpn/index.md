@@ -69,7 +69,6 @@ description: "VPN和机场是什么？有什么区别？一篇文搞懂科学上
 
 | 机场 | 亮点 | 月费 | 链接 |
 |------|------|------|------|
-| **WgetCloud** | 精品专线500Mbps，29节点全解锁 | ¥89起 | [👉 访问官网](https://wgetcloud.com/web/#/register?code=djq10H) |
 | **万达云** | IEPL专线+住宅IP，低延迟高稳定 | ¥16.8起 | [👉 访问官网](https://link.wdyserver.com/register?code=6z6PNS5r) |
 | **龙猫云** | 全IPLC专线无限速，原生IP | ¥15起 | [👉 访问官网](https://inv06.lmaff01.cc/register?aff=dqNRmvru) |
 | **瑶瑶领先** | 性价比之选，新用户优惠多 | ¥10起 | [👉 访问官网](https://yyssr.org/auth/register?code=d326dda059) |
