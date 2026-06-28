@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Claude Code 入门指南 2026：AI编程智能体完整使用教程 | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="AI, 教程, 编程">
+<meta name="description" content="Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/ai/claude-code-guide-2026/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/ai/claude-code-guide-2026/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/ai/claude-code-guide-2026/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="Claude Code 入门指南 2026：AI编程智能体完整使用教程">
+  <meta property="og:description" content="Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ai">
+    <meta property="article:published_time" content="2026-06-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-22T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="教程">
+    <meta property="article:tag" content="编程">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Claude Code 入门指南 2026：AI编程智能体完整使用教程">
+  <meta name="twitter:description" content="Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "🤖 AI工具指南",
+      "item": "https://huanghaiwan.com/ai/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Claude Code 入门指南 2026：AI编程智能体完整使用教程",
+      "item": "https://huanghaiwan.com/ai/claude-code-guide-2026/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Claude Code 入门指南 2026：AI编程智能体完整使用教程",
+  "name": "Claude Code 入门指南 2026：AI编程智能体完整使用教程",
+  "description": "Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。",
+  "keywords": [
+    "AI", "教程", "编程"
+  ],
+  "articleBody": "如果你关注 AI 编程工具，大概率已经看过 Cursor、Windsurf、GitHub Copilot 的教程。但 2026 年最值得关注的 AI 编程工具中，Claude Code 是一个无法绕开的名字。\n它不是\"另一个 Copilot\"——它是一个完整的 AI 编程智能体（Agent），能直接读你的整个代码库、编辑文件、运行命令、提 PR，所有操作都在终端完成。\n本文从零开始，带你全面了解 Claude Code 怎么用、适合谁、值不值得付费。\n🤔 太长不看版 维度 一句话 是什么 Anthropic 推出的 AI 编程智能体，在终端/IDE/桌面/网页端都能运行 核心能力 读代码库 → 理解上下文 → 编辑文件 → 运行命令 → 提 PR，全自动 适合谁 想提升开发效率的开发者、想尝试 AI 编程的新手 定价 需要 Claude Pro（$20/月）或 Max 订阅 与 Cursor 的区别 Claude Code 是通用终端工具，Cursor 是专用 IDE 优点 上下文理解强、支持多平台、有完整的 Agent 工作流 缺点 需要能访问海外服务、价格偏高、长会话性能下降 📜 Claude Code 是什么？发展时间线 Claude Code 是 Anthropic 开发的 AI 编程智能体（Agentic Coding Tool）。和传统的代码补全工具不同，它不是一个 IDE 插件，而是一个能独立完成开发任务的自主 Agent。\n关键里程碑 时间 事件 2025年2月 Claude Code 首次发布（预览版） 2025年5月 随 Claude 4 发布正式版（GA），开始收费 2025年7月 企业营收增长 5.5 倍 2025年8月 Chrome 浏览器扩展发布，可控制浏览器 2025年10月 Web 版上线 + 沙箱功能 2025年12月 因 Claude Opus 4.5 性能提升而\"病毒式传播\" 2026年2月 推出 Claude Code Security（代码安全审计功能） 2026年3月 CLI 源码泄露，暴露多个未发布功能 2026年5月 推出\"Dreaming\"记忆整理功能 2026年6月 Claude Opus 4.8 可用，Claude Fable 5 发布后暂停 Claude Code 与普通 AI 编程工具有什么不同？ 传统模式：你写代码 → AI 给你建议 → 你手动复制粘贴。\nClaude Code 模式：你描述任务 → Claude 理解代码库 → Claude 自己写代码、跑测试、提交 PR → 你审核结果。\n这就像从\"有一个智能的打字员\"变成了\"有一个能独立完成开发任务的工程师\"。\n🖥️ Claude Code 的 5 种使用方式 Claude Code 的最大特点是跨平台——同一个 AI 引擎，5 种接入方式：\n1. 终端 CLI（最推荐） 最强大的使用方式。直接在项目目录下运行：\n# 安装（macOS/Linux） curl -fsSL https://claude.ai/install.sh | bash # 启动 cd your-project claude CLI 版本拥有全部功能：读文件、编辑代码、运行命令、提 PR，不需要 IDE 支持。\n什么时候用 CLI：\n你在服务器/SSH 环境工作 你习惯 vim/emacs 等纯文本编辑器 你需要写自动化脚本或 CI 集成 2. VS Code 扩展 搜索\"Claude Code\"安装后，直接在 VS Code 内打开对话窗口。\n优势：能看到实时行内 diff（类似 Copilot 的改代码预览），@-mention 引用文件更方便。\n3. JetBrains 插件 IntelliJ IDEA、PyCharm、WebStorm 等 JetBrains 全系支持。安装后终端 CLI 的配置也能共享。\n4. 桌面应用 macOS/Windows 独立桌面应用，支持：\n分屏查看 diff 多会话并行工作 定时任务调度 云端会话（关电脑后任务继续跑） 5. Web 版（claude.ai/code） 什么都不用装，浏览器打开就能用。适合：\n临时想写点代码但电脑不在手边 不想在本机安装 CLI 工具 在手机/iPad 上继续桌面任务 🎯 核心功能详解 📂 代码库理解 Claude Code 能自动扫描你的项目结构，理解代码的依赖关系、架构模式。第一次启动时运行 /init 可以自动生成项目的 CLAUDE.md 配置文件。\n看到新人问\"这个代码库是干什么的\"？直接把 Claude Code 扔进去就行。\n✏️ 自动编辑文件 Claude 能读文件、改文件、创建新文件，一次操作可以跨多个文件。改完后会显示 diff，你可以审核后再确认。\n🔧 运行命令 Claude 能执行终端命令：跑测试、运行构建、安装依赖、git 操作。你只需要说\"跑测试\"，它自己去执行并读结果。\n🔁 子 Agent 模式 把探索任务交给子 Agent 去做——它独立读文件、分析代码，只把结论返回主会话。防止主会话的上下文窗口被无关文件塞满。\n🔄 CI/CD 集成 支持 GitHub Actions 和 GitLab CI/CD，自动处理 PR 审查、issue 分类。甚至可以集成 Slack，把 bug 报告直接转成 PR。\n🛡️ 代码安全审计 2026年2月推出的 Claude Code Security 功能，能自动扫描代码库识别安全漏洞。\n📝 可直接复制的 Prompt 模板 模板 1：探索新代码库 I’m new to this codebase. Can you explain its architecture and how the main components interact? Start with a high-level overview, then drill into the key modules.\n模板 2：修 Bug The user reports that [描述 bug 场景]. Check the logs/error trace in [文件路径], find the root cause, and fix it. Write a test that reproduces the issue first, then verify the fix passes.\n模板 3：添加功能 Add [功能描述] to [模块名]. Look at how existing similar features are implemented in the codebase to match the patterns. Write tests for the new feature and make sure existing tests still pass.\n模板 4：重构代码 Refactor [文件名/模块名] to use [新的模式/架构]. Apply the same patterns used in [参考文件] for consistency. After refactoring, run the test suite to verify nothing is broken.\n模板 5：代码审查 Review the changes in the current PR. Look for: security vulnerabilities, performance issues, error handling gaps, and deviations from the project’s established patterns. Provide specific line references and suggested fixes.\n模板 6：生成文档 Generate API documentation for [模块/文件]. Follow the documentation style used in [参考文件]. Include: parameter descriptions, return values, edge cases, and usage examples.\n🚀 进阶技巧合集 技巧 1：写一个优秀的 CLAUDE.md CLAUDE.md 是 Claude Code 每次启动时自动读取的配置文件，相当于给 Claude 的\"入职手册\"：\n# Code style - Use ES modules (import/export) syntax, not CommonJS (require) - Destructure imports when possible # Workflow - Run `npm run typecheck` after making code changes - Prefer running single tests over the whole suite 好的 CLAUDE.md 标准： 每行都问自己\"去掉这行 Claude 会不会犯错？\"——不会就删掉。\n技巧 2：让 Claude 自检（验证循环） 不写测试就给 Claude 提需求，就像不审合同就签字。最好的 Prompt 模板是：\nImplement [功能], then run the test suite to verify. If tests fail, fix the issues and re-run.\n这形成了一个自检闭环——Claude 自己写代码、跑测试、修 bug、再跑测试，直到全通过。\n技巧 3：Plan 模式 + 审核 claude --permission-mode plan 启用 Plan 模式后，Claude 只读文件、提方案，不修改任何文件。你审核通过后再让它执行。适合重要改动。\n技巧 4：并行会话（Worktree） # 终端1 - 开发新功能 claude --worktree feature-auth # 终端2 - 修 Bug claude --worktree fix-login-bug 两个工作树互不干扰，可以同时推进多个任务。\n技巧 5：非交互模式（Pipe 模式） git log --oneline -20 | claude -p \"summarize these recent commits\" Pipe 模式适合 CI 集成、批量处理场景。\n技巧 6：MCP 服务器集成 Claude Code 支持 MCP（Model Context Protocol）服务器，可以连接数据库、issue tracker、监控系统等外部工具。让 Claude 直接查数据库写代码、从 Jira 拉需求、从 Sentry 看错误日志。\n技巧 7：记忆整理（Dreaming） 2026 年 5 月推出的\"Dreaming\"功能，会自动整理 Claude 跨会话的记忆——合并重复信息、删除过期内容，防止记忆库膨胀。\n⚖️ Claude Code vs 其他 AI 编程工具 维度 Claude Code Cursor Windsurf GitHub Copilot 类型 终端 Agent 专用 IDE 专用 IDE IDE 插件 代码库理解 ⭐⭐⭐⭐⭐ 自动扫描 ⭐⭐⭐⭐ 手动选择 ⭐⭐⭐⭐ 半自动 ⭐⭐⭐ 仅当前文件 Agent 自主性 ⭐⭐⭐⭐⭐ 全自动 ⭐⭐⭐⭐ Composer Agent ⭐⭐⭐⭐ Cascade ⭐⭐⭐ Copilot Chat 跨文件编辑 ⭐⭐⭐⭐⭐ ⭐⭐⭐⭐ ⭐⭐⭐⭐ ⭐⭐⭐ 多平台 CLI/IDE/桌面/Web IDE 独占 IDE 独占 IDE 独占 CI 集成 ⭐⭐⭐⭐⭐ ⭐⭐ ⭐⭐ ⭐⭐⭐ 价格 $20/月起 $20/月起 $15/月起 $10/月起 选哪个？\n想要全自主 Agent → Claude Code 想要专用 IDE 操作体验 → Cursor / Windsurf 想要性价比 + 轻度辅助 → GitHub Copilot 很多开发者同时使用多个：Claude Code 做复杂任务，Cursor/Windsurf 做日常编码。\n❓ 常见问题 Q：Claude Code 需要什么配置？ 不需要特殊硬件。CLI 版本在任何操作系统（macOS/Linux/Windows WSL）都能运行。唯一的条件是需要稳定的海外网络访问。\nQ：Claude Code 和 Claude 聊天有什么区别？ Claude（chat）是对话机器人，主要回答问题。Claude Code 是编程 Agent，能直接读文件、改代码、跑命令。\nQ：Claude Code 安全吗？ Claude Code 默认需要为文件修改和命令执行请求权限。你可以在 auto-mode 下让 Claude 自主运行，也可以手动审核每一步。2026年2月还推出了专门的安全审计功能。\nQ：国内的开发者能用吗？ 可以。Claude Code CLI 对网络要求较高，需要稳定的海外连接来访问 Anthropic 的 API。可以参考下方推荐的网络方案。\nQ：Claude Code 能替代程序员吗？ 不能。Claude Code 是效率工具，不是替代品。它可以大幅减少重复劳动（写模板、补测试、修已知类型的 bug），但架构设计、业务理解、复杂决策仍然需要人类的判断。\n💡 总结 Claude Code 代表了 AI 编程工具的下一个阶段——从\"帮你写代码\"到\"帮你完成开发任务\"。\n如果你是开发者，想体验最前沿的 AI 编程 Agent 能力，Claude Code 值得一试。如果你对成本敏感或更习惯 IDE 操作，Cursor 和 Windsurf 也是优秀的选择。\n🌐 附：访问 Claude Code 的网络方案 Claude Code 需要稳定的海外网络访问才能连接 Anthropic 的 API。以下是国内开发者常用的方案：\n方案类型 推荐服务 月费 特点 🚀 高速专线 自由猫 ¥9/月起 100+节点，MPTCP多路复用，适合稳定性要求高的工作 💰 性价比 万达云 ¥16.8/月起 IEPL线路+住宅IP，适合预算有限的开发者 🔒 稳定中转 悠兔 ¥15/月起 专线直连，延迟低 🎯 入门体验 瑶瑶领先 ¥10/月起 低月付，适合先体验 💡 推荐组合： 主力用自由猫（稳定+节点多），备用用万达云（性价比高），日常使用完全够用。\n本文基于 Anthropic 官方文档及 Wikipedia 最新数据编写，数据截至 2026年6月。 本文包含推广链接，通过推荐链接购买服务会为我们带来佣金，但不影响你的价格和使用体验。\n",
+  "wordCount" : "833",
+  "inLanguage": "en",
+  "datePublished": "2026-06-22T00:00:00Z",
+  "dateModified": "2026-06-22T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/ai/claude-code-guide-2026/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/ai/">🤖 AI工具指南</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Claude Code 入门指南 2026：AI编程智能体完整使用教程
+    </h1>
+    <div class="post-description">
+      Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-22 00:00:00 +0000 UTC'>June 22, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>833 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/ai/claude-code-guide-2026/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#-%e5%a4%aa%e9%95%bf%e4%b8%8d%e7%9c%8b%e7%89%88" aria-label="🤔 太长不看版">🤔 太长不看版</a></li>
+            <li>
+                <a href="#-claude-code-%e6%98%af%e4%bb%80%e4%b9%88%e5%8f%91%e5%b1%95%e6%97%b6%e9%97%b4%e7%ba%bf" aria-label="📜 Claude Code 是什么？发展时间线">📜 Claude Code 是什么？发展时间线</a><ul>
+                    
+            <li>
+                <a href="#%e5%85%b3%e9%94%ae%e9%87%8c%e7%a8%8b%e7%a2%91" aria-label="关键里程碑">关键里程碑</a></li>
+            <li>
+                <a href="#claude-code-%e4%b8%8e%e6%99%ae%e9%80%9a-ai-%e7%bc%96%e7%a8%8b%e5%b7%a5%e5%85%b7%e6%9c%89%e4%bb%80%e4%b9%88%e4%b8%8d%e5%90%8c" aria-label="Claude Code 与普通 AI 编程工具有什么不同？">Claude Code 与普通 AI 编程工具有什么不同？</a></li></ul>
+            </li>
+            <li>
+                <a href="#-claude-code-%e7%9a%84-5-%e7%a7%8d%e4%bd%bf%e7%94%a8%e6%96%b9%e5%bc%8f" aria-label="🖥️ Claude Code 的 5 种使用方式">🖥️ Claude Code 的 5 种使用方式</a><ul>
+                    
+            <li>
+                <a href="#1-%e7%bb%88%e7%ab%af-cli%e6%9c%80%e6%8e%a8%e8%8d%90" aria-label="1. 终端 CLI（最推荐）">1. 终端 CLI（最推荐）</a></li>
+            <li>
+                <a href="#2-vs-code-%e6%89%a9%e5%b1%95" aria-label="2. VS Code 扩展">2. VS Code 扩展</a></li>
+            <li>
+                <a href="#3-jetbrains-%e6%8f%92%e4%bb%b6" aria-label="3. JetBrains 插件">3. JetBrains 插件</a></li>
+            <li>
+                <a href="#4-%e6%a1%8c%e9%9d%a2%e5%ba%94%e7%94%a8" aria-label="4. 桌面应用">4. 桌面应用</a></li>
+            <li>
+                <a href="#5-web-%e7%89%88claudeaicode" aria-label="5. Web 版（claude.ai/code）">5. Web 版（claude.ai/code）</a></li></ul>
+            </li>
+            <li>
+                <a href="#-%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd%e8%af%a6%e8%a7%a3" aria-label="🎯 核心功能详解">🎯 核心功能详解</a><ul>
+                    
+            <li>
+                <a href="#-%e4%bb%a3%e7%a0%81%e5%ba%93%e7%90%86%e8%a7%a3" aria-label="📂 代码库理解">📂 代码库理解</a></li>
+            <li>
+                <a href="#-%e8%87%aa%e5%8a%a8%e7%bc%96%e8%be%91%e6%96%87%e4%bb%b6" aria-label="✏️ 自动编辑文件">✏️ 自动编辑文件</a></li>
+            <li>
+                <a href="#-%e8%bf%90%e8%a1%8c%e5%91%bd%e4%bb%a4" aria-label="🔧 运行命令">🔧 运行命令</a></li>
+            <li>
+                <a href="#-%e5%ad%90-agent-%e6%a8%a1%e5%bc%8f" aria-label="🔁 子 Agent 模式">🔁 子 Agent 模式</a></li>
+            <li>
+                <a href="#-cicd-%e9%9b%86%e6%88%90" aria-label="🔄 CI/CD 集成">🔄 CI/CD 集成</a></li>
+            <li>
+                <a href="#-%e4%bb%a3%e7%a0%81%e5%ae%89%e5%85%a8%e5%ae%a1%e8%ae%a1" aria-label="🛡️ 代码安全审计">🛡️ 代码安全审计</a></li></ul>
+            </li>
+            <li>
+                <a href="#-%e5%8f%af%e7%9b%b4%e6%8e%a5%e5%a4%8d%e5%88%b6%e7%9a%84-prompt-%e6%a8%a1%e6%9d%bf" aria-label="📝 可直接复制的 Prompt 模板">📝 可直接复制的 Prompt 模板</a><ul>
+                    
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-1%e6%8e%a2%e7%b4%a2%e6%96%b0%e4%bb%a3%e7%a0%81%e5%ba%93" aria-label="模板 1：探索新代码库">模板 1：探索新代码库</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-2%e4%bf%ae-bug" aria-label="模板 2：修 Bug">模板 2：修 Bug</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-3%e6%b7%bb%e5%8a%a0%e5%8a%9f%e8%83%bd" aria-label="模板 3：添加功能">模板 3：添加功能</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-4%e9%87%8d%e6%9e%84%e4%bb%a3%e7%a0%81" aria-label="模板 4：重构代码">模板 4：重构代码</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-5%e4%bb%a3%e7%a0%81%e5%ae%a1%e6%9f%a5" aria-label="模板 5：代码审查">模板 5：代码审查</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-6%e7%94%9f%e6%88%90%e6%96%87%e6%a1%a3" aria-label="模板 6：生成文档">模板 6：生成文档</a></li></ul>
+            </li>
+            <li>
+                <a href="#-%e8%bf%9b%e9%98%b6%e6%8a%80%e5%b7%a7%e5%90%88%e9%9b%86" aria-label="🚀 进阶技巧合集">🚀 进阶技巧合集</a><ul>
+                    
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-1%e5%86%99%e4%b8%80%e4%b8%aa%e4%bc%98%e7%a7%80%e7%9a%84-claudemd" aria-label="技巧 1：写一个优秀的 CLAUDE.md">技巧 1：写一个优秀的 CLAUDE.md</a></li>
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-2%e8%ae%a9-claude-%e8%87%aa%e6%a3%80%e9%aa%8c%e8%af%81%e5%be%aa%e7%8e%af" aria-label="技巧 2：让 Claude 自检（验证循环）">技巧 2：让 Claude 自检（验证循环）</a></li>
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-3plan-%e6%a8%a1%e5%bc%8f--%e5%ae%a1%e6%a0%b8" aria-label="技巧 3：Plan 模式 &#43; 审核">技巧 3：Plan 模式 + 审核</a></li>
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-4%e5%b9%b6%e8%a1%8c%e4%bc%9a%e8%af%9dworktree" aria-label="技巧 4：并行会话（Worktree）">技巧 4：并行会话（Worktree）</a></li>
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-5%e9%9d%9e%e4%ba%a4%e4%ba%92%e6%a8%a1%e5%bc%8fpipe-%e6%a8%a1%e5%bc%8f" aria-label="技巧 5：非交互模式（Pipe 模式）">技巧 5：非交互模式（Pipe 模式）</a></li>
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-6mcp-%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%9b%86%e6%88%90" aria-label="技巧 6：MCP 服务器集成">技巧 6：MCP 服务器集成</a></li>
+            <li>
+                <a href="#%e6%8a%80%e5%b7%a7-7%e8%ae%b0%e5%bf%86%e6%95%b4%e7%90%86dreaming" aria-label="技巧 7：记忆整理（Dreaming）">技巧 7：记忆整理（Dreaming）</a></li></ul>
+            </li>
+            <li>
+                <a href="#-claude-code-vs-%e5%85%b6%e4%bb%96-ai-%e7%bc%96%e7%a8%8b%e5%b7%a5%e5%85%b7" aria-label="⚖️ Claude Code vs 其他 AI 编程工具">⚖️ Claude Code vs 其他 AI 编程工具</a></li>
+            <li>
+                <a href="#-%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98" aria-label="❓ 常见问题">❓ 常见问题</a><ul>
+                    
+            <li>
+                <a href="#qclaude-code-%e9%9c%80%e8%a6%81%e4%bb%80%e4%b9%88%e9%85%8d%e7%bd%ae" aria-label="Q：Claude Code 需要什么配置？">Q：Claude Code 需要什么配置？</a></li>
+            <li>
+                <a href="#qclaude-code-%e5%92%8c-claude-%e8%81%8a%e5%a4%a9%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab" aria-label="Q：Claude Code 和 Claude 聊天有什么区别？">Q：Claude Code 和 Claude 聊天有什么区别？</a></li>
+            <li>
+                <a href="#qclaude-code-%e5%ae%89%e5%85%a8%e5%90%97" aria-label="Q：Claude Code 安全吗？">Q：Claude Code 安全吗？</a></li>
+            <li>
+                <a href="#q%e5%9b%bd%e5%86%85%e7%9a%84%e5%bc%80%e5%8f%91%e8%80%85%e8%83%bd%e7%94%a8%e5%90%97" aria-label="Q：国内的开发者能用吗？">Q：国内的开发者能用吗？</a></li>
+            <li>
+                <a href="#qclaude-code-%e8%83%bd%e6%9b%bf%e4%bb%a3%e7%a8%8b%e5%ba%8f%e5%91%98%e5%90%97" aria-label="Q：Claude Code 能替代程序员吗？">Q：Claude Code 能替代程序员吗？</a></li></ul>
+            </li>
+            <li>
+                <a href="#-%e6%80%bb%e7%bb%93" aria-label="💡 总结">💡 总结</a></li>
+            <li>
+                <a href="#-%e9%99%84%e8%ae%bf%e9%97%ae-claude-code-%e7%9a%84%e7%bd%91%e7%bb%9c%e6%96%b9%e6%a1%88" aria-label="🌐 附：访问 Claude Code 的网络方案">🌐 附：访问 Claude Code 的网络方案</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><p>如果你关注 AI 编程工具，大概率已经看过 Cursor、Windsurf、GitHub Copilot 的教程。但 2026 年最值得关注的 AI 编程工具中，<strong>Claude Code</strong> 是一个无法绕开的名字。</p>
+<p>它不是&quot;另一个 Copilot&quot;——它是一个完整的 AI 编程智能体（Agent），能直接读你的整个代码库、编辑文件、运行命令、提 PR，所有操作都在终端完成。</p>
+<p>本文从零开始，带你全面了解 Claude Code 怎么用、适合谁、值不值得付费。</p>
+<hr>
+<h2 id="-太长不看版">🤔 太长不看版<a hidden class="anchor" aria-hidden="true" href="#-太长不看版">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">维度</th>
+          <th style="text-align: left">一句话</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>是什么</strong></td>
+          <td style="text-align: left">Anthropic 推出的 AI 编程智能体，在终端/IDE/桌面/网页端都能运行</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>核心能力</strong></td>
+          <td style="text-align: left">读代码库 → 理解上下文 → 编辑文件 → 运行命令 → 提 PR，全自动</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>适合谁</strong></td>
+          <td style="text-align: left">想提升开发效率的开发者、想尝试 AI 编程的新手</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>定价</strong></td>
+          <td style="text-align: left">需要 Claude Pro（$20/月）或 Max 订阅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>与 Cursor 的区别</strong></td>
+          <td style="text-align: left">Claude Code 是通用终端工具，Cursor 是专用 IDE</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>优点</strong></td>
+          <td style="text-align: left">上下文理解强、支持多平台、有完整的 Agent 工作流</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>缺点</strong></td>
+          <td style="text-align: left">需要能访问海外服务、价格偏高、长会话性能下降</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-claude-code-是什么发展时间线">📜 Claude Code 是什么？发展时间线<a hidden class="anchor" aria-hidden="true" href="#-claude-code-是什么发展时间线">#</a></h2>
+<p>Claude Code 是 Anthropic 开发的 <strong>AI 编程智能体（Agentic Coding Tool）</strong>。和传统的代码补全工具不同，它不是一个 IDE 插件，而是一个<strong>能独立完成开发任务的自主 Agent</strong>。</p>
+<h3 id="关键里程碑">关键里程碑<a hidden class="anchor" aria-hidden="true" href="#关键里程碑">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">时间</th>
+          <th style="text-align: left">事件</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">2025年2月</td>
+          <td style="text-align: left">Claude Code 首次发布（预览版）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025年5月</td>
+          <td style="text-align: left">随 Claude 4 发布正式版（GA），开始收费</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025年7月</td>
+          <td style="text-align: left">企业营收增长 5.5 倍</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025年8月</td>
+          <td style="text-align: left">Chrome 浏览器扩展发布，可控制浏览器</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025年10月</td>
+          <td style="text-align: left">Web 版上线 + 沙箱功能</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025年12月</td>
+          <td style="text-align: left">因 Claude Opus 4.5 性能提升而&quot;病毒式传播&quot;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2026年2月</td>
+          <td style="text-align: left">推出 Claude Code Security（代码安全审计功能）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2026年3月</td>
+          <td style="text-align: left">CLI 源码泄露，暴露多个未发布功能</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2026年5月</td>
+          <td style="text-align: left">推出&quot;Dreaming&quot;记忆整理功能</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2026年6月</td>
+          <td style="text-align: left">Claude Opus 4.8 可用，Claude Fable 5 发布后暂停</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="claude-code-与普通-ai-编程工具有什么不同">Claude Code 与普通 AI 编程工具有什么不同？<a hidden class="anchor" aria-hidden="true" href="#claude-code-与普通-ai-编程工具有什么不同">#</a></h3>
+<p>传统模式：你写代码 → AI 给你建议 → 你手动复制粘贴。</p>
+<p>Claude Code 模式：<strong>你描述任务 → Claude 理解代码库 → Claude 自己写代码、跑测试、提交 PR → 你审核结果。</strong></p>
+<p>这就像从&quot;有一个智能的打字员&quot;变成了&quot;有一个能独立完成开发任务的工程师&quot;。</p>
+<hr>
+<h2 id="-claude-code-的-5-种使用方式">🖥️ Claude Code 的 5 种使用方式<a hidden class="anchor" aria-hidden="true" href="#-claude-code-的-5-种使用方式">#</a></h2>
+<p>Claude Code 的最大特点是<strong>跨平台</strong>——同一个 AI 引擎，5 种接入方式：</p>
+<h3 id="1-终端-cli最推荐">1. 终端 CLI（最推荐）<a hidden class="anchor" aria-hidden="true" href="#1-终端-cli最推荐">#</a></h3>
+<p>最强大的使用方式。直接在项目目录下运行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 安装（macOS/Linux）</span>
+</span></span><span style="display:flex;"><span>curl -fsSL https://claude.ai/install.sh | bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 启动</span>
+</span></span><span style="display:flex;"><span>cd your-project
+</span></span><span style="display:flex;"><span>claude
+</span></span></code></pre></div><p>CLI 版本拥有全部功能：读文件、编辑代码、运行命令、提 PR，不需要 IDE 支持。</p>
+<p><strong>什么时候用 CLI：</strong></p>
+<ul>
+<li>你在服务器/SSH 环境工作</li>
+<li>你习惯 vim/emacs 等纯文本编辑器</li>
+<li>你需要写自动化脚本或 CI 集成</li>
+</ul>
+<h3 id="2-vs-code-扩展">2. VS Code 扩展<a hidden class="anchor" aria-hidden="true" href="#2-vs-code-扩展">#</a></h3>
+<p>搜索&quot;Claude Code&quot;安装后，直接在 VS Code 内打开对话窗口。</p>
+<p>优势：能看到<strong>实时行内 diff</strong>（类似 Copilot 的改代码预览），@-mention 引用文件更方便。</p>
+<h3 id="3-jetbrains-插件">3. JetBrains 插件<a hidden class="anchor" aria-hidden="true" href="#3-jetbrains-插件">#</a></h3>
+<p>IntelliJ IDEA、PyCharm、WebStorm 等 JetBrains 全系支持。安装后终端 CLI 的配置也能共享。</p>
+<h3 id="4-桌面应用">4. 桌面应用<a hidden class="anchor" aria-hidden="true" href="#4-桌面应用">#</a></h3>
+<p>macOS/Windows 独立桌面应用，支持：</p>
+<ul>
+<li>分屏查看 diff</li>
+<li>多会话并行工作</li>
+<li>定时任务调度</li>
+<li>云端会话（关电脑后任务继续跑）</li>
+</ul>
+<h3 id="5-web-版claudeaicode">5. Web 版（claude.ai/code）<a hidden class="anchor" aria-hidden="true" href="#5-web-版claudeaicode">#</a></h3>
+<p>什么都不用装，浏览器打开就能用。适合：</p>
+<ul>
+<li>临时想写点代码但电脑不在手边</li>
+<li>不想在本机安装 CLI 工具</li>
+<li>在手机/iPad 上继续桌面任务</li>
+</ul>
+<hr>
+<h2 id="-核心功能详解">🎯 核心功能详解<a hidden class="anchor" aria-hidden="true" href="#-核心功能详解">#</a></h2>
+<h3 id="-代码库理解">📂 代码库理解<a hidden class="anchor" aria-hidden="true" href="#-代码库理解">#</a></h3>
+<p>Claude Code 能自动扫描你的项目结构，理解代码的依赖关系、架构模式。第一次启动时运行 <code>/init</code> 可以自动生成项目的 CLAUDE.md 配置文件。</p>
+<p>看到新人问&quot;这个代码库是干什么的&quot;？直接把 Claude Code 扔进去就行。</p>
+<h3 id="-自动编辑文件">✏️ 自动编辑文件<a hidden class="anchor" aria-hidden="true" href="#-自动编辑文件">#</a></h3>
+<p>Claude 能读文件、改文件、创建新文件，一次操作可以跨多个文件。改完后会显示 diff，你可以审核后再确认。</p>
+<h3 id="-运行命令">🔧 运行命令<a hidden class="anchor" aria-hidden="true" href="#-运行命令">#</a></h3>
+<p>Claude 能执行终端命令：跑测试、运行构建、安装依赖、git 操作。你只需要说&quot;跑测试&quot;，它自己去执行并读结果。</p>
+<h3 id="-子-agent-模式">🔁 子 Agent 模式<a hidden class="anchor" aria-hidden="true" href="#-子-agent-模式">#</a></h3>
+<p>把探索任务交给子 Agent 去做——它独立读文件、分析代码，只把结论返回主会话。防止主会话的上下文窗口被无关文件塞满。</p>
+<h3 id="-cicd-集成">🔄 CI/CD 集成<a hidden class="anchor" aria-hidden="true" href="#-cicd-集成">#</a></h3>
+<p>支持 GitHub Actions 和 GitLab CI/CD，自动处理 PR 审查、issue 分类。甚至可以集成 Slack，把 bug 报告直接转成 PR。</p>
+<h3 id="-代码安全审计">🛡️ 代码安全审计<a hidden class="anchor" aria-hidden="true" href="#-代码安全审计">#</a></h3>
+<p>2026年2月推出的 <strong>Claude Code Security</strong> 功能，能自动扫描代码库识别安全漏洞。</p>
+<hr>
+<h2 id="-可直接复制的-prompt-模板">📝 可直接复制的 Prompt 模板<a hidden class="anchor" aria-hidden="true" href="#-可直接复制的-prompt-模板">#</a></h2>
+<h3 id="模板-1探索新代码库">模板 1：探索新代码库<a hidden class="anchor" aria-hidden="true" href="#模板-1探索新代码库">#</a></h3>
+<blockquote>
+<p>I&rsquo;m new to this codebase. Can you explain its architecture and how the main components interact? Start with a high-level overview, then drill into the key modules.</p></blockquote>
+<h3 id="模板-2修-bug">模板 2：修 Bug<a hidden class="anchor" aria-hidden="true" href="#模板-2修-bug">#</a></h3>
+<blockquote>
+<p>The user reports that [描述 bug 场景]. Check the logs/error trace in [文件路径], find the root cause, and fix it. Write a test that reproduces the issue first, then verify the fix passes.</p></blockquote>
+<h3 id="模板-3添加功能">模板 3：添加功能<a hidden class="anchor" aria-hidden="true" href="#模板-3添加功能">#</a></h3>
+<blockquote>
+<p>Add [功能描述] to [模块名]. Look at how existing similar features are implemented in the codebase to match the patterns. Write tests for the new feature and make sure existing tests still pass.</p></blockquote>
+<h3 id="模板-4重构代码">模板 4：重构代码<a hidden class="anchor" aria-hidden="true" href="#模板-4重构代码">#</a></h3>
+<blockquote>
+<p>Refactor [文件名/模块名] to use [新的模式/架构]. Apply the same patterns used in [参考文件] for consistency. After refactoring, run the test suite to verify nothing is broken.</p></blockquote>
+<h3 id="模板-5代码审查">模板 5：代码审查<a hidden class="anchor" aria-hidden="true" href="#模板-5代码审查">#</a></h3>
+<blockquote>
+<p>Review the changes in the current PR. Look for: security vulnerabilities, performance issues, error handling gaps, and deviations from the project&rsquo;s established patterns. Provide specific line references and suggested fixes.</p></blockquote>
+<h3 id="模板-6生成文档">模板 6：生成文档<a hidden class="anchor" aria-hidden="true" href="#模板-6生成文档">#</a></h3>
+<blockquote>
+<p>Generate API documentation for [模块/文件]. Follow the documentation style used in [参考文件]. Include: parameter descriptions, return values, edge cases, and usage examples.</p></blockquote>
+<hr>
+<h2 id="-进阶技巧合集">🚀 进阶技巧合集<a hidden class="anchor" aria-hidden="true" href="#-进阶技巧合集">#</a></h2>
+<h3 id="技巧-1写一个优秀的-claudemd">技巧 1：写一个优秀的 CLAUDE.md<a hidden class="anchor" aria-hidden="true" href="#技巧-1写一个优秀的-claudemd">#</a></h3>
+<p>CLAUDE.md 是 Claude Code 每次启动时自动读取的配置文件，相当于给 Claude 的&quot;入职手册&quot;：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Code style
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Use ES modules (import/export) syntax, not CommonJS (require)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Destructure imports when possible
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Workflow
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Run <span style="color:#e6db74">`npm run typecheck`</span> after making code changes
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Prefer running single tests over the whole suite
+</span></span></code></pre></div><p><strong>好的 CLAUDE.md 标准：</strong> 每行都问自己&quot;去掉这行 Claude 会不会犯错？&quot;——不会就删掉。</p>
+<h3 id="技巧-2让-claude-自检验证循环">技巧 2：让 Claude 自检（验证循环）<a hidden class="anchor" aria-hidden="true" href="#技巧-2让-claude-自检验证循环">#</a></h3>
+<p>不写测试就给 Claude 提需求，就像不审合同就签字。最好的 Prompt 模板是：</p>
+<blockquote>
+<p>Implement [功能], then run the test suite to verify. If tests fail, fix the issues and re-run.</p></blockquote>
+<p>这形成了一个<strong>自检闭环</strong>——Claude 自己写代码、跑测试、修 bug、再跑测试，直到全通过。</p>
+<h3 id="技巧-3plan-模式--审核">技巧 3：Plan 模式 + 审核<a hidden class="anchor" aria-hidden="true" href="#技巧-3plan-模式--审核">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>claude --permission-mode plan
+</span></span></code></pre></div><p>启用 Plan 模式后，Claude 只读文件、提方案，<strong>不修改任何文件</strong>。你审核通过后再让它执行。适合重要改动。</p>
+<h3 id="技巧-4并行会话worktree">技巧 4：并行会话（Worktree）<a hidden class="anchor" aria-hidden="true" href="#技巧-4并行会话worktree">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 终端1 - 开发新功能</span>
+</span></span><span style="display:flex;"><span>claude --worktree feature-auth
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 终端2 - 修 Bug</span>
+</span></span><span style="display:flex;"><span>claude --worktree fix-login-bug
+</span></span></code></pre></div><p>两个工作树互不干扰，可以同时推进多个任务。</p>
+<h3 id="技巧-5非交互模式pipe-模式">技巧 5：非交互模式（Pipe 模式）<a hidden class="anchor" aria-hidden="true" href="#技巧-5非交互模式pipe-模式">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log --oneline -20 | claude -p <span style="color:#e6db74">&#34;summarize these recent commits&#34;</span>
+</span></span></code></pre></div><p>Pipe 模式适合 CI 集成、批量处理场景。</p>
+<h3 id="技巧-6mcp-服务器集成">技巧 6：MCP 服务器集成<a hidden class="anchor" aria-hidden="true" href="#技巧-6mcp-服务器集成">#</a></h3>
+<p>Claude Code 支持 MCP（Model Context Protocol）服务器，可以连接数据库、issue tracker、监控系统等外部工具。让 Claude 直接查数据库写代码、从 Jira 拉需求、从 Sentry 看错误日志。</p>
+<h3 id="技巧-7记忆整理dreaming">技巧 7：记忆整理（Dreaming）<a hidden class="anchor" aria-hidden="true" href="#技巧-7记忆整理dreaming">#</a></h3>
+<p>2026 年 5 月推出的&quot;Dreaming&quot;功能，会<strong>自动整理</strong> Claude 跨会话的记忆——合并重复信息、删除过期内容，防止记忆库膨胀。</p>
+<hr>
+<h2 id="-claude-code-vs-其他-ai-编程工具">⚖️ Claude Code vs 其他 AI 编程工具<a hidden class="anchor" aria-hidden="true" href="#-claude-code-vs-其他-ai-编程工具">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">维度</th>
+          <th style="text-align: left">Claude Code</th>
+          <th style="text-align: left">Cursor</th>
+          <th style="text-align: left">Windsurf</th>
+          <th style="text-align: left">GitHub Copilot</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>类型</strong></td>
+          <td style="text-align: left">终端 Agent</td>
+          <td style="text-align: left">专用 IDE</td>
+          <td style="text-align: left">专用 IDE</td>
+          <td style="text-align: left">IDE 插件</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>代码库理解</strong></td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐ 自动扫描</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 手动选择</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 半自动</td>
+          <td style="text-align: left">⭐⭐⭐ 仅当前文件</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Agent 自主性</strong></td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐ 全自动</td>
+          <td style="text-align: left">⭐⭐⭐⭐ Composer Agent</td>
+          <td style="text-align: left">⭐⭐⭐⭐ Cascade</td>
+          <td style="text-align: left">⭐⭐⭐ Copilot Chat</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>跨文件编辑</strong></td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>多平台</strong></td>
+          <td style="text-align: left">CLI/IDE/桌面/Web</td>
+          <td style="text-align: left">IDE 独占</td>
+          <td style="text-align: left">IDE 独占</td>
+          <td style="text-align: left">IDE 独占</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>CI 集成</strong></td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐</td>
+          <td style="text-align: left">⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>价格</strong></td>
+          <td style="text-align: left">$20/月起</td>
+          <td style="text-align: left">$20/月起</td>
+          <td style="text-align: left">$15/月起</td>
+          <td style="text-align: left">$10/月起</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>选哪个？</strong></p>
+<ul>
+<li>想要<strong>全自主 Agent</strong> → Claude Code</li>
+<li>想要<strong>专用 IDE 操作体验</strong> → Cursor / Windsurf</li>
+<li>想要<strong>性价比 + 轻度辅助</strong> → GitHub Copilot</li>
+</ul>
+<p>很多开发者同时使用多个：Claude Code 做复杂任务，Cursor/Windsurf 做日常编码。</p>
+<hr>
+<h2 id="-常见问题">❓ 常见问题<a hidden class="anchor" aria-hidden="true" href="#-常见问题">#</a></h2>
+<h3 id="qclaude-code-需要什么配置">Q：Claude Code 需要什么配置？<a hidden class="anchor" aria-hidden="true" href="#qclaude-code-需要什么配置">#</a></h3>
+<p>不需要特殊硬件。CLI 版本在任何操作系统（macOS/Linux/Windows WSL）都能运行。唯一的条件是需要稳定的海外网络访问。</p>
+<h3 id="qclaude-code-和-claude-聊天有什么区别">Q：Claude Code 和 Claude 聊天有什么区别？<a hidden class="anchor" aria-hidden="true" href="#qclaude-code-和-claude-聊天有什么区别">#</a></h3>
+<p>Claude（chat）是对话机器人，主要回答问题。Claude Code 是<strong>编程 Agent</strong>，能直接读文件、改代码、跑命令。</p>
+<h3 id="qclaude-code-安全吗">Q：Claude Code 安全吗？<a hidden class="anchor" aria-hidden="true" href="#qclaude-code-安全吗">#</a></h3>
+<p>Claude Code 默认需要为文件修改和命令执行<strong>请求权限</strong>。你可以在 auto-mode 下让 Claude 自主运行，也可以手动审核每一步。2026年2月还推出了专门的安全审计功能。</p>
+<h3 id="q国内的开发者能用吗">Q：国内的开发者能用吗？<a hidden class="anchor" aria-hidden="true" href="#q国内的开发者能用吗">#</a></h3>
+<p>可以。Claude Code CLI 对网络要求较高，需要稳定的海外连接来访问 Anthropic 的 API。可以参考下方推荐的网络方案。</p>
+<h3 id="qclaude-code-能替代程序员吗">Q：Claude Code 能替代程序员吗？<a hidden class="anchor" aria-hidden="true" href="#qclaude-code-能替代程序员吗">#</a></h3>
+<p>不能。Claude Code 是<strong>效率工具</strong>，不是替代品。它可以大幅减少重复劳动（写模板、补测试、修已知类型的 bug），但架构设计、业务理解、复杂决策仍然需要人类的判断。</p>
+<hr>
+<h2 id="-总结">💡 总结<a hidden class="anchor" aria-hidden="true" href="#-总结">#</a></h2>
+<p>Claude Code 代表了 AI 编程工具的下一个阶段——从&quot;帮你写代码&quot;到&quot;帮你完成开发任务&quot;。</p>
+<p>如果你是开发者，想体验最前沿的 AI 编程 Agent 能力，Claude Code 值得一试。如果你对成本敏感或更习惯 IDE 操作，Cursor 和 Windsurf 也是优秀的选择。</p>
+<hr>
+<h2 id="-附访问-claude-code-的网络方案">🌐 附：访问 Claude Code 的网络方案<a hidden class="anchor" aria-hidden="true" href="#-附访问-claude-code-的网络方案">#</a></h2>
+<p>Claude Code 需要稳定的海外网络访问才能连接 Anthropic 的 API。以下是国内开发者常用的方案：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">方案类型</th>
+          <th style="text-align: left">推荐服务</th>
+          <th style="text-align: center">月费</th>
+          <th style="text-align: left">特点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">🚀 高速专线</td>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫</a></td>
+          <td style="text-align: center">¥9/月起</td>
+          <td style="text-align: left">100+节点，MPTCP多路复用，适合稳定性要求高的工作</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">💰 性价比</td>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E4%B8%87%E8%BE%BE%E4%BA%91">万达云</a></td>
+          <td style="text-align: center">¥16.8/月起</td>
+          <td style="text-align: left">IEPL线路+住宅IP，适合预算有限的开发者</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">🔒 稳定中转</td>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E6%82%A0%E5%85%94">悠兔</a></td>
+          <td style="text-align: center">¥15/月起</td>
+          <td style="text-align: left">专线直连，延迟低</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">🎯 入门体验</td>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E7%91%B6%E7%91%B6%E9%A2%86%E5%85%88">瑶瑶领先</a></td>
+          <td style="text-align: center">¥10/月起</td>
+          <td style="text-align: left">低月付，适合先体验</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>💡 <strong>推荐组合：</strong> 主力用自由猫（稳定+节点多），备用用万达云（性价比高），日常使用完全够用。</p></blockquote>
+<hr>
+<p><em>本文基于 Anthropic 官方文档及 Wikipedia 最新数据编写，数据截至 2026年6月。</em>
+<em>本文包含推广链接，通过推荐链接购买服务会为我们带来佣金，但不影响你的价格和使用体验。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/ai/">AI</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/">编程</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/ai/student-ai-budget-guide-2026/">
+    <span class="title">« Prev</span>
+    <span>2026学生党AI工具省钱攻略：13款免费/低价AI工具推荐</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/posts/home-network-setup-guide-2026/">
+    <span class="title">Next »</span>
+    <span>全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on x"
+            href="https://x.com/intent/tweet/?text=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f&amp;hashtags=AI%2c%e6%95%99%e7%a8%8b%2c%e7%bc%96%e7%a8%8b">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f&amp;title=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b&amp;summary=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b&amp;source=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f&title=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on whatsapp"
+            href="https://api.whatsapp.com/send?text=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b%20-%20https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on telegram"
+            href="https://telegram.me/share/url?text=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Claude Code 入门指南 2026：AI编程智能体完整使用教程 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Claude%20Code%20%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97%202026%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e6%99%ba%e8%83%bd%e4%bd%93%e5%ae%8c%e6%95%b4%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b&u=https%3a%2f%2fhuanghaiwan.com%2fai%2fclaude-code-guide-2026%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Agent on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/agent/</link>
+    <description>Recent content in Agent on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）</title>
+      <link>https://huanghaiwan.com/ai/ai-agent-frameworks-guide/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-agent-frameworks-guide/</guid>
+      <description>AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。</description>
+    </item>
+  </channel>
+</rss>

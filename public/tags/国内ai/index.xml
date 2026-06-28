@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>国内AI on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E5%9B%BD%E5%86%85ai/</link>
+    <description>Recent content in 国内AI on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E5%9B%BD%E5%86%85ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>国内用AI的N种方式：2026年最新指南（免费/付费/企业）</title>
+      <link>https://huanghaiwan.com/ai/domestic-ai-china-guide/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/domestic-ai-china-guide/</guid>
+      <description>2026年国内使用AI助手完全指南，从免费工具到API接入，帮你找到最适合的方案。介绍Kimi、DeepSeek、文心、通义等国产AI，以及ChatGPT/Claude/Gemini的国内访问方法。</description>
+    </item>
+  </channel>
+</rss>

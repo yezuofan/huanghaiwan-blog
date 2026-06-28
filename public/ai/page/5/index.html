@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>🤖 AI工具指南 | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="">
+<meta name="description" content="Claude、ChatGPT、Midjourney等AI工具的使用指南与实用教程">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/ai/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://huanghaiwan.com/ai/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/ai/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/ai/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="🤖 AI工具指南">
+  <meta property="og:description" content="Claude、ChatGPT、Midjourney等AI工具的使用指南与实用教程">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="🤖 AI工具指南">
+  <meta name="twitter:description" content="Claude、ChatGPT、Midjourney等AI工具的使用指南与实用教程">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "🤖 AI工具指南",
+      "item": "https://huanghaiwan.com/ai/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span class="active">🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+  <h1>
+    🤖 AI工具指南
+  </h1>
+  <div class="post-description">
+    Claude、ChatGPT、Midjourney等AI工具的使用指南与实用教程
+  </div>
+</header>
+<div class="post-content md-content"><p>在这里你可以找到各种AI工具的使用教程、访问指南和实用技巧。</p>
+<p>热门话题：</p>
+<ul>
+<li><strong>Claude</strong> 国内怎么用</li>
+<li><strong>ChatGPT</strong> 国内怎么用</li>
+<li><strong>Midjourney</strong> 生图教程</li>
+<li><strong>DeepSeek</strong> 入门到精通</li>
+<li><strong>Suno</strong> AI音乐生成 ← 新</li>
+</ul>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Midjourney 生图教程：2026年最新入门到精通指南
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Midjourney 是目前公认审美最好的AI生图工具。我用它做电商产品图、活动海报、社交媒体配图已经一年多了，这篇文章把我踩过的坑和实战经验全写下来。
+读完你会知道： 怎么注册、怎么选套餐、提示词怎么写才能出好图、哪些参数值得调。
+一句话总结（不想看全文的看这里） 需求 推荐方式 月费 难度 我的推荐 偶尔玩玩 Discord免费版 免费（限25次） ⭐⭐ ✅ 先试试水 日常做图 Discord Standard $10/月（200张） ⭐⭐ ✅ 性价比之王 重度创作 Discord Pro $30/月（不限量） ⭐⭐ ✅ 专业玩家 Web界面 Web &#43; Standard $10-$30/月 ⭐ ✅ 新手最推荐 最省心方案： Web版界面（免去学习Discord的成本）&#43; Standard套餐的性价比组合，配合一个稳定机场，每月花费不超过 ¥60。
+一、Midjourney 是什么？ 简单说，Midjourney 是一个用文字生成图片的AI工具。你输入一句话（提示词），它能生成4张风格各异的图片。
+它厉害在哪？ 维度 Midjourney 其他工具（DALL·E / Stable Diffusion） 审美 公认最强，画面精美 写实但缺乏艺术感 风格 油画/插画/3D渲染/概念设计都很强 偏写实，风格单一 一致性 V6版本人物/场景一致性明显提升 每次生成差异大 上手难度 需要学提示词写法 更简单但上限低 应用场景 电商图/海报/游戏原画/室内设计 日常创作/教育内容 如果你想要&#34;好看&#34;的结果，Midjourney 目前没有对手。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-14 00:00:00 +0000 UTC'>May 14, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>606 words</span>&nbsp;·&nbsp;<span>海洋指南</span></footer>
+  <a class="entry-link" aria-label="post link to Midjourney 生图教程：2026年最新入门到精通指南" href="https://huanghaiwan.com/ai/midjourney-guide/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DeepSeek vs Claude vs ChatGPT vs Perplexity：2026年四大AI助手横评
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 2026年的AI战场热闹非凡：DeepSeek R1靠开源和低价杀出重围，Claude Sonnet 4在编程和长文档上持续进化，ChatGPT o3依然是全能标杆，Perplexity则牢牢把持着AI搜索的第一把交椅。
+四个我都重度使用了半年以上。这篇把各自的强项、短板、适用人群都说清楚，帮你少花冤枉钱。
+一句话结论（懒得看的看这里） AI助手 最适合 月费 国内访问 我的推荐度 DeepSeek 编程/数学/论文分析 免费（强烈推荐） ✅ 国内直连 ⭐⭐⭐⭐⭐ Claude 编程/长文档处理/创意写作 $20 Pro / $100 Max 需要机场 ⭐⭐⭐⭐ ChatGPT 全能型 / 生态最全 $20 Plus / $200 Pro 需要机场 ⭐⭐⭐⭐ Perplexity 实时搜索/研究/写论文 免费 / $20 Pro 需要机场 ⭐⭐⭐ 最省钱方案： DeepSeek（免费，国内直连）&#43; 一个便宜机场偶尔用 Claude/ChatGPT，月均成本不超过 ¥30。
+一、DeepSeek — 2026年最大的黑马 它是什么？ DeepSeek 由国内的深度求索公司开发，2025年初的 R1 模型震惊全球——用 Open AI 十分之一的成本做出了接近 GPT-4o 的水平。到2026年，DeepSeek 已经是全球开发者社区最活跃的开源 AI 项目之一。
+实测表现 场景 表现 评分 编程（Python/JS/Go） 代码质量高，上下文128K，能处理大型代码库 ⭐⭐⭐⭐⭐ 数学推理 R1 模型的推理链路极其严谨，类似 o1 ⭐⭐⭐⭐⭐ 中文写作 自然流畅，甚至比 Claude 更懂中文语境 ⭐⭐⭐⭐⭐ 英文写作 不错，但比 Claude 略逊 ⭐⭐⭐⭐ 长文档分析（100页PDF） 128K 上下文，处理论文/合同很稳 ⭐⭐⭐⭐⭐ 创意写作（小说/剧本） 偏理性，创意不如 Claude ⭐⭐⭐ 优缺点 优点 缺点 ✅ 完全免费，无任何使用限制 ❌ 高峰时段偶尔有排队延迟 ✅ 国内直连，不需要任何网络工具 ❌ 创意类写作不如 Claude 灵动 ✅ 中文理解力是最强的（母语级） ❌ 多模态能力还弱于 GPT-4o ✅ 开源可自部署，企业友好 ❌ 插件和生态不如 ChatGPT 丰富 ✅ 128K 上下文，处理长文本毫无压力 怎么用 访问 chat.deepseek.com 即可。国内直接打开，注册一个手机号就能用。App 在各大应用商店都能下载。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-13 00:00:00 +0000 UTC'>May 13, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>561 words</span>&nbsp;·&nbsp;<span>海洋指南</span></footer>
+  <a class="entry-link" aria-label="post link to DeepSeek vs Claude vs ChatGPT vs Perplexity：2026年四大AI助手横评" href="https://huanghaiwan.com/ai/ai-tools-comparison/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude国内怎么用？2026年最新访问指南（3种方案实测）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Claude Sonnet 4 和多模态能力在 2026 年持续进化，写代码、读论文、处理文档比肩 GPT-4o。但国内用户想用 Claude，必须先过网络这一关。
+Claude 为什么国内用不了？ Claude 由美国 Anthropic 公司开发，官网 claude.ai 和 API 服务均未对中国大陆开放。直接访问会看到：
+❌ 浏览器：连接被重置 / 无法访问此网站 ❌ API：Connection refused / Timeout ❌ 官方 App：设备地域限制 这不是 Claude 的问题，是所有海外 AI 服务的共同情况（ChatGPT、Gemini、Perplexity 同理）。你需要一条通往海外服务器的稳定通道。
+3种方案实测对比 方案 上手难度 稳定性 速度 月费成本 推荐度 ① 机场/代理 ⭐⭐ 中等 ⭐⭐⭐⭐⭐ 最稳 ⭐⭐⭐⭐ 快 ¥10-50/月 🔥 首选 ② API 中转 ⭐⭐⭐⭐⭐ 最难 ⭐⭐⭐ 一般 ⭐⭐⭐ 中等 ¥5-30/月（按量） ✅ 可选 ③ 第三方镜像站 ⭐ 最简单 ⭐⭐ 不稳定 ⭐⭐ 慢 ¥0-20/月 ⚠️ 临时用 方案一：机场/代理（🔥 最推荐） 为什么这是首选？ Claude 是全网页交互的应用——你需要持续跟 AI 对话、上传文件、查看代码。机场提供稳定的海内外通道，延迟低、不掉线，体验最接近原生。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-12 00:00:00 +0000 UTC'>May 12, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>290 words</span>&nbsp;·&nbsp;<span>海洋指南</span></footer>
+  <a class="entry-link" aria-label="post link to Claude国内怎么用？2026年最新访问指南（3种方案实测）" href="https://huanghaiwan.com/ai/claude-access-guide/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://huanghaiwan.com/ai/page/4/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

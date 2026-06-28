@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>自由猫 on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E8%87%AA%E7%94%B1%E7%8C%AB/</link>
+    <description>Recent content in 自由猫 on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E8%87%AA%E7%94%B1%E7%8C%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自由猫 Freecat 机场评测 | 叶老大自用主力，MPTCP多路复用技术详解</title>
+      <link>https://huanghaiwan.com/posts/freecat-review/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/freecat-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;自由猫（Freecat）成立于 &lt;strong&gt;2020 年&lt;/strong&gt;，是团队内部长期自用的主力机场之一。平台核心卖点是 &lt;strong&gt;MPTCP（多路复用）&lt;/strong&gt; 技术——通过聚合多条普通线路来达到接近专线的稳定性和速度，而不需要用户承担专线的成本。100+ 节点覆盖 20+ 国家/地区，入口出口选择丰富，适合对稳定性和节点多样性有要求的用户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://freecat.cloud/register?code=USRIiAoO&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

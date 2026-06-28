@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cursor入门到精通：AI编程的正确姿势（2026教程） | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="AI, 教程">
+<meta name="description" content="
+Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/ai/cursor-guide/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/ai/cursor-guide/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/ai/cursor-guide/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="Cursor入门到精通：AI编程的正确姿势（2026教程）">
+  <meta property="og:description" content="Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ai">
+    <meta property="article:published_time" content="2026-05-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-18T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="教程">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cursor入门到精通：AI编程的正确姿势（2026教程）">
+  <meta name="twitter:description" content="Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "🤖 AI工具指南",
+      "item": "https://huanghaiwan.com/ai/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Cursor入门到精通：AI编程的正确姿势（2026教程）",
+      "item": "https://huanghaiwan.com/ai/cursor-guide/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cursor入门到精通：AI编程的正确姿势（2026教程）",
+  "name": "Cursor入门到精通：AI编程的正确姿势（2026教程）",
+  "description": " Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。\n",
+  "keywords": [
+    "AI", "教程"
+  ],
+  "articleBody": " Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。\n一句话结论 场景 推荐功能 AI模型 日常写代码 Tab 自动补全 Cursor Tab 改一段代码 Ctrl+K 内联编辑 Claude / GPT-4o 写一个新功能 Composer（Ctrl+I） Claude Sonnet 调试 Bug Chat（Ctrl+L） Claude Sonnet 跨文件重构 Composer Agent 模式 Claude Sonnet 批量代码审查 Chat + @Files Claude Sonnet 日常用 Tab 补全（最快），写功能用 Composer（最爽），调试用 Chat（最稳）。\n快速上手：3种使用方式 方式 1：Cursor Tab 自动补全（最强生产力） 安装 Cursor 后，写代码时会自动出现灰色提示，按 Tab 接受：\n单行补全：写一半自动预测下一段 多行补全：写函数/方法时自动补完整块代码 上下文感知：不仅看当前文件，还看你打开的其他文件 技巧：换行后光标停在空白处，按 Ctrl+Enter 触发补全。\n方式 2：Chat 对话（Ctrl+L） 按 Ctrl+L 打开对话面板，像 ChatGPT 一样和 AI 聊天讨论代码：\n选中代码后按 Ctrl+L → 自动把选中代码发给 AI 可在对话中引用文件：输入 @file 选择文件 引用文档：输入 @docs 引入官方文档 最佳实践： 调试 Bug 时，选中报错代码 → Ctrl+L → “这个函数为什么会报 IndexError？”\n方式 3：Composer（Ctrl+I）— 多文件编辑 Composer 是 Cursor 最强大的功能，可以同时编辑多个文件：\n普通模式：只改当前文件 Agent 模式（推荐）：自动创建、修改、删除多个文件 核心功能详解 1. Tab 自动补全 功能 说明 快捷键 Tab 补全 接受 AI 建议 Tab 拒绝建议 继续打字 Esc 换行触发生成 在新行等待 AI 建议 Ctrl+Enter 多行 Diff 预览 一次显示多行修改 自动 2. Ctrl+K 内联编辑 选中一段代码，按 Ctrl+K 输入指令，AI 直接修改选中代码：\n选中代码 → Ctrl+K → \"加错误处理\" / \"用async/await重写\" 3. Chat（Ctrl+L） 功能 用法 代码审查 选中代码 → Ctrl+L → “审查这段代码” 解释代码 选中代码 → Ctrl+L → “解释这段代码在做什么” 添加测试 选中代码 → Ctrl+L → “为这个函数写 Jest 测试” 引用文件 @file + 文件名 → 文件内容进入上下文 引用 Web @web + 搜索词 → 联网搜索最新文档 4. Composer Agent 模式 按 Ctrl+I 切换到 Agent 模式，可以实现：\n创建新项目：一句话生成完整项目结构 跨文件重构：同时修改多个文件 添加功能：在现有项目中加新功能 修复 Bug：定位问题 → 修复 → 写测试 10 个实战 Prompt 模板（直接复制可用） 模板 1：创建 REST API 创建一个 Express.js REST API，包含用户 CRUD、SQLite 数据库、JWT 认证、错误处理中间件。\n模板 2：写单元测试 为 src/utils/helpers.js 中的所有函数写 Jest 单元测试： - 覆盖正常输入、边界值、错误输入 - 用 describe/it 组织 - Mock 外部依赖 - 测试覆盖率达到 90%+ 模板 3：代码重构 重构这个函数： - 拆分超过 50 行的函数 - 提取重复逻辑到公共函数 - 改用 TypeScript 类型 - 添加 JSDoc 注释 - 保持对外接口不变 模板 4：添加新功能 在现有项目中添加新功能：用户邮箱重置密码功能： - 发送 6 位验证码到邮箱 - 验证码有效期 5 分钟 - 重置后强制重新登录 模板 5：性能优化 分析这段代码的性能瓶颈： 1. 找出 O(n²) 及以上复杂度的代码 2. 提出优化方案 3. 改为更高效的实现 4. 添加性能基准测试 5. 对比优化前后的执行时间 模板 6：数据库查询优化 优化这个 SQL 查询： - 用 EXPLAIN ANALYZE 分析执行计划 - 建议需要添加的索引 - 重写 N+1 查询为 JOIN - 标注修改前后的查询时间对比 模板 7：前端组件开发 用 React + TypeScript 创建一个数据表格组件： - 支持排序、搜索过滤、分页、行选中、列宽拖动、CSV 导出 模板 8：API 文档生成 为所有路由生成 OpenAPI 3.0 格式 API 文档，包含请求参数和响应格式。 模板 9：Code Review 助手 审查这个 PR 代码： 1. 安全漏洞（SQL注入/XSS/认证绕过） 2. 性能问题（N+1查询/内存泄漏） 3. 代码质量（重复/可读性/命名） 4. 测试覆盖（缺少的测试用例） 5. 架构问题（耦合度/扩展性） 模板 10：Git Commit 信息生成 分析 git diff，生成 Conventional Commits 格式的 commit 信息，分类型列出： feat/fix/refactor/docs，每行不超过 72 字。 7 个进阶技巧 1. @docs 引用文档 Cursor 可以引入第三方库的官方文档。输入 @docs 后选择「Add Docs」，粘贴文档 URL，Cursor 会自动抓取并索引。\n2. .cursorrules 规则文件 在项目根目录创建 .cursorrules 文件，定义 Cursor 的行为规则，让 AI 遵循你的编码风格。\n3. 项目级别上下文配置 .cursorignore 文件排除不需要索引的目录（node_modules/, dist/, build/），提升 AI 响应质量。\n4. Cmd+K 内联编辑 选中一段代码 → Cmd+K → 输入修改指令，AI 直接修改代码，显示 Diff 对比。\n5. Chat History 复用 Cursor 保存所有对话历史，遇到类似问题可以直接引用之前的解决方案。\n6. Composer Checkpoint 回退 Composer 每次修改自动创建 Checkpoint。如果修改出问题，点击 Restore 回退，相当于 Composer 自动做了 git stash。\n7. Vim 模式兼容 Cursor 完全支持 VS Code 的 Vim 插件，Vim 快捷键和 AI 补全可以同时使用。\nFAQ Q1: Cursor 免费吗？ 免费套餐每月 2000 次 Tab 补全 + 50 次 Composer。Pro 版 $20/月。个人开发免费版完全够用。\nQ2: Cursor 和 Copilot 哪个好？ 对比项 Cursor GitHub Copilot 自动补全 ✅ 更强（多行+上下文） ✅ 强 多文件编辑 ✅ Composer Agent ❌ 不支持 对话能力 ✅ 内置 Chat ✅ Chat 面板 AI 模型 Claude / GPT-4o 可选 OpenAI 系列 免费额度 2000 Tab + 50 Composer 有限使用 Q3: Cursor 支持哪些语言？ 所有主流语言都支持。Python、JavaScript/TypeScript、Java、Go、Rust、C++ 等表现最好。\nQ4: 国内用 Cursor 需要什么？ Cursor 需要访问海外 AI 服务。国内用户需要稳定的网络工具来连接：\n方案 推荐指数 月费 说明 网络工具（低延迟） ⭐⭐⭐⭐⭐ ~¥20-30 稳定连接 Cursor 服务，香港节点延迟最低 API 中转 ⭐⭐⭐ ¥15-50/按量 技术门槛高，不适合新手 👉 推荐稳定低延迟的网络工具 →\nQ5: Cursor 支持远程开发吗？ 支持。完美兼容 VS Code 的 Remote SSH 和 Dev Containers 插件。\nQ6: Cursor 会泄露我的代码吗？ 可以在 Settings → Privacy 中关闭代码训练。商业项目建议关闭。\n优缺点总结 ✅ 优点 多文件编辑强：Composer Agent 模式是目前最好的多文件 AI 编辑体验 模型选择自由：可切换 Claude Sonnet、GPT-4o Tab 补全质量高：上下文理解准确 VS Code 生态：插件、主题全部兼容 代码审查高效：Chat + @Files 快速理解项目 ❌ 缺点 Pro $20/月，比 Copilot 贵一倍 需要海外网络，国内需要配合网络工具 Composer 改多文件时可能引入不存在的 API 长期运行占 2-3GB 内存 写在最后 Cursor 是目前个人开发者最佳的 AI 编程工具。Tab 补全 + Composer Agent 组合让日常开发效率提升 2-3 倍。\n免费版先用起来，Pro 版等确认需要批量编辑能力再升级。\n本文包含推广链接，如果你通过链接注册，我们可能会获得少量佣金，但这不影响我们的评分和推荐。\n",
+  "wordCount" : "584",
+  "inLanguage": "en",
+  "datePublished": "2026-05-18T00:00:00Z",
+  "dateModified": "2026-05-18T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/ai/cursor-guide/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/ai/">🤖 AI工具指南</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Cursor入门到精通：AI编程的正确姿势（2026教程）
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-05-18 00:00:00 +0000 UTC'>May 18, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>584 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/ai/cursor-guide/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e4%b8%80%e5%8f%a5%e8%af%9d%e7%bb%93%e8%ae%ba" aria-label="一句话结论">一句话结论</a></li>
+            <li>
+                <a href="#%e5%bf%ab%e9%80%9f%e4%b8%8a%e6%89%8b3%e7%a7%8d%e4%bd%bf%e7%94%a8%e6%96%b9%e5%bc%8f" aria-label="快速上手：3种使用方式">快速上手：3种使用方式</a><ul>
+                    
+            <li>
+                <a href="#%e6%96%b9%e5%bc%8f-1cursor-tab-%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e6%9c%80%e5%bc%ba%e7%94%9f%e4%ba%a7%e5%8a%9b" aria-label="方式 1：Cursor Tab 自动补全（最强生产力）">方式 1：Cursor Tab 自动补全（最强生产力）</a></li>
+            <li>
+                <a href="#%e6%96%b9%e5%bc%8f-2chat-%e5%af%b9%e8%af%9dctrll" aria-label="方式 2：Chat 对话（Ctrl&#43;L）">方式 2：Chat 对话（Ctrl+L）</a></li>
+            <li>
+                <a href="#%e6%96%b9%e5%bc%8f-3composerctrli-%e5%a4%9a%e6%96%87%e4%bb%b6%e7%bc%96%e8%be%91" aria-label="方式 3：Composer（Ctrl&#43;I）— 多文件编辑">方式 3：Composer（Ctrl+I）— 多文件编辑</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd%e8%af%a6%e8%a7%a3" aria-label="核心功能详解">核心功能详解</a><ul>
+                    
+            <li>
+                <a href="#1-tab-%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8" aria-label="1. Tab 自动补全">1. Tab 自动补全</a></li>
+            <li>
+                <a href="#2-ctrlk-%e5%86%85%e8%81%94%e7%bc%96%e8%be%91" aria-label="2. Ctrl&#43;K 内联编辑">2. Ctrl+K 内联编辑</a></li>
+            <li>
+                <a href="#3-chatctrll" aria-label="3. Chat（Ctrl&#43;L）">3. Chat（Ctrl+L）</a></li>
+            <li>
+                <a href="#4-composer-agent-%e6%a8%a1%e5%bc%8f" aria-label="4. Composer Agent 模式">4. Composer Agent 模式</a></li></ul>
+            </li>
+            <li>
+                <a href="#10-%e4%b8%aa%e5%ae%9e%e6%88%98-prompt-%e6%a8%a1%e6%9d%bf%e7%9b%b4%e6%8e%a5%e5%a4%8d%e5%88%b6%e5%8f%af%e7%94%a8" aria-label="10 个实战 Prompt 模板（直接复制可用）">10 个实战 Prompt 模板（直接复制可用）</a><ul>
+                    
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-1%e5%88%9b%e5%bb%ba-rest-api" aria-label="模板 1：创建 REST API">模板 1：创建 REST API</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-2%e5%86%99%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95" aria-label="模板 2：写单元测试">模板 2：写单元测试</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-3%e4%bb%a3%e7%a0%81%e9%87%8d%e6%9e%84" aria-label="模板 3：代码重构">模板 3：代码重构</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-4%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%8a%9f%e8%83%bd" aria-label="模板 4：添加新功能">模板 4：添加新功能</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-5%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96" aria-label="模板 5：性能优化">模板 5：性能优化</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-6%e6%95%b0%e6%8d%ae%e5%ba%93%e6%9f%a5%e8%af%a2%e4%bc%98%e5%8c%96" aria-label="模板 6：数据库查询优化">模板 6：数据库查询优化</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-7%e5%89%8d%e7%ab%af%e7%bb%84%e4%bb%b6%e5%bc%80%e5%8f%91" aria-label="模板 7：前端组件开发">模板 7：前端组件开发</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-8api-%e6%96%87%e6%a1%a3%e7%94%9f%e6%88%90" aria-label="模板 8：API 文档生成">模板 8：API 文档生成</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-9code-review-%e5%8a%a9%e6%89%8b" aria-label="模板 9：Code Review 助手">模板 9：Code Review 助手</a></li>
+            <li>
+                <a href="#%e6%a8%a1%e6%9d%bf-10git-commit-%e4%bf%a1%e6%81%af%e7%94%9f%e6%88%90" aria-label="模板 10：Git Commit 信息生成">模板 10：Git Commit 信息生成</a></li></ul>
+            </li>
+            <li>
+                <a href="#7-%e4%b8%aa%e8%bf%9b%e9%98%b6%e6%8a%80%e5%b7%a7" aria-label="7 个进阶技巧">7 个进阶技巧</a><ul>
+                    
+            <li>
+                <a href="#1-docs-%e5%bc%95%e7%94%a8%e6%96%87%e6%a1%a3" aria-label="1. @docs 引用文档">1. @docs 引用文档</a></li>
+            <li>
+                <a href="#2-cursorrules-%e8%a7%84%e5%88%99%e6%96%87%e4%bb%b6" aria-label="2. .cursorrules 规则文件">2. .cursorrules 规则文件</a></li>
+            <li>
+                <a href="#3-%e9%a1%b9%e7%9b%ae%e7%ba%a7%e5%88%ab%e4%b8%8a%e4%b8%8b%e6%96%87%e9%85%8d%e7%bd%ae" aria-label="3. 项目级别上下文配置">3. 项目级别上下文配置</a></li>
+            <li>
+                <a href="#4-cmdk-%e5%86%85%e8%81%94%e7%bc%96%e8%be%91" aria-label="4. Cmd&#43;K 内联编辑">4. Cmd+K 内联编辑</a></li>
+            <li>
+                <a href="#5-chat-history-%e5%a4%8d%e7%94%a8" aria-label="5. Chat History 复用">5. Chat History 复用</a></li>
+            <li>
+                <a href="#6-composer-checkpoint-%e5%9b%9e%e9%80%80" aria-label="6. Composer Checkpoint 回退">6. Composer Checkpoint 回退</a></li>
+            <li>
+                <a href="#7-vim-%e6%a8%a1%e5%bc%8f%e5%85%bc%e5%ae%b9" aria-label="7. Vim 模式兼容">7. Vim 模式兼容</a></li></ul>
+            </li>
+            <li>
+                <a href="#faq" aria-label="FAQ">FAQ</a><ul>
+                    
+            <li>
+                <a href="#q1-cursor-%e5%85%8d%e8%b4%b9%e5%90%97" aria-label="Q1: Cursor 免费吗？">Q1: Cursor 免费吗？</a></li>
+            <li>
+                <a href="#q2-cursor-%e5%92%8c-copilot-%e5%93%aa%e4%b8%aa%e5%a5%bd" aria-label="Q2: Cursor 和 Copilot 哪个好？">Q2: Cursor 和 Copilot 哪个好？</a></li>
+            <li>
+                <a href="#q3-cursor-%e6%94%af%e6%8c%81%e5%93%aa%e4%ba%9b%e8%af%ad%e8%a8%80" aria-label="Q3: Cursor 支持哪些语言？">Q3: Cursor 支持哪些语言？</a></li>
+            <li>
+                <a href="#q4-%e5%9b%bd%e5%86%85%e7%94%a8-cursor-%e9%9c%80%e8%a6%81%e4%bb%80%e4%b9%88" aria-label="Q4: 国内用 Cursor 需要什么？">Q4: 国内用 Cursor 需要什么？</a></li>
+            <li>
+                <a href="#q5-cursor-%e6%94%af%e6%8c%81%e8%bf%9c%e7%a8%8b%e5%bc%80%e5%8f%91%e5%90%97" aria-label="Q5: Cursor 支持远程开发吗？">Q5: Cursor 支持远程开发吗？</a></li>
+            <li>
+                <a href="#q6-cursor-%e4%bc%9a%e6%b3%84%e9%9c%b2%e6%88%91%e7%9a%84%e4%bb%a3%e7%a0%81%e5%90%97" aria-label="Q6: Cursor 会泄露我的代码吗？">Q6: Cursor 会泄露我的代码吗？</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%bc%98%e7%bc%ba%e7%82%b9%e6%80%bb%e7%bb%93" aria-label="优缺点总结">优缺点总结</a><ul>
+                    
+            <li>
+                <a href="#-%e4%bc%98%e7%82%b9" aria-label="✅ 优点">✅ 优点</a></li>
+            <li>
+                <a href="#-%e7%bc%ba%e7%82%b9" aria-label="❌ 缺点">❌ 缺点</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%86%99%e5%9c%a8%e6%9c%80%e5%90%8e" aria-label="写在最后">写在最后</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><blockquote>
+<p>Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。</p></blockquote>
+<h2 id="一句话结论">一句话结论<a hidden class="anchor" aria-hidden="true" href="#一句话结论">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">场景</th>
+          <th style="text-align: left">推荐功能</th>
+          <th style="text-align: left">AI模型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">日常写代码</td>
+          <td style="text-align: left">Tab 自动补全</td>
+          <td style="text-align: left">Cursor Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">改一段代码</td>
+          <td style="text-align: left">Ctrl+K 内联编辑</td>
+          <td style="text-align: left">Claude / GPT-4o</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">写一个新功能</td>
+          <td style="text-align: left">Composer（Ctrl+I）</td>
+          <td style="text-align: left">Claude Sonnet</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">调试 Bug</td>
+          <td style="text-align: left">Chat（Ctrl+L）</td>
+          <td style="text-align: left">Claude Sonnet</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">跨文件重构</td>
+          <td style="text-align: left">Composer Agent 模式</td>
+          <td style="text-align: left">Claude Sonnet</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">批量代码审查</td>
+          <td style="text-align: left">Chat + @Files</td>
+          <td style="text-align: left">Claude Sonnet</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>日常用 Tab 补全（最快），写功能用 Composer（最爽），调试用 Chat（最稳）。</strong></p>
+<hr>
+<h2 id="快速上手3种使用方式">快速上手：3种使用方式<a hidden class="anchor" aria-hidden="true" href="#快速上手3种使用方式">#</a></h2>
+<h3 id="方式-1cursor-tab-自动补全最强生产力">方式 1：Cursor Tab 自动补全（最强生产力）<a hidden class="anchor" aria-hidden="true" href="#方式-1cursor-tab-自动补全最强生产力">#</a></h3>
+<p>安装 Cursor 后，写代码时会自动出现灰色提示，按 Tab 接受：</p>
+<ul>
+<li><strong>单行补全</strong>：写一半自动预测下一段</li>
+<li><strong>多行补全</strong>：写函数/方法时自动补完整块代码</li>
+<li><strong>上下文感知</strong>：不仅看当前文件，还看你打开的其他文件</li>
+</ul>
+<p><strong>技巧</strong>：换行后光标停在空白处，按 <code>Ctrl+Enter</code> 触发补全。</p>
+<h3 id="方式-2chat-对话ctrll">方式 2：Chat 对话（Ctrl+L）<a hidden class="anchor" aria-hidden="true" href="#方式-2chat-对话ctrll">#</a></h3>
+<p>按 <code>Ctrl+L</code> 打开对话面板，像 ChatGPT 一样和 AI 聊天讨论代码：</p>
+<ul>
+<li>选中代码后按 <code>Ctrl+L</code> → 自动把选中代码发给 AI</li>
+<li>可在对话中引用文件：输入 <code>@file</code> 选择文件</li>
+<li>引用文档：输入 <code>@docs</code> 引入官方文档</li>
+</ul>
+<p><strong>最佳实践：</strong> 调试 Bug 时，选中报错代码 → <code>Ctrl+L</code> → &ldquo;这个函数为什么会报 <code>IndexError</code>？&rdquo;</p>
+<h3 id="方式-3composerctrli-多文件编辑">方式 3：Composer（Ctrl+I）— 多文件编辑<a hidden class="anchor" aria-hidden="true" href="#方式-3composerctrli-多文件编辑">#</a></h3>
+<p>Composer 是 Cursor 最强大的功能，可以同时编辑多个文件：</p>
+<ul>
+<li><strong>普通模式</strong>：只改当前文件</li>
+<li><strong>Agent 模式（推荐）</strong>：自动创建、修改、删除多个文件</li>
+</ul>
+<hr>
+<h2 id="核心功能详解">核心功能详解<a hidden class="anchor" aria-hidden="true" href="#核心功能详解">#</a></h2>
+<h3 id="1-tab-自动补全">1. Tab 自动补全<a hidden class="anchor" aria-hidden="true" href="#1-tab-自动补全">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">功能</th>
+          <th style="text-align: left">说明</th>
+          <th style="text-align: left">快捷键</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Tab 补全</td>
+          <td style="text-align: left">接受 AI 建议</td>
+          <td style="text-align: left">Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">拒绝建议</td>
+          <td style="text-align: left">继续打字</td>
+          <td style="text-align: left">Esc</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">换行触发生成</td>
+          <td style="text-align: left">在新行等待 AI 建议</td>
+          <td style="text-align: left">Ctrl+Enter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">多行 Diff 预览</td>
+          <td style="text-align: left">一次显示多行修改</td>
+          <td style="text-align: left">自动</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="2-ctrlk-内联编辑">2. Ctrl+K 内联编辑<a hidden class="anchor" aria-hidden="true" href="#2-ctrlk-内联编辑">#</a></h3>
+<p>选中一段代码，按 <code>Ctrl+K</code> 输入指令，AI 直接修改选中代码：</p>
+<pre tabindex="0"><code>选中代码 → Ctrl+K → &#34;加错误处理&#34; / &#34;用async/await重写&#34;
+</code></pre><h3 id="3-chatctrll">3. Chat（Ctrl+L）<a hidden class="anchor" aria-hidden="true" href="#3-chatctrll">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">功能</th>
+          <th style="text-align: left">用法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">代码审查</td>
+          <td style="text-align: left">选中代码 → Ctrl+L → &ldquo;审查这段代码&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">解释代码</td>
+          <td style="text-align: left">选中代码 → Ctrl+L → &ldquo;解释这段代码在做什么&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">添加测试</td>
+          <td style="text-align: left">选中代码 → Ctrl+L → &ldquo;为这个函数写 Jest 测试&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">引用文件</td>
+          <td style="text-align: left">@file + 文件名 → 文件内容进入上下文</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">引用 Web</td>
+          <td style="text-align: left">@web + 搜索词 → 联网搜索最新文档</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="4-composer-agent-模式">4. Composer Agent 模式<a hidden class="anchor" aria-hidden="true" href="#4-composer-agent-模式">#</a></h3>
+<p>按 <code>Ctrl+I</code> 切换到 Agent 模式，可以实现：</p>
+<ul>
+<li><strong>创建新项目</strong>：一句话生成完整项目结构</li>
+<li><strong>跨文件重构</strong>：同时修改多个文件</li>
+<li><strong>添加功能</strong>：在现有项目中加新功能</li>
+<li><strong>修复 Bug</strong>：定位问题 → 修复 → 写测试</li>
+</ul>
+<hr>
+<h2 id="10-个实战-prompt-模板直接复制可用">10 个实战 Prompt 模板（直接复制可用）<a hidden class="anchor" aria-hidden="true" href="#10-个实战-prompt-模板直接复制可用">#</a></h2>
+<h3 id="模板-1创建-rest-api">模板 1：创建 REST API<a hidden class="anchor" aria-hidden="true" href="#模板-1创建-rest-api">#</a></h3>
+<p>创建一个 Express.js REST API，包含用户 CRUD、SQLite 数据库、JWT 认证、错误处理中间件。</p>
+<h3 id="模板-2写单元测试">模板 2：写单元测试<a hidden class="anchor" aria-hidden="true" href="#模板-2写单元测试">#</a></h3>
+<pre tabindex="0"><code>为 src/utils/helpers.js 中的所有函数写 Jest 单元测试：
+- 覆盖正常输入、边界值、错误输入
+- 用 describe/it 组织
+- Mock 外部依赖
+- 测试覆盖率达到 90%+
+</code></pre><h3 id="模板-3代码重构">模板 3：代码重构<a hidden class="anchor" aria-hidden="true" href="#模板-3代码重构">#</a></h3>
+<pre tabindex="0"><code>重构这个函数：
+- 拆分超过 50 行的函数
+- 提取重复逻辑到公共函数
+- 改用 TypeScript 类型
+- 添加 JSDoc 注释
+- 保持对外接口不变
+</code></pre><h3 id="模板-4添加新功能">模板 4：添加新功能<a hidden class="anchor" aria-hidden="true" href="#模板-4添加新功能">#</a></h3>
+<pre tabindex="0"><code>在现有项目中添加新功能：用户邮箱重置密码功能：
+- 发送 6 位验证码到邮箱
+- 验证码有效期 5 分钟
+- 重置后强制重新登录
+</code></pre><h3 id="模板-5性能优化">模板 5：性能优化<a hidden class="anchor" aria-hidden="true" href="#模板-5性能优化">#</a></h3>
+<pre tabindex="0"><code>分析这段代码的性能瓶颈：
+1. 找出 O(n²) 及以上复杂度的代码
+2. 提出优化方案
+3. 改为更高效的实现
+4. 添加性能基准测试
+5. 对比优化前后的执行时间
+</code></pre><h3 id="模板-6数据库查询优化">模板 6：数据库查询优化<a hidden class="anchor" aria-hidden="true" href="#模板-6数据库查询优化">#</a></h3>
+<pre tabindex="0"><code>优化这个 SQL 查询：
+- 用 EXPLAIN ANALYZE 分析执行计划
+- 建议需要添加的索引
+- 重写 N+1 查询为 JOIN
+- 标注修改前后的查询时间对比
+</code></pre><h3 id="模板-7前端组件开发">模板 7：前端组件开发<a hidden class="anchor" aria-hidden="true" href="#模板-7前端组件开发">#</a></h3>
+<pre tabindex="0"><code>用 React + TypeScript 创建一个数据表格组件：
+- 支持排序、搜索过滤、分页、行选中、列宽拖动、CSV 导出
+</code></pre><h3 id="模板-8api-文档生成">模板 8：API 文档生成<a hidden class="anchor" aria-hidden="true" href="#模板-8api-文档生成">#</a></h3>
+<pre tabindex="0"><code>为所有路由生成 OpenAPI 3.0 格式 API 文档，包含请求参数和响应格式。
+</code></pre><h3 id="模板-9code-review-助手">模板 9：Code Review 助手<a hidden class="anchor" aria-hidden="true" href="#模板-9code-review-助手">#</a></h3>
+<pre tabindex="0"><code>审查这个 PR 代码：
+1. 安全漏洞（SQL注入/XSS/认证绕过）
+2. 性能问题（N+1查询/内存泄漏）
+3. 代码质量（重复/可读性/命名）
+4. 测试覆盖（缺少的测试用例）
+5. 架构问题（耦合度/扩展性）
+</code></pre><h3 id="模板-10git-commit-信息生成">模板 10：Git Commit 信息生成<a hidden class="anchor" aria-hidden="true" href="#模板-10git-commit-信息生成">#</a></h3>
+<pre tabindex="0"><code>分析 git diff，生成 Conventional Commits 格式的 commit 信息，分类型列出：
+feat/fix/refactor/docs，每行不超过 72 字。
+</code></pre><hr>
+<h2 id="7-个进阶技巧">7 个进阶技巧<a hidden class="anchor" aria-hidden="true" href="#7-个进阶技巧">#</a></h2>
+<h3 id="1-docs-引用文档">1. @docs 引用文档<a hidden class="anchor" aria-hidden="true" href="#1-docs-引用文档">#</a></h3>
+<p>Cursor 可以引入第三方库的官方文档。输入 <code>@docs</code> 后选择「Add Docs」，粘贴文档 URL，Cursor 会自动抓取并索引。</p>
+<h3 id="2-cursorrules-规则文件">2. .cursorrules 规则文件<a hidden class="anchor" aria-hidden="true" href="#2-cursorrules-规则文件">#</a></h3>
+<p>在项目根目录创建 <code>.cursorrules</code> 文件，定义 Cursor 的行为规则，让 AI 遵循你的编码风格。</p>
+<h3 id="3-项目级别上下文配置">3. 项目级别上下文配置<a hidden class="anchor" aria-hidden="true" href="#3-项目级别上下文配置">#</a></h3>
+<p><code>.cursorignore</code> 文件排除不需要索引的目录（node_modules/, dist/, build/），提升 AI 响应质量。</p>
+<h3 id="4-cmdk-内联编辑">4. Cmd+K 内联编辑<a hidden class="anchor" aria-hidden="true" href="#4-cmdk-内联编辑">#</a></h3>
+<p>选中一段代码 → <code>Cmd+K</code> → 输入修改指令，AI 直接修改代码，显示 Diff 对比。</p>
+<h3 id="5-chat-history-复用">5. Chat History 复用<a hidden class="anchor" aria-hidden="true" href="#5-chat-history-复用">#</a></h3>
+<p>Cursor 保存所有对话历史，遇到类似问题可以直接引用之前的解决方案。</p>
+<h3 id="6-composer-checkpoint-回退">6. Composer Checkpoint 回退<a hidden class="anchor" aria-hidden="true" href="#6-composer-checkpoint-回退">#</a></h3>
+<p>Composer 每次修改自动创建 Checkpoint。如果修改出问题，点击 Restore 回退，相当于 Composer 自动做了 git stash。</p>
+<h3 id="7-vim-模式兼容">7. Vim 模式兼容<a hidden class="anchor" aria-hidden="true" href="#7-vim-模式兼容">#</a></h3>
+<p>Cursor 完全支持 VS Code 的 Vim 插件，Vim 快捷键和 AI 补全可以同时使用。</p>
+<hr>
+<h2 id="faq">FAQ<a hidden class="anchor" aria-hidden="true" href="#faq">#</a></h2>
+<h3 id="q1-cursor-免费吗">Q1: Cursor 免费吗？<a hidden class="anchor" aria-hidden="true" href="#q1-cursor-免费吗">#</a></h3>
+<p>免费套餐每月 2000 次 Tab 补全 + 50 次 Composer。Pro 版 $20/月。<strong>个人开发免费版完全够用。</strong></p>
+<h3 id="q2-cursor-和-copilot-哪个好">Q2: Cursor 和 Copilot 哪个好？<a hidden class="anchor" aria-hidden="true" href="#q2-cursor-和-copilot-哪个好">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">对比项</th>
+          <th style="text-align: left">Cursor</th>
+          <th style="text-align: left">GitHub Copilot</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">自动补全</td>
+          <td style="text-align: left">✅ 更强（多行+上下文）</td>
+          <td style="text-align: left">✅ 强</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">多文件编辑</td>
+          <td style="text-align: left">✅ Composer Agent</td>
+          <td style="text-align: left">❌ 不支持</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">对话能力</td>
+          <td style="text-align: left">✅ 内置 Chat</td>
+          <td style="text-align: left">✅ Chat 面板</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">AI 模型</td>
+          <td style="text-align: left">Claude / GPT-4o 可选</td>
+          <td style="text-align: left">OpenAI 系列</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">免费额度</td>
+          <td style="text-align: left">2000 Tab + 50 Composer</td>
+          <td style="text-align: left">有限使用</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="q3-cursor-支持哪些语言">Q3: Cursor 支持哪些语言？<a hidden class="anchor" aria-hidden="true" href="#q3-cursor-支持哪些语言">#</a></h3>
+<p>所有主流语言都支持。Python、JavaScript/TypeScript、Java、Go、Rust、C++ 等表现最好。</p>
+<h3 id="q4-国内用-cursor-需要什么">Q4: 国内用 Cursor 需要什么？<a hidden class="anchor" aria-hidden="true" href="#q4-国内用-cursor-需要什么">#</a></h3>
+<p>Cursor 需要访问海外 AI 服务。国内用户需要稳定的网络工具来连接：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">方案</th>
+          <th style="text-align: center">推荐指数</th>
+          <th style="text-align: left">月费</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">网络工具（低延迟）</td>
+          <td style="text-align: center">⭐⭐⭐⭐⭐</td>
+          <td style="text-align: left">~¥20-30</td>
+          <td style="text-align: left">稳定连接 Cursor 服务，香港节点延迟最低</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">API 中转</td>
+          <td style="text-align: center">⭐⭐⭐</td>
+          <td style="text-align: left">¥15-50/按量</td>
+          <td style="text-align: left">技术门槛高，不适合新手</td>
+      </tr>
+  </tbody>
+</table>
+<p>👉 <a href="https://hongxingyun.club/web/#/register?code=OBEi3O69">推荐稳定低延迟的网络工具 →</a></p>
+<h3 id="q5-cursor-支持远程开发吗">Q5: Cursor 支持远程开发吗？<a hidden class="anchor" aria-hidden="true" href="#q5-cursor-支持远程开发吗">#</a></h3>
+<p>支持。完美兼容 VS Code 的 Remote SSH 和 Dev Containers 插件。</p>
+<h3 id="q6-cursor-会泄露我的代码吗">Q6: Cursor 会泄露我的代码吗？<a hidden class="anchor" aria-hidden="true" href="#q6-cursor-会泄露我的代码吗">#</a></h3>
+<p>可以在 Settings → Privacy 中关闭代码训练。<strong>商业项目建议关闭。</strong></p>
+<hr>
+<h2 id="优缺点总结">优缺点总结<a hidden class="anchor" aria-hidden="true" href="#优缺点总结">#</a></h2>
+<h3 id="-优点">✅ 优点<a hidden class="anchor" aria-hidden="true" href="#-优点">#</a></h3>
+<ul>
+<li><strong>多文件编辑强</strong>：Composer Agent 模式是目前最好的多文件 AI 编辑体验</li>
+<li><strong>模型选择自由</strong>：可切换 Claude Sonnet、GPT-4o</li>
+<li><strong>Tab 补全质量高</strong>：上下文理解准确</li>
+<li><strong>VS Code 生态</strong>：插件、主题全部兼容</li>
+<li><strong>代码审查高效</strong>：Chat + @Files 快速理解项目</li>
+</ul>
+<h3 id="-缺点">❌ 缺点<a hidden class="anchor" aria-hidden="true" href="#-缺点">#</a></h3>
+<ul>
+<li>Pro $20/月，比 Copilot 贵一倍</li>
+<li>需要海外网络，国内需要配合网络工具</li>
+<li>Composer 改多文件时可能引入不存在的 API</li>
+<li>长期运行占 2-3GB 内存</li>
+</ul>
+<hr>
+<h2 id="写在最后">写在最后<a hidden class="anchor" aria-hidden="true" href="#写在最后">#</a></h2>
+<p>Cursor 是目前个人开发者最佳的 AI 编程工具。Tab 补全 + Composer Agent 组合让日常开发效率提升 2-3 倍。</p>
+<p><strong>免费版先用起来，Pro 版等确认需要批量编辑能力再升级。</strong></p>
+<hr>
+<p><em>本文包含推广链接，如果你通过链接注册，我们可能会获得少量佣金，但这不影响我们的评分和推荐。</em></p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/ai/">AI</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/posts/hongxingyun-review/">
+    <span class="title">« Prev</span>
+    <span>红杏云机场评测 | 不限时流量包&#43;全协议支持，2026深度体验</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/ai/deepseek-guide/">
+    <span class="title">Next »</span>
+    <span>DeepSeek入门到精通：2026年最新使用指南（注册、提示词、API）</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on x"
+            href="https://x.com/intent/tweet/?text=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f&amp;hashtags=AI%2c%e6%95%99%e7%a8%8b">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f&amp;title=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89&amp;summary=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89&amp;source=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f&title=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on whatsapp"
+            href="https://api.whatsapp.com/send?text=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89%20-%20https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on telegram"
+            href="https://telegram.me/share/url?text=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Cursor入门到精通：AI编程的正确姿势（2026教程） on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Cursor%e5%85%a5%e9%97%a8%e5%88%b0%e7%b2%be%e9%80%9a%ef%bc%9aAI%e7%bc%96%e7%a8%8b%e7%9a%84%e6%ad%a3%e7%a1%ae%e5%a7%bf%e5%8a%bf%ef%bc%882026%e6%95%99%e7%a8%8b%ef%bc%89&u=https%3a%2f%2fhuanghaiwan.com%2fai%2fcursor-guide%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

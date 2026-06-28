@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="教程, 新手入门">
+<meta name="description" content="放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/posts/home-network-setup-guide-2026/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/posts/home-network-setup-guide-2026/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/posts/home-network-setup-guide-2026/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）">
+  <meta property="og:description" content="放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-06-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-21T00:00:00+00:00">
+    <meta property="article:tag" content="教程">
+    <meta property="article:tag" content="新手入门">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）">
+  <meta name="twitter:description" content="放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://huanghaiwan.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）",
+      "item": "https://huanghaiwan.com/posts/home-network-setup-guide-2026/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）",
+  "name": "全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）",
+  "description": "放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。",
+  "keywords": [
+    "教程", "新手入门"
+  ],
+  "articleBody": " 暑假回家，你是不是也遇到这个问题：自己的笔记本、手机、iPad都配好了翻墙，但爸妈的电视要看Netflix、弟弟的电脑要查Google学术、全家人的iPad都要用ChatGPT……一个一个配太麻烦，有没有什么办法让全家的设备自动就能上外网？\n这篇文章一次性给你讲清楚4种全屋科学上网方案，从最简单的到最折腾的，总有一个适合你家。\n📋 太长不看版 方案 难度 成本 覆盖范围 稳定性 推荐场景 🥇 软路由（OpenWrt x86） ⭐⭐⭐ ¥300-800 全屋所有设备 ⭐⭐⭐⭐⭐ 家里有旧电脑/想一步到位 🥇 魔法网关（旁路由） ⭐⭐ ¥200-500 全屋可选 ⭐⭐⭐⭐ 不想动主路由、小白友好 🥈 硬路由刷机 ⭐⭐⭐ ¥100-300 全屋所有设备 ⭐⭐⭐⭐ 现成路由器刷固件、成本最低 🥉 单设备客户端 ⭐ ¥0 仅单设备 ⭐⭐⭐ 一个人用、懒得折腾 🥉 魔法盒子/网关硬件 ⭐ ¥200-600 全屋所有设备 ⭐⭐⭐⭐ 不想动软件、插电即用 一句话推荐： 家里有旧电脑 → 装软路由（最稳）；不想折腾 → 买硬网关（最省心）；一个人用 → 客户端（最简单）。不管你选哪种方案，先挑一个好的机场作为服务来源。\n完整横向对比 维度 软路由 硬路由刷机 旁路由/魔法网关 纯客户端 硬件需求 旧电脑/NUC/工控机 支持刷机的路由器 树莓派/旧手机/电视盒子 + 主路由 无（用设备本身） 初始成本 ¥300-800 ¥100-300 ¥100-500 ¥0 配置难度 高（需要装系统+配置） 中（刷固件有变砖风险） 中（需要改网关/DHCP） 低（下载安装即可） 需要新设备？ 通常是 不需要（用现有路由器） 可能需要 不需要 覆盖设备 全屋所有 全屋所有 全屋所有 仅当前设备 速度损耗 极小（硬件渲染） 小（硬件NAT） 小（单臂路由模式） 中等（软件渲染） 无线覆盖 需额外AP 自带WiFi 靠主路由WiFi 设备自带WiFi 维护难度 高（系统更新+排障） 中（固件更新） 中 低 功耗 15-50W 10-30W 10-30W 0 适合人群 技术爱好者/一步到位 有刷机经验 不想改主路由 单用户/新手 方案详解 🥇 软路由（OpenWrt x86）— 终极方案 软路由就是用一台 x86 电脑（旧笔记本、迷你主机、工控机）装上 OpenWrt 系统，专门负责全家的网络代理。\n优点：\n✅ 性能最强（x86 处理器碾压路由器 ARM 芯片） ✅ 可以跑满千兆宽带（硬件渲染远超客户端软件） ✅ 插件生态丰富（AdGuard Home去广告、DNS防污染、多协议支持） ✅ 稳定性最好（专用的设备不干别的，7×24小时运行） 缺点：\n❌ 需要额外一台设备（成本¥300起） ❌ 配置复杂（要装系统、配防火墙、设置分流规则） ❌ 需要配合无线AP使用（软路由本身不带WiFi） 硬件推荐：\n预算 推荐配置 预估价格 ¥200-300 闲置旧笔记本刷OpenWrt ¥0（如果有闲置） ¥300-500 R4S/R5S（ARM软路由成品） ¥300-500 ¥500-800 N100迷你主机（x86全功能） ¥500-800 配置要点：\n装好 OpenWrt 后，配置 PassWall 或 OpenClash 导入机场订阅链接 设置分流规则（国内直连+国外代理） 配合一款好用的机场，比如自由猫（100+节点、MPTCP多路复用）或一枝红杏（IPLC专线极稳） 适用场景： 家里已有旧电脑/想一步到位/对网络性能有要求的用户\n🥇 旁路由 / 魔法网关 — 最流行的折中方案 旁路由（也叫魔法网关）是最多人在用的方案——不动家里的主路由器，另外加一台小设备做代理网关，需要科学上网的设备手动改一下网关地址即可。\n优点：\n✅ 不动主路由（不影响家人上网） ✅ 可以按需分配（有的设备走代理，有的不走） ✅ 配置简单（比软路由简单很多） ✅ 硬件门槛低（树莓派/电视盒子/N1盒子都行） 缺点：\n❌ 需要额外设备 ❌ 单臂路由模式性能有损耗 ❌ 每个需要代理的设备要手动改网关（或者改DHCP） 硬件推荐：\n设备 价格 说明 旧手机（刷Linux） ¥0 如果有闲置安卓手机 电视盒子（HK1 Box等） ¥100-200 刷Armbian跑OpenWrt 树莓派4B ¥200-400 经典方案但价格偏高 N1盒子 ¥80-120 曾经的性价比之王 硬网关设备（GL.iNet） ¥200-600 到手即用，不需要配置 配置要点：\n旁路由刷好 OpenWrt，配置好代理服务（PassWall） 旁路由的网关指向主路由 主路由的 DHCP 中把默认网关指向旁路由（全屋自动走代理） 或者在需要代理的设备上手动设置网关为旁路由IP 适用场景： 不想动主路由/想逐步尝试/家里有人在用不能断网\n🥈 硬路由刷机 — 成本最低的全屋方案 如果你的路由器本来就支持刷 OpenWrt / 梅林 / Padavan，那直接刷固件就能实现全屋翻墙，不需要额外设备。\n优点：\n✅ 成本最低（不需要新硬件） ✅ 全屋覆盖（路由器自带WiFi） ✅ 功耗低（10-30W） 缺点：\n❌ 刷机有变砖风险（新手慎入） ❌ 性能受限于路由器CPU（带不起高带宽） ❌ 插件兼容性不确定 支持刷机的路由器推荐：\n型号 芯片 推荐固件 二手价格 Redmi AX6S MT7981 OpenWrt ¥80-120 小米AX3600 IPQ8071 OpenWrt ¥150-200 华硕AX86U BCM4908 梅林改版 ¥400-600 GL.iNet全系列 多种 出厂自带OpenWrt ¥200-600 适用场景： 已有支持刷机的路由器/不介意刷机风险/预算有限\n🥉 单设备客户端 — 最简单但只覆盖一台设备 这就是大多数人最初接触的方式——在每台设备上单独安装客户端软件（Clash Verge、Clash for Android、Surge等），导入机场订阅链接。\n优点：\n✅ 零成本、零硬件 ✅ 配置最简单（下载→安装→导入订阅→开启） ✅ 灵活（每个设备可以选不同节点） ✅ 不用动路由器 缺点：\n❌ 每个设备都要配一次（家里4个人=配4次） ❌ 智能电视/游戏机等设备无法配置 ❌ 软件渲染会消耗设备性能、增加耗电 ❌ 后台切换应用容易忘记开启代理 客户端选择：\n平台 推荐客户端 Windows Clash Verge / v2rayN macOS ClashX / Stash Android Clash for Android / v2rayNG iOS Stash / Shadowrocket（小火箭） 软路由 OpenClash / PassWall 适用场景： 一个人使用/临时方案/不想折腾硬件\n按家庭场景推荐 👨‍👩‍👧‍👦 回家过暑假的学生党 预算 ¥0-200 | 推荐方案：旁路由\n回家发现爸妈的路由器不支持刷机？没关系，用闲置手机或电视盒子做旁路由。如果你手头有一台不用的旧手机或电视盒子，花¥0-100买个USB网卡就能搞定。\n推荐搭配：自由猫 ¥15/月150G套餐 — 自己用 + 家里偶尔用够用，节点多不怕全家挤。\n🏠 家庭长期使用 预算 ¥300-800 | 推荐方案：软路由+AP\n如果全家都在用（爸妈看Netflix/迪士尼、弟弟打外服游戏、自己用AI工具），直接上软路由性价比最高。买一台N100迷你主机（¥500-800）刷OpenWrt，配上一款好机场的订阅，全家所有设备自动走代理。\n建议搭配主力+备用双机场方案：\n主力：自由猫 ¥35/月500G — 全家4-5人共享够用 备用：悠兔 ¥199/年200G — 备用防断 💻 独居/单设备用户 预算 ¥0 | 推荐方案：客户端\n一个人住，只在笔记本上需要翻墙？直接下载客户端完事，别折腾硬件。花¥9/月买个自由猫入门套餐就能跑满需求。\nFAQ ❓ 有软路由了，还需要买机场吗？ 需要。 软路由只是\"管道\"，机场是\"水源\"。软路由负责把流量转发出国，但具体走哪条线路、多少带宽、能解锁哪些流媒体——这些都是机场决定的。没有机场订阅，软路由就是个空壳。\n❓ 旁路由会不会拖慢网速？ 会有一点点，但日常使用感受不到。旁路由模式下，流量走\"设备→旁路由→主路由→外网\"多了一跳，增加了1-3ms延迟。对于看视频、刷网页来说完全不影响。打游戏的话建议用软路由或硬路由刷机方案。\n❓ 爸妈不会用翻墙客户端怎么办？ 旁路由或软路由方案最适合你——爸妈什么都不用管。 你配置好之后，全家的WiFi自动就能上外网。爸妈打开电视看Netflix，跟打开爱奇艺一样，不需要他们做任何操作。\n❓ 我家300M宽带，需要什么方案？ 300M以下 → 硬路由刷机或旁路由都够用 500M-1000M → 推荐软路由（x86），客户端软件跑不了满速 1000M以上 → 必须软路由（x86），其他方案都有瓶颈\n❓ 搬家了/换宽带了，配置需要重做吗？ 软路由：换个地方插电就行，配置都在路由器里 旁路由：同上，什么都不用改 硬路由刷机：同上 客户端：换个WiFi重连就行 总结：方案一旦配好，除非搬家后换了运营商（IP网段变了），否则一劳永逸。\n🎯 总结 你的情况 推荐方案 预计花费 一个人、笔记本 客户端 + 自由猫 ¥9/月 回家过暑假 旁路由（旧手机/电视盒子） + 万达云 ¥16.8/月+¥0硬件 全家长期使用 软路由（N100） + 自由猫 + 悠兔备用 ≈¥52/月+¥500硬件 不想折腾 硬网关(GL.iNet) + 一枝红杏 ¥99/年+¥300硬件 技术爱好者 软路由全功能 + Cyberguard ¥16/月+¥400硬件 不管你选哪种方案，核心永远是\"好机场+稳定的网络配置\"。 方案是管道，机场是水源——先挑对水源，再考虑输水管怎么铺。\n本文包含推广链接，如果你通过链接注册，我可能会获得一定佣金。所有推荐均基于实际使用体验和客观数据，不因推广而偏袒。\n",
+  "wordCount" : "424",
+  "inLanguage": "en",
+  "datePublished": "2026-06-21T00:00:00Z",
+  "dateModified": "2026-06-21T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/posts/home-network-setup-guide-2026/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）
+    </h1>
+    <div class="post-description">
+      放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-21 00:00:00 +0000 UTC'>June 21, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>424 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/posts/home-network-setup-guide-2026/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#-%e5%a4%aa%e9%95%bf%e4%b8%8d%e7%9c%8b%e7%89%88" aria-label="📋 太长不看版">📋 太长不看版</a></li>
+            <li>
+                <a href="#%e5%ae%8c%e6%95%b4%e6%a8%aa%e5%90%91%e5%af%b9%e6%af%94" aria-label="完整横向对比">完整横向对比</a></li>
+            <li>
+                <a href="#%e6%96%b9%e6%a1%88%e8%af%a6%e8%a7%a3" aria-label="方案详解">方案详解</a><ul>
+                    
+            <li>
+                <a href="#-%e8%bd%af%e8%b7%af%e7%94%b1openwrt-x86-%e7%bb%88%e6%9e%81%e6%96%b9%e6%a1%88" aria-label="🥇 软路由（OpenWrt x86）— 终极方案">🥇 软路由（OpenWrt x86）— 终极方案</a></li>
+            <li>
+                <a href="#-%e6%97%81%e8%b7%af%e7%94%b1--%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3--%e6%9c%80%e6%b5%81%e8%a1%8c%e7%9a%84%e6%8a%98%e4%b8%ad%e6%96%b9%e6%a1%88" aria-label="🥇 旁路由 / 魔法网关 — 最流行的折中方案">🥇 旁路由 / 魔法网关 — 最流行的折中方案</a></li>
+            <li>
+                <a href="#-%e7%a1%ac%e8%b7%af%e7%94%b1%e5%88%b7%e6%9c%ba--%e6%88%90%e6%9c%ac%e6%9c%80%e4%bd%8e%e7%9a%84%e5%85%a8%e5%b1%8b%e6%96%b9%e6%a1%88" aria-label="🥈 硬路由刷机 — 成本最低的全屋方案">🥈 硬路由刷机 — 成本最低的全屋方案</a></li>
+            <li>
+                <a href="#-%e5%8d%95%e8%ae%be%e5%a4%87%e5%ae%a2%e6%88%b7%e7%ab%af--%e6%9c%80%e7%ae%80%e5%8d%95%e4%bd%86%e5%8f%aa%e8%a6%86%e7%9b%96%e4%b8%80%e5%8f%b0%e8%ae%be%e5%a4%87" aria-label="🥉 单设备客户端 — 最简单但只覆盖一台设备">🥉 单设备客户端 — 最简单但只覆盖一台设备</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e6%8c%89%e5%ae%b6%e5%ba%ad%e5%9c%ba%e6%99%af%e6%8e%a8%e8%8d%90" aria-label="按家庭场景推荐">按家庭场景推荐</a><ul>
+                    
+            <li>
+                <a href="#-%e5%9b%9e%e5%ae%b6%e8%bf%87%e6%9a%91%e5%81%87%e7%9a%84%e5%ad%a6%e7%94%9f%e5%85%9a" aria-label="👨‍👩‍👧‍👦 回家过暑假的学生党">👨‍👩‍👧‍👦 回家过暑假的学生党</a></li>
+            <li>
+                <a href="#-%e5%ae%b6%e5%ba%ad%e9%95%bf%e6%9c%9f%e4%bd%bf%e7%94%a8" aria-label="🏠 家庭长期使用">🏠 家庭长期使用</a></li>
+            <li>
+                <a href="#-%e7%8b%ac%e5%b1%85%e5%8d%95%e8%ae%be%e5%a4%87%e7%94%a8%e6%88%b7" aria-label="💻 独居/单设备用户">💻 独居/单设备用户</a></li></ul>
+            </li>
+            <li>
+                <a href="#faq" aria-label="FAQ">FAQ</a><ul>
+                    
+            <li>
+                <a href="#-%e6%9c%89%e8%bd%af%e8%b7%af%e7%94%b1%e4%ba%86%e8%bf%98%e9%9c%80%e8%a6%81%e4%b9%b0%e6%9c%ba%e5%9c%ba%e5%90%97" aria-label="❓ 有软路由了，还需要买机场吗？">❓ 有软路由了，还需要买机场吗？</a></li>
+            <li>
+                <a href="#-%e6%97%81%e8%b7%af%e7%94%b1%e4%bc%9a%e4%b8%8d%e4%bc%9a%e6%8b%96%e6%85%a2%e7%bd%91%e9%80%9f" aria-label="❓ 旁路由会不会拖慢网速？">❓ 旁路由会不会拖慢网速？</a></li>
+            <li>
+                <a href="#-%e7%88%b8%e5%a6%88%e4%b8%8d%e4%bc%9a%e7%94%a8%e7%bf%bb%e5%a2%99%e5%ae%a2%e6%88%b7%e7%ab%af%e6%80%8e%e4%b9%88%e5%8a%9e" aria-label="❓ 爸妈不会用翻墙客户端怎么办？">❓ 爸妈不会用翻墙客户端怎么办？</a></li>
+            <li>
+                <a href="#-%e6%88%91%e5%ae%b6300m%e5%ae%bd%e5%b8%a6%e9%9c%80%e8%a6%81%e4%bb%80%e4%b9%88%e6%96%b9%e6%a1%88" aria-label="❓ 我家300M宽带，需要什么方案？">❓ 我家300M宽带，需要什么方案？</a></li>
+            <li>
+                <a href="#-%e6%90%ac%e5%ae%b6%e4%ba%86%e6%8d%a2%e5%ae%bd%e5%b8%a6%e4%ba%86%e9%85%8d%e7%bd%ae%e9%9c%80%e8%a6%81%e9%87%8d%e5%81%9a%e5%90%97" aria-label="❓ 搬家了/换宽带了，配置需要重做吗？">❓ 搬家了/换宽带了，配置需要重做吗？</a></li></ul>
+            </li>
+            <li>
+                <a href="#-%e6%80%bb%e7%bb%93" aria-label="🎯 总结">🎯 总结</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><blockquote>
+<p>暑假回家，你是不是也遇到这个问题：自己的笔记本、手机、iPad都配好了翻墙，但爸妈的电视要看Netflix、弟弟的电脑要查Google学术、全家人的iPad都要用ChatGPT……一个一个配太麻烦，有没有什么办法让<strong>全家的设备自动就能上外网</strong>？</p></blockquote>
+<p>这篇文章一次性给你讲清楚4种全屋科学上网方案，从最简单的到最折腾的，总有一个适合你家。</p>
+<hr>
+<h2 id="-太长不看版">📋 太长不看版<a hidden class="anchor" aria-hidden="true" href="#-太长不看版">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">方案</th>
+          <th style="text-align: left">难度</th>
+          <th style="text-align: left">成本</th>
+          <th style="text-align: left">覆盖范围</th>
+          <th style="text-align: left">稳定性</th>
+          <th style="text-align: left">推荐场景</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">🥇 <strong>软路由（OpenWrt x86）</strong></td>
+          <td style="text-align: left">⭐⭐⭐</td>
+          <td style="text-align: left">¥300-800</td>
+          <td style="text-align: left">全屋所有设备</td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐</td>
+          <td style="text-align: left">家里有旧电脑/想一步到位</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">🥇 <strong>魔法网关（旁路由）</strong></td>
+          <td style="text-align: left">⭐⭐</td>
+          <td style="text-align: left">¥200-500</td>
+          <td style="text-align: left">全屋可选</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">不想动主路由、小白友好</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">🥈 <strong>硬路由刷机</strong></td>
+          <td style="text-align: left">⭐⭐⭐</td>
+          <td style="text-align: left">¥100-300</td>
+          <td style="text-align: left">全屋所有设备</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">现成路由器刷固件、成本最低</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">🥉 <strong>单设备客户端</strong></td>
+          <td style="text-align: left">⭐</td>
+          <td style="text-align: left">¥0</td>
+          <td style="text-align: left">仅单设备</td>
+          <td style="text-align: left">⭐⭐⭐</td>
+          <td style="text-align: left">一个人用、懒得折腾</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">🥉 <strong>魔法盒子/网关硬件</strong></td>
+          <td style="text-align: left">⭐</td>
+          <td style="text-align: left">¥200-600</td>
+          <td style="text-align: left">全屋所有设备</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">不想动软件、插电即用</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>一句话推荐：</strong> 家里有旧电脑 → 装软路由（最稳）；不想折腾 → 买硬网关（最省心）；一个人用 → 客户端（最简单）。不管你选哪种方案，先挑一个好的机场作为服务来源。</p>
+<hr>
+<h2 id="完整横向对比">完整横向对比<a hidden class="anchor" aria-hidden="true" href="#完整横向对比">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">维度</th>
+          <th style="text-align: left">软路由</th>
+          <th style="text-align: left">硬路由刷机</th>
+          <th style="text-align: left">旁路由/魔法网关</th>
+          <th style="text-align: left">纯客户端</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>硬件需求</strong></td>
+          <td style="text-align: left">旧电脑/NUC/工控机</td>
+          <td style="text-align: left">支持刷机的路由器</td>
+          <td style="text-align: left">树莓派/旧手机/电视盒子 + 主路由</td>
+          <td style="text-align: left">无（用设备本身）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>初始成本</strong></td>
+          <td style="text-align: left">¥300-800</td>
+          <td style="text-align: left">¥100-300</td>
+          <td style="text-align: left">¥100-500</td>
+          <td style="text-align: left"><strong>¥0</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>配置难度</strong></td>
+          <td style="text-align: left">高（需要装系统+配置）</td>
+          <td style="text-align: left">中（刷固件有变砖风险）</td>
+          <td style="text-align: left">中（需要改网关/DHCP）</td>
+          <td style="text-align: left"><strong>低</strong>（下载安装即可）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>需要新设备？</strong></td>
+          <td style="text-align: left">通常是</td>
+          <td style="text-align: left">不需要（用现有路由器）</td>
+          <td style="text-align: left">可能需要</td>
+          <td style="text-align: left"><strong>不需要</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>覆盖设备</strong></td>
+          <td style="text-align: left"><strong>全屋所有</strong></td>
+          <td style="text-align: left"><strong>全屋所有</strong></td>
+          <td style="text-align: left"><strong>全屋所有</strong></td>
+          <td style="text-align: left">仅当前设备</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>速度损耗</strong></td>
+          <td style="text-align: left">极小（硬件渲染）</td>
+          <td style="text-align: left">小（硬件NAT）</td>
+          <td style="text-align: left">小（单臂路由模式）</td>
+          <td style="text-align: left">中等（软件渲染）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>无线覆盖</strong></td>
+          <td style="text-align: left">需额外AP</td>
+          <td style="text-align: left">自带WiFi</td>
+          <td style="text-align: left">靠主路由WiFi</td>
+          <td style="text-align: left">设备自带WiFi</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>维护难度</strong></td>
+          <td style="text-align: left">高（系统更新+排障）</td>
+          <td style="text-align: left">中（固件更新）</td>
+          <td style="text-align: left">中</td>
+          <td style="text-align: left"><strong>低</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>功耗</strong></td>
+          <td style="text-align: left">15-50W</td>
+          <td style="text-align: left">10-30W</td>
+          <td style="text-align: left">10-30W</td>
+          <td style="text-align: left">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>适合人群</strong></td>
+          <td style="text-align: left">技术爱好者/一步到位</td>
+          <td style="text-align: left">有刷机经验</td>
+          <td style="text-align: left">不想改主路由</td>
+          <td style="text-align: left">单用户/新手</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="方案详解">方案详解<a hidden class="anchor" aria-hidden="true" href="#方案详解">#</a></h2>
+<h3 id="-软路由openwrt-x86-终极方案">🥇 软路由（OpenWrt x86）— 终极方案<a hidden class="anchor" aria-hidden="true" href="#-软路由openwrt-x86-终极方案">#</a></h3>
+<p>软路由就是用一台 x86 电脑（旧笔记本、迷你主机、工控机）装上 OpenWrt 系统，专门负责全家的网络代理。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ 性能最强（x86 处理器碾压路由器 ARM 芯片）</li>
+<li>✅ 可以跑满千兆宽带（硬件渲染远超客户端软件）</li>
+<li>✅ 插件生态丰富（AdGuard Home去广告、DNS防污染、多协议支持）</li>
+<li>✅ 稳定性最好（专用的设备不干别的，7×24小时运行）</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ 需要额外一台设备（成本¥300起）</li>
+<li>❌ 配置复杂（要装系统、配防火墙、设置分流规则）</li>
+<li>❌ 需要配合无线AP使用（软路由本身不带WiFi）</li>
+</ul>
+<p><strong>硬件推荐：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">预算</th>
+          <th style="text-align: left">推荐配置</th>
+          <th style="text-align: left">预估价格</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">¥200-300</td>
+          <td style="text-align: left">闲置旧笔记本刷OpenWrt</td>
+          <td style="text-align: left">¥0（如果有闲置）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">¥300-500</td>
+          <td style="text-align: left">R4S/R5S（ARM软路由成品）</td>
+          <td style="text-align: left">¥300-500</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">¥500-800</td>
+          <td style="text-align: left">N100迷你主机（x86全功能）</td>
+          <td style="text-align: left">¥500-800</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>配置要点：</strong></p>
+<ol>
+<li>装好 OpenWrt 后，配置 PassWall 或 OpenClash</li>
+<li>导入机场订阅链接</li>
+<li>设置分流规则（国内直连+国外代理）</li>
+<li>配合一款好用的机场，比如<a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫</a>（100+节点、MPTCP多路复用）或<a href="https://api.huanghaiwan.com/go/%E4%B8%80%E6%9E%9D%E7%BA%A2%E6%9D%8F">一枝红杏</a>（IPLC专线极稳）</li>
+</ol>
+<blockquote>
+<p><strong>适用场景：</strong> 家里已有旧电脑/想一步到位/对网络性能有要求的用户</p></blockquote>
+<hr>
+<h3 id="-旁路由--魔法网关--最流行的折中方案">🥇 旁路由 / 魔法网关 — 最流行的折中方案<a hidden class="anchor" aria-hidden="true" href="#-旁路由--魔法网关--最流行的折中方案">#</a></h3>
+<p>旁路由（也叫魔法网关）是最多人在用的方案——不动家里的主路由器，另外加一台小设备做代理网关，需要科学上网的设备手动改一下网关地址即可。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ 不动主路由（不影响家人上网）</li>
+<li>✅ 可以按需分配（有的设备走代理，有的不走）</li>
+<li>✅ 配置简单（比软路由简单很多）</li>
+<li>✅ 硬件门槛低（树莓派/电视盒子/N1盒子都行）</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ 需要额外设备</li>
+<li>❌ 单臂路由模式性能有损耗</li>
+<li>❌ 每个需要代理的设备要手动改网关（或者改DHCP）</li>
+</ul>
+<p><strong>硬件推荐：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">设备</th>
+          <th style="text-align: left">价格</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">旧手机（刷Linux）</td>
+          <td style="text-align: left">¥0</td>
+          <td style="text-align: left">如果有闲置安卓手机</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">电视盒子（HK1 Box等）</td>
+          <td style="text-align: left">¥100-200</td>
+          <td style="text-align: left">刷Armbian跑OpenWrt</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">树莓派4B</td>
+          <td style="text-align: left">¥200-400</td>
+          <td style="text-align: left">经典方案但价格偏高</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">N1盒子</td>
+          <td style="text-align: left">¥80-120</td>
+          <td style="text-align: left">曾经的性价比之王</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">硬网关设备（GL.iNet）</td>
+          <td style="text-align: left">¥200-600</td>
+          <td style="text-align: left">到手即用，不需要配置</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>配置要点：</strong></p>
+<ol>
+<li>旁路由刷好 OpenWrt，配置好代理服务（PassWall）</li>
+<li>旁路由的网关指向主路由</li>
+<li>主路由的 DHCP 中把默认网关指向旁路由（全屋自动走代理）</li>
+<li>或者在需要代理的设备上手动设置网关为旁路由IP</li>
+</ol>
+<blockquote>
+<p><strong>适用场景：</strong> 不想动主路由/想逐步尝试/家里有人在用不能断网</p></blockquote>
+<hr>
+<h3 id="-硬路由刷机--成本最低的全屋方案">🥈 硬路由刷机 — 成本最低的全屋方案<a hidden class="anchor" aria-hidden="true" href="#-硬路由刷机--成本最低的全屋方案">#</a></h3>
+<p>如果你的路由器本来就支持刷 OpenWrt / 梅林 / Padavan，那直接刷固件就能实现全屋翻墙，不需要额外设备。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ 成本最低（不需要新硬件）</li>
+<li>✅ 全屋覆盖（路由器自带WiFi）</li>
+<li>✅ 功耗低（10-30W）</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ <strong>刷机有变砖风险</strong>（新手慎入）</li>
+<li>❌ 性能受限于路由器CPU（带不起高带宽）</li>
+<li>❌ 插件兼容性不确定</li>
+</ul>
+<p><strong>支持刷机的路由器推荐：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">型号</th>
+          <th style="text-align: left">芯片</th>
+          <th style="text-align: left">推荐固件</th>
+          <th style="text-align: left">二手价格</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Redmi AX6S</td>
+          <td style="text-align: left">MT7981</td>
+          <td style="text-align: left">OpenWrt</td>
+          <td style="text-align: left">¥80-120</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">小米AX3600</td>
+          <td style="text-align: left">IPQ8071</td>
+          <td style="text-align: left">OpenWrt</td>
+          <td style="text-align: left">¥150-200</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">华硕AX86U</td>
+          <td style="text-align: left">BCM4908</td>
+          <td style="text-align: left">梅林改版</td>
+          <td style="text-align: left">¥400-600</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">GL.iNet全系列</td>
+          <td style="text-align: left">多种</td>
+          <td style="text-align: left">出厂自带OpenWrt</td>
+          <td style="text-align: left">¥200-600</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>适用场景：</strong> 已有支持刷机的路由器/不介意刷机风险/预算有限</p></blockquote>
+<hr>
+<h3 id="-单设备客户端--最简单但只覆盖一台设备">🥉 单设备客户端 — 最简单但只覆盖一台设备<a hidden class="anchor" aria-hidden="true" href="#-单设备客户端--最简单但只覆盖一台设备">#</a></h3>
+<p>这就是大多数人最初接触的方式——在每台设备上单独安装客户端软件（Clash Verge、Clash for Android、Surge等），导入机场订阅链接。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ 零成本、零硬件</li>
+<li>✅ 配置最简单（下载→安装→导入订阅→开启）</li>
+<li>✅ 灵活（每个设备可以选不同节点）</li>
+<li>✅ 不用动路由器</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ 每个设备都要配一次（家里4个人=配4次）</li>
+<li>❌ 智能电视/游戏机等设备无法配置</li>
+<li>❌ 软件渲染会消耗设备性能、增加耗电</li>
+<li>❌ 后台切换应用容易忘记开启代理</li>
+</ul>
+<p><strong>客户端选择：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">平台</th>
+          <th style="text-align: left">推荐客户端</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Windows</td>
+          <td style="text-align: left">Clash Verge / v2rayN</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">macOS</td>
+          <td style="text-align: left">ClashX / Stash</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Android</td>
+          <td style="text-align: left">Clash for Android / v2rayNG</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">iOS</td>
+          <td style="text-align: left">Stash / Shadowrocket（小火箭）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">软路由</td>
+          <td style="text-align: left">OpenClash / PassWall</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>适用场景：</strong> 一个人使用/临时方案/不想折腾硬件</p></blockquote>
+<hr>
+<h2 id="按家庭场景推荐">按家庭场景推荐<a hidden class="anchor" aria-hidden="true" href="#按家庭场景推荐">#</a></h2>
+<h3 id="-回家过暑假的学生党">👨‍👩‍👧‍👦 回家过暑假的学生党<a hidden class="anchor" aria-hidden="true" href="#-回家过暑假的学生党">#</a></h3>
+<p><strong>预算 ¥0-200 | 推荐方案：旁路由</strong></p>
+<p>回家发现爸妈的路由器不支持刷机？没关系，用<strong>闲置手机或电视盒子</strong>做旁路由。如果你手头有一台不用的旧手机或电视盒子，花¥0-100买个USB网卡就能搞定。</p>
+<p>推荐搭配：<a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫</a> ¥15/月150G套餐 — 自己用 + 家里偶尔用够用，节点多不怕全家挤。</p>
+<h3 id="-家庭长期使用">🏠 家庭长期使用<a hidden class="anchor" aria-hidden="true" href="#-家庭长期使用">#</a></h3>
+<p><strong>预算 ¥300-800 | 推荐方案：软路由+AP</strong></p>
+<p>如果全家都在用（爸妈看Netflix/迪士尼、弟弟打外服游戏、自己用AI工具），直接上软路由性价比最高。买一台N100迷你主机（¥500-800）刷OpenWrt，配上一款好机场的订阅，全家所有设备自动走代理。</p>
+<p>建议搭配主力+备用双机场方案：</p>
+<ul>
+<li><strong>主力</strong>：<a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫</a> ¥35/月500G — 全家4-5人共享够用</li>
+<li><strong>备用</strong>：<a href="https://api.huanghaiwan.com/go/%E6%82%A0%E5%85%94">悠兔</a> ¥199/年200G — 备用防断</li>
+</ul>
+<h3 id="-独居单设备用户">💻 独居/单设备用户<a hidden class="anchor" aria-hidden="true" href="#-独居单设备用户">#</a></h3>
+<p><strong>预算 ¥0 | 推荐方案：客户端</strong></p>
+<p>一个人住，只在笔记本上需要翻墙？直接下载客户端完事，别折腾硬件。花¥9/月买个<a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫入门套餐</a>就能跑满需求。</p>
+<hr>
+<h2 id="faq">FAQ<a hidden class="anchor" aria-hidden="true" href="#faq">#</a></h2>
+<h3 id="-有软路由了还需要买机场吗">❓ 有软路由了，还需要买机场吗？<a hidden class="anchor" aria-hidden="true" href="#-有软路由了还需要买机场吗">#</a></h3>
+<p><strong>需要。</strong> 软路由只是&quot;管道&quot;，机场是&quot;水源&quot;。软路由负责把流量转发出国，但具体走哪条线路、多少带宽、能解锁哪些流媒体——这些都是机场决定的。没有机场订阅，软路由就是个空壳。</p>
+<h3 id="-旁路由会不会拖慢网速">❓ 旁路由会不会拖慢网速？<a hidden class="anchor" aria-hidden="true" href="#-旁路由会不会拖慢网速">#</a></h3>
+<p>会有一点点，但<strong>日常使用感受不到</strong>。旁路由模式下，流量走&quot;设备→旁路由→主路由→外网&quot;多了一跳，增加了1-3ms延迟。对于看视频、刷网页来说完全不影响。打游戏的话建议用软路由或硬路由刷机方案。</p>
+<h3 id="-爸妈不会用翻墙客户端怎么办">❓ 爸妈不会用翻墙客户端怎么办？<a hidden class="anchor" aria-hidden="true" href="#-爸妈不会用翻墙客户端怎么办">#</a></h3>
+<p><strong>旁路由或软路由方案最适合你——爸妈什么都不用管。</strong> 你配置好之后，全家的WiFi自动就能上外网。爸妈打开电视看Netflix，跟打开爱奇艺一样，不需要他们做任何操作。</p>
+<h3 id="-我家300m宽带需要什么方案">❓ 我家300M宽带，需要什么方案？<a hidden class="anchor" aria-hidden="true" href="#-我家300m宽带需要什么方案">#</a></h3>
+<p><strong>300M以下</strong> → 硬路由刷机或旁路由都够用
+<strong>500M-1000M</strong> → 推荐软路由（x86），客户端软件跑不了满速
+<strong>1000M以上</strong> → 必须软路由（x86），其他方案都有瓶颈</p>
+<h3 id="-搬家了换宽带了配置需要重做吗">❓ 搬家了/换宽带了，配置需要重做吗？<a hidden class="anchor" aria-hidden="true" href="#-搬家了换宽带了配置需要重做吗">#</a></h3>
+<ul>
+<li><strong>软路由</strong>：换个地方插电就行，配置都在路由器里</li>
+<li><strong>旁路由</strong>：同上，什么都不用改</li>
+<li><strong>硬路由刷机</strong>：同上</li>
+<li><strong>客户端</strong>：换个WiFi重连就行</li>
+</ul>
+<p>总结：方案一旦配好，除非搬家后换了运营商（IP网段变了），否则一劳永逸。</p>
+<hr>
+<h2 id="-总结">🎯 总结<a hidden class="anchor" aria-hidden="true" href="#-总结">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">你的情况</th>
+          <th style="text-align: left">推荐方案</th>
+          <th style="text-align: left">预计花费</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">一个人、笔记本</td>
+          <td style="text-align: left">客户端 + <a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫</a></td>
+          <td style="text-align: left">¥9/月</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">回家过暑假</td>
+          <td style="text-align: left">旁路由（旧手机/电视盒子） + <a href="https://api.huanghaiwan.com/go/%E4%B8%87%E8%BE%BE%E4%BA%91">万达云</a></td>
+          <td style="text-align: left">¥16.8/月+¥0硬件</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">全家长期使用</td>
+          <td style="text-align: left">软路由（N100） + <a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB">自由猫</a> + <a href="https://api.huanghaiwan.com/go/%E6%82%A0%E5%85%94">悠兔备用</a></td>
+          <td style="text-align: left">≈¥52/月+¥500硬件</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">不想折腾</td>
+          <td style="text-align: left">硬网关(GL.iNet) + <a href="https://api.huanghaiwan.com/go/%E4%B8%80%E6%9E%9D%E7%BA%A2%E6%9D%8F">一枝红杏</a></td>
+          <td style="text-align: left">¥99/年+¥300硬件</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">技术爱好者</td>
+          <td style="text-align: left">软路由全功能 + <a href="https://api.huanghaiwan.com/go/Cyberguard">Cyberguard</a></td>
+          <td style="text-align: left">¥16/月+¥400硬件</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>不管你选哪种方案，核心永远是&quot;好机场+稳定的网络配置&quot;。</strong> 方案是管道，机场是水源——先挑对水源，再考虑输水管怎么铺。</p>
+<p><em>本文包含推广链接，如果你通过链接注册，我可能会获得一定佣金。所有推荐均基于实际使用体验和客观数据，不因推广而偏袒。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/">新手入门</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/ai/claude-code-guide-2026/">
+    <span class="title">« Prev</span>
+    <span>Claude Code 入门指南 2026：AI编程智能体完整使用教程</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/ai/ai-audio-tools-guide-2026/">
+    <span class="title">Next »</span>
+    <span>2026年AI音频工具横评：Suno v5.5、ElevenLabs、Udio深度对比&#43;实战指南</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on x"
+            href="https://x.com/intent/tweet/?text=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f&amp;hashtags=%e6%95%99%e7%a8%8b%2c%e6%96%b0%e6%89%8b%e5%85%a5%e9%97%a8">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f&amp;title=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89&amp;summary=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89&amp;source=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f&title=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on whatsapp"
+            href="https://api.whatsapp.com/send?text=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89%20-%20https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on telegram"
+            href="https://telegram.me/share/url?text=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版） on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=%e5%85%a8%e5%b1%8b%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94%ef%bc%9a%e8%b7%af%e7%94%b1%e5%99%a8%20vs%20%e8%bd%af%e8%b7%af%e7%94%b1%20vs%20%e9%ad%94%e6%b3%95%e7%bd%91%e5%85%b3%20vs%20%e5%ae%a2%e6%88%b7%e7%ab%af%ef%bc%882026%e6%9a%91%e5%81%87%e7%89%88%ef%bc%89&u=https%3a%2f%2fhuanghaiwan.com%2fposts%2fhome-network-setup-guide-2026%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

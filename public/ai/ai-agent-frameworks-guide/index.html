@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="AI, 教程, Agent">
+<meta name="description" content="AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/ai/ai-agent-frameworks-guide/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/ai/ai-agent-frameworks-guide/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/ai/ai-agent-frameworks-guide/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）">
+  <meta property="og:description" content="AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ai">
+    <meta property="article:published_time" content="2026-05-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-27T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="教程">
+    <meta property="article:tag" content="Agent">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）">
+  <meta name="twitter:description" content="AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "🤖 AI工具指南",
+      "item": "https://huanghaiwan.com/ai/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）",
+      "item": "https://huanghaiwan.com/ai/ai-agent-frameworks-guide/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）",
+  "name": "AI Agent 完全指南：2026年从理论到实战（LangChain\/AutoGen\/CrewAI）",
+  "description": "AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。",
+  "keywords": [
+    "AI", "教程", "Agent"
+  ],
+  "articleBody": " 2026年，AI Agent（智能体）成为了AI领域最火热的关键词。从OpenAI的Operator到Manus概念，Agent让AI从「你问一句我答一句」的对话助手，变成能够自主规划、调用工具、多Agent协作的智能系统。\n本文从零开始，详解AI Agent的核心概念、架构设计，以及三大主流框架的实战用法。\n一、什么是AI Agent？ 1.1 从聊天助手到智能体 传统AI助手（ChatGPT、Claude等）的核心模式是：\n用户提问 → AI生成回答 → 结束 AI Agent的核心模式是：\n用户设定目标 → Agent自主规划 → 调用工具 → 感知反馈 → 迭代行动 → 达成目标 关键差异： AI Agent不是简单的一问一答，而是能够：\n自主规划：将复杂目标分解为多个步骤 工具调用：调用搜索、代码执行、API等外部工具 记忆存储：保留上下文，支持长期任务 多Agent协作：多个Agent分工合作完成复杂任务 1.2 AI Agent的核心组件 一个完整的AI Agent通常包含4个核心组件：\n组件 功能 比喻 规划（Planning） 将任务分解为可执行的子任务 的大脑 记忆（Memory） 存储短期上下文和长期知识 海马体 工具（Tools） 调用外部API、搜索引擎、代码 手和脚 行动（Action） 实际执行工具调用并验证结果 执行器 1.3 单Agent vs 多Agent架构 架构 适用场景 代表框架 单Agent 单一任务、简单场景 LangChain Agents 多Agent协作 复杂任务、多角色分工 AutoGen、CrewAI 二、主流AI Agent框架对比 2.1 三大框架一览 框架 开发方 定位 上手难度 2026年状态 LangChain Agents LangChain社区 全能型框架，工具链丰富 中等 成熟稳定 AutoGen Microsoft 多Agent对话协作 中等 活跃开发 CrewAI CrewAI团队 多Agent任务分工 简单 快速崛起 三、LangChain Agents实战 3.1 什么是LangChain LangChain是一个用于构建LLM应用的框架，核心思想是将chains（链）连接起来：\nPrompt Template → LLM → Output Parser 多个链可以组合成复杂的工作流 Agent是LangChain中能够自主决策使用工具的LLM 3.2 快速开始：构建一个搜索Agent # 安装 pip install langchain langchain-openai langchain-community # 构建搜索Agent from langchain.agents import AgentExecutor, create_react_agent from langchain_community.tools import DuckDuckGoSearchRun from langchain_openai import ChatOpenAI # 1. 定义工具 search = DuckDuckGoSearchRun() # 2. 创建Agent（使用ReAct方法） llm = ChatOpenAI(model=\"gpt-4o\", temperature=0) tools = [search] agent = create_react_agent(llm, tools) # 3. 创建Executor并运行 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True) result = agent_executor.invoke({ \"input\": \"2026年最新AI工具发展趋势是什么？\" }) print(result[\"output\"]) 运行流程：\nAgent接收问题：「2026年最新AI工具发展趋势」 Agent决定调用搜索工具 执行搜索，获取结果 基于搜索结果生成最终回答 3.3 高级用法：多工具Agent from langchain.agents import load_tools from langchain.agents.initialize import initialize_agent llm = ChatOpenAI(model=\"gpt-4o\", temperature=0) # 加载多种工具 tools = load_tools([\"ddg-search\", \"python\", \"arxiv\", \"wikipedia\"], llm=llm) # 初始化支持多种工具的Agent agent = initialize_agent( tools, llm, agent=\"zero-shot-react-description\", # ReAct方法 verbose=True ) # 复杂任务：先搜索再计算 result = agent.run( \"搜索2026年第一季度全球AI融资金额，并计算同比增长\" ) 四、AutoGen实战：多Agent对话 4.1 什么是AutoGen AutoGen是Microsoft开源的多Agent框架，核心思想是多个Agent相互对话协作：\n每个Agent有固定的角色（助手、用户、批评者等） Agent之间可以互相发送消息 可以自动生成Agent回复，无需人工干预 4.2 快速开始：两个Agent对话 # 安装 pip install pyautogen import autogen # 1. 定义Assistant Agent（助手） assistant = autogen.AssistantAgent( name=\"Assistant\", llm_config={ \"model\": \"gpt-4o\", \"api_key\": os.getenv(\"OPENAI_API_KEY\") } ) # 2. 定义User Proxy（用户代理，执行代码） user_proxy = autogen.UserProxyAgent( name=\"User\", human_input_mode=\"NEVER\", # 不需要人工输入 max_consecutive_auto_reply=10, code_execution_config={\"work_dir\": \"agent_workdir\"} ) # 3. 开始对话 user_proxy.initiate_chat( assistant, message=\"帮我分析2026年AI Agent领域的技术趋势，用Python生成一个简短的报告\" ) 4.3 多Agent协作：产品经理 + 开发者 # 定义产品经理Agent pm = autogen.AssistantAgent( name=\"ProductManager\", llm_config={\"model\": \"gpt-4o\"}, system_message=\"你是一个资深产品经理，擅长需求分析和产品设计\" ) # 定义开发者Agent dev = autogen.AssistantAgent( name=\"Developer\", llm_config={\"model\": \"gpt-4o\"}, system_message=\"你是一个资深全栈工程师，擅长把需求转化为可执行代码\" ) # 定义用户代理 user = autogen.UserProxyAgent(name=\"User\", human_input_mode=\"NEVER\") # PM和Dev协作 chat_result = user.initiate_chats([ {\"recipient\": pm, \"message\": \"设计一个AI Agent平台的原型，包含用户管理、Agent创建、任务管理三个模块\", \"silent\": True}, {\"recipient\": dev, \"message\": \"根据产品经理的设计，用Python+Flask实现这个平台的API\", \"silent\": True} ]) 五、CrewAI实战：多Agent任务分工 5.1 什么是CrewAI CrewAI是一个更年轻的多Agent框架，主打任务分工概念：\n每个Agent有明确的角色（如研究员、分析师、作者） 每个Agent有明确的任务 Crew（团队）负责协调Agent按顺序或并行执行任务 5.2 快速开始：三Agent团队 # 安装 pip install crewai crewai-tools from crewai import Agent, Task, Crew, Process # 1. 定义Agent（角色） researcher = Agent( role=\"AI研究员\", goal=\"搜索并分析2026年AI Agent领域的最新进展\", backstory=\"你是一个资深的AI技术研究员，擅长搜索和整理技术信息\", tools=[search_tool] # 需要先定义搜索工具 ) analyst = Agent( role=\"行业分析师\", goal=\"分析AI Agent的市场趋势和商业价值\", backstory=\"你是一个商业分析师，专注于AI行业的市场分析和投资趋势\" ) writer = Agent( role=\"内容作者\", goal=\"将研究员的发现和分析师的观点整理成一篇深度文章\", backstory=\"你是一个科技专栏作家，擅长把复杂的技术内容写得通俗易懂\" ) # 2. 定义任务 task1 = Task( description=\"搜索2026年以来最重要的AI Agent技术进展，至少5条\", agent=researcher ) task2 = Task( description=\"分析这些进展的市场影响和商业价值\", agent=analyst, context=[task1] # 依赖前一个任务的结果 ) task3 = Task( description=\"将研究和分析结果写成一篇2000字的深度文章\", agent=writer, context=[task1, task2] # 依赖前两个任务 ) # 3. 创建Crew并运行 crew = Crew( agents=[researcher, analyst, writer], tasks=[task1, task2, task3], process=Process.sequence # 按顺序执行 ) result = crew.kickoff() print(result) 5.3 并行执行：快速调研 # 并行执行多个研究任务 crew = Crew( agents=[researcher, analyst, writer], tasks=[task1, task2, task3], process=Process.hierarchical, # 层次化，管理员协调 manager_agent=researcher # 研究员作为管理者 ) result = crew.kickoff() 六、AI Agent的十大应用场景 场景 说明 适合框架 1. 自动化研究 自动搜索、总结多篇论文 LangChain、 CrewAI 2. 代码审查 自动检查代码质量并提出改进 AutoGen 3. 内容工厂 多Agent协作生成多版本内容 CrewAI 4. 数据分析 自动抓取数据 + 分析 + 可视化 LangChain 5. 客服机器人 多轮对话 + 知识库检索 LangChain 6. 市场调研 全自动竞品分析报告 CrewAI 7. 个人助手 日程、邮件、文档综合管理 AutoGen 8. 技术文档生成 从代码注释自动生成API文档 AutoGen 9. 金融分析 自动抓取财报 + 生成分析报告 LangChain 10. 法律助手 合同审查 + 风险点提取 LangChain 七、构建AI Agent的最佳实践 7.1 工具定义原则 好的工具应该：\n单一职责：每个工具只做一件事 输入输出清晰：明确的参数定义和返回格式 错误处理：工具调用失败时给Agent清晰的反馈 # 好的工具定义示例 from langchain.tools import Tool def search_ai_news(query: str) -\u003e str: \"\"\" 搜索AI领域新闻 输入：搜索关键词（字符串） 输出：相关新闻标题和摘要列表 \"\"\" # 实现搜索逻辑 ... search_tool = Tool( name=\"AI新闻搜索\", func=search_ai_news, description=\"当需要搜索最新AI新闻和技术进展时使用此工具。输入搜索关键词。\" ) 7.2 避免Agent陷入循环 常见问题：Agent反复调用同一工具不停止。\n解决方案：\n设置 max_iterations 限制迭代次数 在Prompt中明确终止条件 使用force_output_as_final_answer强制输出 7.3 长期记忆方案 Agent的「记忆」通常分三层：\n层级 内容 技术实现 短期记忆 当前对话上下文 LangChain ConversationBufferMemory 长期记忆 跨会话的知识 Vector DB（Chroma/Pinecone） 程序记忆 学会的技能模式 Few-shot examples in Prompt 八、优缺点总结 优点：\n自主执行复杂多步骤任务 工具调用能力扩展了LLM的能力边界 多Agent协作可以处理复杂真实场景 24小时不间断执行 缺点：\n调试困难，Agent决策过程不透明 容易陷入循环调用 成本较高（多次LLM调用） 安全性需要关注（Agent越权操作） 国内访问需要机场 适合场景：\n✅ 复杂、多步骤、需要工具调用的任务 ✅ 需要24小时无人值守的后台任务 ❌ 简单问答、一次性任务（用普通LLM更划算） 九、总结与推荐 AI Agent是2026年最值得关注的AI技术方向之一。对于入门者：\n首选CrewAI：上手最简单，文档友好 进阶选LangChain：最灵活，工具最丰富 多Agent对话选AutoGen：对话协作能力强 国内使用需要稳定的机场（月付¥15-30即可）。主流框架都需要调用OpenAI/Anthropic API。\n框架 上手难度 生态丰富度 2026年推荐度 CrewAI ⭐⭐ ⭐⭐⭐⭐ ⭐⭐⭐⭐⭐ LangChain ⭐⭐⭐ ⭐⭐⭐⭐⭐ ⭐⭐⭐⭐ AutoGen ⭐⭐⭐ ⭐⭐⭐⭐ ⭐⭐⭐⭐ 本文包含推广链接。注册前请阅读 网站 disclaimer\n快速访问推荐：\n机场 推荐度 月费 特点 自由猫 ⭐⭐⭐⭐⭐ ¥9起 流媒体全解锁、100+节点 悠兔 ⭐⭐⭐⭐ ¥25起 专线稳定、老板靠谱 贝贝云 ⭐⭐⭐ ¥25起 便宜备用 👉 访问官网了解更多AI工具教程\n",
+  "wordCount" : "623",
+  "inLanguage": "en",
+  "datePublished": "2026-05-27T00:00:00Z",
+  "dateModified": "2026-05-27T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/ai/ai-agent-frameworks-guide/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/ai/">🤖 AI工具指南</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）
+    </h1>
+    <div class="post-description">
+      AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-05-27 00:00:00 +0000 UTC'>May 27, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>623 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/ai/ai-agent-frameworks-guide/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e4%b8%80%e4%bb%80%e4%b9%88%e6%98%afai-agent" aria-label="一、什么是AI Agent？">一、什么是AI Agent？</a><ul>
+                    
+            <li>
+                <a href="#11-%e4%bb%8e%e8%81%8a%e5%a4%a9%e5%8a%a9%e6%89%8b%e5%88%b0%e6%99%ba%e8%83%bd%e4%bd%93" aria-label="1.1 从聊天助手到智能体">1.1 从聊天助手到智能体</a></li>
+            <li>
+                <a href="#12-ai-agent%e7%9a%84%e6%a0%b8%e5%bf%83%e7%bb%84%e4%bb%b6" aria-label="1.2 AI Agent的核心组件">1.2 AI Agent的核心组件</a></li>
+            <li>
+                <a href="#13-%e5%8d%95agent-vs-%e5%a4%9aagent%e6%9e%b6%e6%9e%84" aria-label="1.3 单Agent vs 多Agent架构">1.3 单Agent vs 多Agent架构</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%ba%8c%e4%b8%bb%e6%b5%81ai-agent%e6%a1%86%e6%9e%b6%e5%af%b9%e6%af%94" aria-label="二、主流AI Agent框架对比">二、主流AI Agent框架对比</a><ul>
+                    
+            <li>
+                <a href="#21-%e4%b8%89%e5%a4%a7%e6%a1%86%e6%9e%b6%e4%b8%80%e8%a7%88" aria-label="2.1 三大框架一览">2.1 三大框架一览</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%b8%89langchain-agents%e5%ae%9e%e6%88%98" aria-label="三、LangChain Agents实战">三、LangChain Agents实战</a><ul>
+                    
+            <li>
+                <a href="#31-%e4%bb%80%e4%b9%88%e6%98%aflangchain" aria-label="3.1 什么是LangChain">3.1 什么是LangChain</a></li>
+            <li>
+                <a href="#32-%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b%e6%9e%84%e5%bb%ba%e4%b8%80%e4%b8%aa%e6%90%9c%e7%b4%a2agent" aria-label="3.2 快速开始：构建一个搜索Agent">3.2 快速开始：构建一个搜索Agent</a></li>
+            <li>
+                <a href="#33-%e9%ab%98%e7%ba%a7%e7%94%a8%e6%b3%95%e5%a4%9a%e5%b7%a5%e5%85%b7agent" aria-label="3.3 高级用法：多工具Agent">3.3 高级用法：多工具Agent</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%9b%9bautogen%e5%ae%9e%e6%88%98%e5%a4%9aagent%e5%af%b9%e8%af%9d" aria-label="四、AutoGen实战：多Agent对话">四、AutoGen实战：多Agent对话</a><ul>
+                    
+            <li>
+                <a href="#41-%e4%bb%80%e4%b9%88%e6%98%afautogen" aria-label="4.1 什么是AutoGen">4.1 什么是AutoGen</a></li>
+            <li>
+                <a href="#42-%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b%e4%b8%a4%e4%b8%aaagent%e5%af%b9%e8%af%9d" aria-label="4.2 快速开始：两个Agent对话">4.2 快速开始：两个Agent对话</a></li>
+            <li>
+                <a href="#43-%e5%a4%9aagent%e5%8d%8f%e4%bd%9c%e4%ba%a7%e5%93%81%e7%bb%8f%e7%90%86--%e5%bc%80%e5%8f%91%e8%80%85" aria-label="4.3 多Agent协作：产品经理 &#43; 开发者">4.3 多Agent协作：产品经理 + 开发者</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%ba%94crewai%e5%ae%9e%e6%88%98%e5%a4%9aagent%e4%bb%bb%e5%8a%a1%e5%88%86%e5%b7%a5" aria-label="五、CrewAI实战：多Agent任务分工">五、CrewAI实战：多Agent任务分工</a><ul>
+                    
+            <li>
+                <a href="#51-%e4%bb%80%e4%b9%88%e6%98%afcrewai" aria-label="5.1 什么是CrewAI">5.1 什么是CrewAI</a></li>
+            <li>
+                <a href="#52-%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b%e4%b8%89agent%e5%9b%a2%e9%98%9f" aria-label="5.2 快速开始：三Agent团队">5.2 快速开始：三Agent团队</a></li>
+            <li>
+                <a href="#53-%e5%b9%b6%e8%a1%8c%e6%89%a7%e8%a1%8c%e5%bf%ab%e9%80%9f%e8%b0%83%e7%a0%94" aria-label="5.3 并行执行：快速调研">5.3 并行执行：快速调研</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%85%adai-agent%e7%9a%84%e5%8d%81%e5%a4%a7%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af" aria-label="六、AI Agent的十大应用场景">六、AI Agent的十大应用场景</a></li>
+            <li>
+                <a href="#%e4%b8%83%e6%9e%84%e5%bb%baai-agent%e7%9a%84%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5" aria-label="七、构建AI Agent的最佳实践">七、构建AI Agent的最佳实践</a><ul>
+                    
+            <li>
+                <a href="#71-%e5%b7%a5%e5%85%b7%e5%ae%9a%e4%b9%89%e5%8e%9f%e5%88%99" aria-label="7.1 工具定义原则">7.1 工具定义原则</a></li>
+            <li>
+                <a href="#72-%e9%81%bf%e5%85%8dagent%e9%99%b7%e5%85%a5%e5%be%aa%e7%8e%af" aria-label="7.2 避免Agent陷入循环">7.2 避免Agent陷入循环</a></li>
+            <li>
+                <a href="#73-%e9%95%bf%e6%9c%9f%e8%ae%b0%e5%bf%86%e6%96%b9%e6%a1%88" aria-label="7.3 长期记忆方案">7.3 长期记忆方案</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%85%ab%e4%bc%98%e7%bc%ba%e7%82%b9%e6%80%bb%e7%bb%93" aria-label="八、优缺点总结">八、优缺点总结</a></li>
+            <li>
+                <a href="#%e4%b9%9d%e6%80%bb%e7%bb%93%e4%b8%8e%e6%8e%a8%e8%8d%90" aria-label="九、总结与推荐">九、总结与推荐</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><blockquote>
+<p>2026年，AI Agent（智能体）成为了AI领域最火热的关键词。从OpenAI的Operator到Manus概念，Agent让AI从「你问一句我答一句」的对话助手，变成能够自主规划、调用工具、多Agent协作的智能系统。</p>
+<p>本文从零开始，详解AI Agent的核心概念、架构设计，以及三大主流框架的实战用法。</p></blockquote>
+<hr>
+<h2 id="一什么是ai-agent">一、什么是AI Agent？<a hidden class="anchor" aria-hidden="true" href="#一什么是ai-agent">#</a></h2>
+<h3 id="11-从聊天助手到智能体">1.1 从聊天助手到智能体<a hidden class="anchor" aria-hidden="true" href="#11-从聊天助手到智能体">#</a></h3>
+<p>传统AI助手（ChatGPT、Claude等）的核心模式是：</p>
+<pre tabindex="0"><code>用户提问 → AI生成回答 → 结束
+</code></pre><p>AI Agent的核心模式是：</p>
+<pre tabindex="0"><code>用户设定目标 → Agent自主规划 → 调用工具 → 感知反馈 → 迭代行动 → 达成目标
+</code></pre><p><strong>关键差异：</strong> AI Agent不是简单的一问一答，而是能够：</p>
+<ul>
+<li><strong>自主规划</strong>：将复杂目标分解为多个步骤</li>
+<li><strong>工具调用</strong>：调用搜索、代码执行、API等外部工具</li>
+<li><strong>记忆存储</strong>：保留上下文，支持长期任务</li>
+<li><strong>多Agent协作</strong>：多个Agent分工合作完成复杂任务</li>
+</ul>
+<h3 id="12-ai-agent的核心组件">1.2 AI Agent的核心组件<a hidden class="anchor" aria-hidden="true" href="#12-ai-agent的核心组件">#</a></h3>
+<p>一个完整的AI Agent通常包含4个核心组件：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">组件</th>
+          <th style="text-align: left">功能</th>
+          <th style="text-align: left">比喻</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>规划（Planning）</strong></td>
+          <td style="text-align: left">将任务分解为可执行的子任务</td>
+          <td style="text-align: left">的大脑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>记忆（Memory）</strong></td>
+          <td style="text-align: left">存储短期上下文和长期知识</td>
+          <td style="text-align: left">海马体</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>工具（Tools）</strong></td>
+          <td style="text-align: left">调用外部API、搜索引擎、代码</td>
+          <td style="text-align: left">手和脚</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>行动（Action）</strong></td>
+          <td style="text-align: left">实际执行工具调用并验证结果</td>
+          <td style="text-align: left">执行器</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="13-单agent-vs-多agent架构">1.3 单Agent vs 多Agent架构<a hidden class="anchor" aria-hidden="true" href="#13-单agent-vs-多agent架构">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">架构</th>
+          <th style="text-align: left">适用场景</th>
+          <th style="text-align: left">代表框架</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>单Agent</strong></td>
+          <td style="text-align: left">单一任务、简单场景</td>
+          <td style="text-align: left">LangChain Agents</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>多Agent协作</strong></td>
+          <td style="text-align: left">复杂任务、多角色分工</td>
+          <td style="text-align: left">AutoGen、CrewAI</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="二主流ai-agent框架对比">二、主流AI Agent框架对比<a hidden class="anchor" aria-hidden="true" href="#二主流ai-agent框架对比">#</a></h2>
+<h3 id="21-三大框架一览">2.1 三大框架一览<a hidden class="anchor" aria-hidden="true" href="#21-三大框架一览">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">框架</th>
+          <th style="text-align: left">开发方</th>
+          <th style="text-align: left">定位</th>
+          <th style="text-align: left">上手难度</th>
+          <th style="text-align: left">2026年状态</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>LangChain Agents</strong></td>
+          <td style="text-align: left">LangChain社区</td>
+          <td style="text-align: left">全能型框架，工具链丰富</td>
+          <td style="text-align: left">中等</td>
+          <td style="text-align: left">成熟稳定</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AutoGen</strong></td>
+          <td style="text-align: left">Microsoft</td>
+          <td style="text-align: left">多Agent对话协作</td>
+          <td style="text-align: left">中等</td>
+          <td style="text-align: left">活跃开发</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>CrewAI</strong></td>
+          <td style="text-align: left">CrewAI团队</td>
+          <td style="text-align: left">多Agent任务分工</td>
+          <td style="text-align: left">简单</td>
+          <td style="text-align: left">快速崛起</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="三langchain-agents实战">三、LangChain Agents实战<a hidden class="anchor" aria-hidden="true" href="#三langchain-agents实战">#</a></h2>
+<h3 id="31-什么是langchain">3.1 什么是LangChain<a hidden class="anchor" aria-hidden="true" href="#31-什么是langchain">#</a></h3>
+<p>LangChain是一个用于构建LLM应用的框架，核心思想是将<strong>chains</strong>（链）连接起来：</p>
+<ul>
+<li>Prompt Template → LLM → Output Parser</li>
+<li>多个链可以组合成复杂的工作流</li>
+<li>Agent是LangChain中能够<strong>自主决策</strong>使用工具的LLM</li>
+</ul>
+<h3 id="32-快速开始构建一个搜索agent">3.2 快速开始：构建一个搜索Agent<a hidden class="anchor" aria-hidden="true" href="#32-快速开始构建一个搜索agent">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
+</span></span><span style="display:flex;"><span>pip install langchain langchain<span style="color:#f92672">-</span>openai langchain<span style="color:#f92672">-</span>community
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 构建搜索Agent</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.agents <span style="color:#f92672">import</span> AgentExecutor, create_react_agent
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_community.tools <span style="color:#f92672">import</span> DuckDuckGoSearchRun
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_openai <span style="color:#f92672">import</span> ChatOpenAI
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 定义工具</span>
+</span></span><span style="display:flex;"><span>search <span style="color:#f92672">=</span> DuckDuckGoSearchRun()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 创建Agent（使用ReAct方法）</span>
+</span></span><span style="display:flex;"><span>llm <span style="color:#f92672">=</span> ChatOpenAI(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-4o&#34;</span>, temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>tools <span style="color:#f92672">=</span> [search]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> create_react_agent(llm, tools)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 创建Executor并运行</span>
+</span></span><span style="display:flex;"><span>agent_executor <span style="color:#f92672">=</span> AgentExecutor(agent<span style="color:#f92672">=</span>agent, tools<span style="color:#f92672">=</span>tools, verbose<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> agent_executor<span style="color:#f92672">.</span>invoke({
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;input&#34;</span>: <span style="color:#e6db74">&#34;2026年最新AI工具发展趋势是什么？&#34;</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>print(result[<span style="color:#e6db74">&#34;output&#34;</span>])
+</span></span></code></pre></div><p><strong>运行流程：</strong></p>
+<ol>
+<li>Agent接收问题：「2026年最新AI工具发展趋势」</li>
+<li>Agent决定调用搜索工具</li>
+<li>执行搜索，获取结果</li>
+<li>基于搜索结果生成最终回答</li>
+</ol>
+<h3 id="33-高级用法多工具agent">3.3 高级用法：多工具Agent<a hidden class="anchor" aria-hidden="true" href="#33-高级用法多工具agent">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.agents <span style="color:#f92672">import</span> load_tools
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.agents.initialize <span style="color:#f92672">import</span> initialize_agent
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>llm <span style="color:#f92672">=</span> ChatOpenAI(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-4o&#34;</span>, temperature<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 加载多种工具</span>
+</span></span><span style="display:flex;"><span>tools <span style="color:#f92672">=</span> load_tools([<span style="color:#e6db74">&#34;ddg-search&#34;</span>, <span style="color:#e6db74">&#34;python&#34;</span>, <span style="color:#e6db74">&#34;arxiv&#34;</span>, <span style="color:#e6db74">&#34;wikipedia&#34;</span>], llm<span style="color:#f92672">=</span>llm)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 初始化支持多种工具的Agent</span>
+</span></span><span style="display:flex;"><span>agent <span style="color:#f92672">=</span> initialize_agent(
+</span></span><span style="display:flex;"><span>    tools, 
+</span></span><span style="display:flex;"><span>    llm, 
+</span></span><span style="display:flex;"><span>    agent<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zero-shot-react-description&#34;</span>,  <span style="color:#75715e"># ReAct方法</span>
+</span></span><span style="display:flex;"><span>    verbose<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 复杂任务：先搜索再计算</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>run(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;搜索2026年第一季度全球AI融资金额，并计算同比增长&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><hr>
+<h2 id="四autogen实战多agent对话">四、AutoGen实战：多Agent对话<a hidden class="anchor" aria-hidden="true" href="#四autogen实战多agent对话">#</a></h2>
+<h3 id="41-什么是autogen">4.1 什么是AutoGen<a hidden class="anchor" aria-hidden="true" href="#41-什么是autogen">#</a></h3>
+<p>AutoGen是Microsoft开源的多Agent框架，核心思想是<strong>多个Agent相互对话协作</strong>：</p>
+<ul>
+<li>每个Agent有固定的角色（助手、用户、批评者等）</li>
+<li>Agent之间可以互相发送消息</li>
+<li>可以自动生成Agent回复，无需人工干预</li>
+</ul>
+<h3 id="42-快速开始两个agent对话">4.2 快速开始：两个Agent对话<a hidden class="anchor" aria-hidden="true" href="#42-快速开始两个agent对话">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
+</span></span><span style="display:flex;"><span>pip install pyautogen
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> autogen
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 定义Assistant Agent（助手）</span>
+</span></span><span style="display:flex;"><span>assistant <span style="color:#f92672">=</span> autogen<span style="color:#f92672">.</span>AssistantAgent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Assistant&#34;</span>,
+</span></span><span style="display:flex;"><span>    llm_config<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;model&#34;</span>: <span style="color:#e6db74">&#34;gpt-4o&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;api_key&#34;</span>: os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#34;OPENAI_API_KEY&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 定义User Proxy（用户代理，执行代码）</span>
+</span></span><span style="display:flex;"><span>user_proxy <span style="color:#f92672">=</span> autogen<span style="color:#f92672">.</span>UserProxyAgent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;User&#34;</span>,
+</span></span><span style="display:flex;"><span>    human_input_mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;NEVER&#34;</span>,  <span style="color:#75715e"># 不需要人工输入</span>
+</span></span><span style="display:flex;"><span>    max_consecutive_auto_reply<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>    code_execution_config<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;work_dir&#34;</span>: <span style="color:#e6db74">&#34;agent_workdir&#34;</span>}
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 开始对话</span>
+</span></span><span style="display:flex;"><span>user_proxy<span style="color:#f92672">.</span>initiate_chat(
+</span></span><span style="display:flex;"><span>    assistant,
+</span></span><span style="display:flex;"><span>    message<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;帮我分析2026年AI Agent领域的技术趋势，用Python生成一个简短的报告&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h3 id="43-多agent协作产品经理--开发者">4.3 多Agent协作：产品经理 + 开发者<a hidden class="anchor" aria-hidden="true" href="#43-多agent协作产品经理--开发者">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 定义产品经理Agent</span>
+</span></span><span style="display:flex;"><span>pm <span style="color:#f92672">=</span> autogen<span style="color:#f92672">.</span>AssistantAgent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ProductManager&#34;</span>,
+</span></span><span style="display:flex;"><span>    llm_config<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;model&#34;</span>: <span style="color:#e6db74">&#34;gpt-4o&#34;</span>},
+</span></span><span style="display:flex;"><span>    system_message<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;你是一个资深产品经理，擅长需求分析和产品设计&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 定义开发者Agent</span>
+</span></span><span style="display:flex;"><span>dev <span style="color:#f92672">=</span> autogen<span style="color:#f92672">.</span>AssistantAgent(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Developer&#34;</span>,
+</span></span><span style="display:flex;"><span>    llm_config<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;model&#34;</span>: <span style="color:#e6db74">&#34;gpt-4o&#34;</span>},
+</span></span><span style="display:flex;"><span>    system_message<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;你是一个资深全栈工程师，擅长把需求转化为可执行代码&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 定义用户代理</span>
+</span></span><span style="display:flex;"><span>user <span style="color:#f92672">=</span> autogen<span style="color:#f92672">.</span>UserProxyAgent(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;User&#34;</span>, human_input_mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;NEVER&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PM和Dev协作</span>
+</span></span><span style="display:flex;"><span>chat_result <span style="color:#f92672">=</span> user<span style="color:#f92672">.</span>initiate_chats([
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;recipient&#34;</span>: pm, <span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;设计一个AI Agent平台的原型，包含用户管理、Agent创建、任务管理三个模块&#34;</span>, <span style="color:#e6db74">&#34;silent&#34;</span>: <span style="color:#66d9ef">True</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;recipient&#34;</span>: dev, <span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;根据产品经理的设计，用Python+Flask实现这个平台的API&#34;</span>, <span style="color:#e6db74">&#34;silent&#34;</span>: <span style="color:#66d9ef">True</span>}
+</span></span><span style="display:flex;"><span>])
+</span></span></code></pre></div><hr>
+<h2 id="五crewai实战多agent任务分工">五、CrewAI实战：多Agent任务分工<a hidden class="anchor" aria-hidden="true" href="#五crewai实战多agent任务分工">#</a></h2>
+<h3 id="51-什么是crewai">5.1 什么是CrewAI<a hidden class="anchor" aria-hidden="true" href="#51-什么是crewai">#</a></h3>
+<p>CrewAI是一个更年轻的多Agent框架，主打<strong>任务分工</strong>概念：</p>
+<ul>
+<li>每个Agent有明确的<strong>角色</strong>（如研究员、分析师、作者）</li>
+<li>每个Agent有明确的<strong>任务</strong></li>
+<li>Crew（团队）负责协调Agent按顺序或并行执行任务</li>
+</ul>
+<h3 id="52-快速开始三agent团队">5.2 快速开始：三Agent团队<a hidden class="anchor" aria-hidden="true" href="#52-快速开始三agent团队">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
+</span></span><span style="display:flex;"><span>pip install crewai crewai<span style="color:#f92672">-</span>tools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> crewai <span style="color:#f92672">import</span> Agent, Task, Crew, Process
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 定义Agent（角色）</span>
+</span></span><span style="display:flex;"><span>researcher <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    role<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;AI研究员&#34;</span>,
+</span></span><span style="display:flex;"><span>    goal<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;搜索并分析2026年AI Agent领域的最新进展&#34;</span>,
+</span></span><span style="display:flex;"><span>    backstory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;你是一个资深的AI技术研究员，擅长搜索和整理技术信息&#34;</span>,
+</span></span><span style="display:flex;"><span>    tools<span style="color:#f92672">=</span>[search_tool]  <span style="color:#75715e"># 需要先定义搜索工具</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyst <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    role<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;行业分析师&#34;</span>,
+</span></span><span style="display:flex;"><span>    goal<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;分析AI Agent的市场趋势和商业价值&#34;</span>,
+</span></span><span style="display:flex;"><span>    backstory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;你是一个商业分析师，专注于AI行业的市场分析和投资趋势&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>writer <span style="color:#f92672">=</span> Agent(
+</span></span><span style="display:flex;"><span>    role<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;内容作者&#34;</span>,
+</span></span><span style="display:flex;"><span>    goal<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;将研究员的发现和分析师的观点整理成一篇深度文章&#34;</span>,
+</span></span><span style="display:flex;"><span>    backstory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;你是一个科技专栏作家，擅长把复杂的技术内容写得通俗易懂&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 定义任务</span>
+</span></span><span style="display:flex;"><span>task1 <span style="color:#f92672">=</span> Task(
+</span></span><span style="display:flex;"><span>    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;搜索2026年以来最重要的AI Agent技术进展，至少5条&#34;</span>,
+</span></span><span style="display:flex;"><span>    agent<span style="color:#f92672">=</span>researcher
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>task2 <span style="color:#f92672">=</span> Task(
+</span></span><span style="display:flex;"><span>    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;分析这些进展的市场影响和商业价值&#34;</span>,
+</span></span><span style="display:flex;"><span>    agent<span style="color:#f92672">=</span>analyst,
+</span></span><span style="display:flex;"><span>    context<span style="color:#f92672">=</span>[task1]  <span style="color:#75715e"># 依赖前一个任务的结果</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>task3 <span style="color:#f92672">=</span> Task(
+</span></span><span style="display:flex;"><span>    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;将研究和分析结果写成一篇2000字的深度文章&#34;</span>,
+</span></span><span style="display:flex;"><span>    agent<span style="color:#f92672">=</span>writer,
+</span></span><span style="display:flex;"><span>    context<span style="color:#f92672">=</span>[task1, task2]  <span style="color:#75715e"># 依赖前两个任务</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 创建Crew并运行</span>
+</span></span><span style="display:flex;"><span>crew <span style="color:#f92672">=</span> Crew(
+</span></span><span style="display:flex;"><span>    agents<span style="color:#f92672">=</span>[researcher, analyst, writer],
+</span></span><span style="display:flex;"><span>    tasks<span style="color:#f92672">=</span>[task1, task2, task3],
+</span></span><span style="display:flex;"><span>    process<span style="color:#f92672">=</span>Process<span style="color:#f92672">.</span>sequence  <span style="color:#75715e"># 按顺序执行</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> crew<span style="color:#f92672">.</span>kickoff()
+</span></span><span style="display:flex;"><span>print(result)
+</span></span></code></pre></div><h3 id="53-并行执行快速调研">5.3 并行执行：快速调研<a hidden class="anchor" aria-hidden="true" href="#53-并行执行快速调研">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 并行执行多个研究任务</span>
+</span></span><span style="display:flex;"><span>crew <span style="color:#f92672">=</span> Crew(
+</span></span><span style="display:flex;"><span>    agents<span style="color:#f92672">=</span>[researcher, analyst, writer],
+</span></span><span style="display:flex;"><span>    tasks<span style="color:#f92672">=</span>[task1, task2, task3],
+</span></span><span style="display:flex;"><span>    process<span style="color:#f92672">=</span>Process<span style="color:#f92672">.</span>hierarchical,  <span style="color:#75715e"># 层次化，管理员协调</span>
+</span></span><span style="display:flex;"><span>    manager_agent<span style="color:#f92672">=</span>researcher  <span style="color:#75715e"># 研究员作为管理者</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> crew<span style="color:#f92672">.</span>kickoff()
+</span></span></code></pre></div><hr>
+<h2 id="六ai-agent的十大应用场景">六、AI Agent的十大应用场景<a hidden class="anchor" aria-hidden="true" href="#六ai-agent的十大应用场景">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">场景</th>
+          <th style="text-align: left">说明</th>
+          <th style="text-align: left">适合框架</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1. <strong>自动化研究</strong></td>
+          <td style="text-align: left">自动搜索、总结多篇论文</td>
+          <td style="text-align: left">LangChain、 CrewAI</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2. <strong>代码审查</strong></td>
+          <td style="text-align: left">自动检查代码质量并提出改进</td>
+          <td style="text-align: left">AutoGen</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3. <strong>内容工厂</strong></td>
+          <td style="text-align: left">多Agent协作生成多版本内容</td>
+          <td style="text-align: left">CrewAI</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4. <strong>数据分析</strong></td>
+          <td style="text-align: left">自动抓取数据 + 分析 + 可视化</td>
+          <td style="text-align: left">LangChain</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5. <strong>客服机器人</strong></td>
+          <td style="text-align: left">多轮对话 + 知识库检索</td>
+          <td style="text-align: left">LangChain</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6. <strong>市场调研</strong></td>
+          <td style="text-align: left">全自动竞品分析报告</td>
+          <td style="text-align: left">CrewAI</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">7. <strong>个人助手</strong></td>
+          <td style="text-align: left">日程、邮件、文档综合管理</td>
+          <td style="text-align: left">AutoGen</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">8. <strong>技术文档生成</strong></td>
+          <td style="text-align: left">从代码注释自动生成API文档</td>
+          <td style="text-align: left">AutoGen</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">9. <strong>金融分析</strong></td>
+          <td style="text-align: left">自动抓取财报 + 生成分析报告</td>
+          <td style="text-align: left">LangChain</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">10. <strong>法律助手</strong></td>
+          <td style="text-align: left">合同审查 + 风险点提取</td>
+          <td style="text-align: left">LangChain</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="七构建ai-agent的最佳实践">七、构建AI Agent的最佳实践<a hidden class="anchor" aria-hidden="true" href="#七构建ai-agent的最佳实践">#</a></h2>
+<h3 id="71-工具定义原则">7.1 工具定义原则<a hidden class="anchor" aria-hidden="true" href="#71-工具定义原则">#</a></h3>
+<p>好的工具应该：</p>
+<ul>
+<li><strong>单一职责</strong>：每个工具只做一件事</li>
+<li><strong>输入输出清晰</strong>：明确的参数定义和返回格式</li>
+<li><strong>错误处理</strong>：工具调用失败时给Agent清晰的反馈</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 好的工具定义示例</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.tools <span style="color:#f92672">import</span> Tool
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">search_ai_news</span>(query: str) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    搜索AI领域新闻
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    输入：搜索关键词（字符串）
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    输出：相关新闻标题和摘要列表
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 实现搜索逻辑</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>search_tool <span style="color:#f92672">=</span> Tool(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;AI新闻搜索&#34;</span>,
+</span></span><span style="display:flex;"><span>    func<span style="color:#f92672">=</span>search_ai_news,
+</span></span><span style="display:flex;"><span>    description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;当需要搜索最新AI新闻和技术进展时使用此工具。输入搜索关键词。&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h3 id="72-避免agent陷入循环">7.2 避免Agent陷入循环<a hidden class="anchor" aria-hidden="true" href="#72-避免agent陷入循环">#</a></h3>
+<p>常见问题：Agent反复调用同一工具不停止。</p>
+<p><strong>解决方案：</strong></p>
+<ol>
+<li>设置 <code>max_iterations</code> 限制迭代次数</li>
+<li>在Prompt中明确终止条件</li>
+<li>使用<code>force_output_as_final_answer</code>强制输出</li>
+</ol>
+<h3 id="73-长期记忆方案">7.3 长期记忆方案<a hidden class="anchor" aria-hidden="true" href="#73-长期记忆方案">#</a></h3>
+<p>Agent的「记忆」通常分三层：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">层级</th>
+          <th style="text-align: left">内容</th>
+          <th style="text-align: left">技术实现</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>短期记忆</strong></td>
+          <td style="text-align: left">当前对话上下文</td>
+          <td style="text-align: left">LangChain ConversationBufferMemory</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>长期记忆</strong></td>
+          <td style="text-align: left">跨会话的知识</td>
+          <td style="text-align: left">Vector DB（Chroma/Pinecone）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>程序记忆</strong></td>
+          <td style="text-align: left">学会的技能模式</td>
+          <td style="text-align: left">Few-shot examples in Prompt</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="八优缺点总结">八、优缺点总结<a hidden class="anchor" aria-hidden="true" href="#八优缺点总结">#</a></h2>
+<p><strong>优点：</strong></p>
+<ul>
+<li>自主执行复杂多步骤任务</li>
+<li>工具调用能力扩展了LLM的能力边界</li>
+<li>多Agent协作可以处理复杂真实场景</li>
+<li>24小时不间断执行</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>调试困难，Agent决策过程不透明</li>
+<li>容易陷入循环调用</li>
+<li>成本较高（多次LLM调用）</li>
+<li>安全性需要关注（Agent越权操作）</li>
+<li>国内访问需要机场</li>
+</ul>
+<p><strong>适合场景：</strong></p>
+<ul>
+<li>✅ 复杂、多步骤、需要工具调用的任务</li>
+<li>✅ 需要24小时无人值守的后台任务</li>
+<li>❌ 简单问答、一次性任务（用普通LLM更划算）</li>
+</ul>
+<hr>
+<h2 id="九总结与推荐">九、总结与推荐<a hidden class="anchor" aria-hidden="true" href="#九总结与推荐">#</a></h2>
+<p>AI Agent是2026年最值得关注的AI技术方向之一。对于入门者：</p>
+<ul>
+<li><strong>首选CrewAI</strong>：上手最简单，文档友好</li>
+<li><strong>进阶选LangChain</strong>：最灵活，工具最丰富</li>
+<li><strong>多Agent对话选AutoGen</strong>：对话协作能力强</li>
+</ul>
+<p><strong>国内使用需要稳定的机场</strong>（月付¥15-30即可）。主流框架都需要调用OpenAI/Anthropic API。</p>
+<hr>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">框架</th>
+          <th style="text-align: left">上手难度</th>
+          <th style="text-align: left">生态丰富度</th>
+          <th style="text-align: left">2026年推荐度</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>CrewAI</strong></td>
+          <td style="text-align: left">⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>LangChain</strong></td>
+          <td style="text-align: left">⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AutoGen</strong></td>
+          <td style="text-align: left">⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><em>本文包含推广链接。注册前请阅读 <a href="../disclaimer.md">网站 disclaimer</a></em></p>
+<p><strong>快速访问推荐：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">机场</th>
+          <th style="text-align: center">推荐度</th>
+          <th style="text-align: center">月费</th>
+          <th style="text-align: left">特点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://freecat.cloud/register?code=USRIiAoO">自由猫</a></td>
+          <td style="text-align: center">⭐⭐⭐⭐⭐</td>
+          <td style="text-align: center">¥9起</td>
+          <td style="text-align: left">流媒体全解锁、100+节点</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://666.youtu6.shop/register?code=Vfs3Qqkm">悠兔</a></td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+          <td style="text-align: center">¥25起</td>
+          <td style="text-align: left">专线稳定、老板靠谱</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://888.2beibei.com/register?code=qwqDFEUW">贝贝云</a></td>
+          <td style="text-align: center">⭐⭐⭐</td>
+          <td style="text-align: center">¥25起</td>
+          <td style="text-align: left">便宜备用</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://huanghaiwan.com/ai/">👉 访问官网了解更多AI工具教程</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/ai/">AI</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+      <li><a href="https://huanghaiwan.com/tags/agent/">Agent</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/posts/dageyun-review/">
+    <span class="title">« Prev</span>
+    <span>大哥云机场评测：Trojan协议年付性价比之选</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/posts/ai-tools-618-guide-2026/">
+    <span class="title">Next »</span>
+    <span>2026年618 AI工具选购指南：哪些值得买，哪些是坑</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on x"
+            href="https://x.com/intent/tweet/?text=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f&amp;hashtags=AI%2c%e6%95%99%e7%a8%8b%2cAgent">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f&amp;title=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89&amp;summary=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89&amp;source=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f&title=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on whatsapp"
+            href="https://api.whatsapp.com/send?text=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89%20-%20https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on telegram"
+            href="https://telegram.me/share/url?text=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI） on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=AI%20Agent%20%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a2026%e5%b9%b4%e4%bb%8e%e7%90%86%e8%ae%ba%e5%88%b0%e5%ae%9e%e6%88%98%ef%bc%88LangChain%2fAutoGen%2fCrewAI%ef%bc%89&u=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-agent-frameworks-guide%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>编程 on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code 入门指南 2026：AI编程智能体完整使用教程</title>
+      <link>https://huanghaiwan.com/ai/claude-code-guide-2026/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/claude-code-guide-2026/</guid>
+      <description>Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。</description>
+    </item>
+    <item>
+      <title>2026年AI编程工具横评：Cursor vs Windsurf vs GitHub Copilot vs Claude Code</title>
+      <link>https://huanghaiwan.com/ai/ai-coding-tools-comparison-2026/</link>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-coding-tools-comparison-2026/</guid>
+      <description>Cursor、Windsurf、GitHub Copilot、Claude Code四款主流AI编程工具全方位对比。从价格、模型、功能到实际体验，帮你找到最适合的AI编程助手。</description>
+    </item>
+    <item>
+      <title>2026年AI编程助手横评：Cursor vs Windsurf vs GitHub Copilot，选哪个？</title>
+      <link>https://huanghaiwan.com/ai/ai-coding-assistants-comparison-2026/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-coding-assistants-comparison-2026/</guid>
+      <description>2026年AI编程助手大爆发，Cursor、Windsurf、GitHub Copilot三足鼎立。本文从功能、性能、价格、适用场景全面横评，帮开发者选对工具。</description>
+    </item>
+    <item>
+      <title>Windsurf AI 编程助手入门指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/windsurf-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/windsurf-guide/</guid>
+      <description>Windsurf AI 是什么？和 Cursor 有什么区别？2026 年最新 Windsurf 入门教程，包含安装配置、核心功能、提示词技巧和与 Cursor 的全面对比。</description>
+    </item>
+  </channel>
+</rss>

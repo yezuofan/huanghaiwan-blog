@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>视频制作 on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/</link>
+    <description>Recent content in 视频制作 on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026下半年AI视频生成工具横评：Sora关闭后的新格局</title>
+      <link>https://huanghaiwan.com/ai/ai-video-tools-2026-h2/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-video-tools-2026-h2/</guid>
+      <description>2026下半年AI视频生成工具格局剧变：Sora已关闭，Runway升级到Gen-4.5，Kling更新到3.0，Veo 2全面开放。本文实测横评8款主流工具，给出最新价格、功能和选择建议。</description>
+    </item>
+    <item>
+      <title>AI视频生成完全指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/ai-video-generation-guide/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-video-generation-guide/</guid>
+      <description>&lt;h1 id=&#34;ai视频生成完全指南2026年最新教程&#34;&gt;AI视频生成完全指南：2026年最新教程&lt;/h1&gt;
+&lt;p&gt;你有没有想过，用一段文字描述就能生成一段电影级视频？2026年的今天，这已经不是科幻——AI视频生成已经真正落地，成为创作者、短视频博主和企业的标配工具。&lt;/p&gt;
+&lt;p&gt;本文将从零开始，带你了解当前最主流的AI视频生成工具，掌握核心使用技巧，并给出实际的选择建议。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;主流ai视频生成工具横评&#34;&gt;主流AI视频生成工具横评&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;工具&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;开发方&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;核心优势&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;单次生成时长&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;月费(约)&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;适合人群&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Runway Gen-3&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Runway&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;电影感强、运动控制精准&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;10秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$15&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;专业创作者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Pika 2.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Pika Labs&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;操作简单、社区活跃&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3-10秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$8&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;内容创作者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Luma Dream Machine 2&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Luma AI&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;物理理解强、画面真实&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;5秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$10&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;真实场景还原&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;可灵（Kling）&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;快手&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;中文友好、支持长镜头&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;180秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;免费起&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;国内用户首选&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;海螺AI视频&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;字节跳动&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;生成速度快、风格多样&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;6秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;免费&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;快速出片&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Sora&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;OpenAI&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;画质最高、时长最长&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;20秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$20&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;最高画质需求&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;快速选择建议：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;国内用户首选&lt;strong&gt;可灵&lt;/strong&gt;或&lt;strong&gt;海螺AI&lt;/strong&gt;（中文友好，无需特殊网络条件）&lt;/li&gt;
+&lt;li&gt;追求电影级画质选&lt;strong&gt;Runway Gen-3&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;想快速出片发社交媒体选&lt;strong&gt;海螺AI&lt;/strong&gt;（免费额度够用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么你需要ai视频生成&#34;&gt;为什么你需要AI视频生成？&lt;/h2&gt;
+&lt;p&gt;传统视频制作有几大痛点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;成本高&lt;/strong&gt;：一条简单的产品视频，请摄影师+剪辑师可能要几千元&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;周期长&lt;/strong&gt;：从策划到成片，通常需要3-7天&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;门槛高&lt;/strong&gt;：需要掌握拍摄、剪辑、配乐等多技能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AI视频生成彻底改变了这个局面——成本趋近于零、速度极快、零门槛。&lt;/p&gt;
+&lt;p&gt;对于做跨境电商、社交媒体运营的朋友来说，AI视频生成已经是降本增效的利器。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;runway-gen-3-使用教程&#34;&gt;Runway Gen-3 使用教程&lt;/h2&gt;
+&lt;h3 id=&#34;核心功能&#34;&gt;核心功能&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;主要功能：&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="AI, 教程, 效率">
+<meta name="description" content="周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/ai/ai-workflow-guide/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/ai/ai-workflow-guide/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/ai/ai-workflow-guide/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）">
+  <meta property="og:description" content="周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ai">
+    <meta property="article:published_time" content="2026-05-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-16T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="教程">
+    <meta property="article:tag" content="效率">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）">
+  <meta name="twitter:description" content="周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "🤖 AI工具指南",
+      "item": "https://huanghaiwan.com/ai/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）",
+      "item": "https://huanghaiwan.com/ai/ai-workflow-guide/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）",
+  "name": "AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）",
+  "description": "周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。",
+  "keywords": [
+    "AI", "教程", "效率"
+  ],
+  "articleBody": " 周报2小时憋不出来？PPT改到凌晨？小需求写代码花一整天？你不是效率低，是没用对工具。\n2026年，AI工具已经从\"新鲜玩具\"进化成了职场标配。会用的同事半小时干完你一天的话，不是他比你强，是他知道怎么让AI干活。\n这篇不讲虚的，直接上实操——写周报、做PPT、写代码三个场景，每个都有现成模板，复制粘贴就能用。\n你需要什么？（前置准备） 在用AI之前，先确保你有访问以下工具的能力：\n工具 用途 是否需要特殊网络 Claude / ChatGPT 文本生成：写周报、写邮件、做总结 ✅ 需要 Gamma.app AI生成PPT ✅ 需要 Cursor / Claude Code AI辅助编程 ✅ 需要 由于这些海外AI服务的服务器均不在中国大陆，直连会报连接错误。下面推荐几个实测可用的方案，选一个配置好就能用了。\n推荐方案 方案一（推荐）：用机场代理——一次配置全部能用 选择一家靠谱的节点服务，安装客户端（Clash Verge / Sing-Box），所有海外AI和Google、YouTube全通。\n机场 月费 特点 适合 龙猫云 ¥15/月起(100G) 全IPLC专线，原生IP，AI对话低延迟 👉 访问官网 万达云 ¥16.8/月(150G) IEPL专线，住宅IP，TikTok+AI双用 👉 访问官网 WgetCloud ¥89/月(280G) 精品专线500Mbps，SLA保障，商务首选 👉 访问官网 瑶瑶领先 ¥15/月(100G) 全IEPL专线，AI工具+流媒体解锁 👉 访问官网 方案二（免费/轻量）：使用API中转服务 如果只是偶尔用AI，不追求访问其他海外网站，可以用API中转服务。上手难度较高但费用更低。详细配置方法参考 ChatGPT国内使用指南。\n🏆 三大场景速览 场景 推荐工具 上手难度 每天能省多少时间 写周报/报告 Claude + 模板 ⭐ 超简单 30分钟 → 5分钟 做PPT Gamma.app ⭐⭐ 简单 2小时 → 15分钟 写代码 Cursor / Claude Code ⭐⭐⭐ 中等 半天 → 1小时 以下分场景展开，每个都有可直接复制粘贴的模板。\n一、AI写周报（每天省25分钟） 核心逻辑 不是让AI替你编，是你把本周干的活粗略说出来，让AI帮你整理成漂亮的周报格式。\nClaude/ChatGPT提示词模板 你是一位专业的职场写作助手。请将以下工作内容整理成一份专业的周报/日报。 要求： - 分点列出，重点突出 - 量化成果（有数字更好） - 用正式但不过于刻板的语气 - 突出本周已完成的成果 - 下周计划单独列出 以下是我本周的工作内容（比较乱，帮我整理）： {{把你做的事情随便写在这里，一段话也行、关键词也行}} 实测示例：\n输入：\n你这周做了：修复了3个线上bug，其中一个数据库死锁导致客户订单失败。开始了新项目\"用户画像系统\"的数据库设计。跟产品团队开了两次需求评审会。给新同事做了一次code review培训。 输出：\n\u003e\u003e 本周工作完成情况 1. **线上Bug修复**：修复3个线上问题，含1个数据库死锁引起的客户订单失败（紧急处理，恢复时长\u003c30分钟） 2. **用户画像系统**：启动新项目数据库设计，完成核心表结构初版 3. **需求评审**：参与产品团队2次需求评审会，明确8个技术要点 4. **团队支持**：完成1次新员工Code Review培训（参与5人） \u003e\u003e 下周计划 1. 完成用户画像系统数据库设计评审 2. 开始设计用户画像系统的API接口 3. 持续跟踪线上系统稳定性 进阶用法：AI周报自动生成流 用Claude的Projects或ChatGPT的GPTs功能，可以创建一个专门的周报生成器：\n在ChatGPT中创建一个GPT，设定角色为\"周报助手\" 把你的日常工作内容（Jira工单、Git commits、邮件）丢进去 AI自动按周报格式输出 这项功能需要ChatGPT Plus订阅（$20/月）。推荐搭配龙猫云或万达云使用，每月¥15-17搞定网络 + ChatGPT全功能访问。\n二、AI做PPT（每天省1.5小时） 方案一：Gamma.app（强烈推荐） Gamma.app 是目前最好的AI生成PPT工具，没有之一。\n优势：\n一句主题描述 → 自动生成完整PPT（含大纲、配图、排版） 支持中文内容 免费版就能用（生成有限制） 可导出为PPT/PDF格式 操作步骤：\n打开 gamma.app，点击\"Create with AI\" 输入主题（中文就行），比如：“人工智能在电商行业的应用” 选择风格模板（Professional / Creative / Minimal） Gamma自动生成大纲 → 确认 → 生成完整PPT 手动微调细节文字和图片 导出为PPT文件 提示词模板：\n帮我生成一份关于[你的主题]的演示文稿。 要求： - 8-10页 - 受众：公司管理层 - 风格：专业简洁 - 语言：中文 - 每页不要太多字，每个点不超过20字 方案二：用ChatGPT/Claude写大纲 + 手动做 如果不想用Gamma，也可以用AI写大纲你来做：\n你是一位PPT内容策划专家。请为以下主题设计一份演示文稿的内容框架。 主题：[填写你的主题] 受众：[填写听众群体] 时长：[填写预计演讲时长] 要求： 1. 设定一个有记忆点的演讲主线 2. 每页只讲一个核心观点（不超过20字） 3. 每页都有具体的数据/案例支撑（编的也可以，标注\"待替换\"） 4. 最后一页是行动号召 请输出每页的标题和核心要点，以及建议的配图方向。 方案三（进阶）：Napkin AI + 截图流 Napkin AI 可以将文字自动转成信息图。配上Gamma生成的PPT，效果翻倍。\n工作流：\nGamma生成PPT初稿 → 2. Napkin AI将关键数据转成图表 → 3. 截图插入PPT → 4. 导出完成 三、AI写代码（每天省3-4小时） 这是AI效率提升最明显的场景。实测下来，熟手用AI写代码效率提升至少3倍。\n工具选择 工具 费用 适合场景 推荐度 Claude Code Claude Pro $20/月 全栈开发、重构、复杂逻辑 ⭐⭐⭐⭐⭐ GitHub Copilot $10/月 日常编码补全 ⭐⭐⭐⭐ Cursor $20/月 编辑器集成AI ⭐⭐⭐⭐ ChatGPT / Claude对话 免费/Pro 写小脚本、查API用法 ⭐⭐⭐ Claude Code：最强AI编程助手 Claude Code是Anthropic推出的终端版AI编程工具，直接在你的项目里运行，能读文件、改代码、跑git。\n常用指令示例：\n# 写一个新功能 /start 帮我写一个用户登录的JWT验证中间件，Express + TypeScript # 修bug Debug一下为什么/api/login返回503，查服务端日志 # 重构 把这个controller拆分一下，职责太多了 # 写测试 给userService.ts写单元测试，覆盖率80%以上 工作流（已验证）：\n把需求用自然语言告诉Claude Code Claude Code分析项目结构 → 写代码 → 自动测试 你只需要review结果，验收修改 需要Claude访问权限？搭配龙猫云或WgetCloud使用，Claude对话完全无障碍。\nGitHub Copilot：日常编码搭档 如果你在用VS Code或JetBrains，Copilot是最低门槛的AI编程助手：\n常用场景：\n写重复性代码（CRUD、测试用例）：直接写注释，Copilot补全 查API用法：不用翻文档，Copilot inline suggestion直接给你写 SQL查数据：写个注释\"–查询本月订单TOP10\"，Copilot帮你写SQL AI编程的核心技巧 最重要的一个原则：不要等AI替你做决定。\n最佳用法：\n你负责设计（架构/逻辑） → 你告诉AI要做什么 AI负责执行（写代码） → AI生成实现代码 你负责校验（review/测试） → 你确认代码正确 提示词模板：\n我用[技术栈]，要实现[具体功能]。 约束条件： - 错误处理要完整 - 性能优先（O(n) \u003e O(n²)） - 不要引入新依赖 - 写TypeScript类型定义 - 包含单元测试 功能描述：[详细描述] 完整工作流（建议每天这样用） 时间 任务 工具 耗时 09:00 AI整理昨天工作内容 → 生成今日待办 ChatGPT/Claude 5分钟 10:00 AI辅助写代码 / 改bug Cursor / Claude Code 1-3小时 15:00 用AI整理周报/项目进展 ChatGPT + 周报模板 5分钟 17:00 下次会议PPT用AI生成初稿 Gamma.app 15分钟 一天下来省出的时间：至少2-3小时。\n常见问题 Q：这些AI工具国内都能用吗？ A：ChatGPT、Claude、Gamma.app、Cursor都需要梯子（代理）才能访问。GitHub Copilot在国内可以直连，但速度较慢。建议配置一个稳定的代理服务——文中推荐的龙猫云、万达云都经过实测，一次配置所有AI工具全通。\nQ：免费的AI够用吗？ A：够用但有限制。ChatGPT免费版可以用GPT-3.5和有限次数的GPT-4o，写周报完全OK。Claude免费版有每日次数限制，重度使用建议付费（$20/月）。写代码建议用Claude Code（Pro订阅）+ Copilot（$10/月），月投入$30左右，换来每天省3小时。\nQ：AI写的内容能直接用吗？ A：不能照搬。 AI生成的周报、PPT、代码，都需要人工review一遍。AI擅长\"搭框架\"和\"写草稿\"，最后的把关和润色得自己来。尤其是周报——AI不知道你项目中那些微妙的细节，你需要在AI基础上补充真实信息。\nQ：写代码用AI，代码质量靠得住吗？ A：取决于你review得多认真。AI生成的代码一般结构上没问题，但可能有：\n过度工程（写了很多你根本不需要的抽象） 安全漏洞（没做输入验证、SQL注入防护） 依赖版本过旧 核心规则：信任但验证。 每个AI生成的commit都diff一下再提交。\n写在最后 AI效率工具的核心理念不是\"AI替你工作\"，而是**“AI帮你把重复劳动省掉，你专注于更有价值的事情”**。\n不想写周报？让AI帮你写框架，你往里填关键信息 不想做PPT？让AI出初稿，你只做最后的美化 不想写重复代码？让AI生成模板，你专注架构设计 用上AI和不用的区别，不是30%的效率差——是3倍的差距。\n本文包含推广链接。如果你通过推荐链接购买服务，我们会获得佣金，但不影响你的实际费用。\n",
+  "wordCount" : "377",
+  "inLanguage": "en",
+  "datePublished": "2026-05-16T00:00:00Z",
+  "dateModified": "2026-05-16T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/ai/ai-workflow-guide/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/ai/">🤖 AI工具指南</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）
+    </h1>
+    <div class="post-description">
+      周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-05-16 00:00:00 +0000 UTC'>May 16, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>377 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/ai/ai-workflow-guide/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e4%bd%a0%e9%9c%80%e8%a6%81%e4%bb%80%e4%b9%88%e5%89%8d%e7%bd%ae%e5%87%86%e5%a4%87" aria-label="你需要什么？（前置准备）">你需要什么？（前置准备）</a><ul>
+                    
+            <li>
+                <a href="#%e6%8e%a8%e8%8d%90%e6%96%b9%e6%a1%88" aria-label="推荐方案">推荐方案</a></li></ul>
+            </li>
+            <li>
+                <a href="#-%e4%b8%89%e5%a4%a7%e5%9c%ba%e6%99%af%e9%80%9f%e8%a7%88" aria-label="🏆 三大场景速览">🏆 三大场景速览</a></li>
+            <li>
+                <a href="#%e4%b8%80ai%e5%86%99%e5%91%a8%e6%8a%a5%e6%af%8f%e5%a4%a9%e7%9c%8125%e5%88%86%e9%92%9f" aria-label="一、AI写周报（每天省25分钟）">一、AI写周报（每天省25分钟）</a><ul>
+                    
+            <li>
+                <a href="#%e6%a0%b8%e5%bf%83%e9%80%bb%e8%be%91" aria-label="核心逻辑">核心逻辑</a></li>
+            <li>
+                <a href="#claudechatgpt%e6%8f%90%e7%a4%ba%e8%af%8d%e6%a8%a1%e6%9d%bf" aria-label="Claude/ChatGPT提示词模板">Claude/ChatGPT提示词模板</a></li>
+            <li>
+                <a href="#%e8%bf%9b%e9%98%b6%e7%94%a8%e6%b3%95ai%e5%91%a8%e6%8a%a5%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90%e6%b5%81" aria-label="进阶用法：AI周报自动生成流">进阶用法：AI周报自动生成流</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%ba%8cai%e5%81%9appt%e6%af%8f%e5%a4%a9%e7%9c%8115%e5%b0%8f%e6%97%b6" aria-label="二、AI做PPT（每天省1.5小时）">二、AI做PPT（每天省1.5小时）</a><ul>
+                    
+            <li>
+                <a href="#%e6%96%b9%e6%a1%88%e4%b8%80gammaapp%e5%bc%ba%e7%83%88%e6%8e%a8%e8%8d%90" aria-label="方案一：Gamma.app（强烈推荐）">方案一：Gamma.app（强烈推荐）</a></li>
+            <li>
+                <a href="#%e6%96%b9%e6%a1%88%e4%ba%8c%e7%94%a8chatgptclaude%e5%86%99%e5%a4%a7%e7%ba%b2--%e6%89%8b%e5%8a%a8%e5%81%9a" aria-label="方案二：用ChatGPT/Claude写大纲 &#43; 手动做">方案二：用ChatGPT/Claude写大纲 + 手动做</a></li>
+            <li>
+                <a href="#%e6%96%b9%e6%a1%88%e4%b8%89%e8%bf%9b%e9%98%b6napkin-ai--%e6%88%aa%e5%9b%be%e6%b5%81" aria-label="方案三（进阶）：Napkin AI &#43; 截图流">方案三（进阶）：Napkin AI + 截图流</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%b8%89ai%e5%86%99%e4%bb%a3%e7%a0%81%e6%af%8f%e5%a4%a9%e7%9c%813-4%e5%b0%8f%e6%97%b6" aria-label="三、AI写代码（每天省3-4小时）">三、AI写代码（每天省3-4小时）</a><ul>
+                    
+            <li>
+                <a href="#%e5%b7%a5%e5%85%b7%e9%80%89%e6%8b%a9" aria-label="工具选择">工具选择</a></li>
+            <li>
+                <a href="#claude-code%e6%9c%80%e5%bc%baai%e7%bc%96%e7%a8%8b%e5%8a%a9%e6%89%8b" aria-label="Claude Code：最强AI编程助手">Claude Code：最强AI编程助手</a></li>
+            <li>
+                <a href="#github-copilot%e6%97%a5%e5%b8%b8%e7%bc%96%e7%a0%81%e6%90%ad%e6%a1%a3" aria-label="GitHub Copilot：日常编码搭档">GitHub Copilot：日常编码搭档</a></li>
+            <li>
+                <a href="#ai%e7%bc%96%e7%a8%8b%e7%9a%84%e6%a0%b8%e5%bf%83%e6%8a%80%e5%b7%a7" aria-label="AI编程的核心技巧">AI编程的核心技巧</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%ae%8c%e6%95%b4%e5%b7%a5%e4%bd%9c%e6%b5%81%e5%bb%ba%e8%ae%ae%e6%af%8f%e5%a4%a9%e8%bf%99%e6%a0%b7%e7%94%a8" aria-label="完整工作流（建议每天这样用）">完整工作流（建议每天这样用）</a></li>
+            <li>
+                <a href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98" aria-label="常见问题">常见问题</a><ul>
+                    
+            <li>
+                <a href="#q%e8%bf%99%e4%ba%9bai%e5%b7%a5%e5%85%b7%e5%9b%bd%e5%86%85%e9%83%bd%e8%83%bd%e7%94%a8%e5%90%97" aria-label="Q：这些AI工具国内都能用吗？">Q：这些AI工具国内都能用吗？</a></li>
+            <li>
+                <a href="#q%e5%85%8d%e8%b4%b9%e7%9a%84ai%e5%a4%9f%e7%94%a8%e5%90%97" aria-label="Q：免费的AI够用吗？">Q：免费的AI够用吗？</a></li>
+            <li>
+                <a href="#qai%e5%86%99%e7%9a%84%e5%86%85%e5%ae%b9%e8%83%bd%e7%9b%b4%e6%8e%a5%e7%94%a8%e5%90%97" aria-label="Q：AI写的内容能直接用吗？">Q：AI写的内容能直接用吗？</a></li>
+            <li>
+                <a href="#q%e5%86%99%e4%bb%a3%e7%a0%81%e7%94%a8ai%e4%bb%a3%e7%a0%81%e8%b4%a8%e9%87%8f%e9%9d%a0%e5%be%97%e4%bd%8f%e5%90%97" aria-label="Q：写代码用AI，代码质量靠得住吗？">Q：写代码用AI，代码质量靠得住吗？</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%86%99%e5%9c%a8%e6%9c%80%e5%90%8e" aria-label="写在最后">写在最后</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><blockquote>
+<p>周报2小时憋不出来？PPT改到凌晨？小需求写代码花一整天？<strong>你不是效率低，是没用对工具。</strong></p></blockquote>
+<p>2026年，AI工具已经从&quot;新鲜玩具&quot;进化成了<strong>职场标配</strong>。会用的同事半小时干完你一天的话，不是他比你强，是他知道怎么让AI干活。</p>
+<p>这篇不讲虚的，直接上实操——<strong>写周报、做PPT、写代码</strong>三个场景，每个都有现成模板，复制粘贴就能用。</p>
+<hr>
+<h2 id="你需要什么前置准备">你需要什么？（前置准备）<a hidden class="anchor" aria-hidden="true" href="#你需要什么前置准备">#</a></h2>
+<p>在用AI之前，先确保你有访问以下工具的能力：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">工具</th>
+          <th style="text-align: left">用途</th>
+          <th style="text-align: left">是否需要特殊网络</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Claude / ChatGPT</td>
+          <td style="text-align: left">文本生成：写周报、写邮件、做总结</td>
+          <td style="text-align: left">✅ 需要</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Gamma.app</td>
+          <td style="text-align: left">AI生成PPT</td>
+          <td style="text-align: left">✅ 需要</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cursor / Claude Code</td>
+          <td style="text-align: left">AI辅助编程</td>
+          <td style="text-align: left">✅ 需要</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>由于这些海外AI服务的服务器均不在中国大陆，直连会报连接错误。下面推荐几个实测可用的方案，<strong>选一个配置好</strong>就能用了。</p></blockquote>
+<h3 id="推荐方案">推荐方案<a hidden class="anchor" aria-hidden="true" href="#推荐方案">#</a></h3>
+<p><strong>方案一（推荐）：用机场代理——一次配置全部能用</strong>
+选择一家靠谱的节点服务，安装客户端（Clash Verge / Sing-Box），所有海外AI和Google、YouTube全通。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">机场</th>
+          <th style="text-align: left">月费</th>
+          <th style="text-align: left">特点</th>
+          <th style="text-align: left">适合</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>龙猫云</strong></td>
+          <td style="text-align: left">¥15/月起(100G)</td>
+          <td style="text-align: left">全IPLC专线，原生IP，AI对话低延迟</td>
+          <td style="text-align: left"><a href="https://www.longmao.biz/web/#/register?aff=dqNRmvru">👉 访问官网</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>万达云</strong></td>
+          <td style="text-align: left">¥16.8/月(150G)</td>
+          <td style="text-align: left">IEPL专线，住宅IP，TikTok+AI双用</td>
+          <td style="text-align: left"><a href="https://wandayun.me/web/#/register?code=6z6PNS5r">👉 访问官网</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>WgetCloud</strong></td>
+          <td style="text-align: left">¥89/月(280G)</td>
+          <td style="text-align: left">精品专线500Mbps，SLA保障，商务首选</td>
+          <td style="text-align: left"><a href="https://wgetcloud.com/web/#/register?code=djq10H">👉 访问官网</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>瑶瑶领先</strong></td>
+          <td style="text-align: left">¥15/月(100G)</td>
+          <td style="text-align: left">全IEPL专线，AI工具+流媒体解锁</td>
+          <td style="text-align: left"><a href="https://yaoyaolingxian.com/web/#/register?code=d326dda059">👉 访问官网</a></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>方案二（免费/轻量）：使用API中转服务</strong>
+如果只是偶尔用AI，不追求访问其他海外网站，可以用API中转服务。上手难度较高但费用更低。详细配置方法参考 <a href="/ai/chatgpt-access-guide/#%E6%96%B9%E6%A1%88%E4%BA%8Capi%E4%B8%AD%E8%BD%AC">ChatGPT国内使用指南</a>。</p>
+<hr>
+<h2 id="-三大场景速览">🏆 三大场景速览<a hidden class="anchor" aria-hidden="true" href="#-三大场景速览">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">场景</th>
+          <th style="text-align: left">推荐工具</th>
+          <th style="text-align: left">上手难度</th>
+          <th style="text-align: left">每天能省多少时间</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>写周报/报告</strong></td>
+          <td style="text-align: left">Claude + 模板</td>
+          <td style="text-align: left">⭐ 超简单</td>
+          <td style="text-align: left">30分钟 → 5分钟</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>做PPT</strong></td>
+          <td style="text-align: left">Gamma.app</td>
+          <td style="text-align: left">⭐⭐ 简单</td>
+          <td style="text-align: left">2小时 → 15分钟</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>写代码</strong></td>
+          <td style="text-align: left">Cursor / Claude Code</td>
+          <td style="text-align: left">⭐⭐⭐ 中等</td>
+          <td style="text-align: left">半天 → 1小时</td>
+      </tr>
+  </tbody>
+</table>
+<p>以下分场景展开，每个都有<strong>可直接复制粘贴的模板</strong>。</p>
+<hr>
+<h2 id="一ai写周报每天省25分钟">一、AI写周报（每天省25分钟）<a hidden class="anchor" aria-hidden="true" href="#一ai写周报每天省25分钟">#</a></h2>
+<h3 id="核心逻辑">核心逻辑<a hidden class="anchor" aria-hidden="true" href="#核心逻辑">#</a></h3>
+<p>不是让AI替你编，是你把本周干的活<strong>粗略说出来</strong>，让AI帮你整理成漂亮的周报格式。</p>
+<h3 id="claudechatgpt提示词模板">Claude/ChatGPT提示词模板<a hidden class="anchor" aria-hidden="true" href="#claudechatgpt提示词模板">#</a></h3>
+<pre tabindex="0"><code>你是一位专业的职场写作助手。请将以下工作内容整理成一份专业的周报/日报。
+
+要求：
+- 分点列出，重点突出
+- 量化成果（有数字更好）
+- 用正式但不过于刻板的语气
+- 突出本周已完成的成果
+- 下周计划单独列出
+
+以下是我本周的工作内容（比较乱，帮我整理）：
+{{把你做的事情随便写在这里，一段话也行、关键词也行}}
+</code></pre><p><strong>实测示例：</strong></p>
+<p>输入：</p>
+<pre tabindex="0"><code>你这周做了：修复了3个线上bug，其中一个数据库死锁导致客户订单失败。开始了新项目&#34;用户画像系统&#34;的数据库设计。跟产品团队开了两次需求评审会。给新同事做了一次code review培训。
+</code></pre><p>输出：</p>
+<pre tabindex="0"><code>&gt;&gt; 本周工作完成情况
+
+1. **线上Bug修复**：修复3个线上问题，含1个数据库死锁引起的客户订单失败（紧急处理，恢复时长&lt;30分钟）
+2. **用户画像系统**：启动新项目数据库设计，完成核心表结构初版
+3. **需求评审**：参与产品团队2次需求评审会，明确8个技术要点
+4. **团队支持**：完成1次新员工Code Review培训（参与5人）
+
+&gt;&gt; 下周计划
+
+1. 完成用户画像系统数据库设计评审
+2. 开始设计用户画像系统的API接口
+3. 持续跟踪线上系统稳定性
+</code></pre><h3 id="进阶用法ai周报自动生成流">进阶用法：AI周报自动生成流<a hidden class="anchor" aria-hidden="true" href="#进阶用法ai周报自动生成流">#</a></h3>
+<p>用Claude的Projects或ChatGPT的GPTs功能，可以创建一个专门的<strong>周报生成器</strong>：</p>
+<ol>
+<li>在ChatGPT中创建一个GPT，设定角色为&quot;周报助手&quot;</li>
+<li>把你的日常工作内容（Jira工单、Git commits、邮件）丢进去</li>
+<li>AI自动按周报格式输出</li>
+</ol>
+<blockquote>
+<p>这项功能需要ChatGPT Plus订阅（$20/月）。推荐搭配<strong>龙猫云</strong>或<strong>万达云</strong>使用，每月¥15-17搞定网络 + ChatGPT全功能访问。</p></blockquote>
+<hr>
+<h2 id="二ai做ppt每天省15小时">二、AI做PPT（每天省1.5小时）<a hidden class="anchor" aria-hidden="true" href="#二ai做ppt每天省15小时">#</a></h2>
+<h3 id="方案一gammaapp强烈推荐">方案一：Gamma.app（强烈推荐）<a hidden class="anchor" aria-hidden="true" href="#方案一gammaapp强烈推荐">#</a></h3>
+<p><a href="https://gamma.app">Gamma.app</a> 是目前最好的AI生成PPT工具，没有之一。</p>
+<p><strong>优势：</strong></p>
+<ul>
+<li>一句主题描述 → 自动生成完整PPT（含大纲、配图、排版）</li>
+<li>支持中文内容</li>
+<li>免费版就能用（生成有限制）</li>
+<li>可导出为PPT/PDF格式</li>
+</ul>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>打开 gamma.app，点击&quot;Create with AI&quot;</li>
+<li>输入主题（中文就行），比如：&ldquo;人工智能在电商行业的应用&rdquo;</li>
+<li>选择风格模板（Professional / Creative / Minimal）</li>
+<li>Gamma自动生成大纲 → 确认 → 生成完整PPT</li>
+<li>手动微调细节文字和图片</li>
+<li>导出为PPT文件</li>
+</ol>
+<p><strong>提示词模板：</strong></p>
+<pre tabindex="0"><code>帮我生成一份关于[你的主题]的演示文稿。
+要求：
+- 8-10页
+- 受众：公司管理层
+- 风格：专业简洁
+- 语言：中文
+- 每页不要太多字，每个点不超过20字
+</code></pre><h3 id="方案二用chatgptclaude写大纲--手动做">方案二：用ChatGPT/Claude写大纲 + 手动做<a hidden class="anchor" aria-hidden="true" href="#方案二用chatgptclaude写大纲--手动做">#</a></h3>
+<p>如果不想用Gamma，也可以用AI写大纲你来做：</p>
+<pre tabindex="0"><code>你是一位PPT内容策划专家。请为以下主题设计一份演示文稿的内容框架。
+
+主题：[填写你的主题]
+受众：[填写听众群体]
+时长：[填写预计演讲时长]
+
+要求：
+1. 设定一个有记忆点的演讲主线
+2. 每页只讲一个核心观点（不超过20字）
+3. 每页都有具体的数据/案例支撑（编的也可以，标注&#34;待替换&#34;）
+4. 最后一页是行动号召
+
+请输出每页的标题和核心要点，以及建议的配图方向。
+</code></pre><h3 id="方案三进阶napkin-ai--截图流">方案三（进阶）：Napkin AI + 截图流<a hidden class="anchor" aria-hidden="true" href="#方案三进阶napkin-ai--截图流">#</a></h3>
+<p><a href="https://napkin.ai">Napkin AI</a> 可以将文字自动转成信息图。配上Gamma生成的PPT，效果翻倍。</p>
+<p><strong>工作流：</strong></p>
+<ol>
+<li>Gamma生成PPT初稿 → 2. Napkin AI将关键数据转成图表 → 3. 截图插入PPT → 4. 导出完成</li>
+</ol>
+<hr>
+<h2 id="三ai写代码每天省3-4小时">三、AI写代码（每天省3-4小时）<a hidden class="anchor" aria-hidden="true" href="#三ai写代码每天省3-4小时">#</a></h2>
+<p>这是AI效率提升最明显的场景。实测下来，<strong>熟手用AI写代码效率提升至少3倍</strong>。</p>
+<h3 id="工具选择">工具选择<a hidden class="anchor" aria-hidden="true" href="#工具选择">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">工具</th>
+          <th style="text-align: left">费用</th>
+          <th style="text-align: left">适合场景</th>
+          <th style="text-align: center">推荐度</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Claude Code</strong></td>
+          <td style="text-align: left">Claude Pro $20/月</td>
+          <td style="text-align: left">全栈开发、重构、复杂逻辑</td>
+          <td style="text-align: center">⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>GitHub Copilot</strong></td>
+          <td style="text-align: left">$10/月</td>
+          <td style="text-align: left">日常编码补全</td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Cursor</strong></td>
+          <td style="text-align: left">$20/月</td>
+          <td style="text-align: left">编辑器集成AI</td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>ChatGPT / Claude对话</strong></td>
+          <td style="text-align: left">免费/Pro</td>
+          <td style="text-align: left">写小脚本、查API用法</td>
+          <td style="text-align: center">⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="claude-code最强ai编程助手">Claude Code：最强AI编程助手<a hidden class="anchor" aria-hidden="true" href="#claude-code最强ai编程助手">#</a></h3>
+<p>Claude Code是Anthropic推出的终端版AI编程工具，直接在你的项目里运行，能读文件、改代码、跑git。</p>
+<p><strong>常用指令示例：</strong></p>
+<pre tabindex="0"><code># 写一个新功能
+/start 帮我写一个用户登录的JWT验证中间件，Express + TypeScript
+
+# 修bug
+Debug一下为什么/api/login返回503，查服务端日志
+
+# 重构
+把这个controller拆分一下，职责太多了
+
+# 写测试
+给userService.ts写单元测试，覆盖率80%以上
+</code></pre><p><strong>工作流（已验证）：</strong></p>
+<ol>
+<li>把需求用自然语言告诉Claude Code</li>
+<li>Claude Code分析项目结构 → 写代码 → 自动测试</li>
+<li>你只需要review结果，验收修改</li>
+</ol>
+<blockquote>
+<p>需要Claude访问权限？搭配<strong>龙猫云</strong>或<strong>WgetCloud</strong>使用，Claude对话完全无障碍。</p></blockquote>
+<h3 id="github-copilot日常编码搭档">GitHub Copilot：日常编码搭档<a hidden class="anchor" aria-hidden="true" href="#github-copilot日常编码搭档">#</a></h3>
+<p>如果你在用VS Code或JetBrains，Copilot是最低门槛的AI编程助手：</p>
+<p><strong>常用场景：</strong></p>
+<ul>
+<li>写重复性代码（CRUD、测试用例）：直接写注释，Copilot补全</li>
+<li>查API用法：不用翻文档，Copilot inline suggestion直接给你写</li>
+<li>SQL查数据：写个注释&quot;&ndash;查询本月订单TOP10&quot;，Copilot帮你写SQL</li>
+</ul>
+<h3 id="ai编程的核心技巧">AI编程的核心技巧<a hidden class="anchor" aria-hidden="true" href="#ai编程的核心技巧">#</a></h3>
+<p><strong>最重要的一个原则：不要等AI替你做决定。</strong></p>
+<p>最佳用法：</p>
+<ol>
+<li><strong>你负责设计（架构/逻辑）</strong> → 你告诉AI要做什么</li>
+<li><strong>AI负责执行（写代码）</strong> → AI生成实现代码</li>
+<li><strong>你负责校验（review/测试）</strong> → 你确认代码正确</li>
+</ol>
+<p><strong>提示词模板：</strong></p>
+<pre tabindex="0"><code>我用[技术栈]，要实现[具体功能]。
+约束条件：
+- 错误处理要完整
+- 性能优先（O(n) &gt; O(n²)）
+- 不要引入新依赖
+- 写TypeScript类型定义
+- 包含单元测试
+
+功能描述：[详细描述]
+</code></pre><hr>
+<h2 id="完整工作流建议每天这样用">完整工作流（建议每天这样用）<a hidden class="anchor" aria-hidden="true" href="#完整工作流建议每天这样用">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">时间</th>
+          <th style="text-align: left">任务</th>
+          <th style="text-align: left">工具</th>
+          <th style="text-align: left">耗时</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">09:00</td>
+          <td style="text-align: left">AI整理昨天工作内容 → 生成今日待办</td>
+          <td style="text-align: left">ChatGPT/Claude</td>
+          <td style="text-align: left">5分钟</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">10:00</td>
+          <td style="text-align: left">AI辅助写代码 / 改bug</td>
+          <td style="text-align: left">Cursor / Claude Code</td>
+          <td style="text-align: left">1-3小时</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">15:00</td>
+          <td style="text-align: left">用AI整理周报/项目进展</td>
+          <td style="text-align: left">ChatGPT + 周报模板</td>
+          <td style="text-align: left">5分钟</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">17:00</td>
+          <td style="text-align: left">下次会议PPT用AI生成初稿</td>
+          <td style="text-align: left">Gamma.app</td>
+          <td style="text-align: left">15分钟</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>一天下来省出的时间：至少2-3小时。</strong></p>
+<hr>
+<h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
+<h3 id="q这些ai工具国内都能用吗">Q：这些AI工具国内都能用吗？<a hidden class="anchor" aria-hidden="true" href="#q这些ai工具国内都能用吗">#</a></h3>
+<p>A：ChatGPT、Claude、Gamma.app、Cursor都需要梯子（代理）才能访问。GitHub Copilot在国内可以直连，但速度较慢。建议配置一个稳定的代理服务——文中推荐的<strong>龙猫云</strong>、<strong>万达云</strong>都经过实测，一次配置所有AI工具全通。</p>
+<h3 id="q免费的ai够用吗">Q：免费的AI够用吗？<a hidden class="anchor" aria-hidden="true" href="#q免费的ai够用吗">#</a></h3>
+<p>A：够用但有限制。ChatGPT免费版可以用GPT-3.5和有限次数的GPT-4o，写周报完全OK。Claude免费版有每日次数限制，重度使用建议付费（$20/月）。写代码建议用Claude Code（Pro订阅）+ Copilot（$10/月），月投入$30左右，换来每天省3小时。</p>
+<h3 id="qai写的内容能直接用吗">Q：AI写的内容能直接用吗？<a hidden class="anchor" aria-hidden="true" href="#qai写的内容能直接用吗">#</a></h3>
+<p>A：<strong>不能照搬。</strong> AI生成的周报、PPT、代码，都需要人工review一遍。AI擅长&quot;搭框架&quot;和&quot;写草稿&quot;，最后的把关和润色得自己来。尤其是周报——AI不知道你项目中那些微妙的细节，你需要在AI基础上补充真实信息。</p>
+<h3 id="q写代码用ai代码质量靠得住吗">Q：写代码用AI，代码质量靠得住吗？<a hidden class="anchor" aria-hidden="true" href="#q写代码用ai代码质量靠得住吗">#</a></h3>
+<p>A：取决于你review得多认真。AI生成的代码一般结构上没问题，但可能有：</p>
+<ul>
+<li>过度工程（写了很多你根本不需要的抽象）</li>
+<li>安全漏洞（没做输入验证、SQL注入防护）</li>
+<li>依赖版本过旧</li>
+</ul>
+<p><strong>核心规则：信任但验证。</strong> 每个AI生成的commit都diff一下再提交。</p>
+<hr>
+<h2 id="写在最后">写在最后<a hidden class="anchor" aria-hidden="true" href="#写在最后">#</a></h2>
+<p>AI效率工具的核心理念不是&quot;AI替你工作&quot;，而是**&ldquo;AI帮你把重复劳动省掉，你专注于更有价值的事情&rdquo;**。</p>
+<ul>
+<li>不想写周报？让AI帮你写框架，你往里填关键信息</li>
+<li>不想做PPT？让AI出初稿，你只做最后的美化</li>
+<li>不想写重复代码？让AI生成模板，你专注架构设计</li>
+</ul>
+<p><strong>用上AI和不用的区别，不是30%的效率差——是3倍的差距。</strong></p>
+<p><em>本文包含推广链接。如果你通过推荐链接购买服务，我们会获得佣金，但不影响你的实际费用。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/ai/">AI</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%88%E7%8E%87/">效率</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/ai/deepseek-guide/">
+    <span class="title">« Prev</span>
+    <span>DeepSeek入门到精通：2026年最新使用指南（注册、提示词、API）</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/posts/freecat-review/">
+    <span class="title">Next »</span>
+    <span>自由猫 Freecat 机场评测 | 叶老大自用主力，MPTCP多路复用技术详解</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on x"
+            href="https://x.com/intent/tweet/?text=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f&amp;hashtags=AI%2c%e6%95%99%e7%a8%8b%2c%e6%95%88%e7%8e%87">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f&amp;title=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89&amp;summary=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89&amp;source=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f&title=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on whatsapp"
+            href="https://api.whatsapp.com/send?text=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89%20-%20https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on telegram"
+            href="https://telegram.me/share/url?text=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南） on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=AI%e6%95%88%e7%8e%87%e5%b7%a5%e4%bd%9c%e6%b5%81%ef%bc%9a%e7%94%a8AI%e5%86%99%e5%91%a8%e6%8a%a5%e3%80%81%e5%81%9aPPT%e3%80%81%e5%86%99%e4%bb%a3%e7%a0%81%ef%bc%882026%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%89&u=https%3a%2f%2fhuanghaiwan.com%2fai%2fai-workflow-guide%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

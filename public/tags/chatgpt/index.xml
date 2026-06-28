@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ChatGPT on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/chatgpt/</link>
+    <description>Recent content in ChatGPT on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPT-5.5 完全指南：OpenAI 2026最强模型深度评测 — 性能、定价、实战Prompt</title>
+      <link>https://huanghaiwan.com/ai/gpt-5-5-guide-2026/</link>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/gpt-5-5-guide-2026/</guid>
+      <description>OpenAI 在 2026 年 4 月发布了 GPT-5.5，这是目前最强的 AI 模型。本文全面评测 GPT-5.5 的性能、定价、使用方法，并提供 8 个可直接复制的 Prompt 模板。</description>
+    </item>
+  </channel>
+</rss>

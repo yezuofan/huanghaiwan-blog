@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/posts/</link>
+    <description>Recent content in Posts on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026科学上网客户端下载安装配置全攻略：Clash Verge/Stash/Shadowrocket/v2rayN</title>
+      <link>https://huanghaiwan.com/posts/client-setup-guide-2026/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/client-setup-guide-2026/</guid>
+      <description>2026年主流科学上网客户端完整下载安装与配置教程，覆盖Windows/macOS/iOS/Android四大平台</description>
+    </item>
+    <item>
+      <title>2026暑假出境游网络指南：出国上网怎么办？</title>
+      <link>https://huanghaiwan.com/posts/summer-travel-network-guide-2026/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/summer-travel-network-guide-2026/</guid>
+      <description>eSIM/机场/国际漫游三种境外上网方案全对比，日本/泰国/欧美出行省钱攻略，帮你找到最适合的出境上网方案。</description>
+    </item>
+    <item>
+      <title>全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）</title>
+      <link>https://huanghaiwan.com/posts/home-network-setup-guide-2026/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/home-network-setup-guide-2026/</guid>
+      <description>放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。</description>
+    </item>
+    <item>
+      <title>2026年机场横向对比指南：12家主流机场怎么选？（更新版）</title>
+      <link>https://huanghaiwan.com/posts/airport-comparison-guide-2026/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-comparison-guide-2026/</guid>
+      <description>2026年最新机场横向对比：自由猫、悠兔、万达云、Cyberguard、一枝红杏、SKYLUMO等12家机场从价格、线路、流媒体、适合人群全面对比。附太长不看版速览表。</description>
+    </item>
+    <item>
+      <title>SKYLUMO评测：全球80&#43;地区覆盖，6.99元/月起，不限时流量包</title>
+      <link>https://huanghaiwan.com/posts/skylumo-review/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/skylumo-review/</guid>
+      <description>SKYLUMO评测：80&#43;国家节点覆盖，¥6.99/月入门价，¥99不限时流量包。含同价位对比、FAQ和全球覆盖详解。适合出差党、跨境电商、海外华人。</description>
+    </item>
+    <item>
+      <title>光年梯评测：IPLC专线&#43;SS协议，¥12.6/月起的性价比之选</title>
+      <link>https://huanghaiwan.com/posts/lightyear-review/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/lightyear-review/</guid>
+      <description>光年梯评测：¥18/月（7折后¥12.6）用上IPLC专线，SS协议兼容性好，不限设备。光年梯是低价位IPLC专线性价比之选。</description>
+    </item>
+    <item>
+      <title>全球云评测：BGP多线路年付99元起，高性价比入门之选</title>
+      <link>https://huanghaiwan.com/posts/quanjiuyun-review/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/quanjiuyun-review/</guid>
+      <description>全球云评测：BGP多线路中转保证稳定性，年付¥99起（8折码vpsknow后约¥79），同价位最稳妥的选择。含同价位对比、FAQ和快速入门指南。</description>
+    </item>
+    <item>
+      <title>2026年机场双保险策略：为什么你需要两个机场？主力&#43;备用最佳搭配方案</title>
+      <link>https://huanghaiwan.com/posts/airport-dual-backup-strategy-2026/</link>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-dual-backup-strategy-2026/</guid>
+      <description>一个机场断了怎么办？2026年双机场策略全攻略——从为什么需要两个机场到主力&#43;备用怎么搭配，5套方案和Clash配置教程一次说清楚。</description>
+    </item>
+    <item>
+      <title>2026年机场横向对比评测：12家主流机场谁最强？</title>
+      <link>https://huanghaiwan.com/posts/airport-comparison-2026/</link>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-comparison-2026/</guid>
+      <description>从价格、速度、稳定性、流媒体解锁、适合人群五大维度横向对比12家主流机场。自由猫、悠兔、万达云、Cyberguard、贝贝云…一篇看懂谁最适合你。</description>
+    </item>
+    <item>
+      <title>机场连接不上怎么办？2026年最全自助排查指南</title>
+      <link>https://huanghaiwan.com/posts/airport-connection-troubleshooting/</link>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-connection-troubleshooting/</guid>
+      <description>机场突然连不上？节点全红？延迟飙高？从客户端检查到网络环境，一步步教你自助排查，90%的问题自己就能解决。</description>
+    </item>
+    <item>
+      <title>AI变现入门：2026年普通人用AI赚钱的6种真实方法</title>
+      <link>https://huanghaiwan.com/posts/ai-monetization-guide-2026/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/ai-monetization-guide-2026/</guid>
+      <description>2026年AI爆发，普通人怎么用它赚钱？这篇入门指南覆盖6种真实可行的AI变现方法，从零开始，手把手教你用AI工具开启副业。不需要技术背景，拿来就能用。</description>
+    </item>
+    <item>
+      <title>2026年机场性价比排行：预算有限用户首选指南</title>
+      <link>https://huanghaiwan.com/posts/airport-value-guide-2026/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-value-guide-2026/</guid>
+      <description>2026年最新机场性价比排行，从价格、速度、稳定性三维评测贝贝云/自由猫/闪狐云等12家主流机场，帮你找到预算内最优选择。</description>
+    </item>
+    <item>
+      <title>618后怎么选机场？2026年科学上网选购实战指南</title>
+      <link>https://huanghaiwan.com/posts/airport-shopping-guide-2026/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-shopping-guide-2026/</guid>
+      <description>刚过完618，花了大钱买了各种东西。现在教你如何在网络工具上把钱花在刀刃上——2026年最实用的机场选购指南，覆盖各价位段和需求场景。</description>
+    </item>
+    <item>
+      <title>NXO Earth（太极）机场评测：高端BGP中继&#43;MPTCP多线程专线</title>
+      <link>https://huanghaiwan.com/posts/nxo-earth-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/nxo-earth-review/</guid>
+      <description>NXO Earth（太极）机场评测：高端BGP中继&#43;MPTCP多线程，2000Mbps理论速度，IEPL/IPLC专线支持SS/V2ray/Trojan多协议。适合对速度和线路质量有要求的用户。</description>
+    </item>
+    <item>
+      <title>一枝红杏</title>
+      <link>https://huanghaiwan.com/posts/yizhihongxing-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/yizhihongxing-review/</guid>
+      <description>一枝红杏机场评测 - 约2015年开业，运营超过10年的老字号机场</description>
+    </item>
+    <item>
+      <title>三十六行（nfsqttt）</title>
+      <link>https://huanghaiwan.com/posts/nfsqttt-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/nfsqttt-review/</guid>
+      <description>老牌机场之一，价格实惠的中转机场。适合预算有限的日常使用。</description>
+    </item>
+    <item>
+      <title>太极/动力港</title>
+      <link>https://huanghaiwan.com/posts/dongligang-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/dongligang-review/</guid>
+      <description>Xboard框架专线机场，IEPL/IPLC专线，支持SS/V2ray/Trojan多协议。GitHub上有详细测速记录。</description>
+    </item>
+    <item>
+      <title>肥猫云</title>
+      <link>https://huanghaiwan.com/posts/feimao-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/feimao-review/</guid>
+      <description>2021年开业，BGP三线纯专线，不限设备，流媒体全解锁。只能用自家客户端，不支持Clash等第三方工具。</description>
+    </item>
+    <item>
+      <title>酷酷云机场评测：BGP三网专线的4K流媒体秒开机场</title>
+      <link>https://huanghaiwan.com/posts/kukuyun-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/kukuyun-review/</guid>
+      <description>BGP三网专线&#43;Trojan协议机场，Netflix/Hulu/HBO/Disney&#43;/Dazn秒开4K，原生解锁ChatGPT/Claude等AI工具</description>
+    </item>
+    <item>
+      <title>闪狐云机场评测：BGP隧道中转&#43;IPLC专线的千兆高速机场</title>
+      <link>https://huanghaiwan.com/posts/shanhucloud-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/shanhucloud-review/</guid>
+      <description>闪狐云是一家主打BGP隧道中转&#43;IPLC高速内网纯专线出口的机场。采用Trojan协议，理论速率1000Mbps，晚高峰不限速。解锁全球流媒体和AI工具，无设备和IP限制，专业人工客服。</description>
+    </item>
+    <item>
+      <title>FlyingBird（飞鸟）机场评测：全平台适配的平价款机场</title>
+      <link>https://huanghaiwan.com/posts/flyingbird-review/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/flyingbird-review/</guid>
+      <description>FlyingBird（飞鸟）是一家主打全节点线路&#43;不限客户端数量的机场，套餐从15元/100GB到150元/1000GB，支持流媒体解锁和ChatGPT等AI工具，全球用户可用。</description>
+    </item>
+    <item>
+      <title>奈云（V2NY）机场评测：IEPL专线&#43;三协议支持，2026年还值得用吗？</title>
+      <link>https://huanghaiwan.com/posts/v2ny-review/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/v2ny-review/</guid>
+      <description>奈云（V2NY）是一家2021年开业的IEPL专线机场，支持Shadowsocks/V2ray/Trojan三协议，流媒体全解锁，¥168/年起。2026年在竞争激烈的市场中还值得选择吗？</description>
+    </item>
+    <item>
+      <title>悠兔（YouTu）机场评测：IEPL专线&#43;老牌稳定，2026年还推荐吗？</title>
+      <link>https://huanghaiwan.com/posts/youtu-review/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/youtu-review/</guid>
+      <description>悠兔（YouTu）是一家2022年开业的IEPL专线机场，老牌稳定，节点覆盖广，客服靠谱。套餐从200元/年/200G起，是很多用户的长期主力选择。2026年还值得用吗？</description>
+    </item>
+    <item>
+      <title>Cyberguard 机场评测 | IEPL专线&#43;60&#43;节点，2026年还值得用吗？</title>
+      <link>https://huanghaiwan.com/posts/cyberguard-review/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/cyberguard-review/</guid>
+      <description>2020年老牌机场，IEPL专线&#43;BGP接入&#43;QUIC协议，60&#43;节点不限设备。深度评测优缺点，帮你判断Cyberguard适不适合你。</description>
+    </item>
+    <item>
+      <title>大哥云机场评测：Trojan协议年付性价比之选</title>
+      <link>https://huanghaiwan.com/posts/dageyun-review/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/dageyun-review/</guid>
+      <description>&lt;h1 id=&#34;大哥云机场评测trojan协议年付性价比之选&#34;&gt;大哥云机场评测：Trojan协议年付性价比之选&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大哥云是一家主打&lt;strong&gt;Trojan协议+500-1000Mbps带宽&lt;/strong&gt;的机场。年付性价比极高，¥199/年，折合¥16.58/月，用9折码后更低。适合作为主力机场或备用机场。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;项目&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;详情&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;协议&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Trojan&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;传输方式&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;BGP中转&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;理论带宽&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;500-1000Mbps&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;UDP&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;设备限制&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;待确认&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Netflix ✅ · Disney+ ✅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AI工具&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ChatGPT ✅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支付方式&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支付宝、微信&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;优惠码&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;年付9折码：mcuE8uOq&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;注意&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;新疆地区不可用，不支持原路退款&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://aff01.dgyhao.com/#/register?code=HIYe2Ag0&#34;&gt;👉 访问官网&lt;/a&gt;
+&lt;strong&gt;备用地址：&lt;/strong&gt; &lt;a href=&#34;https://aff02.dgyhao.com/#/register?code=HIYe2Ag0&#34;&gt;👉 备用入口&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;套餐对比&#34;&gt;套餐对比&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;套餐&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;价格&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;流量&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;折合月费&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;小流量年付&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥88/年&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;15GB（≈7.33/月）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥7.33/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;单月套餐A&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥19.9/月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥19.9/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;季付套餐A&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥69/季&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;200GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥23/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;年付套餐A 300GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥199/年&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;300GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥16.58/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;年付套餐A 500GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥299/年&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;500GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥24.92/月&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;年付9折码：&lt;/strong&gt; &lt;code&gt;mcuE8uOq&lt;/code&gt;（结算时输入）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;性价比分析：&lt;/strong&gt; 年付套餐A 300GB 用9折码后约¥179/年，折合¥14.9/月，是性价比最高的选择。季付69元/200GB适合想先试用再决定的用户。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;流媒体解锁&#34;&gt;流媒体解锁&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;平台&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;状态&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Netflix&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全节点&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Disney+&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全节点&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;YouTube Premium&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4K流畅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ChatGPT&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全节点&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;优缺点&#34;&gt;优缺点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2026年618 AI工具选购指南：哪些值得买，哪些是坑</title>
+      <link>https://huanghaiwan.com/posts/ai-tools-618-guide-2026/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/ai-tools-618-guide-2026/</guid>
+      <description>&lt;h1 id=&#34;2026年618-ai工具选购指南哪些值得买哪些是坑&#34;&gt;2026年618 AI工具选购指南：哪些值得买，哪些是坑&lt;/h1&gt;
+&lt;p&gt;每年618都是囤工具的好时机。AI爆发年，各种订阅费趁机褥一把。本文帮你避坑——哪些AI工具真的值得在促销时入手，哪些不过是营销噱头。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>机场新手入门完全指南（2026年版）</title>
+      <link>https://huanghaiwan.com/posts/airport-beginner-guide-2026/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-beginner-guide-2026/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;如果你刚听说&amp;quot;机场&amp;quot;这个词，不知道它能做什么、是否安全、该怎么选择，这篇文章就是为你写的。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>MESL评测：Premium IEPL专线，低调高端之选</title>
+      <link>https://huanghaiwan.com/posts/mesl-review/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/mesl-review/</guid>
+      <description>&lt;h1 id=&#34;mesl评测premium-iepl专线低调高端之选&#34;&gt;MESL评测：Premium IEPL专线，低调高端之选&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MESL 是一家走低调高端路线的网络工具服务商，成立于2022年，主打 &lt;strong&gt;Premium IEPL专线&lt;/strong&gt;。接入阿里云CEN与腾讯云Anycast内网传输网络，走金融级架构路线。它不像别的机场铺天盖地打广告，口碑主要靠资深用户之间的推荐。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>新华云评测：3.99元/月不限设备，价格屠夫来了</title>
+      <link>https://huanghaiwan.com/posts/newhua-review/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/newhua-review/</guid>
+      <description>&lt;h1 id=&#34;新华云评测399元月不限设备价格屠夫来了&#34;&gt;新华云评测：3.99元/月不限设备，价格屠夫来了&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新华云（NewHua99）喊出 &lt;strong&gt;¥1/月&lt;/strong&gt;（1G体验套餐）的超低入门价，核心卖点是 &lt;strong&gt;不限设备数&lt;/strong&gt;。如果你只是想偶尔用用、预算极度有限，新华云是目前市场上门槛最低的选择之一。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>2026年机场流媒体&#43;AI工具横评：看片赚钱两不误</title>
+      <link>https://huanghaiwan.com/posts/airport-streaming-ai-guide/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-streaming-ai-guide/</guid>
+      <description>2026年最新实测：Netflix 4K解锁能力&#43;ChatGPT流畅访问的机场横评，看片赚钱两不误的机场推荐榜单</description>
+    </item>
+    <item>
+      <title>Google Gemini AI 完整指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/posts/gemini-ai-guide/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/gemini-ai-guide/</guid>
+      <description>Google Gemini AI 完整教程：Gemini vs GPT-4 vs Claude 怎么选？免费使用、付费Pro版、深度整合Google生态的优劣势分析。国内访问方案和10个实测提示词模板。</description>
+    </item>
+    <item>
+      <title>机场到期了怎么办？2026年续费/换服务商完全指南</title>
+      <link>https://huanghaiwan.com/posts/airport-subscription-expired-guide/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-subscription-expired-guide/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文解决一个实际问题：机场订阅到期后，是续费好还是换一家好？如果想换，如何平滑迁移避免断网？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;先问自己续费还是换家&#34;&gt;先问自己：续费还是换家？&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;情况&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;建议&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场一直稳定，没出过问题&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 续费，省心&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场最近经常断联/速度下降&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ 考虑换家&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场涨价了或性价比变差&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ 换家更划算&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场跑路了&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;🔴 立刻换家&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;一个原则：&lt;/strong&gt; 如果旧机场满足需求就别折腾。迁移有成本（学习新客户端配置等），换来换去反而影响体验。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案一续费旧机场最省心&#34;&gt;方案一：续费旧机场（最省心）&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不用重新配置客户端&lt;/li&gt;
+&lt;li&gt;订阅记录、用量历史都在&lt;/li&gt;
+&lt;li&gt;有问题客服还认识你&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;续费注意事项：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;续费前先看价格有没有变（很多机场年末会调价）&lt;/li&gt;
+&lt;li&gt;检查账户有没有未用完的流量（部分机场可结转）&lt;/li&gt;
+&lt;li&gt;关注官方有没有新套餐（有时候加一点钱升套餐更划算）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案二换一家新机场需要技巧&#34;&gt;方案二：换一家新机场（需要技巧）&lt;/h2&gt;
+&lt;h3 id=&#34;step-1选好新机场再下手&#34;&gt;Step 1：选好新机场再下手&lt;/h3&gt;
+&lt;p&gt;不要等旧机场彻底死了才找新的，提前1-2周开始物色。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;选新机场的标准：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;运营1年以上（避开月抛新站）&lt;/li&gt;
+&lt;li&gt;有真实用户社区（ Telegram群/群讨论）&lt;/li&gt;
+&lt;li&gt;套餐透明，没有超低价陷阱&lt;/li&gt;
+&lt;li&gt;支持你常用的客户端（Clash/V2ray/Sing-Box）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-2先买新机场测试ok再迁移&#34;&gt;Step 2：先买新机场，测试OK再迁移&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;推荐流程：
+1. 新机场买一个月套餐试用
+2. 配置到客户端，测试速度和解锁
+3. 确认新机场稳定可用
+4. 旧机场到期前再停止续费
+5. 期间两个机场并行使用，零断网风险
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;step-3迁移节点配置&#34;&gt;Step 3：迁移节点配置&lt;/h3&gt;
+&lt;p&gt;大多数机场都支持导入订阅链接，在Clash中：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法A：订阅链接导入（推荐）&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在Clash设置 → 配置文件 → URL&lt;/li&gt;
+&lt;li&gt;填入新机场的订阅URL&lt;/li&gt;
+&lt;li&gt;勾选「自动更新」→ 以后换节点不用手动改&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;方法B：手动复制节点&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从新机场后台复制节点信息&lt;/li&gt;
+&lt;li&gt;粘贴到Clash配置文件&lt;/li&gt;
+&lt;li&gt;适合只有少量节点的小机场&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-4旧机场数据备份&#34;&gt;Step 4：旧机场数据备份&lt;/h3&gt;
+&lt;p&gt;在停止旧机场订阅前，导出以下信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;账户名/注册邮箱（以后可能还用）&lt;/li&gt;
+&lt;li&gt;常用节点的服务器地址（万一以后想回来）&lt;/li&gt;
+&lt;li&gt;消费记录（报销/记账用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案三备用机场常态化最稳妥&#34;&gt;方案三：备用机场常态化（最稳妥）&lt;/h2&gt;
+&lt;p&gt;不管旧机场有没有问题，都建议保持一个备用机场。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>红杏云机场评测 | 不限时流量包&#43;全协议支持，2026深度体验</title>
+      <link>https://huanghaiwan.com/posts/hongxingyun-review/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/hongxingyun-review/</guid>
+      <description>&lt;h1 id=&#34;红杏云评测不限时流量包的性价比之选&#34;&gt;红杏云评测：不限时流量包的性价比之选&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;红杏云是少数主打&lt;strong&gt;不限时流量包&lt;/strong&gt;的机场。流量买了就是你的，用多久都行。这和其他按月扣费的机场是本质区别。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一句话总结：&lt;/strong&gt; 适合流量需求不固定、不想每个月付固定费用的用户。200G不限时¥20，500G不限时¥40，价格不算最便宜，但胜在灵活。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;项目&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;详情&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;开业时间&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2021年&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;线路类型&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;BGP三线优化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;设备限制&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;宽松（同时在线3-5台）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;第三方导入&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持（Clash/Surge/Stash等）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;软路由支持&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持（OpenWrt/iStoreOS等）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体解锁&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;待实测确认&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;官网&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://hongxingyun.club/web/#/register?code=OBEi3O69&#34;&gt;红杏云官网&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;最大卖点不限时流量包&#34;&gt;最大卖点：不限时流量包&lt;/h2&gt;
+&lt;p&gt;传统机场都是按月扣费——你交了30块钱，只用了一周，剩下的流量浪费了。红杏云的模式不一样：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;你买的是流量，不是时间。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;对比维度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;红杏云（不限时）&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;普通机场（月付）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流量有效期&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;用完为止，不限时间&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;每月重置，用不完浪费&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;月支出&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;不固定，买了能用很久&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;固定月费&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;适合场景&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;偶尔用、流量需求波动大&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;每天重度使用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;灵活性&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐⭐ 极高&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 固定&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;套餐对比&#34;&gt;套餐对比&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;套餐&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;价格&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;流量&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;折合月均（按3个月算）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;轻量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥20&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;200G不限时&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;约¥6.6/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;冲浪&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥40&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;500G不限时&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;约¥13.3/月&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;算一笔账：&lt;/strong&gt; 如果你一个月用70G左右，¥20的轻量包够你用3个月。相比月付¥15-20的普通机场，每年能省下 ¥60-100。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;线路质量分析&#34;&gt;线路质量分析&lt;/h2&gt;
+&lt;p&gt;红杏云采用BGP三线优化，虽然没有标注IPLC/IEPL高端专线，但日常使用体验不错：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;节点区域&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;适用场景&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;体验评价&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;香港&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;浏览网页/看视频&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 延迟中等，日常使用流畅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;日本&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;游戏/下载&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 日本线路稳定&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;美国&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;访问国际网站&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 美国节点速度尚可&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;新加坡&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;东南亚业务&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 适合东南亚业务场景&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;适合做的事情&#34;&gt;适合做的事情&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;日常浏览&lt;/strong&gt;（Google/YouTube/Twitter） — 流畅&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;看YouTube 1080p&lt;/strong&gt; — BGP线路够用&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;访问AI工具&lt;/strong&gt;（ChatGPT/Claude） — 没问题&lt;/li&gt;
+&lt;li&gt;⚠️ &lt;strong&gt;玩游戏&lt;/strong&gt; — 看具体游戏，欧美游戏延迟偏高&lt;/li&gt;
+&lt;li&gt;❌ &lt;strong&gt;4K视频重度用户&lt;/strong&gt; — 建议选有专线的大机场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;优缺点总结&#34;&gt;优缺点总结&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;优点&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;缺点&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;不限时流量包&lt;/strong&gt; — 买了就是你的&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 没有高端专线（IPLC/IEPL）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;设备限制宽松&lt;/strong&gt; — 多设备同时在线&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 流媒体解锁情况待确认&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;支持第三方导入&lt;/strong&gt; — 不强制用自家客户端&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 节点数量不算多&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;价格灵活&lt;/strong&gt; — 用多少买多少&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 官网偶尔需要翻墙访问&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;软路由支持&lt;/strong&gt; — OpenWrt用户友好&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;适合谁用&#34;&gt;适合谁用？&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;用户画像&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;推荐度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;原因&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;轻度用户（偶尔用）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;买200G能用好几个月，不用每月交钱&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;学生党&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预算有限，灵活付费&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;重度用户（每天用）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;建议选有专线的月付机场，体验更好&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;游戏玩家&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;基础线路够用，但对延迟敏感的不如选专线&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体爱好者&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;需要确认解锁情况，有专线需求的选别家&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;常见问题faq&#34;&gt;常见问题（FAQ）&lt;/h2&gt;
+&lt;h3 id=&#34;q1不限时流量包是什么意思&#34;&gt;Q1：不限时流量包是什么意思？&lt;/h3&gt;
+&lt;p&gt;就是你买了200G流量，&lt;strong&gt;用一年都行&lt;/strong&gt;，流量扣完了再买。不像月付机场那样每个月自动扣费、月底流量清零。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自由猫 Freecat 机场评测 | 叶老大自用主力，MPTCP多路复用技术详解</title>
+      <link>https://huanghaiwan.com/posts/freecat-review/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/freecat-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;自由猫（Freecat）成立于 &lt;strong&gt;2020 年&lt;/strong&gt;，是团队内部长期自用的主力机场之一。平台核心卖点是 &lt;strong&gt;MPTCP（多路复用）&lt;/strong&gt; 技术——通过聚合多条普通线路来达到接近专线的稳定性和速度，而不需要用户承担专线的成本。100+ 节点覆盖 20+ 国家/地区，入口出口选择丰富，适合对稳定性和节点多样性有要求的用户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://freecat.cloud/register?code=USRIiAoO&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2026年如何选择机场？新手选购指南（附避坑建议）</title>
+      <link>https://huanghaiwan.com/posts/how-to-choose-airport/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/how-to-choose-airport/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;对于刚接触科学上网的新手来说，&amp;ldquo;机场&amp;quot;这个词可能有些陌生。本文将用通俗易懂的语言，介绍什么是机场、如何挑选适合自己的机场，以及常见的选择误区。无论你是想访问 Google 查资料、观看 YouTube 视频，还是需要稳定的跨境网络连接，这篇指南都能帮你做出更明智的选择。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5分钟快速入门：机场/VPN新手教程</title>
+      <link>https://huanghaiwan.com/posts/quick-start/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/quick-start/</guid>
+      <description>如果你不想看原理，只想快点用上机场，看这一篇就够了。5分钟从下载客户端到成功翻墙。</description>
+    </item>
+    <item>
+      <title>WgetCloud 机场评测 | 精品专线29节点，年付套餐深度体验</title>
+      <link>https://huanghaiwan.com/posts/wgetcloud-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/wgetcloud-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;WgetCloud（又称 WgetCloud GlobalNet）是一家主打精品专线的中高端机场，隶属于 A 组推荐梯队。平台提供 29 个节点，覆盖全球主要地区，采用 IEPL/IPLC 专线线路，主打 500Mbps 带宽和流媒体+AI 工具解锁能力。本次评测基于年付套餐深度体验，数据仅供参考。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://wgetcloud.com/web/#/register?code=djq10H&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>万达云 机场评测 | IEPL专线&#43;住宅IP，最低¥16.8/月起</title>
+      <link>https://huanghaiwan.com/posts/wandayun-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/wandayun-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;万达云（WangDaCloud）是一家主打 IEPL 专线 + 住宅IP 的中高端机场，隶属于 B 组有特色梯队。平台核心卖点是住宅IP节点的原生属性，对流媒体和TikTok等平台有天然解锁优势。本次评测覆盖套餐、专线优势及实际使用体验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://link.wdyserver.com/register?code=6z6PNS5r&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>什么是VPN/机场？一篇文读懂翻墙原理与常见术语</title>
+      <link>https://huanghaiwan.com/posts/what-is-vpn/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/what-is-vpn/</guid>
+      <description>VPN和机场是什么？有什么区别？一篇文搞懂科学上网的基本概念、常用协议（VMess/VLESS/Trojan）和核心术语。</description>
+    </item>
+    <item>
+      <title>机场购买完整教程：从注册到客户端配置</title>
+      <link>https://huanghaiwan.com/posts/purchase-guide/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/purchase-guide/</guid>
+      <description>手把手教你完成机场注册、购买套餐、获取订阅链接、导入客户端。从零开始，5分钟搞定。</description>
+    </item>
+    <item>
+      <title>瑶瑶领先 机场评测 | SS协议大流量套餐，¥9.9起用384G</title>
+      <link>https://huanghaiwan.com/posts/yaoyaolingxian-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/yaoyaolingxian-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;瑶瑶领先（YaoYao LingXian）是一家主打 SS（Shadowsocks）协议的大流量性价比机场，隶属于 C 组补充的量大便宜路线。平台核心卖点是超低价格+超大流量，适合对网络速度要求不极致、但流量消耗大的用户。本次评测覆盖套餐配置和实际速度表现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://yyssr.org/auth/register?code=d326dda059&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选</title>
+      <link>https://huanghaiwan.com/posts/protocol-guide/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/protocol-guide/</guid>
+      <description>一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS&#43;Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。</description>
+    </item>
+    <item>
+      <title>龙猫云 机场评测 | 全IPLC专线无限速，入门仅¥15/月</title>
+      <link>https://huanghaiwan.com/posts/longmaoyun-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/longmaoyun-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;龙猫云（LongMao Cloud）是一家主打全 IPLC 专线的中端机场，隶属于 C 组补充梯队。相比混合线路机场，龙猫云承诺全节点 IPLC 专线接入，不做普通公网中转。平台口号是&amp;quot;无限速&amp;quot;，适合对网络质量有要求但预算有限的用户。本次评测基于标准套餐实测。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://inv06.lmaff01.cc/register?aff=dqNRmvru&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>效率 on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 效率 on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026年AI工具搭配方案：不同预算的最佳AI工具箱</title>
+      <link>https://huanghaiwan.com/ai/ai-tool-stack-guide-2026/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-tool-stack-guide-2026/</guid>
+      <description>从零元党到全家桶，5个预算档次的最佳AI工具组合方案。DeepSeek/ChatGPT/Claude/Cursor/Midjourney怎么搭最划算？看完这篇就知道。</description>
+    </item>
+    <item>
+      <title>2026年打工人必备AI工具清单：从写作到绘画全覆盖</title>
+      <link>https://huanghaiwan.com/ai/ai-tools-for-work-2026/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-tools-for-work-2026/</guid>
+      <description>打工人必备的AI工具清单来了！覆盖写作/绘画/编程/搜索四大场景，附真实体验和选择建议。2026年最新整理。</description>
+    </item>
+    <item>
+      <title>AI效率工作流完全指南：2026年如何用AI提升10倍生产力</title>
+      <link>https://huanghaiwan.com/ai/ai-productivity-workflows-2026/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-productivity-workflows-2026/</guid>
+      <description>从日常办公到创意生产，AI工具正在重新定义工作效率。本文覆盖5大核心场景：周报、PPT、编程、内容创作、数据分析，提供可复制的提示词模板和工作流配置，适合想用AI提效但不知从哪入手的用户。</description>
+    </item>
+    <item>
+      <title>DeepSeek高阶组合技：2026年提升效率10倍的实战用法</title>
+      <link>https://huanghaiwan.com/ai/deepseek-advanced-combinations/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/deepseek-advanced-combinations/</guid>
+      <description>DeepSeek不是孤立的工具。把它和Cursor编程、Suno音乐、Midjourney生图等工具组合使用，才能发挥真正威力。本文分享10个我日常在用的高阶组合方案。</description>
+    </item>
+    <item>
+      <title>AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）</title>
+      <link>https://huanghaiwan.com/ai/ai-workflow-guide/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-workflow-guide/</guid>
+      <description>周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>MCP协议是什么？2026年AI工具互联互通完全指南 | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="AI, 教程">
+<meta name="description" content="MCP(Model Context Protocol)正在成为AI世界的USB-C标准。一文读懂MCP是什么、为什么重要、3种使用方式(Claude Desktop/VS Code/SDK)、热门服务器推荐、与Google A2A的关系。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/ai/mcp-protocol-guide-2026/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/ai/mcp-protocol-guide-2026/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/ai/mcp-protocol-guide-2026/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="MCP协议是什么？2026年AI工具互联互通完全指南">
+  <meta property="og:description" content="MCP(Model Context Protocol)正在成为AI世界的USB-C标准。一文读懂MCP是什么、为什么重要、3种使用方式(Claude Desktop/VS Code/SDK)、热门服务器推荐、与Google A2A的关系。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ai">
+    <meta property="article:published_time" content="2026-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-13T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="教程">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MCP协议是什么？2026年AI工具互联互通完全指南">
+  <meta name="twitter:description" content="MCP(Model Context Protocol)正在成为AI世界的USB-C标准。一文读懂MCP是什么、为什么重要、3种使用方式(Claude Desktop/VS Code/SDK)、热门服务器推荐、与Google A2A的关系。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "🤖 AI工具指南",
+      "item": "https://huanghaiwan.com/ai/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "MCP协议是什么？2026年AI工具互联互通完全指南",
+      "item": "https://huanghaiwan.com/ai/mcp-protocol-guide-2026/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "MCP协议是什么？2026年AI工具互联互通完全指南",
+  "name": "MCP协议是什么？2026年AI工具互联互通完全指南",
+  "description": "MCP(Model Context Protocol)正在成为AI世界的USB-C标准。一文读懂MCP是什么、为什么重要、3种使用方式(Claude Desktop/VS Code/SDK)、热门服务器推荐、与Google A2A的关系。",
+  "keywords": [
+    "AI", "教程"
+  ],
+  "articleBody": " 你有多少个 AI 工具，就有多少种不同的「连接方式」——Claude 用这种方式连接文件，ChatGPT 用那种方式，VS Code 插件又是另一种。每次换工具都得重新学一遍，烦不烦？\nMCP（Model Context Protocol）就是为了解决这个问题而生的。 它被业界称为「AI 世界的 USB-C」——一个统一的标准，让所有 AI 应用用同一种方式连接到工具、数据和系统。\n截至 2026 年中，MCP 已经成为 Linux Foundation 治理下的行业标准，获得了 OpenAI、Google DeepMind、Microsoft 等巨头的支持。GitHub 上 MCP servers 仓库已获 87,000+ Stars，Python SDK 23,000+ Stars，生态正在爆发。\n太长不看版 场景 推荐方式 难度 适合人群 让 Claude 读文件/查资料 Claude Desktop + Filesystem Server ⭐ 普通用户 在 VS Code 中编码用工具 VS Code + MCP 配置 ⭐⭐ 开发者 自己开发 MCP 服务器 Python SDK ⭐⭐⭐ 后端/全栈开发者 让 Agent 协作 MCP + A2A 组合 ⭐⭐⭐⭐ 高级开发者/团队 一句话： MCP 是让 AI 能「动手做事」的标准——不只是聊天，还能读文件、查数据库、操作工具。\n一、MCP 是什么？ 起源 MCP 由 Anthropic 于 2024 年 11 月 推出，灵感来自开发者熟知的 LSP（Language Server Protocol）——那个让 VS Code 支持 100+ 语言的标准。核心架构基于 JSON-RPC 2.0。\n关键时间线：\n时间 事件 2024-11 Anthropic 发布 MCP 初始规范 2025-04 Google 发布 A2A（Agent2Agent）协议，与 MCP 互补 2025-12 Anthropic 将 MCP 捐赠给 Linux Foundation 的 AAIF 2025-12 OpenAI 加入 AAIF 联合治理 2026-04 纽约 MCP Dev Summit，约 1,200 人参加 2026 MCP Registry 预览版上线 为什么重要 在 MCP 之前，每个 AI 工具连接外部数据的方式都是私有的、互不兼容的：\n传统方式（N×M 问题）: Claude ──→ 文件系统 (专用插件) ChatGPT ──→ 文件系统 (另一套插件) VS Code ──→ 文件系统 (再一套插件) MCP 方式（标准化）: 任何 AI ──→ MCP 服务器 ──→ 文件系统 对三类人群的价值：\n角色 价值 普通用户 一次配置，换 AI 工具不用重新学连接方式 开发者 写一个 MCP 服务器，所有 AI 应用都能用，不再为每家模型写适配层 企业 统一安全策略、审计追踪，一个 MCP 网关管所有 AI 工具 二、MCP 的 3 种使用方式 方式 1：Claude Desktop（零门槛入门） 适合： 普通用户，让 Claude 能读写文件、浏览网页、管理 Git。\n操作步骤：\n下载安装 Claude Desktop 打开 Settings → Developer → Edit Config 在配置文件中添加一个文件系统服务器： { \"mcpServers\": { \"filesystem\": { \"command\": \"npx\", \"args\": [ \"-y\", \"@modelcontextprotocol/server-filesystem\", \"/Users/你的用户名/Documents\", \"/Users/你的用户名/Downloads\" ] } } } 重启 Claude Desktop 右下角会出现 MCP 服务器指示器——点击可查看可用的工具列表 现在你可以说：「帮我整理 Documents 文件夹里的 PDF」 配置文件位置（不同系统）：\nmacOS: ~/Library/Application Support/Claude/claude_desktop_config.json Windows: %APPDATA%\\Claude\\claude_desktop_config.json ⚠️ 注意事项：\n路径参数要绝对路径，不能是 ~ Mac 需要授予 Claude 相关文件夹的权限（系统弹窗时点击允许） 添加多个服务器就用逗号分隔配置 方式 2：VS Code 集成（开发者日常） 适合： 程序员，让 AI 编程助手能操作数据库、调用 API、运行测试。\nVS Code 已经内置了对 MCP 的原生支持（通过 GitHub Copilot Chat）：\n方法 A——从 Gallery 安装（最简单）：\n在 VS Code 的 Extensions 面板搜索 MCP Server 点击 Install 即可 方法 B——手动配置 .vscode/mcp.json：\n{ \"servers\": { \"playwright\": { \"type\": \"local\", \"command\": \"npx\", \"args\": [\"-y\", \"@microsoft/mcp-server-playwright\"] }, \"github\": { \"type\": \"local\", \"command\": \"npx\", \"args\": [\"-y\", \"@modelcontextprotocol/server-github\"] } } } 方法 C——命令面板：\nCtrl+Shift+P → 输入 MCP: Open User Configuration 在打开的 JSON 文件中配置 支持的功能： 文件操作、数据库查询、外部 API 调用、浏览器自动化等。\n方式 3：SDK 编程（开发者进阶） 适合： 想自己写 MCP 服务器或客户端的开发者。\nMCP 官方提供 9 种语言的 SDK：\nSDK Stars 支持级别 适用场景 Python ⭐ 23,298 Tier 1 快速原型、数据工具 TypeScript ⭐ 12,652 Tier 1 前端集成、Node 服务 C# (.NET) — Tier 1 企业应用 Go — Tier 1 高性能服务 Java — Tier 2 后端生态 Rust — Tier 2 极致性能 Python 示例——30 行创建一个 MCP 服务器：\nfrom mcp.server import Server, NotificationOptions from mcp.server.models import InitializationOptions import mcp.server.stdio server = Server(\"greeting-server\") @server.list_tools() async def handle_list_tools(): return [{ \"name\": \"greet\", \"description\": \"向某人打招呼\", \"inputSchema\": { \"type\": \"object\", \"properties\": { \"name\": {\"type\": \"string\", \"description\": \"名字\"} } } }] @server.call_tool() async def handle_call_tool(name, arguments): if name == \"greet\": return [{\"type\": \"text\", \"text\": f\"你好，{arguments['name']}！\"}] async def main(): async with mcp.server.stdio.stdio_server() as (read_stream, write_stream): await server.run(read_stream, write_stream, InitializationOptions( server_name=\"greeting-server\", server_version=\"0.1.0\" )) if __name__ == \"__main__\": import asyncio asyncio.run(main()) 安装： pip install mcp\n三、热门 MCP 服务器推荐 服务器 功能 安装方式 推荐度 Filesystem 安全的文件读写，可配置访问路径 npx -y @modelcontextprotocol/server-filesystem /路径 ⭐⭐⭐⭐⭐ Fetch 获取网页内容并转换成 LLM 友好格式 npx -y @modelcontextprotocol/server-fetch ⭐⭐⭐⭐⭐ Git 读取、搜索、操作 Git 仓库 uvx mcp-server-git ⭐⭐⭐⭐ Memory 基于知识图谱的持久记忆 npx -y @modelcontextprotocol/server-memory ⭐⭐⭐⭐ Sequential Thinking 结构化思维链推理 内置（无需安装） ⭐⭐⭐ Playwright 浏览器自动化（截图、点击、填表） npx -y @microsoft/mcp-server-playwright ⭐⭐⭐⭐ GitHub 管理 Issue、PR、代码搜索 npx -y @modelcontextprotocol/server-github ⭐⭐⭐⭐ Sentry 查看错误日志和性能数据 Sentry 官方维护 ⭐⭐⭐ Cloudflare 管理 Workers、KV、D1 等 Cloudflare 官方维护 ⭐⭐⭐ Stripe 查询支付、客户、订阅 Stripe 官方维护 ⭐⭐⭐ 💡 提示： 所有 MCP 服务器都只需一行命令安装，配置到 claude_desktop_config.json 或 .vscode/mcp.json 后就能使用。\n四、MCP vs A2A：对手还是队友？ 2025 年 4 月，Google 发布了 A2A（Agent2Agent）协议。很多人问：MCP 和 A2A 哪个会赢？\n答案是：它们根本不需要分出胜负——它们是互补的。\n维度 MCP A2A 目标 Agent 连接工具和数据 Agent 之间互相通信 比喻 USB-C（标准化接入设备） TCP/IP（标准化网络通信） 核心模式 客户端-服务器 点对点 发起者 Anthropic Google 治理 Linux Foundation (AAIF) Linux Foundation 场景 AI 读文件→AI 查数据库→AI 操作浏览器 Agent A 派任务给 Agent B→结果回传 是否冲突 ❌ 不冲突，可协同使用 ❌ 不冲突，可协同使用 实际场景： 一个企业客服系统可以同时使用 MCP 和 A2A：\nMCP：让 AI 连接 CRM 数据库、邮件系统、知识库 A2A：让「客服 Agent」把复杂订单问题转交给「订单处理 Agent」处理，处理完后结果回传给客服 Agent Google DeepMind 和 OpenAI 都已加入 MCP 的 AAIF 治理组织，两大生态正在走向融合。\n五、MCP 2026 年发展趋势 方向 进展 治理成熟 已捐赠给 Linux Foundation AAIF，Anthropic + Block + OpenAI 联合治理 企业就绪 Auditing/SSO/网关模式 在路线图中，企业级认证即将支持 异步任务 SEP-1686 Tasks 原语已实现，支持「立即调用/稍后取结果」模式 无状态化 SEP-2567/2575 正在审议，让 MCP Server 可以无状态运行 Registry 上线 官方集中式元数据仓库预览版已上线 事件驱动 Webhooks 标准化正在路线图中，服务器可主动推送更新 开发者工具 MCP Inspector 可视化调试工具、VS Code 原生集成已就绪 六、常见问题 FAQ Q：MCP 和 Function Calling 有什么区别？ A：Function Calling 是 OpenAI 的私有标准，只能用于 OpenAI 的模型。MCP 是开放标准，任何 AI 应用都可以接入——包括 ChatGPT（OpenAI 已加入 AAIF）。\nQ：MCP 只支持 Claude 吗？ A：不。现在 ChatGPT、VS Code、Cursor、Replit、Sourcegraph 等多个主流工具都已经或正在支持 MCP。\nQ：配置 MCP 需要编程能力吗？ A：普通用户只需要复制粘贴 JSON 配置到 Claude Desktop 即可（方式 1），不需要写代码。开发者可以通过 SDK 构建自定义服务器（方式 3）。\nQ：MCP 安全吗？ A：Filesystem 服务器通过白名单路径控制访问范围；支持 OAuth 2.1、Bearer Token 等认证方式；企业场景可配置网关实现统一审计。\nQ：国内用户能用 MCP 吗？ A：可以。Claude Desktop 需要网络环境支持。Filesystem 和 Git 等本地服务器离线也能用。给 Claude Desktop 配置一个稳定的网络通道就能完整使用 MCP 生态。\nQ：哪里可以找到更多 MCP 服务器？ A：MCP Registry（预览版）、GitHub 上的 modelcontextprotocol/servers（87k Stars）、PulseMCP、npm/PyPI 搜索 mcp-server。\n七、MCP 的优缺点 ✅ 优点：\n开放标准 — Linux Foundation 治理，非任何一家独有 生态庞大 — 87k+ Stars，9 种 SDK，数千个社区服务器 巨头支持 — OpenAI、Google DeepMind、Microsoft 都加入了 零门槛入门 — 复制 JSON 就能用，不需要写代码 安全性 — 路径白名单、OAuth 2.1、企业网关 ❌ 缺点：\n仍在快速发展 — 部分功能（无状态化、Webhooks）还在路线图中 企业特性尚未完善 — 完整的 SSO、审计功能还在开发中 配置有一定学习成本 — 虽然不写代码，但 JSON 配置对纯小白仍有门槛 依赖生态成熟度 — 高品质的社区服务器还在快速涌现中，质量参差不齐 八、搭配网络工具使用 MCP MCP 的精髓在于让 AI 连接外部工具——但这需要稳定的网络环境。特别是使用 Claude Desktop、注册 GitHub、浏览网页等场景，一个稳定可靠的网络通道能让你的 MCP 体验提升一个档次。\n推荐方案 月费 适合 特点 自由猫 Freecat ¥9 起 Claude Desktop 重度用户 IEPL+MPTCP，100+节点，低延迟 万达云 Wanda ¥16.8 起 开发者日常使用 IEPL+住宅IP，稳定可靠 龙猫云 ¥15.8 起 性价比优先 专线入门，满足日常需求 推荐配置： 主力用自由猫（每日使用），备选龙猫云（分流/备用），两套方案覆盖所有场景，月均花费不到 ¥40。\n本文包含推广链接，如果你通过这些链接注册，我会获得一定比例的佣金。但这不影响文章内容的客观性，所有推荐均基于真实体验。\n",
+  "wordCount" : "818",
+  "inLanguage": "en",
+  "datePublished": "2026-06-13T00:00:00Z",
+  "dateModified": "2026-06-13T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/ai/mcp-protocol-guide-2026/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/ai/">🤖 AI工具指南</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      MCP协议是什么？2026年AI工具互联互通完全指南
+    </h1>
+    <div class="post-description">
+      MCP(Model Context Protocol)正在成为AI世界的USB-C标准。一文读懂MCP是什么、为什么重要、3种使用方式(Claude Desktop/VS Code/SDK)、热门服务器推荐、与Google A2A的关系。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>818 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/ai/mcp-protocol-guide-2026/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e5%a4%aa%e9%95%bf%e4%b8%8d%e7%9c%8b%e7%89%88" aria-label="太长不看版">太长不看版</a></li>
+            <li>
+                <a href="#%e4%b8%80mcp-%e6%98%af%e4%bb%80%e4%b9%88" aria-label="一、MCP 是什么？">一、MCP 是什么？</a><ul>
+                    
+            <li>
+                <a href="#%e8%b5%b7%e6%ba%90" aria-label="起源">起源</a></li>
+            <li>
+                <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%87%8d%e8%a6%81" aria-label="为什么重要">为什么重要</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%ba%8cmcp-%e7%9a%84-3-%e7%a7%8d%e4%bd%bf%e7%94%a8%e6%96%b9%e5%bc%8f" aria-label="二、MCP 的 3 种使用方式">二、MCP 的 3 种使用方式</a><ul>
+                    
+            <li>
+                <a href="#%e6%96%b9%e5%bc%8f-1claude-desktop%e9%9b%b6%e9%97%a8%e6%a7%9b%e5%85%a5%e9%97%a8" aria-label="方式 1：Claude Desktop（零门槛入门）">方式 1：Claude Desktop（零门槛入门）</a></li>
+            <li>
+                <a href="#%e6%96%b9%e5%bc%8f-2vs-code-%e9%9b%86%e6%88%90%e5%bc%80%e5%8f%91%e8%80%85%e6%97%a5%e5%b8%b8" aria-label="方式 2：VS Code 集成（开发者日常）">方式 2：VS Code 集成（开发者日常）</a></li>
+            <li>
+                <a href="#%e6%96%b9%e5%bc%8f-3sdk-%e7%bc%96%e7%a8%8b%e5%bc%80%e5%8f%91%e8%80%85%e8%bf%9b%e9%98%b6" aria-label="方式 3：SDK 编程（开发者进阶）">方式 3：SDK 编程（开发者进阶）</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e4%b8%89%e7%83%ad%e9%97%a8-mcp-%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%8e%a8%e8%8d%90" aria-label="三、热门 MCP 服务器推荐">三、热门 MCP 服务器推荐</a></li>
+            <li>
+                <a href="#%e5%9b%9bmcp-vs-a2a%e5%af%b9%e6%89%8b%e8%bf%98%e6%98%af%e9%98%9f%e5%8f%8b" aria-label="四、MCP vs A2A：对手还是队友？">四、MCP vs A2A：对手还是队友？</a></li>
+            <li>
+                <a href="#%e4%ba%94mcp-2026-%e5%b9%b4%e5%8f%91%e5%b1%95%e8%b6%8b%e5%8a%bf" aria-label="五、MCP 2026 年发展趋势">五、MCP 2026 年发展趋势</a></li>
+            <li>
+                <a href="#%e5%85%ad%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98-faq" aria-label="六、常见问题 FAQ">六、常见问题 FAQ</a></li>
+            <li>
+                <a href="#%e4%b8%83mcp-%e7%9a%84%e4%bc%98%e7%bc%ba%e7%82%b9" aria-label="七、MCP 的优缺点">七、MCP 的优缺点</a></li>
+            <li>
+                <a href="#%e5%85%ab%e6%90%ad%e9%85%8d%e7%bd%91%e7%bb%9c%e5%b7%a5%e5%85%b7%e4%bd%bf%e7%94%a8-mcp" aria-label="八、搭配网络工具使用 MCP">八、搭配网络工具使用 MCP</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><blockquote>
+<p>你有多少个 AI 工具，就有多少种不同的「连接方式」——Claude 用这种方式连接文件，ChatGPT 用那种方式，VS Code 插件又是另一种。每次换工具都得重新学一遍，烦不烦？</p>
+<p><strong>MCP（Model Context Protocol）就是为了解决这个问题而生的。</strong> 它被业界称为「AI 世界的 USB-C」——一个统一的标准，让所有 AI 应用用同一种方式连接到工具、数据和系统。</p>
+<p>截至 2026 年中，MCP 已经成为 Linux Foundation 治理下的行业标准，获得了 OpenAI、Google DeepMind、Microsoft 等巨头的支持。GitHub 上 MCP servers 仓库已获 <strong>87,000+ Stars</strong>，Python SDK 23,000+ Stars，生态正在爆发。</p></blockquote>
+<hr>
+<h2 id="太长不看版">太长不看版<a hidden class="anchor" aria-hidden="true" href="#太长不看版">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">场景</th>
+          <th style="text-align: left">推荐方式</th>
+          <th style="text-align: left">难度</th>
+          <th style="text-align: left">适合人群</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">让 Claude 读文件/查资料</td>
+          <td style="text-align: left"><strong>Claude Desktop + Filesystem Server</strong></td>
+          <td style="text-align: left">⭐</td>
+          <td style="text-align: left">普通用户</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">在 VS Code 中编码用工具</td>
+          <td style="text-align: left"><strong>VS Code + MCP 配置</strong></td>
+          <td style="text-align: left">⭐⭐</td>
+          <td style="text-align: left">开发者</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">自己开发 MCP 服务器</td>
+          <td style="text-align: left"><strong>Python SDK</strong></td>
+          <td style="text-align: left">⭐⭐⭐</td>
+          <td style="text-align: left">后端/全栈开发者</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">让 Agent 协作</td>
+          <td style="text-align: left"><strong>MCP + A2A 组合</strong></td>
+          <td style="text-align: left">⭐⭐⭐⭐</td>
+          <td style="text-align: left">高级开发者/团队</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>一句话：</strong> MCP 是让 AI 能「动手做事」的标准——不只是聊天，还能读文件、查数据库、操作工具。</p>
+<hr>
+<h2 id="一mcp-是什么">一、MCP 是什么？<a hidden class="anchor" aria-hidden="true" href="#一mcp-是什么">#</a></h2>
+<h3 id="起源">起源<a hidden class="anchor" aria-hidden="true" href="#起源">#</a></h3>
+<p>MCP 由 <strong>Anthropic</strong> 于 <strong>2024 年 11 月</strong> 推出，灵感来自开发者熟知的 <strong>LSP（Language Server Protocol）</strong>——那个让 VS Code 支持 100+ 语言的标准。核心架构基于 <strong>JSON-RPC 2.0</strong>。</p>
+<p><strong>关键时间线：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">时间</th>
+          <th style="text-align: left">事件</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">2024-11</td>
+          <td style="text-align: left">Anthropic 发布 MCP 初始规范</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025-04</td>
+          <td style="text-align: left">Google 发布 A2A（Agent2Agent）协议，与 MCP 互补</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025-12</td>
+          <td style="text-align: left">Anthropic 将 MCP 捐赠给 <strong>Linux Foundation 的 AAIF</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2025-12</td>
+          <td style="text-align: left">OpenAI 加入 AAIF 联合治理</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2026-04</td>
+          <td style="text-align: left">纽约 MCP Dev Summit，约 <strong>1,200 人</strong>参加</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2026</td>
+          <td style="text-align: left">MCP Registry 预览版上线</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="为什么重要">为什么重要<a hidden class="anchor" aria-hidden="true" href="#为什么重要">#</a></h3>
+<p>在 MCP 之前，每个 AI 工具连接外部数据的方式都是<strong>私有的、互不兼容的</strong>：</p>
+<pre tabindex="0"><code>传统方式（N×M 问题）:
+  Claude ──→ 文件系统 (专用插件)
+  ChatGPT ──→ 文件系统 (另一套插件)
+  VS Code ──→ 文件系统 (再一套插件)
+  
+MCP 方式（标准化）:
+  任何 AI ──→ MCP 服务器 ──→ 文件系统
+</code></pre><p><strong>对三类人群的价值：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">角色</th>
+          <th style="text-align: left">价值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>普通用户</strong></td>
+          <td style="text-align: left">一次配置，换 AI 工具不用重新学连接方式</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>开发者</strong></td>
+          <td style="text-align: left">写一个 MCP 服务器，所有 AI 应用都能用，不再为每家模型写适配层</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>企业</strong></td>
+          <td style="text-align: left">统一安全策略、审计追踪，一个 MCP 网关管所有 AI 工具</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="二mcp-的-3-种使用方式">二、MCP 的 3 种使用方式<a hidden class="anchor" aria-hidden="true" href="#二mcp-的-3-种使用方式">#</a></h2>
+<h3 id="方式-1claude-desktop零门槛入门">方式 1：Claude Desktop（零门槛入门）<a hidden class="anchor" aria-hidden="true" href="#方式-1claude-desktop零门槛入门">#</a></h3>
+<p><strong>适合：</strong> 普通用户，让 Claude 能读写文件、浏览网页、管理 Git。</p>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>下载安装 <a href="https://claude.ai/download">Claude Desktop</a></li>
+<li>打开 <strong>Settings → Developer → Edit Config</strong></li>
+<li>在配置文件中添加一个文件系统服务器：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;mcpServers&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;filesystem&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;npx&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;args&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;-y&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;@modelcontextprotocol/server-filesystem&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;/Users/你的用户名/Documents&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;/Users/你的用户名/Downloads&#34;</span>
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="4">
+<li>重启 Claude Desktop</li>
+<li>右下角会出现 <strong>MCP 服务器指示器</strong>——点击可查看可用的工具列表</li>
+<li>现在你可以说：「帮我整理 Documents 文件夹里的 PDF」</li>
+</ol>
+<p><strong>配置文件位置（不同系统）：</strong></p>
+<ul>
+<li><strong>macOS:</strong> <code>~/Library/Application Support/Claude/claude_desktop_config.json</code></li>
+<li><strong>Windows:</strong> <code>%APPDATA%\Claude\claude_desktop_config.json</code></li>
+</ul>
+<p>⚠️ <strong>注意事项：</strong></p>
+<ul>
+<li>路径参数要绝对路径，不能是 <code>~</code></li>
+<li>Mac 需要授予 Claude 相关文件夹的权限（系统弹窗时点击允许）</li>
+<li>添加多个服务器就用逗号分隔配置</li>
+</ul>
+<h3 id="方式-2vs-code-集成开发者日常">方式 2：VS Code 集成（开发者日常）<a hidden class="anchor" aria-hidden="true" href="#方式-2vs-code-集成开发者日常">#</a></h3>
+<p><strong>适合：</strong> 程序员，让 AI 编程助手能操作数据库、调用 API、运行测试。</p>
+<p>VS Code 已经内置了对 MCP 的原生支持（通过 GitHub Copilot Chat）：</p>
+<p><strong>方法 A——从 Gallery 安装（最简单）：</strong></p>
+<ol>
+<li>在 VS Code 的 <strong>Extensions</strong> 面板搜索 MCP Server</li>
+<li>点击 <strong>Install</strong> 即可</li>
+</ol>
+<p><strong>方法 B——手动配置 <code>.vscode/mcp.json</code>：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;servers&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;playwright&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;local&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;npx&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;args&#34;</span>: [<span style="color:#e6db74">&#34;-y&#34;</span>, <span style="color:#e6db74">&#34;@microsoft/mcp-server-playwright&#34;</span>]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;github&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;local&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;npx&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;args&#34;</span>: [<span style="color:#e6db74">&#34;-y&#34;</span>, <span style="color:#e6db74">&#34;@modelcontextprotocol/server-github&#34;</span>]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>方法 C——命令面板：</strong></p>
+<ul>
+<li><code>Ctrl+Shift+P</code> → 输入 <code>MCP: Open User Configuration</code></li>
+<li>在打开的 JSON 文件中配置</li>
+</ul>
+<p><strong>支持的功能：</strong> 文件操作、数据库查询、外部 API 调用、浏览器自动化等。</p>
+<h3 id="方式-3sdk-编程开发者进阶">方式 3：SDK 编程（开发者进阶）<a hidden class="anchor" aria-hidden="true" href="#方式-3sdk-编程开发者进阶">#</a></h3>
+<p><strong>适合：</strong> 想自己写 MCP 服务器或客户端的开发者。</p>
+<p>MCP 官方提供 <strong>9 种语言的 SDK</strong>：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">SDK</th>
+          <th style="text-align: left">Stars</th>
+          <th style="text-align: left">支持级别</th>
+          <th style="text-align: left">适用场景</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Python</strong> ⭐</td>
+          <td style="text-align: left">23,298</td>
+          <td style="text-align: left">Tier 1</td>
+          <td style="text-align: left">快速原型、数据工具</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>TypeScript</strong> ⭐</td>
+          <td style="text-align: left">12,652</td>
+          <td style="text-align: left">Tier 1</td>
+          <td style="text-align: left">前端集成、Node 服务</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>C# (.NET)</strong></td>
+          <td style="text-align: left">—</td>
+          <td style="text-align: left">Tier 1</td>
+          <td style="text-align: left">企业应用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Go</strong></td>
+          <td style="text-align: left">—</td>
+          <td style="text-align: left">Tier 1</td>
+          <td style="text-align: left">高性能服务</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Java</strong></td>
+          <td style="text-align: left">—</td>
+          <td style="text-align: left">Tier 2</td>
+          <td style="text-align: left">后端生态</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Rust</strong></td>
+          <td style="text-align: left">—</td>
+          <td style="text-align: left">Tier 2</td>
+          <td style="text-align: left">极致性能</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Python 示例——30 行创建一个 MCP 服务器：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> mcp.server <span style="color:#f92672">import</span> Server, NotificationOptions
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mcp.server.models <span style="color:#f92672">import</span> InitializationOptions
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> mcp.server.stdio
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>server <span style="color:#f92672">=</span> Server(<span style="color:#e6db74">&#34;greeting-server&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@server.list_tools</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_list_tools</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;greet&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;向某人打招呼&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;inputSchema&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;name&#34;</span>: {<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>, <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;名字&#34;</span>}
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@server.call_tool</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_call_tool</span>(name, arguments):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;greet&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [{<span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>, <span style="color:#e6db74">&#34;text&#34;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;你好，</span><span style="color:#e6db74">{</span>arguments[<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">！&#34;</span>}]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">with</span> mcp<span style="color:#f92672">.</span>server<span style="color:#f92672">.</span>stdio<span style="color:#f92672">.</span>stdio_server() <span style="color:#66d9ef">as</span> (read_stream, write_stream):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> server<span style="color:#f92672">.</span>run(read_stream, write_stream, InitializationOptions(
+</span></span><span style="display:flex;"><span>            server_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;greeting-server&#34;</span>, server_version<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0.1.0&#34;</span>
+</span></span><span style="display:flex;"><span>        ))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">import</span> asyncio
+</span></span><span style="display:flex;"><span>    asyncio<span style="color:#f92672">.</span>run(main())
+</span></span></code></pre></div><p><strong>安装：</strong> <code>pip install mcp</code></p>
+<hr>
+<h2 id="三热门-mcp-服务器推荐">三、热门 MCP 服务器推荐<a hidden class="anchor" aria-hidden="true" href="#三热门-mcp-服务器推荐">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">服务器</th>
+          <th style="text-align: left">功能</th>
+          <th style="text-align: left">安装方式</th>
+          <th style="text-align: center">推荐度</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Filesystem</strong></td>
+          <td style="text-align: left">安全的文件读写，可配置访问路径</td>
+          <td style="text-align: left"><code>npx -y @modelcontextprotocol/server-filesystem /路径</code></td>
+          <td style="text-align: center">⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Fetch</strong></td>
+          <td style="text-align: left">获取网页内容并转换成 LLM 友好格式</td>
+          <td style="text-align: left"><code>npx -y @modelcontextprotocol/server-fetch</code></td>
+          <td style="text-align: center">⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Git</strong></td>
+          <td style="text-align: left">读取、搜索、操作 Git 仓库</td>
+          <td style="text-align: left"><code>uvx mcp-server-git</code></td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Memory</strong></td>
+          <td style="text-align: left">基于知识图谱的持久记忆</td>
+          <td style="text-align: left"><code>npx -y @modelcontextprotocol/server-memory</code></td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Sequential Thinking</strong></td>
+          <td style="text-align: left">结构化思维链推理</td>
+          <td style="text-align: left">内置（无需安装）</td>
+          <td style="text-align: center">⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Playwright</strong></td>
+          <td style="text-align: left">浏览器自动化（截图、点击、填表）</td>
+          <td style="text-align: left"><code>npx -y @microsoft/mcp-server-playwright</code></td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>GitHub</strong></td>
+          <td style="text-align: left">管理 Issue、PR、代码搜索</td>
+          <td style="text-align: left"><code>npx -y @modelcontextprotocol/server-github</code></td>
+          <td style="text-align: center">⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Sentry</strong></td>
+          <td style="text-align: left">查看错误日志和性能数据</td>
+          <td style="text-align: left">Sentry 官方维护</td>
+          <td style="text-align: center">⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Cloudflare</strong></td>
+          <td style="text-align: left">管理 Workers、KV、D1 等</td>
+          <td style="text-align: left">Cloudflare 官方维护</td>
+          <td style="text-align: center">⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Stripe</strong></td>
+          <td style="text-align: left">查询支付、客户、订阅</td>
+          <td style="text-align: left">Stripe 官方维护</td>
+          <td style="text-align: center">⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<p>💡 <strong>提示：</strong> 所有 MCP 服务器都只需一行命令安装，配置到 <code>claude_desktop_config.json</code> 或 <code>.vscode/mcp.json</code> 后就能使用。</p>
+<hr>
+<h2 id="四mcp-vs-a2a对手还是队友">四、MCP vs A2A：对手还是队友？<a hidden class="anchor" aria-hidden="true" href="#四mcp-vs-a2a对手还是队友">#</a></h2>
+<p>2025 年 4 月，<strong>Google 发布了 A2A（Agent2Agent）协议</strong>。很多人问：MCP 和 A2A 哪个会赢？</p>
+<p>答案是：<strong>它们根本不需要分出胜负——它们是互补的。</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">维度</th>
+          <th style="text-align: left">MCP</th>
+          <th style="text-align: left">A2A</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>目标</strong></td>
+          <td style="text-align: left">Agent 连接工具和数据</td>
+          <td style="text-align: left">Agent 之间互相通信</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>比喻</strong></td>
+          <td style="text-align: left"><strong>USB-C</strong>（标准化接入设备）</td>
+          <td style="text-align: left"><strong>TCP/IP</strong>（标准化网络通信）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>核心模式</strong></td>
+          <td style="text-align: left">客户端-服务器</td>
+          <td style="text-align: left">点对点</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>发起者</strong></td>
+          <td style="text-align: left">Anthropic</td>
+          <td style="text-align: left">Google</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>治理</strong></td>
+          <td style="text-align: left">Linux Foundation (AAIF)</td>
+          <td style="text-align: left">Linux Foundation</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>场景</strong></td>
+          <td style="text-align: left">AI 读文件→AI 查数据库→AI 操作浏览器</td>
+          <td style="text-align: left">Agent A 派任务给 Agent B→结果回传</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>是否冲突</strong></td>
+          <td style="text-align: left">❌ 不冲突，可协同使用</td>
+          <td style="text-align: left">❌ 不冲突，可协同使用</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>实际场景：</strong> 一个企业客服系统可以同时使用 MCP 和 A2A：</p>
+<ul>
+<li><strong>MCP</strong>：让 AI 连接 CRM 数据库、邮件系统、知识库</li>
+<li><strong>A2A</strong>：让「客服 Agent」把复杂订单问题转交给「订单处理 Agent」处理，处理完后结果回传给客服 Agent</li>
+</ul>
+<p>Google DeepMind 和 OpenAI 都已加入 MCP 的 AAIF 治理组织，两大生态正在走向融合。</p>
+<hr>
+<h2 id="五mcp-2026-年发展趋势">五、MCP 2026 年发展趋势<a hidden class="anchor" aria-hidden="true" href="#五mcp-2026-年发展趋势">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">方向</th>
+          <th style="text-align: left">进展</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>治理成熟</strong></td>
+          <td style="text-align: left">已捐赠给 Linux Foundation AAIF，Anthropic + Block + OpenAI 联合治理</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>企业就绪</strong></td>
+          <td style="text-align: left">Auditing/SSO/网关模式 在路线图中，企业级认证即将支持</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>异步任务</strong></td>
+          <td style="text-align: left">SEP-1686 Tasks 原语已实现，支持「立即调用/稍后取结果」模式</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>无状态化</strong></td>
+          <td style="text-align: left">SEP-2567/2575 正在审议，让 MCP Server 可以无状态运行</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Registry 上线</strong></td>
+          <td style="text-align: left">官方集中式元数据仓库预览版已上线</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>事件驱动</strong></td>
+          <td style="text-align: left">Webhooks 标准化正在路线图中，服务器可主动推送更新</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>开发者工具</strong></td>
+          <td style="text-align: left">MCP Inspector 可视化调试工具、VS Code 原生集成已就绪</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="六常见问题-faq">六、常见问题 FAQ<a hidden class="anchor" aria-hidden="true" href="#六常见问题-faq">#</a></h2>
+<p><strong>Q：MCP 和 Function Calling 有什么区别？</strong>
+A：Function Calling 是 OpenAI 的私有标准，只能用于 OpenAI 的模型。MCP 是开放标准，任何 AI 应用都可以接入——包括 ChatGPT（OpenAI 已加入 AAIF）。</p>
+<p><strong>Q：MCP 只支持 Claude 吗？</strong>
+A：不。现在 ChatGPT、VS Code、Cursor、Replit、Sourcegraph 等<strong>多个主流工具</strong>都已经或正在支持 MCP。</p>
+<p><strong>Q：配置 MCP 需要编程能力吗？</strong>
+A：<strong>普通用户</strong>只需要复制粘贴 JSON 配置到 Claude Desktop 即可（方式 1），不需要写代码。<strong>开发者</strong>可以通过 SDK 构建自定义服务器（方式 3）。</p>
+<p><strong>Q：MCP 安全吗？</strong>
+A：Filesystem 服务器通过白名单路径控制访问范围；支持 OAuth 2.1、Bearer Token 等认证方式；企业场景可配置网关实现统一审计。</p>
+<p><strong>Q：国内用户能用 MCP 吗？</strong>
+A：可以。Claude Desktop 需要网络环境支持。Filesystem 和 Git 等本地服务器离线也能用。给 Claude Desktop 配置一个稳定的网络通道就能完整使用 MCP 生态。</p>
+<p><strong>Q：哪里可以找到更多 MCP 服务器？</strong>
+A：MCP Registry（预览版）、GitHub 上的 <a href="https://github.com/modelcontextprotocol/servers">modelcontextprotocol/servers</a>（87k Stars）、PulseMCP、npm/PyPI 搜索 <code>mcp-server</code>。</p>
+<hr>
+<h2 id="七mcp-的优缺点">七、MCP 的优缺点<a hidden class="anchor" aria-hidden="true" href="#七mcp-的优缺点">#</a></h2>
+<p><strong>✅ 优点：</strong></p>
+<ul>
+<li><strong>开放标准</strong> — Linux Foundation 治理，非任何一家独有</li>
+<li><strong>生态庞大</strong> — 87k+ Stars，9 种 SDK，数千个社区服务器</li>
+<li><strong>巨头支持</strong> — OpenAI、Google DeepMind、Microsoft 都加入了</li>
+<li><strong>零门槛入门</strong> — 复制 JSON 就能用，不需要写代码</li>
+<li><strong>安全性</strong> — 路径白名单、OAuth 2.1、企业网关</li>
+</ul>
+<p><strong>❌ 缺点：</strong></p>
+<ul>
+<li><strong>仍在快速发展</strong> — 部分功能（无状态化、Webhooks）还在路线图中</li>
+<li><strong>企业特性尚未完善</strong> — 完整的 SSO、审计功能还在开发中</li>
+<li><strong>配置有一定学习成本</strong> — 虽然不写代码，但 JSON 配置对纯小白仍有门槛</li>
+<li><strong>依赖生态成熟度</strong> — 高品质的社区服务器还在快速涌现中，质量参差不齐</li>
+</ul>
+<hr>
+<h2 id="八搭配网络工具使用-mcp">八、搭配网络工具使用 MCP<a hidden class="anchor" aria-hidden="true" href="#八搭配网络工具使用-mcp">#</a></h2>
+<p>MCP 的精髓在于让 AI 连接外部工具——但这需要稳定的网络环境。特别是使用 Claude Desktop、注册 GitHub、浏览网页等场景，一个稳定可靠的网络通道能让你的 MCP 体验提升一个档次。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">推荐方案</th>
+          <th style="text-align: left">月费</th>
+          <th style="text-align: left">适合</th>
+          <th style="text-align: left">特点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB"><strong>自由猫 Freecat</strong></a></td>
+          <td style="text-align: left">¥9 起</td>
+          <td style="text-align: left">Claude Desktop 重度用户</td>
+          <td style="text-align: left">IEPL+MPTCP，100+节点，低延迟</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E4%B8%87%E8%BE%BE%E4%BA%91"><strong>万达云 Wanda</strong></a></td>
+          <td style="text-align: left">¥16.8 起</td>
+          <td style="text-align: left">开发者日常使用</td>
+          <td style="text-align: left">IEPL+住宅IP，稳定可靠</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://api.huanghaiwan.com/go/%E9%BE%99%E7%8C%AB%E4%BA%91"><strong>龙猫云</strong></a></td>
+          <td style="text-align: left">¥15.8 起</td>
+          <td style="text-align: left">性价比优先</td>
+          <td style="text-align: left">专线入门，满足日常需求</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>推荐配置：</strong> 主力用自由猫（每日使用），备选龙猫云（分流/备用），两套方案覆盖所有场景，月均花费不到 ¥40。</p>
+<blockquote>
+<p><em>本文包含推广链接，如果你通过这些链接注册，我会获得一定比例的佣金。但这不影响文章内容的客观性，所有推荐均基于真实体验。</em></p></blockquote>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/ai/">AI</a></li>
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/ai/notebooklm-guide-2026/">
+    <span class="title">« Prev</span>
+    <span>NotebookLM 2026完全指南：AI超级研究助手从入门到精通</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/ai/ai-tools-subscription-guide-2026/">
+    <span class="title">Next »</span>
+    <span>2026年AI工具订阅省钱攻略：哪家值得付费？怎么买最划算？</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on x"
+            href="https://x.com/intent/tweet/?text=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f&amp;hashtags=AI%2c%e6%95%99%e7%a8%8b">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f&amp;title=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97&amp;summary=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97&amp;source=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f&title=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on whatsapp"
+            href="https://api.whatsapp.com/send?text=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%20-%20https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on telegram"
+            href="https://telegram.me/share/url?text=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97&amp;url=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MCP协议是什么？2026年AI工具互联互通完全指南 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=MCP%e5%8d%8f%e8%ae%ae%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f2026%e5%b9%b4AI%e5%b7%a5%e5%85%b7%e4%ba%92%e8%81%94%e4%ba%92%e9%80%9a%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97&u=https%3a%2f%2fhuanghaiwan.com%2fai%2fmcp-protocol-guide-2026%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

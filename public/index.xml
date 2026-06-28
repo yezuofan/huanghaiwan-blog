@@ -1,11 +1,1288 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>黄海湾 - 机场评测 &amp; AI 工具指南</title>
+    <title>海洋指南 - 机场评测 &amp; AI 工具指南</title>
     <link>https://huanghaiwan.com/</link>
-    <description>Recent content on 黄海湾 - 机场评测 &amp; AI 工具指南</description>
+    <description>Recent content on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://huanghaiwan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026科学上网客户端下载安装配置全攻略：Clash Verge/Stash/Shadowrocket/v2rayN</title>
+      <link>https://huanghaiwan.com/posts/client-setup-guide-2026/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/client-setup-guide-2026/</guid>
+      <description>2026年主流科学上网客户端完整下载安装与配置教程，覆盖Windows/macOS/iOS/Android四大平台</description>
+    </item>
+    <item>
+      <title>GPT-5.5 完全指南：OpenAI 2026最强模型深度评测 — 性能、定价、实战Prompt</title>
+      <link>https://huanghaiwan.com/ai/gpt-5-5-guide-2026/</link>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/gpt-5-5-guide-2026/</guid>
+      <description>OpenAI 在 2026 年 4 月发布了 GPT-5.5，这是目前最强的 AI 模型。本文全面评测 GPT-5.5 的性能、定价、使用方法，并提供 8 个可直接复制的 Prompt 模板。</description>
+    </item>
+    <item>
+      <title>2026暑假出境游网络指南：出国上网怎么办？</title>
+      <link>https://huanghaiwan.com/posts/summer-travel-network-guide-2026/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/summer-travel-network-guide-2026/</guid>
+      <description>eSIM/机场/国际漫游三种境外上网方案全对比，日本/泰国/欧美出行省钱攻略，帮你找到最适合的出境上网方案。</description>
+    </item>
+    <item>
+      <title>2026年AI会议纪要工具横评：讯飞听见/通义听悟/飞书妙记/Fireflies/Otter谁最好用？</title>
+      <link>https://huanghaiwan.com/ai/ai-meeting-notes-guide-2026/</link>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-meeting-notes-guide-2026/</guid>
+      <description>2026年最新AI会议纪要工具横向对比——讯飞听见、通义听悟、飞书妙记、Fireflies、Otter、Notion AI六款主流工具从价格、准确率、功能、语言支持五大维度深度评测。看完就知道哪款适合你。</description>
+    </item>
+    <item>
+      <title>2026学生党AI工具省钱攻略：13款免费/低价AI工具推荐</title>
+      <link>https://huanghaiwan.com/ai/student-ai-budget-guide-2026/</link>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/student-ai-budget-guide-2026/</guid>
+      <description>2026年学生党AI工具省钱攻略：ChatGPT免费版够用吗？Claude、Gemini、Perplexity哪些对学生免费？GitHub学生包怎么领？附预算¥10-50的访问方案对比。</description>
+    </item>
+    <item>
+      <title>Claude Code 入门指南 2026：AI编程智能体完整使用教程</title>
+      <link>https://huanghaiwan.com/ai/claude-code-guide-2026/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/claude-code-guide-2026/</guid>
+      <description>Claude Code 是 Anthropic 推出的 AI 编程智能体，能在终端、VS Code、桌面应用等多平台运行。本文详解 5 种使用方式、核心功能、Prompt 模板和进阶技巧，帮你快速上手 Claude Code。</description>
+    </item>
+    <item>
+      <title>全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）</title>
+      <link>https://huanghaiwan.com/posts/home-network-setup-guide-2026/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/home-network-setup-guide-2026/</guid>
+      <description>放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。</description>
+    </item>
+    <item>
+      <title>2026年AI音频工具横评：Suno v5.5、ElevenLabs、Udio深度对比&#43;实战指南</title>
+      <link>https://huanghaiwan.com/ai/ai-audio-tools-guide-2026/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-audio-tools-guide-2026/</guid>
+      <description>2026年AI音频工具全面横评：Suno v5.5已大幅升级，ElevenLabs估值突破110亿美元，Udio转型新商业模式。本文从歌曲生成、语音合成、配乐制作三大场景出发，实测对比7款主流AI音频工具，附提示词模板和选择建议。</description>
+    </item>
+    <item>
+      <title>2026暑假学生党海外AI工具访问指南：3种方案对比&#43;省钱攻略</title>
+      <link>https://huanghaiwan.com/ai/student-overseas-ai-access-2026/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/student-overseas-ai-access-2026/</guid>
+      <description>暑假想用ChatGPT、Claude、NotebookLM等海外AI工具学习，但访问受限怎么办？本文为学生党整理了3种方案：国内替代、网络环境、API中转，含预算对比和月付推荐。</description>
+    </item>
+    <item>
+      <title>2026下半年AI视频生成工具横评：Sora关闭后的新格局</title>
+      <link>https://huanghaiwan.com/ai/ai-video-tools-2026-h2/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-video-tools-2026-h2/</guid>
+      <description>2026下半年AI视频生成工具格局剧变：Sora已关闭，Runway升级到Gen-4.5，Kling更新到3.0，Veo 2全面开放。本文实测横评8款主流工具，给出最新价格、功能和选择建议。</description>
+    </item>
+    <item>
+      <title>2026暑假AI学习指南：学生党如何用AI提升学习效率（省钱版）</title>
+      <link>https://huanghaiwan.com/ai/summer-ai-learning-guide-2026/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/summer-ai-learning-guide-2026/</guid>
+      <description>2026年暑假，学生党如何用AI提升学习效率。本文整理了国内外可用的免费AI工具、学生优惠方案和场景化学习建议，帮你零成本或极低成本用上最前沿的AI助手。</description>
+    </item>
+    <item>
+      <title>2026年AI工具搭配方案：不同预算的最佳AI工具箱</title>
+      <link>https://huanghaiwan.com/ai/ai-tool-stack-guide-2026/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-tool-stack-guide-2026/</guid>
+      <description>从零元党到全家桶，5个预算档次的最佳AI工具组合方案。DeepSeek/ChatGPT/Claude/Cursor/Midjourney怎么搭最划算？看完这篇就知道。</description>
+    </item>
+    <item>
+      <title>Cursor 2026进阶实战：Cloud Agents、Composer 2.5、CLI全攻略</title>
+      <link>https://huanghaiwan.com/ai/cursor-pro-guide-2026/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/cursor-pro-guide-2026/</guid>
+      <description>2026年Cursor已从AI编辑器进化为完整的AI编码Agent平台。Cloud Agents、Composer 2.5、CLI、Bugbot、MCP生态——本文聚焦这些新功能的实战用法，附10个可直接复用的进阶Prompt模板。</description>
+    </item>
+    <item>
+      <title>2026年机场横向对比指南：12家主流机场怎么选？（更新版）</title>
+      <link>https://huanghaiwan.com/posts/airport-comparison-guide-2026/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-comparison-guide-2026/</guid>
+      <description>2026年最新机场横向对比：自由猫、悠兔、万达云、Cyberguard、一枝红杏、SKYLUMO等12家机场从价格、线路、流媒体、适合人群全面对比。附太长不看版速览表。</description>
+    </item>
+    <item>
+      <title>SKYLUMO评测：全球80&#43;地区覆盖，6.99元/月起，不限时流量包</title>
+      <link>https://huanghaiwan.com/posts/skylumo-review/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/skylumo-review/</guid>
+      <description>SKYLUMO评测：80&#43;国家节点覆盖，¥6.99/月入门价，¥99不限时流量包。含同价位对比、FAQ和全球覆盖详解。适合出差党、跨境电商、海外华人。</description>
+    </item>
+    <item>
+      <title>光年梯评测：IPLC专线&#43;SS协议，¥12.6/月起的性价比之选</title>
+      <link>https://huanghaiwan.com/posts/lightyear-review/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/lightyear-review/</guid>
+      <description>光年梯评测：¥18/月（7折后¥12.6）用上IPLC专线，SS协议兼容性好，不限设备。光年梯是低价位IPLC专线性价比之选。</description>
+    </item>
+    <item>
+      <title>全球云评测：BGP多线路年付99元起，高性价比入门之选</title>
+      <link>https://huanghaiwan.com/posts/quanjiuyun-review/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/quanjiuyun-review/</guid>
+      <description>全球云评测：BGP多线路中转保证稳定性，年付¥99起（8折码vpsknow后约¥79），同价位最稳妥的选择。含同价位对比、FAQ和快速入门指南。</description>
+    </item>
+    <item>
+      <title>Manus AI 2026完全指南：被Meta收购的智能体到底有多强？</title>
+      <link>https://huanghaiwan.com/ai/manus-guide-2026/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/manus-guide-2026/</guid>
+      <description>Manus AI是一个能自主完成复杂任务的AI智能体——写研究报告、做幻灯片、分析数据、操作浏览器。本文详解Manus的核心能力、定价方案、使用场景和实战技巧。</description>
+    </item>
+    <item>
+      <title>NotebookLM 2026完全指南：AI超级研究助手从入门到精通</title>
+      <link>https://huanghaiwan.com/ai/notebooklm-guide-2026/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/notebooklm-guide-2026/</guid>
+      <description>Google NotebookLM是2026年最值得关注的AI研究助手之一。本文从核心功能到进阶技巧，帮你3小时内从小白变成NotebookLM高手，含AI播客、视频摘要、INFographics等全功能详解。</description>
+    </item>
+    <item>
+      <title>MCP协议是什么？2026年AI工具互联互通完全指南</title>
+      <link>https://huanghaiwan.com/ai/mcp-protocol-guide-2026/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/mcp-protocol-guide-2026/</guid>
+      <description>MCP(Model Context Protocol)正在成为AI世界的USB-C标准。一文读懂MCP是什么、为什么重要、3种使用方式(Claude Desktop/VS Code/SDK)、热门服务器推荐、与Google A2A的关系。</description>
+    </item>
+    <item>
+      <title>2026年AI工具订阅省钱攻略：哪家值得付费？怎么买最划算？</title>
+      <link>https://huanghaiwan.com/ai/ai-tools-subscription-guide-2026/</link>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-tools-subscription-guide-2026/</guid>
+      <description>ChatGPT $20/月？Claude $20/月？DeepSeek全免费？2026年主流AI工具定价横向对比，帮你算清楚哪家真的值得付费。</description>
+    </item>
+    <item>
+      <title>2026年AI图像生成工具横评：Midjourney vs DALL-E 3 vs FLUX vs SD vs Firefly</title>
+      <link>https://huanghaiwan.com/ai/ai-image-generation-comparison-2026/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-image-generation-comparison-2026/</guid>
+      <description>从图像质量、可控性、价格、商用安全性五大维度横评Midjourney V7、DALL-E 3、FLUX.1 Pro、Stable Diffusion 3.5、Adobe Firefly。一张表告诉你哪款AI绘画工具最适合你，附跨工具Prompt模板。</description>
+    </item>
+    <item>
+      <title>2026年AI音频/音乐工具横评：Suno vs Udio vs ElevenLabs vs Stable Audio</title>
+      <link>https://huanghaiwan.com/ai/ai-audio-tools-comparison-2026/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-audio-tools-comparison-2026/</guid>
+      <description>Suno 4.0、Udio、ElevenLabs、Stable Audio、AIVA五款AI音频工具全面横评。包含核心能力对比、场景推荐、Prompt模板，帮你快速选出最适合的AI音乐/语音工具。</description>
+    </item>
+    <item>
+      <title>2026年AI写作工具横评：ChatGPT vs Claude vs Kimi vs DeepSeek vs Gemini，谁最好用？</title>
+      <link>https://huanghaiwan.com/ai/ai-writing-tools-comparison-2026/</link>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-writing-tools-comparison-2026/</guid>
+      <description>ChatGPT、Claude、Kimi、DeepSeek、Gemini五款AI写作工具全面对比。从写作质量、中文能力、长文处理、价格四个维度实测横评，帮你找到最适合自己的AI写作助手。</description>
+    </item>
+    <item>
+      <title>2026年机场双保险策略：为什么你需要两个机场？主力&#43;备用最佳搭配方案</title>
+      <link>https://huanghaiwan.com/posts/airport-dual-backup-strategy-2026/</link>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-dual-backup-strategy-2026/</guid>
+      <description>一个机场断了怎么办？2026年双机场策略全攻略——从为什么需要两个机场到主力&#43;备用怎么搭配，5套方案和Clash配置教程一次说清楚。</description>
+    </item>
+    <item>
+      <title>2026年AI编程工具横评：Cursor vs Windsurf vs GitHub Copilot vs Claude Code</title>
+      <link>https://huanghaiwan.com/ai/ai-coding-tools-comparison-2026/</link>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-coding-tools-comparison-2026/</guid>
+      <description>Cursor、Windsurf、GitHub Copilot、Claude Code四款主流AI编程工具全方位对比。从价格、模型、功能到实际体验，帮你找到最适合的AI编程助手。</description>
+    </item>
+    <item>
+      <title>2026年机场横向对比评测：12家主流机场谁最强？</title>
+      <link>https://huanghaiwan.com/posts/airport-comparison-2026/</link>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-comparison-2026/</guid>
+      <description>从价格、速度、稳定性、流媒体解锁、适合人群五大维度横向对比12家主流机场。自由猫、悠兔、万达云、Cyberguard、贝贝云…一篇看懂谁最适合你。</description>
+    </item>
+    <item>
+      <title>机场连接不上怎么办？2026年最全自助排查指南</title>
+      <link>https://huanghaiwan.com/posts/airport-connection-troubleshooting/</link>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-connection-troubleshooting/</guid>
+      <description>机场突然连不上？节点全红？延迟飙高？从客户端检查到网络环境，一步步教你自助排查，90%的问题自己就能解决。</description>
+    </item>
+    <item>
+      <title>AI变现入门：2026年普通人用AI赚钱的6种真实方法</title>
+      <link>https://huanghaiwan.com/posts/ai-monetization-guide-2026/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/ai-monetization-guide-2026/</guid>
+      <description>2026年AI爆发，普通人怎么用它赚钱？这篇入门指南覆盖6种真实可行的AI变现方法，从零开始，手把手教你用AI工具开启副业。不需要技术背景，拿来就能用。</description>
+    </item>
+    <item>
+      <title>ChatGPT 国内怎么用？2026年最新指南</title>
+      <link>https://huanghaiwan.com/ai/chatgpt-access-guide/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/chatgpt-access-guide/</guid>
+      <description>ChatGPT 从 GPT-4o 到 o3 一路进化，但国内直连一直有问题。这篇文章帮你梳理 3 种主流方案——选一个适合自己的就行。</description>
+    </item>
+    <item>
+      <title>2026年机场性价比排行：预算有限用户首选指南</title>
+      <link>https://huanghaiwan.com/posts/airport-value-guide-2026/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-value-guide-2026/</guid>
+      <description>2026年最新机场性价比排行，从价格、速度、稳定性三维评测贝贝云/自由猫/闪狐云等12家主流机场，帮你找到预算内最优选择。</description>
+    </item>
+    <item>
+      <title>AI设计工具完全指南：2026年设计师都在用的神器</title>
+      <link>https://huanghaiwan.com/ai/ai-design-tools-guide-2026/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-design-tools-guide-2026/</guid>
+      <description>全面对比Canva/Firefly/Recraft/稿定设计/墨刀等主流AI设计工具，从品牌设计到UI原型全覆盖。含实操指南和工具选择建议。</description>
+    </item>
+    <item>
+      <title>2026年AI Agent完全指南：从入门到实战自动化工作流</title>
+      <link>https://huanghaiwan.com/ai/ai-agent-guide-2026/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-agent-guide-2026/</guid>
+      <description>AI Agent爆火，但90%的人用错了方式。这篇指南帮你搞清楚什么是AI Agent、不同场景怎么选、以及如何用AI Agent彻底改变你的工作流。</description>
+    </item>
+    <item>
+      <title>2026年AI搜索工具横评：Perplexity vs ChatGPT Search vs Gemini Search</title>
+      <link>https://huanghaiwan.com/ai/ai-search-tools-comparison-2026/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-search-tools-comparison-2026/</guid>
+      <description>Google正在被AI搜索颠覆。Perplexity月活突破1亿，ChatGPT内置搜索叫板Google，Gemini全面更新搜索能力——2026年的搜索战场已经变天。这篇横评帮你选对工具。</description>
+    </item>
+    <item>
+      <title>618后怎么选机场？2026年科学上网选购实战指南</title>
+      <link>https://huanghaiwan.com/posts/airport-shopping-guide-2026/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-shopping-guide-2026/</guid>
+      <description>刚过完618，花了大钱买了各种东西。现在教你如何在网络工具上把钱花在刀刃上——2026年最实用的机场选购指南，覆盖各价位段和需求场景。</description>
+    </item>
+    <item>
+      <title>NXO Earth（太极）机场评测：高端BGP中继&#43;MPTCP多线程专线</title>
+      <link>https://huanghaiwan.com/posts/nxo-earth-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/nxo-earth-review/</guid>
+      <description>NXO Earth（太极）机场评测：高端BGP中继&#43;MPTCP多线程，2000Mbps理论速度，IEPL/IPLC专线支持SS/V2ray/Trojan多协议。适合对速度和线路质量有要求的用户。</description>
+    </item>
+    <item>
+      <title>一枝红杏</title>
+      <link>https://huanghaiwan.com/posts/yizhihongxing-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/yizhihongxing-review/</guid>
+      <description>一枝红杏机场评测 - 约2015年开业，运营超过10年的老字号机场</description>
+    </item>
+    <item>
+      <title>三十六行（nfsqttt）</title>
+      <link>https://huanghaiwan.com/posts/nfsqttt-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/nfsqttt-review/</guid>
+      <description>老牌机场之一，价格实惠的中转机场。适合预算有限的日常使用。</description>
+    </item>
+    <item>
+      <title>太极/动力港</title>
+      <link>https://huanghaiwan.com/posts/dongligang-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/dongligang-review/</guid>
+      <description>Xboard框架专线机场，IEPL/IPLC专线，支持SS/V2ray/Trojan多协议。GitHub上有详细测速记录。</description>
+    </item>
+    <item>
+      <title>肥猫云</title>
+      <link>https://huanghaiwan.com/posts/feimao-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/feimao-review/</guid>
+      <description>2021年开业，BGP三线纯专线，不限设备，流媒体全解锁。只能用自家客户端，不支持Clash等第三方工具。</description>
+    </item>
+    <item>
+      <title>酷酷云机场评测：BGP三网专线的4K流媒体秒开机场</title>
+      <link>https://huanghaiwan.com/posts/kukuyun-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/kukuyun-review/</guid>
+      <description>BGP三网专线&#43;Trojan协议机场，Netflix/Hulu/HBO/Disney&#43;/Dazn秒开4K，原生解锁ChatGPT/Claude等AI工具</description>
+    </item>
+    <item>
+      <title>闪狐云机场评测：BGP隧道中转&#43;IPLC专线的千兆高速机场</title>
+      <link>https://huanghaiwan.com/posts/shanhucloud-review/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/shanhucloud-review/</guid>
+      <description>闪狐云是一家主打BGP隧道中转&#43;IPLC高速内网纯专线出口的机场。采用Trojan协议，理论速率1000Mbps，晚高峰不限速。解锁全球流媒体和AI工具，无设备和IP限制，专业人工客服。</description>
+    </item>
+    <item>
+      <title>2026年AI编程助手横评：Cursor vs Windsurf vs GitHub Copilot，选哪个？</title>
+      <link>https://huanghaiwan.com/ai/ai-coding-assistants-comparison-2026/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-coding-assistants-comparison-2026/</guid>
+      <description>2026年AI编程助手大爆发，Cursor、Windsurf、GitHub Copilot三足鼎立。本文从功能、性能、价格、适用场景全面横评，帮开发者选对工具。</description>
+    </item>
+    <item>
+      <title>2026年打工人必备AI工具清单：从写作到绘画全覆盖</title>
+      <link>https://huanghaiwan.com/ai/ai-tools-for-work-2026/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-tools-for-work-2026/</guid>
+      <description>打工人必备的AI工具清单来了！覆盖写作/绘画/编程/搜索四大场景，附真实体验和选择建议。2026年最新整理。</description>
+    </item>
+    <item>
+      <title>FlyingBird（飞鸟）机场评测：全平台适配的平价款机场</title>
+      <link>https://huanghaiwan.com/posts/flyingbird-review/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/flyingbird-review/</guid>
+      <description>FlyingBird（飞鸟）是一家主打全节点线路&#43;不限客户端数量的机场，套餐从15元/100GB到150元/1000GB，支持流媒体解锁和ChatGPT等AI工具，全球用户可用。</description>
+    </item>
+    <item>
+      <title>奈云（V2NY）机场评测：IEPL专线&#43;三协议支持，2026年还值得用吗？</title>
+      <link>https://huanghaiwan.com/posts/v2ny-review/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/v2ny-review/</guid>
+      <description>奈云（V2NY）是一家2021年开业的IEPL专线机场，支持Shadowsocks/V2ray/Trojan三协议，流媒体全解锁，¥168/年起。2026年在竞争激烈的市场中还值得选择吗？</description>
+    </item>
+    <item>
+      <title>悠兔（YouTu）机场评测：IEPL专线&#43;老牌稳定，2026年还推荐吗？</title>
+      <link>https://huanghaiwan.com/posts/youtu-review/</link>
+      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/youtu-review/</guid>
+      <description>悠兔（YouTu）是一家2022年开业的IEPL专线机场，老牌稳定，节点覆盖广，客服靠谱。套餐从200元/年/200G起，是很多用户的长期主力选择。2026年还值得用吗？</description>
+    </item>
+    <item>
+      <title>国内用AI的N种方式：2026年最新指南（免费/付费/企业）</title>
+      <link>https://huanghaiwan.com/ai/domestic-ai-china-guide/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/domestic-ai-china-guide/</guid>
+      <description>2026年国内使用AI助手完全指南，从免费工具到API接入，帮你找到最适合的方案。介绍Kimi、DeepSeek、文心、通义等国产AI，以及ChatGPT/Claude/Gemini的国内访问方法。</description>
+    </item>
+    <item>
+      <title>Cyberguard 机场评测 | IEPL专线&#43;60&#43;节点，2026年还值得用吗？</title>
+      <link>https://huanghaiwan.com/posts/cyberguard-review/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/cyberguard-review/</guid>
+      <description>2020年老牌机场，IEPL专线&#43;BGP接入&#43;QUIC协议，60&#43;节点不限设备。深度评测优缺点，帮你判断Cyberguard适不适合你。</description>
+    </item>
+    <item>
+      <title>Kimi AI助手完全指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/kimi-ai-guide/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/kimi-ai-guide/</guid>
+      <description>Kimi AI助手是Moonshot AI推出的长文本处理专家，支持20万字超长上下文、文件分析、联网搜索。本文全面解析Kimi的核心功能、使用技巧，以及与ChatGPT/Claude的适用场景对比。</description>
+    </item>
+    <item>
+      <title>AI效率工作流完全指南：2026年如何用AI提升10倍生产力</title>
+      <link>https://huanghaiwan.com/ai/ai-productivity-workflows-2026/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-productivity-workflows-2026/</guid>
+      <description>从日常办公到创意生产，AI工具正在重新定义工作效率。本文覆盖5大核心场景：周报、PPT、编程、内容创作、数据分析，提供可复制的提示词模板和工作流配置，适合想用AI提效但不知从哪入手的用户。</description>
+    </item>
+    <item>
+      <title>大哥云机场评测：Trojan协议年付性价比之选</title>
+      <link>https://huanghaiwan.com/posts/dageyun-review/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/dageyun-review/</guid>
+      <description>&lt;h1 id=&#34;大哥云机场评测trojan协议年付性价比之选&#34;&gt;大哥云机场评测：Trojan协议年付性价比之选&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大哥云是一家主打&lt;strong&gt;Trojan协议+500-1000Mbps带宽&lt;/strong&gt;的机场。年付性价比极高，¥199/年，折合¥16.58/月，用9折码后更低。适合作为主力机场或备用机场。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;项目&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;详情&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;协议&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Trojan&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;传输方式&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;BGP中转&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;理论带宽&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;500-1000Mbps&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;UDP&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;设备限制&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;待确认&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Netflix ✅ · Disney+ ✅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AI工具&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ChatGPT ✅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支付方式&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支付宝、微信&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;优惠码&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;年付9折码：mcuE8uOq&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;注意&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;新疆地区不可用，不支持原路退款&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://aff01.dgyhao.com/#/register?code=HIYe2Ag0&#34;&gt;👉 访问官网&lt;/a&gt;
+&lt;strong&gt;备用地址：&lt;/strong&gt; &lt;a href=&#34;https://aff02.dgyhao.com/#/register?code=HIYe2Ag0&#34;&gt;👉 备用入口&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;套餐对比&#34;&gt;套餐对比&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;套餐&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;价格&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;流量&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;折合月费&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;小流量年付&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥88/年&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;15GB（≈7.33/月）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥7.33/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;单月套餐A&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥19.9/月&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥19.9/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;季付套餐A&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥69/季&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;200GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥23/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;年付套餐A 300GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥199/年&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;300GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥16.58/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;年付套餐A 500GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥299/年&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;500GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥24.92/月&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;年付9折码：&lt;/strong&gt; &lt;code&gt;mcuE8uOq&lt;/code&gt;（结算时输入）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;性价比分析：&lt;/strong&gt; 年付套餐A 300GB 用9折码后约¥179/年，折合¥14.9/月，是性价比最高的选择。季付69元/200GB适合想先试用再决定的用户。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;流媒体解锁&#34;&gt;流媒体解锁&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;平台&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;状态&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Netflix&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全节点&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Disney+&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全节点&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;YouTube Premium&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4K流畅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ChatGPT&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全节点&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;优缺点&#34;&gt;优缺点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agent 完全指南：2026年从理论到实战（LangChain/AutoGen/CrewAI）</title>
+      <link>https://huanghaiwan.com/ai/ai-agent-frameworks-guide/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-agent-frameworks-guide/</guid>
+      <description>AI Agent（智能体）是2026年最火热的技术方向。本文详解什么是AI Agent、核心架构、与普通AI助手的区别，以及如何使用 LangChain、AutoGen、CrewAI 三大框架构建自己的AI Agent。</description>
+    </item>
+    <item>
+      <title>2026年618 AI工具选购指南：哪些值得买，哪些是坑</title>
+      <link>https://huanghaiwan.com/posts/ai-tools-618-guide-2026/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/ai-tools-618-guide-2026/</guid>
+      <description>&lt;h1 id=&#34;2026年618-ai工具选购指南哪些值得买哪些是坑&#34;&gt;2026年618 AI工具选购指南：哪些值得买，哪些是坑&lt;/h1&gt;
+&lt;p&gt;每年618都是囤工具的好时机。AI爆发年，各种订阅费趁机褥一把。本文帮你避坑——哪些AI工具真的值得在促销时入手，哪些不过是营销噱头。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>机场新手入门完全指南（2026年版）</title>
+      <link>https://huanghaiwan.com/posts/airport-beginner-guide-2026/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-beginner-guide-2026/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;如果你刚听说&amp;quot;机场&amp;quot;这个词，不知道它能做什么、是否安全、该怎么选择，这篇文章就是为你写的。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>MESL评测：Premium IEPL专线，低调高端之选</title>
+      <link>https://huanghaiwan.com/posts/mesl-review/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/mesl-review/</guid>
+      <description>&lt;h1 id=&#34;mesl评测premium-iepl专线低调高端之选&#34;&gt;MESL评测：Premium IEPL专线，低调高端之选&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MESL 是一家走低调高端路线的网络工具服务商，成立于2022年，主打 &lt;strong&gt;Premium IEPL专线&lt;/strong&gt;。接入阿里云CEN与腾讯云Anycast内网传输网络，走金融级架构路线。它不像别的机场铺天盖地打广告，口碑主要靠资深用户之间的推荐。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>新华云评测：3.99元/月不限设备，价格屠夫来了</title>
+      <link>https://huanghaiwan.com/posts/newhua-review/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/newhua-review/</guid>
+      <description>&lt;h1 id=&#34;新华云评测399元月不限设备价格屠夫来了&#34;&gt;新华云评测：3.99元/月不限设备，价格屠夫来了&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新华云（NewHua99）喊出 &lt;strong&gt;¥1/月&lt;/strong&gt;（1G体验套餐）的超低入门价，核心卖点是 &lt;strong&gt;不限设备数&lt;/strong&gt;。如果你只是想偶尔用用、预算极度有限，新华云是目前市场上门槛最低的选择之一。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>2026年机场流媒体&#43;AI工具横评：看片赚钱两不误</title>
+      <link>https://huanghaiwan.com/posts/airport-streaming-ai-guide/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-streaming-ai-guide/</guid>
+      <description>2026年最新实测：Netflix 4K解锁能力&#43;ChatGPT流畅访问的机场横评，看片赚钱两不误的机场推荐榜单</description>
+    </item>
+    <item>
+      <title>AI Agent完全指南：从概念到实践，2026年最完整的AI智能体入门教程</title>
+      <link>https://huanghaiwan.com/ai/ai-agent-guide/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-agent-guide/</guid>
+      <description>AI Agent（智能体）是2026年最火的技术方向。本文从零开始，详解什么是AI Agent、核心组件、使用场景、主流平台对比，以及如何从0搭建你的第一个AI智能体。</description>
+    </item>
+    <item>
+      <title>AI视频生成完全指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/ai-video-generation-guide/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-video-generation-guide/</guid>
+      <description>&lt;h1 id=&#34;ai视频生成完全指南2026年最新教程&#34;&gt;AI视频生成完全指南：2026年最新教程&lt;/h1&gt;
+&lt;p&gt;你有没有想过，用一段文字描述就能生成一段电影级视频？2026年的今天，这已经不是科幻——AI视频生成已经真正落地，成为创作者、短视频博主和企业的标配工具。&lt;/p&gt;
+&lt;p&gt;本文将从零开始，带你了解当前最主流的AI视频生成工具，掌握核心使用技巧，并给出实际的选择建议。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;主流ai视频生成工具横评&#34;&gt;主流AI视频生成工具横评&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;工具&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;开发方&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;核心优势&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;单次生成时长&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;月费(约)&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;适合人群&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Runway Gen-3&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Runway&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;电影感强、运动控制精准&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;10秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$15&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;专业创作者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Pika 2.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Pika Labs&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;操作简单、社区活跃&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3-10秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$8&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;内容创作者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Luma Dream Machine 2&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Luma AI&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;物理理解强、画面真实&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;5秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$10&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;真实场景还原&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;可灵（Kling）&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;快手&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;中文友好、支持长镜头&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;180秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;免费起&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;国内用户首选&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;海螺AI视频&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;字节跳动&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;生成速度快、风格多样&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;6秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;免费&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;快速出片&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Sora&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;OpenAI&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;画质最高、时长最长&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;20秒&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$20&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;最高画质需求&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;快速选择建议：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;国内用户首选&lt;strong&gt;可灵&lt;/strong&gt;或&lt;strong&gt;海螺AI&lt;/strong&gt;（中文友好，无需特殊网络条件）&lt;/li&gt;
+&lt;li&gt;追求电影级画质选&lt;strong&gt;Runway Gen-3&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;想快速出片发社交媒体选&lt;strong&gt;海螺AI&lt;/strong&gt;（免费额度够用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么你需要ai视频生成&#34;&gt;为什么你需要AI视频生成？&lt;/h2&gt;
+&lt;p&gt;传统视频制作有几大痛点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;成本高&lt;/strong&gt;：一条简单的产品视频，请摄影师+剪辑师可能要几千元&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;周期长&lt;/strong&gt;：从策划到成片，通常需要3-7天&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;门槛高&lt;/strong&gt;：需要掌握拍摄、剪辑、配乐等多技能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AI视频生成彻底改变了这个局面——成本趋近于零、速度极快、零门槛。&lt;/p&gt;
+&lt;p&gt;对于做跨境电商、社交媒体运营的朋友来说，AI视频生成已经是降本增效的利器。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;runway-gen-3-使用教程&#34;&gt;Runway Gen-3 使用教程&lt;/h2&gt;
+&lt;h3 id=&#34;核心功能&#34;&gt;核心功能&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;主要功能：&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DeepSeek高阶组合技：2026年提升效率10倍的实战用法</title>
+      <link>https://huanghaiwan.com/ai/deepseek-advanced-combinations/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/deepseek-advanced-combinations/</guid>
+      <description>DeepSeek不是孤立的工具。把它和Cursor编程、Suno音乐、Midjourney生图等工具组合使用，才能发挥真正威力。本文分享10个我日常在用的高阶组合方案。</description>
+    </item>
+    <item>
+      <title>Notion AI 完全指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/notion-ai-guide/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/notion-ai-guide/</guid>
+      <description>Notion AI 完整教程：与笔记深度集成的 AI 助手。写作助手、内容摘要、多语言翻译、代码生成等核心功能详解。国内用户访问方案与实用提示词模板。</description>
+    </item>
+    <item>
+      <title>海螺AI免费使用指南：国产AI视频生成实测</title>
+      <link>https://huanghaiwan.com/ai/hailuo-ai-free-guide/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/hailuo-ai-free-guide/</guid>
+      <description>&lt;h1 id=&#34;海螺ai免费使用指南国产ai视频生成实测&#34;&gt;海螺AI免费使用指南：国产AI视频生成实测&lt;/h1&gt;
+&lt;p&gt;最近国产AI视频生成工具持续火爆，其中&lt;strong&gt;海螺AI&lt;/strong&gt;（即梦同款模型）吸引了不少用户关注。今天实测一下这个平台到底怎么用、效果如何。&lt;/p&gt;
+&lt;h2 id=&#34;海螺ai是什么&#34;&gt;海螺AI是什么&lt;/h2&gt;
+&lt;p&gt;海螺AI是字节跳动旗下的AI视频生成平台，接入了即梦（Jimi）同款的视频生成模型。目前每天赠送免费额度，新用户可以直接体验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心特点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中文提示词友好&lt;/li&gt;
+&lt;li&gt;支持文生视频、图生视频&lt;/li&gt;
+&lt;li&gt;720p免费输出&lt;/li&gt;
+&lt;li&gt;无需翻墙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何注册使用&#34;&gt;如何注册使用&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Step 1：访问官网&lt;/strong&gt;
+进入 &lt;a href=&#34;https://hailuoai.video&#34;&gt;海螺AI官网&lt;/a&gt;，使用抖音账号或手机号登录。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2：创建视频&lt;/strong&gt;
+登录后在左侧选择「AI视频」，选择「文生视频」或「图生视频」模式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3：输入提示词&lt;/strong&gt;
+在提示词框中用中文描述想要的画面场景。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 4：生成并下载&lt;/strong&gt;
+点击生成，等待1-3分钟即可获得AI生成的视频，支持免费下载。&lt;/p&gt;
+&lt;h2 id=&#34;效果实测&#34;&gt;效果实测&lt;/h2&gt;
+&lt;p&gt;实测了5个不同场景的提示词：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;风景类：山水画面生成速度快&lt;/li&gt;
+&lt;li&gt;动物类：猫咪、狗狗动作自然&lt;/li&gt;
+&lt;li&gt;人物类：面部略有塑料感&lt;/li&gt;
+&lt;li&gt;动画类：色彩鲜艳，表现较好&lt;/li&gt;
+&lt;li&gt;文字动画：识别准确度一般&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总体来说，日常娱乐和小场景视频完全够用，专业商业视频还需继续优化。&lt;/p&gt;
+&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Q：每天免费额度是多少？&lt;/strong&gt;
+A：新用户约50-100点，具体根据账号情况动态调整。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q：生成的视频有水印吗？&lt;/strong&gt;
+A：付费版本无水印，免费版有平台水印。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q：支持多长视频？&lt;/strong&gt;
+A：单次最长5秒，可通过多次生成拼接。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;维度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;评分&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;易用性&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;★★★★☆&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;中文界面，上手快&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;生成速度&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;★★★★☆&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1-3分钟出结果&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;视频质量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;★★★☆☆&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;日常够用，专业一般&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;免费额度&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;★★★★☆&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;新用户额度充足&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;海螺AI作为国产AI视频工具，对中文用户非常友好，适合日常创意内容创作。如果需要更高质量的商业视频，建议配合剪映等专业工具使用。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;本文不包含任何推广链接，仅供技术交流使用。&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Gemini AI 完整指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/gemini-ai-guide/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/gemini-ai-guide/</guid>
+      <description>Google Gemini AI 完整教程：Gemini vs GPT-4 vs Claude 怎么选？免费使用、付费Pro版、深度整合Google生态的优劣势分析。国内访问方案和10个实测提示词模板。</description>
+    </item>
+    <item>
+      <title>Google Gemini AI 完整指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/posts/gemini-ai-guide/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/gemini-ai-guide/</guid>
+      <description>Google Gemini AI 完整教程：Gemini vs GPT-4 vs Claude 怎么选？免费使用、付费Pro版、深度整合Google生态的优劣势分析。国内访问方案和10个实测提示词模板。</description>
+    </item>
+    <item>
+      <title>Perplexity AI搜索完全指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/perplexity-guide/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/perplexity-guide/</guid>
+      <description>2026年Perplexity AI搜索完全指南：实时联网搜索、带来源回答、学术研究神器。与传统搜索引擎和ChatGPT的区别是什么？国内怎么用？附免费vs Pro版本对比和提示词技巧。</description>
+    </item>
+    <item>
+      <title>Suno AI音乐生成教程：2026年最新指南（注册、使用、提示词模板）</title>
+      <link>https://huanghaiwan.com/ai/suno-music-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/suno-music-guide/</guid>
+      <description>Suno AI音乐生成完全指南：零基础到精通，从注册到创作爆款音乐。内置提示词模板&#43;5种音乐风格教程&#43;AI工具推荐，帮你用AI做出专业级音乐。</description>
+    </item>
+    <item>
+      <title>Windsurf AI 编程助手入门指南：2026年最新教程</title>
+      <link>https://huanghaiwan.com/ai/windsurf-guide/</link>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/windsurf-guide/</guid>
+      <description>Windsurf AI 是什么？和 Cursor 有什么区别？2026 年最新 Windsurf 入门教程，包含安装配置、核心功能、提示词技巧和与 Cursor 的全面对比。</description>
+    </item>
+    <item>
+      <title>机场到期了怎么办？2026年续费/换服务商完全指南</title>
+      <link>https://huanghaiwan.com/posts/airport-subscription-expired-guide/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-subscription-expired-guide/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文解决一个实际问题：机场订阅到期后，是续费好还是换一家好？如果想换，如何平滑迁移避免断网？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;先问自己续费还是换家&#34;&gt;先问自己：续费还是换家？&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;情况&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;建议&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场一直稳定，没出过问题&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 续费，省心&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场最近经常断联/速度下降&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ 考虑换家&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场涨价了或性价比变差&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ 换家更划算&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;旧机场跑路了&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;🔴 立刻换家&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;一个原则：&lt;/strong&gt; 如果旧机场满足需求就别折腾。迁移有成本（学习新客户端配置等），换来换去反而影响体验。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案一续费旧机场最省心&#34;&gt;方案一：续费旧机场（最省心）&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;优点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不用重新配置客户端&lt;/li&gt;
+&lt;li&gt;订阅记录、用量历史都在&lt;/li&gt;
+&lt;li&gt;有问题客服还认识你&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;续费注意事项：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;续费前先看价格有没有变（很多机场年末会调价）&lt;/li&gt;
+&lt;li&gt;检查账户有没有未用完的流量（部分机场可结转）&lt;/li&gt;
+&lt;li&gt;关注官方有没有新套餐（有时候加一点钱升套餐更划算）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案二换一家新机场需要技巧&#34;&gt;方案二：换一家新机场（需要技巧）&lt;/h2&gt;
+&lt;h3 id=&#34;step-1选好新机场再下手&#34;&gt;Step 1：选好新机场再下手&lt;/h3&gt;
+&lt;p&gt;不要等旧机场彻底死了才找新的，提前1-2周开始物色。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;选新机场的标准：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;运营1年以上（避开月抛新站）&lt;/li&gt;
+&lt;li&gt;有真实用户社区（ Telegram群/群讨论）&lt;/li&gt;
+&lt;li&gt;套餐透明，没有超低价陷阱&lt;/li&gt;
+&lt;li&gt;支持你常用的客户端（Clash/V2ray/Sing-Box）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-2先买新机场测试ok再迁移&#34;&gt;Step 2：先买新机场，测试OK再迁移&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;推荐流程：
+1. 新机场买一个月套餐试用
+2. 配置到客户端，测试速度和解锁
+3. 确认新机场稳定可用
+4. 旧机场到期前再停止续费
+5. 期间两个机场并行使用，零断网风险
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;step-3迁移节点配置&#34;&gt;Step 3：迁移节点配置&lt;/h3&gt;
+&lt;p&gt;大多数机场都支持导入订阅链接，在Clash中：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法A：订阅链接导入（推荐）&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在Clash设置 → 配置文件 → URL&lt;/li&gt;
+&lt;li&gt;填入新机场的订阅URL&lt;/li&gt;
+&lt;li&gt;勾选「自动更新」→ 以后换节点不用手动改&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;方法B：手动复制节点&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从新机场后台复制节点信息&lt;/li&gt;
+&lt;li&gt;粘贴到Clash配置文件&lt;/li&gt;
+&lt;li&gt;适合只有少量节点的小机场&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-4旧机场数据备份&#34;&gt;Step 4：旧机场数据备份&lt;/h3&gt;
+&lt;p&gt;在停止旧机场订阅前，导出以下信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;账户名/注册邮箱（以后可能还用）&lt;/li&gt;
+&lt;li&gt;常用节点的服务器地址（万一以后想回来）&lt;/li&gt;
+&lt;li&gt;消费记录（报销/记账用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案三备用机场常态化最稳妥&#34;&gt;方案三：备用机场常态化（最稳妥）&lt;/h2&gt;
+&lt;p&gt;不管旧机场有没有问题，都建议保持一个备用机场。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>红杏云机场评测 | 不限时流量包&#43;全协议支持，2026深度体验</title>
+      <link>https://huanghaiwan.com/posts/hongxingyun-review/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/hongxingyun-review/</guid>
+      <description>&lt;h1 id=&#34;红杏云评测不限时流量包的性价比之选&#34;&gt;红杏云评测：不限时流量包的性价比之选&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;红杏云是少数主打&lt;strong&gt;不限时流量包&lt;/strong&gt;的机场。流量买了就是你的，用多久都行。这和其他按月扣费的机场是本质区别。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一句话总结：&lt;/strong&gt; 适合流量需求不固定、不想每个月付固定费用的用户。200G不限时¥20，500G不限时¥40，价格不算最便宜，但胜在灵活。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;项目&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;详情&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;开业时间&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2021年&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;线路类型&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;BGP三线优化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;设备限制&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;宽松（同时在线3-5台）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;第三方导入&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持（Clash/Surge/Stash等）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;软路由支持&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;支持（OpenWrt/iStoreOS等）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体解锁&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;待实测确认&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;官网&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://hongxingyun.club/web/#/register?code=OBEi3O69&#34;&gt;红杏云官网&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;最大卖点不限时流量包&#34;&gt;最大卖点：不限时流量包&lt;/h2&gt;
+&lt;p&gt;传统机场都是按月扣费——你交了30块钱，只用了一周，剩下的流量浪费了。红杏云的模式不一样：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;你买的是流量，不是时间。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;对比维度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;红杏云（不限时）&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;普通机场（月付）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流量有效期&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;用完为止，不限时间&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;每月重置，用不完浪费&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;月支出&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;不固定，买了能用很久&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;固定月费&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;适合场景&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;偶尔用、流量需求波动大&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;每天重度使用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;灵活性&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐⭐ 极高&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 固定&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;套餐对比&#34;&gt;套餐对比&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;套餐&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;价格&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;流量&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;折合月均（按3个月算）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;轻量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥20&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;200G不限时&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;约¥6.6/月&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;冲浪&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥40&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;500G不限时&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;约¥13.3/月&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;算一笔账：&lt;/strong&gt; 如果你一个月用70G左右，¥20的轻量包够你用3个月。相比月付¥15-20的普通机场，每年能省下 ¥60-100。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;线路质量分析&#34;&gt;线路质量分析&lt;/h2&gt;
+&lt;p&gt;红杏云采用BGP三线优化，虽然没有标注IPLC/IEPL高端专线，但日常使用体验不错：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;节点区域&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;适用场景&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;体验评价&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;香港&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;浏览网页/看视频&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 延迟中等，日常使用流畅&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;日本&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;游戏/下载&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 日本线路稳定&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;美国&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;访问国际网站&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 美国节点速度尚可&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;新加坡&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;东南亚业务&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 适合东南亚业务场景&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;适合做的事情&#34;&gt;适合做的事情&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;日常浏览&lt;/strong&gt;（Google/YouTube/Twitter） — 流畅&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;看YouTube 1080p&lt;/strong&gt; — BGP线路够用&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;访问AI工具&lt;/strong&gt;（ChatGPT/Claude） — 没问题&lt;/li&gt;
+&lt;li&gt;⚠️ &lt;strong&gt;玩游戏&lt;/strong&gt; — 看具体游戏，欧美游戏延迟偏高&lt;/li&gt;
+&lt;li&gt;❌ &lt;strong&gt;4K视频重度用户&lt;/strong&gt; — 建议选有专线的大机场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;优缺点总结&#34;&gt;优缺点总结&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;优点&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;缺点&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;不限时流量包&lt;/strong&gt; — 买了就是你的&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 没有高端专线（IPLC/IEPL）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;设备限制宽松&lt;/strong&gt; — 多设备同时在线&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 流媒体解锁情况待确认&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;支持第三方导入&lt;/strong&gt; — 不强制用自家客户端&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 节点数量不算多&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;价格灵活&lt;/strong&gt; — 用多少买多少&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 官网偶尔需要翻墙访问&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ &lt;strong&gt;软路由支持&lt;/strong&gt; — OpenWrt用户友好&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;适合谁用&#34;&gt;适合谁用？&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;用户画像&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;推荐度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;原因&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;轻度用户（偶尔用）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;买200G能用好几个月，不用每月交钱&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;学生党&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;预算有限，灵活付费&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;重度用户（每天用）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;建议选有专线的月付机场，体验更好&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;游戏玩家&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;基础线路够用，但对延迟敏感的不如选专线&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体爱好者&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⭐⭐&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;需要确认解锁情况，有专线需求的选别家&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;常见问题faq&#34;&gt;常见问题（FAQ）&lt;/h2&gt;
+&lt;h3 id=&#34;q1不限时流量包是什么意思&#34;&gt;Q1：不限时流量包是什么意思？&lt;/h3&gt;
+&lt;p&gt;就是你买了200G流量，&lt;strong&gt;用一年都行&lt;/strong&gt;，流量扣完了再买。不像月付机场那样每个月自动扣费、月底流量清零。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cursor入门到精通：AI编程的正确姿势（2026教程）</title>
+      <link>https://huanghaiwan.com/ai/cursor-guide/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/cursor-guide/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Cursor 是目前最火的 AI IDE，基于 VS Code 深度改造，内置 AI 对话、代码补全、多文件编辑等能力。本文从零开始，帮你把 Cursor 用到极致。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>DeepSeek入门到精通：2026年最新使用指南（注册、提示词、API）</title>
+      <link>https://huanghaiwan.com/ai/deepseek-guide/</link>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/deepseek-guide/</guid>
+      <description>DeepSeek R1/V3全方位使用指南：从注册到高阶技巧，Web/App/API三种使用方式详解，提示词模板&#43;10个实用场景，帮你把这把国产AI利刃用到极致。</description>
+    </item>
+    <item>
+      <title>AI效率工作流：用AI写周报、做PPT、写代码（2026完整指南）</title>
+      <link>https://huanghaiwan.com/ai/ai-workflow-guide/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-workflow-guide/</guid>
+      <description>周报写2小时？PPT做到崩溃？代码debug一天？本文教你用AI搭一套效率工作流，Claude写周报、Gamma做PPT、Cursor写代码，手把手实操模板。</description>
+    </item>
+    <item>
+      <title>自由猫 Freecat 机场评测 | 叶老大自用主力，MPTCP多路复用技术详解</title>
+      <link>https://huanghaiwan.com/posts/freecat-review/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/freecat-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;自由猫（Freecat）成立于 &lt;strong&gt;2020 年&lt;/strong&gt;，是团队内部长期自用的主力机场之一。平台核心卖点是 &lt;strong&gt;MPTCP（多路复用）&lt;/strong&gt; 技术——通过聚合多条普通线路来达到接近专线的稳定性和速度，而不需要用户承担专线的成本。100+ 节点覆盖 20+ 国家/地区，入口出口选择丰富，适合对稳定性和节点多样性有要求的用户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://freecat.cloud/register?code=USRIiAoO&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Midjourney 生图教程：2026年最新入门到精通指南</title>
+      <link>https://huanghaiwan.com/ai/midjourney-guide/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/midjourney-guide/</guid>
+      <description>2026年Midjourney完全指南：从注册、订阅到提示词编写、参数调优的全流程教程。覆盖Discord版和Web版两种使用方式，附国内访问方案和实战案例。</description>
+    </item>
+    <item>
+      <title>DeepSeek vs Claude vs ChatGPT vs Perplexity：2026年四大AI助手横评</title>
+      <link>https://huanghaiwan.com/ai/ai-tools-comparison/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/ai-tools-comparison/</guid>
+      <description>2026年四大AI助手实测对比：DeepSeek、Claude、ChatGPT、Perplexity在编程、写作、搜索、长文档处理等场景的真实表现。附国内访问方案和性价比分析。</description>
+    </item>
+    <item>
+      <title>2026年如何选择机场？新手选购指南（附避坑建议）</title>
+      <link>https://huanghaiwan.com/posts/how-to-choose-airport/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/how-to-choose-airport/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;对于刚接触科学上网的新手来说，&amp;ldquo;机场&amp;quot;这个词可能有些陌生。本文将用通俗易懂的语言，介绍什么是机场、如何挑选适合自己的机场，以及常见的选择误区。无论你是想访问 Google 查资料、观看 YouTube 视频，还是需要稳定的跨境网络连接，这篇指南都能帮你做出更明智的选择。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5分钟快速入门：机场/VPN新手教程</title>
+      <link>https://huanghaiwan.com/posts/quick-start/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/quick-start/</guid>
+      <description>如果你不想看原理，只想快点用上机场，看这一篇就够了。5分钟从下载客户端到成功翻墙。</description>
+    </item>
+    <item>
+      <title>Claude国内怎么用？2026年最新访问指南（3种方案实测）</title>
+      <link>https://huanghaiwan.com/ai/claude-access-guide/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/claude-access-guide/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Claude Sonnet 4 和多模态能力在 2026 年持续进化，写代码、读论文、处理文档比肩 GPT-4o。但国内用户想用 Claude，必须先过网络这一关。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;claude-为什么国内用不了&#34;&gt;Claude 为什么国内用不了？&lt;/h2&gt;
+&lt;p&gt;Claude 由美国 Anthropic 公司开发，官网 &lt;code&gt;claude.ai&lt;/code&gt; 和 API 服务均未对中国大陆开放。直接访问会看到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;❌ 浏览器：连接被重置 / 无法访问此网站&lt;/li&gt;
+&lt;li&gt;❌ API：&lt;code&gt;Connection refused&lt;/code&gt; / &lt;code&gt;Timeout&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;❌ 官方 App：设备地域限制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;这不是 Claude 的问题&lt;/strong&gt;，是所有海外 AI 服务的共同情况（ChatGPT、Gemini、Perplexity 同理）。你需要一条通往海外服务器的稳定通道。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3种方案实测对比&#34;&gt;3种方案实测对比&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;方案&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;上手难度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;稳定性&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;速度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;月费成本&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;推荐度&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;① 机场/代理&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 中等&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐⭐ 最稳&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐ 快&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥10-50/月&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;🔥 首选&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;② API 中转&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐⭐ 最难&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐ 一般&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐ 中等&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥5-30/月（按量）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;✅ 可选&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;③ 第三方镜像站&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐ 最简单&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 不稳定&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 慢&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥0-20/月&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⚠️ 临时用&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案一机场代理-最推荐&#34;&gt;方案一：机场/代理（🔥 最推荐）&lt;/h2&gt;
+&lt;h3 id=&#34;为什么这是首选&#34;&gt;为什么这是首选？&lt;/h3&gt;
+&lt;p&gt;Claude 是&lt;strong&gt;全网页交互&lt;/strong&gt;的应用——你需要持续跟 AI 对话、上传文件、查看代码。机场提供稳定的海内外通道，延迟低、不掉线，体验最接近原生。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WgetCloud 机场评测 | 精品专线29节点，年付套餐深度体验</title>
+      <link>https://huanghaiwan.com/posts/wgetcloud-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/wgetcloud-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;WgetCloud（又称 WgetCloud GlobalNet）是一家主打精品专线的中高端机场，隶属于 A 组推荐梯队。平台提供 29 个节点，覆盖全球主要地区，采用 IEPL/IPLC 专线线路，主打 500Mbps 带宽和流媒体+AI 工具解锁能力。本次评测基于年付套餐深度体验，数据仅供参考。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://wgetcloud.com/web/#/register?code=djq10H&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>万达云 机场评测 | IEPL专线&#43;住宅IP，最低¥16.8/月起</title>
+      <link>https://huanghaiwan.com/posts/wandayun-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/wandayun-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;万达云（WangDaCloud）是一家主打 IEPL 专线 + 住宅IP 的中高端机场，隶属于 B 组有特色梯队。平台核心卖点是住宅IP节点的原生属性，对流媒体和TikTok等平台有天然解锁优势。本次评测覆盖套餐、专线优势及实际使用体验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://link.wdyserver.com/register?code=6z6PNS5r&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>什么是VPN/机场？一篇文读懂翻墙原理与常见术语</title>
+      <link>https://huanghaiwan.com/posts/what-is-vpn/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/what-is-vpn/</guid>
+      <description>VPN和机场是什么？有什么区别？一篇文搞懂科学上网的基本概念、常用协议（VMess/VLESS/Trojan）和核心术语。</description>
+    </item>
+    <item>
+      <title>机场购买完整教程：从注册到客户端配置</title>
+      <link>https://huanghaiwan.com/posts/purchase-guide/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/purchase-guide/</guid>
+      <description>手把手教你完成机场注册、购买套餐、获取订阅链接、导入客户端。从零开始，5分钟搞定。</description>
+    </item>
+    <item>
+      <title>瑶瑶领先 机场评测 | SS协议大流量套餐，¥9.9起用384G</title>
+      <link>https://huanghaiwan.com/posts/yaoyaolingxian-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/yaoyaolingxian-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;瑶瑶领先（YaoYao LingXian）是一家主打 SS（Shadowsocks）协议的大流量性价比机场，隶属于 C 组补充的量大便宜路线。平台核心卖点是超低价格+超大流量，适合对网络速度要求不极致、但流量消耗大的用户。本次评测覆盖套餐配置和实际速度表现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://yyssr.org/auth/register?code=d326dda059&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选</title>
+      <link>https://huanghaiwan.com/posts/protocol-guide/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/protocol-guide/</guid>
+      <description>一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS&#43;Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。</description>
+    </item>
+    <item>
+      <title>龙猫云 机场评测 | 全IPLC专线无限速，入门仅¥15/月</title>
+      <link>https://huanghaiwan.com/posts/longmaoyun-review/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/longmaoyun-review/</guid>
+      <description>&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+&lt;p&gt;龙猫云（LongMao Cloud）是一家主打全 IPLC 专线的中端机场，隶属于 C 组补充梯队。相比混合线路机场，龙猫云承诺全节点 IPLC 专线接入，不做普通公网中转。平台口号是&amp;quot;无限速&amp;quot;，适合对网络质量有要求但预算有限的用户。本次评测基于标准套餐实测。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官网地址：&lt;/strong&gt; &lt;a href=&#34;https://inv06.lmaff01.cc/register?aff=dqNRmvru&#34;&gt;👉 访问官网&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

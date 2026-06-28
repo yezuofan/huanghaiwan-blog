@@ -14,6 +14,7 @@ params:
   description: "可靠的机场评测与AI工具使用指南"
   keywords: [机场评测, 机场推荐, AI工具, 科学上网, V2Ray, 代理]
   author: "海洋指南"
+  mainSections: ["ai", "posts"]
 
   # 外观
   defaultTheme: auto

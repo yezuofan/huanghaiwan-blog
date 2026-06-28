@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Claude on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/claude/</link>
+    <description>Recent content in Claude on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude国内怎么用？2026年最新访问指南（3种方案实测）</title>
+      <link>https://huanghaiwan.com/ai/claude-access-guide/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/claude-access-guide/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Claude Sonnet 4 和多模态能力在 2026 年持续进化，写代码、读论文、处理文档比肩 GPT-4o。但国内用户想用 Claude，必须先过网络这一关。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;claude-为什么国内用不了&#34;&gt;Claude 为什么国内用不了？&lt;/h2&gt;
+&lt;p&gt;Claude 由美国 Anthropic 公司开发，官网 &lt;code&gt;claude.ai&lt;/code&gt; 和 API 服务均未对中国大陆开放。直接访问会看到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;❌ 浏览器：连接被重置 / 无法访问此网站&lt;/li&gt;
+&lt;li&gt;❌ API：&lt;code&gt;Connection refused&lt;/code&gt; / &lt;code&gt;Timeout&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;❌ 官方 App：设备地域限制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;这不是 Claude 的问题&lt;/strong&gt;，是所有海外 AI 服务的共同情况（ChatGPT、Gemini、Perplexity 同理）。你需要一条通往海外服务器的稳定通道。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3种方案实测对比&#34;&gt;3种方案实测对比&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;方案&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;上手难度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;稳定性&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;速度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;月费成本&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;推荐度&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;① 机场/代理&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 中等&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐⭐ 最稳&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐ 快&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥10-50/月&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;🔥 首选&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;② API 中转&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐⭐⭐ 最难&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐ 一般&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐⭐ 中等&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥5-30/月（按量）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;✅ 可选&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;③ 第三方镜像站&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐ 最简单&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 不稳定&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⭐⭐ 慢&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥0-20/月&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⚠️ 临时用&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;方案一机场代理-最推荐&#34;&gt;方案一：机场/代理（🔥 最推荐）&lt;/h2&gt;
+&lt;h3 id=&#34;为什么这是首选&#34;&gt;为什么这是首选？&lt;/h3&gt;
+&lt;p&gt;Claude 是&lt;strong&gt;全网页交互&lt;/strong&gt;的应用——你需要持续跟 AI 对话、上传文件、查看代码。机场提供稳定的海内外通道，延迟低、不掉线，体验最接近原生。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>新手入门 on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/</link>
+    <description>Recent content in 新手入门 on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026科学上网客户端下载安装配置全攻略：Clash Verge/Stash/Shadowrocket/v2rayN</title>
+      <link>https://huanghaiwan.com/posts/client-setup-guide-2026/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/client-setup-guide-2026/</guid>
+      <description>2026年主流科学上网客户端完整下载安装与配置教程，覆盖Windows/macOS/iOS/Android四大平台</description>
+    </item>
+    <item>
+      <title>全屋科学上网方案对比：路由器 vs 软路由 vs 魔法网关 vs 客户端（2026暑假版）</title>
+      <link>https://huanghaiwan.com/posts/home-network-setup-guide-2026/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/home-network-setup-guide-2026/</guid>
+      <description>放暑假回家，全家人的设备都要能上外网？路由器刷机、软路由、魔法网关、单设备客户端——本文把这4种全屋翻墙方案的优缺点、成本、配置难度逐个拆解，帮你找到最适合自己家的方案。</description>
+    </item>
+    <item>
+      <title>机场连接不上怎么办？2026年最全自助排查指南</title>
+      <link>https://huanghaiwan.com/posts/airport-connection-troubleshooting/</link>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-connection-troubleshooting/</guid>
+      <description>机场突然连不上？节点全红？延迟飙高？从客户端检查到网络环境，一步步教你自助排查，90%的问题自己就能解决。</description>
+    </item>
+    <item>
+      <title>机场新手入门完全指南（2026年版）</title>
+      <link>https://huanghaiwan.com/posts/airport-beginner-guide-2026/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/airport-beginner-guide-2026/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;如果你刚听说&amp;quot;机场&amp;quot;这个词，不知道它能做什么、是否安全、该怎么选择，这篇文章就是为你写的。&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>2026年如何选择机场？新手选购指南（附避坑建议）</title>
+      <link>https://huanghaiwan.com/posts/how-to-choose-airport/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/how-to-choose-airport/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;对于刚接触科学上网的新手来说，&amp;ldquo;机场&amp;quot;这个词可能有些陌生。本文将用通俗易懂的语言，介绍什么是机场、如何挑选适合自己的机场，以及常见的选择误区。无论你是想访问 Google 查资料、观看 YouTube 视频，还是需要稳定的跨境网络连接，这篇指南都能帮你做出更明智的选择。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 | 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+<meta name="keywords" content="教程">
+<meta name="description" content="一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS&#43;Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。">
+<meta name="author" content="海洋指南">
+<link rel="canonical" href="https://huanghaiwan.com/posts/protocol-guide/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.98a127f4247a79734a02db10a56d338eae130db728f04a5ba45b9773c2262a30.css" integrity="sha256-mKEn9CR6eXNKAtsQpW0zjq4TDbco8EpbpFuXc8ImKjA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://huanghaiwan.com/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://huanghaiwan.com/favicon.svg">
+<link rel="apple-touch-icon" href="https://huanghaiwan.com/favicon.svg">
+<link rel="mask-icon" href="https://huanghaiwan.com/favicon.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://huanghaiwan.com/posts/protocol-guide/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="impact-site-verification" content="8b49a619-44a3-478a-87b7-dd5dce0219e0">
+<meta property="og:url" content="https://huanghaiwan.com/posts/protocol-guide/">
+  <meta property="og:site_name" content="海洋指南 - 机场评测 & AI 工具指南">
+  <meta property="og:title" content="科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选">
+  <meta property="og:description" content="一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS&#43;Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-12T00:00:00+00:00">
+    <meta property="article:tag" content="教程">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选">
+  <meta name="twitter:description" content="一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS&#43;Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://huanghaiwan.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "科学上网协议指南：SS/VMess/VLESS+Reality/Trojan/WireGuard怎么选",
+      "item": "https://huanghaiwan.com/posts/protocol-guide/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "科学上网协议指南：SS/VMess/VLESS+Reality/Trojan/WireGuard怎么选",
+  "name": "科学上网协议指南：SS\/VMess\/VLESS\u002bReality\/Trojan\/WireGuard怎么选",
+  "description": "一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS+Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。",
+  "keywords": [
+    "教程"
+  ],
+  "articleBody": " 刚接触科学上网时，最懵的就是这一堆协议名——Shadowsocks、VMess、VLESS、Trojan、WireGuard……到底有什么区别？哪个最快？哪个最安全？这篇一次性帮你理清。\n先给结论：2026年该怎么选？ 你的情况 推荐的协议 一句话理由 不想研究，买现成机场 跟着机场走就行，机场配什么就用什么 大多数机场已做好最优配置 自己搭梯子（VPS自建） VLESS + Reality 目前最强的防封方案，DPI无法识别 用现成的机场订阅 Trojan 或 VLESS + Reality 机场主流方案，兼容性和防封兼顾 在海外用，不需要翻墙 WireGuard 延迟最低，速度最快，配置最简单 老设备/OpenWrt路由器 Shadowsocks 兼容性最好，几乎所有设备都支持 追求最高速度 VLESS + Reality 或 Trojan 加密开销小，配合XTLS性能极佳 一句话总结：2026年首选 VLESS + Reality，其次是 Trojan。SS 和 VMess 已过时，WireGuard 适合海外场景。\n协议对比总表 维度 Shadowsocks (SS) VMess VLESS + Reality Trojan WireGuard 推出年份 2012 2017 2022 2019 2016 防封锁能力 ⭐⭐ 弱 ⭐⭐ 弱 ⭐⭐⭐⭐⭐ 最强 ⭐⭐⭐⭐ 强 ⭐⭐ 弱 速度 ⭐⭐⭐ 一般 ⭐⭐⭐ 一般 ⭐⭐⭐⭐⭐ 最快 ⭐⭐⭐⭐ 快 ⭐⭐⭐⭐⭐ 最快 配置难度 ⭐⭐ 简单 ⭐⭐⭐ 中等 ⭐⭐⭐⭐ 较难 ⭐⭐ 简单 ⭐ 最简单 兼容性 ⭐⭐⭐⭐⭐ 最好 ⭐⭐⭐⭐ 好 ⭐⭐⭐ 中等 ⭐⭐⭐⭐ 好 ⭐⭐ 有限 加密开销 较大 较大 极小 小 极小 当前状态 ⏳ 逐渐淘汰 ⏳ 逐渐淘汰 🔥 主流 ✅ 主流 🟢 海外首选 逐个协议详解 1. Shadowsocks（SS）— 老前辈，正在退场 诞生时间： 2012年 原理： 将流量加密成普通HTTPS流量的样子，绕过防火墙检测。\n优点：\n✅ 兼容性最好：所有客户端都支持，OpenWrt、路由器等老设备首选 ✅ 配置简单，socks5 代理模式几乎不需要额外设置 ✅ 社区活跃，遇到问题容易搜索到解决方案 缺点：\n❌ 防封能力弱：防火墙（GFW）已经能准确识别 SS 流量特征 ❌ 协议特征明显，近年大规模封杀中首当其冲 ❌ 加密协商机制简单，安全余量低 还适合谁用：\n路由器（OpenWrt）上跑代理，ss-redir 集成最方便 纯浏览网页、不看视频的低强度使用 作为备用方案，主力用更强的协议 要不要选？ 2026年不推荐新用户用 SS。过去它是神，现在它已老。如果你在用，考虑逐步迁移到 VLESS+Reality 或 Trojan。\n2. VMess — V2Ray 嫡长子，也开始老了 诞生时间： 2017年（随 V2Ray 项目推出） 原理： 比 SS 多了元数据加密，理论防封更好，但实际效果有限。\n优点：\n✅ V2Ray 生态成熟，文档丰富 ✅ 支持多种传输方式（WebSocket、gRPC、HTTP/2 等） ✅ 可与 CDN 配合使用（CDN 套娃方案） 缺点：\n❌ 已被 GFW 识别：VMess 特征在 2024-2026 年已纳入重点检测 ❌ 加密机制复杂但没有实质性增强安全性 ❌ 配置比 SS 复杂，但防封能力没有质的提升 还适合谁用：\n配合 Cloudflare CDN 使用（CDN 套娃隐藏真实服务器 IP） 已经在用且稳定不需要折腾的老用户 要不要选？ 2026 年也不推荐新用 VMess。VLESS+Reality 是它的全面升级版。\n3. VLESS + Reality（🔥 2026年首选） 什么是 VLESS？ VLESS 是 VMess 的轻量版。去掉了 VMess 中多余的加密校验环节，减少 CPU 开销，提升速度。\n什么是 Reality？ Reality 是 XRay 核心的独家技术。核心思想：伪装成你访问一个正常网站。\n当你连接 Reality 服务器时，网络流量看起来完全是一个用户访问 www.microsoft.com 或 www.bing.com 这样的正常网站。防火墙看到的是 HTTPS 加密流量，无从判断这是访问真实网站还是代理。\n为什么 Reality 是目前最强防封方案？\n特性 说明 流量伪装 数据包和正常 HTTPS 访问一模一样 无固定特征 防火墙无法提取指纹特征 无需证书 使用目标网站的 TLS 证书，不需要自己申请 抗主动探测 主动连接检测时返回正常网站内容 4 次握手 比 Trojan 的 3 次多一次，但对安全是正面作用 优点：\n✅ 防封能力最强：GFW 目前无法有效识别 ✅ 速度最快：加密开销极小，几乎不影响带宽 ✅ 不需要自己买域名和证书 ✅ XRay 核心持续更新，社区活跃 缺点：\n❌ 配置相对复杂（虽然一键脚本已经很多） ❌ 客户端支持不如 Trojan 广泛（多数主流客户端已支持） ❌ 需要服务器端 XRay 版本较新 配置要点：\n服务器需要安装 XRay（v1.8.0+） 需要选择一个合适的域名作为伪装目标（推荐 www.microsoft.com、www.bing.com） 建议使用 vision 流控 + tcp + uTLS 配置 如果遇到\"无网络\"问题，检查 dst 端口和目标域名 要不要选？ 如果你自建 VPS，首选 VLESS + Reality。目前自建方案的最优解，没有之一。\n4. Trojan — 成熟稳定的主流选择 诞生时间： 2019年 原理： 将代理流量伪装成 HTTPS 流量。和 Reality 思路类似，但需要自己持有域名和 TLS 证书。\n优点：\n✅ 防封能力强：流量特征和普通 HTTPS 一致 ✅ 配置简单：比 VLESS+Reality 容易上手，有现成的一键脚本 ✅ 兼容性好：几乎所有客户端都支持 Trojan ✅ 主流机场广泛使用，生态成熟 缺点：\n❌ 需要自己买域名和证书（虽然可以免费申请 Let’s Encrypt） ❌ 相比 Reality，多了证书管理的麻烦 ❌ 被检测到的风险略高于 Reality 适合场景：\n自建 VPS 且已经持有域名 机场用户——很多机场主力就是 Trojan 不想折腾 Reality 配置的用户 要不要选？ Trojan 是稳健之选。如果你已经有域名，配置 Trojan 是性价比很高的方案。防封能力足够满足 95% 的用户需求。\n5. WireGuard — 海外用户的神器 诞生时间： 2016年（Linux 内核 5.6 原生支持） 原理： 不到 4000 行代码的极简 VPN 协议，使用最新的加密算法。\n优点：\n✅ 速度最快：内核级实现，加密开销极小，跑满带宽 ✅ 配置极简：只需要交换公钥即可建立连接 ✅ 移动漫游：IP 地址变化自动切换，不掉线 ✅ 已被纳入 Linux 内核，系统级支持 缺点：\n❌ 防封能力弱：流量特征明显，GFW 容易检测 ❌ UDP 协议容易被 QoS（限速） ❌ 在中国大陆使用基本等于裸奔——防火墙很快会发现 适合场景：\n海外用户：不需要翻墙，只需要加密通信 自建内部网络：连接多个 VPS、办公室、家庭网络 作为辅助隧道：在已有代理基础上叠加 WireGuard 多层加密 要不要选？ 在国内作为科学上网协议不推荐。但在海外连接回国、或者自建 VPS 之间的内网通信，WireGuard 是无可替代的最佳选择。\n按场景推荐协议 场景 1：买现成机场 不需要纠结协议。 机场已经配好了最优方案。\n如果机场提供 Trojan 或 VLESS+Reality 节点 → 优先用这些 如果机场有 SS/VMess 节点 → 当作备用 只需要把订阅链接导入客户端 → 一切交给机场 还没买机场？ 推荐几家稳定靠谱的机场：\n机场 亮点 月费 链接 万达云 IEPL专线+住宅IP，低延迟高稳定 ¥16.8起 👉 访问官网 龙猫云 全IPLC专线无限速，原生IP ¥15起 👉 访问官网 瑶瑶领先 性价比之选，新用户优惠多 ¥10起 👉 访问官网 场景 2：自己搭 VPS（自建） 优先级 协议 说明 🔥 首选 VLESS + Reality 防封最强，速度最快，无需域名 ✅ 次选 Trojan 如果有域名，稳定可靠 ⚠️ 备选 SS + 插件 老设备兼容 推荐流程：\n1. 买一台 VPS（日本/香港/新加坡 \u003e 美国） 2. 安装 XRay 一键脚本 3. 配置 VLESS + Reality 4. 导入客户端 → 完成 场景 3：游戏加速 需求 推荐方案 降低延迟 机场 + 香港/日本节点（物理距离近） 稳定不掉线 IEPL/IPLC 专线机场 协议选择 选择支持 UDP 转发的机场（Trojan 和 VLESS 都支持） 常见误区 ❌ “加密越强越安全” 错。 科学上网的安全核心是隐身（不让防火墙认出你），不是加密强度（那是对抗监听者的）。\nReality 的伪装思路 \u003e VMess 的复杂加密 你在墙内用 AES-256 加密 VS 明文 HTTPS 流量→防火墙只看得出\"这是代理\"就封了 ❌ “协议越多层越安全” 错。 多层代理 = 多层延迟叠加。WS + TLS + CDN + VMess 的\"套娃\"方案在 2022 年流行，现在 Reality 一层就够。\n❌ “Shadowsocks 还能再用 10 年” 错。 SS 已经被 GFW 精准识别了。2025-2026 年大量 SS 节点被封，不建议再用。\n❌ “WireGuard 在国内最好用” 错。 WireGuard 速度最快没错，但它是UDP 明文特征，GFW 直接 QoS 甚至封锁。WireGuard 适合海外，不适合翻墙。\n协议发展简史（了解来龙去脉） 2012 ─ Shadowsocks 诞生 ─ 取代 OpenVPN，成为主流 2017 ─ V2Ray + VMess ─ Shadowsocks 的进化版 2019 ─ Trojan ─ HTTPS 伪装思路成为主流 2022 ─ VLESS + Reality ─ 无特征协议，当前最强方案 2026 ─ Reality 及新变种持续进化 ─ 在防探测方面不断优化 常见问题 Q：用错协议会被封吗？ 不会。GFW 封的是服务器 IP 和流量特征，不是你的客户端配置。你选 SS 不会被封，但 SS 节点更容易被 GFW 识别并封锁。所以本质上，更好的协议在保护的是服务器的稳定性。\nQ：换了协议速度会更快吗？ 看情况。VLESS+Reality 比 SS 快大约 10-20%（加密开销小），但实际体验最大的决定因素还是：你的带宽、服务器线路质量、物理距离。\nQ：我要不要从 SS 迁移到 Reality？ 如果现在能用且稳定→可以不急着换。 如果出现以下情况→建议迁移：\n❌ 节点频繁被墙 ❌ 速度越来越慢 ❌ 检测到明显限速 迁移建议：保持 SS 作为备用，加一个 Reality 节点当主力，双保险。\nQ：所有客户端都支持 Reality 吗？ 目前主流的都支持了：\n客户端 平台 支持 Reality Clash Verge Windows/macOS/Linux ✅ Clash Meta / Mihomo 多平台 ✅ Shadowrocket iOS ✅ Surge iOS/macOS ✅ v2rayN Windows ✅ Clash for Android Android ✅ 💡 最终建议： 2026 年自建用 VLESS+Reality，买机场跟着走就行。不用在协议选择上纠结——协议只是工具，稳定服务才是核心。\n相关阅读 什么是机场/VPN？ 5分钟快速入门 购买完整教程 本文包含推广链接，如果您通过链接购买，我们会获得一定佣金。但这不影响我们的客观评测。\n",
+  "wordCount" : "679",
+  "inLanguage": "en",
+  "datePublished": "2026-05-12T00:00:00Z",
+  "dateModified": "2026-05-12T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "海洋指南"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://huanghaiwan.com/posts/protocol-guide/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "海洋指南 - 机场评测 \u0026 AI 工具指南",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huanghaiwan.com/favicon.svg"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://huanghaiwan.com/" accesskey="h" title="海洋指南 - 机场评测 &amp; AI 工具指南 (Alt + H)">海洋指南 - 机场评测 &amp; AI 工具指南</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://huanghaiwan.com/posts/" title="📝 文章">
+                    <span>📝 文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/ai/" title="🤖 AI工具">
+                    <span>🤖 AI工具</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/tags/" title="🏷️ 分类">
+                    <span>🏷️ 分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://huanghaiwan.com/about/" title="ℹ️ 关于">
+                    <span>ℹ️ 关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选
+    </h1>
+    <div class="post-description">
+      一篇搞懂科学上网全部主流协议——Shadowsocks、VMess、VLESS&#43;Reality、Trojan、WireGuard的对比、优缺点和场景推荐。2026年最新指南。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-05-12 00:00:00 +0000 UTC'>May 12, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>679 words</span>&nbsp;·&nbsp;<span>海洋指南</span>&nbsp;|&nbsp;<span>
+        <a href="https://github.com/yezuofan/huanghaiwan-blog/tree/main/content/posts/protocol-guide/index.md" rel="noopener noreferrer edit" target="_blank">建议修改</a>
+    </span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#%e5%85%88%e7%bb%99%e7%bb%93%e8%ae%ba2026%e5%b9%b4%e8%af%a5%e6%80%8e%e4%b9%88%e9%80%89" aria-label="先给结论：2026年该怎么选？">先给结论：2026年该怎么选？</a></li>
+            <li>
+                <a href="#%e5%8d%8f%e8%ae%ae%e5%af%b9%e6%af%94%e6%80%bb%e8%a1%a8" aria-label="协议对比总表">协议对比总表</a></li>
+            <li>
+                <a href="#%e9%80%90%e4%b8%aa%e5%8d%8f%e8%ae%ae%e8%af%a6%e8%a7%a3" aria-label="逐个协议详解">逐个协议详解</a><ul>
+                    
+            <li>
+                <a href="#1-shadowsocksss-%e8%80%81%e5%89%8d%e8%be%88%e6%ad%a3%e5%9c%a8%e9%80%80%e5%9c%ba" aria-label="1. Shadowsocks（SS）— 老前辈，正在退场">1. Shadowsocks（SS）— 老前辈，正在退场</a></li>
+            <li>
+                <a href="#2-vmess--v2ray-%e5%ab%a1%e9%95%bf%e5%ad%90%e4%b9%9f%e5%bc%80%e5%a7%8b%e8%80%81%e4%ba%86" aria-label="2. VMess — V2Ray 嫡长子，也开始老了">2. VMess — V2Ray 嫡长子，也开始老了</a></li>
+            <li>
+                <a href="#3-vless--reality-2026%e5%b9%b4%e9%a6%96%e9%80%89" aria-label="3. VLESS &#43; Reality（🔥 2026年首选）">3. VLESS + Reality（🔥 2026年首选）</a></li>
+            <li>
+                <a href="#4-trojan--%e6%88%90%e7%86%9f%e7%a8%b3%e5%ae%9a%e7%9a%84%e4%b8%bb%e6%b5%81%e9%80%89%e6%8b%a9" aria-label="4. Trojan — 成熟稳定的主流选择">4. Trojan — 成熟稳定的主流选择</a></li>
+            <li>
+                <a href="#5-wireguard--%e6%b5%b7%e5%a4%96%e7%94%a8%e6%88%b7%e7%9a%84%e7%a5%9e%e5%99%a8" aria-label="5. WireGuard — 海外用户的神器">5. WireGuard — 海外用户的神器</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e6%8c%89%e5%9c%ba%e6%99%af%e6%8e%a8%e8%8d%90%e5%8d%8f%e8%ae%ae" aria-label="按场景推荐协议">按场景推荐协议</a><ul>
+                    
+            <li>
+                <a href="#%e5%9c%ba%e6%99%af-1%e4%b9%b0%e7%8e%b0%e6%88%90%e6%9c%ba%e5%9c%ba" aria-label="场景 1：买现成机场">场景 1：买现成机场</a></li>
+            <li>
+                <a href="#%e5%9c%ba%e6%99%af-2%e8%87%aa%e5%b7%b1%e6%90%ad-vps%e8%87%aa%e5%bb%ba" aria-label="场景 2：自己搭 VPS（自建）">场景 2：自己搭 VPS（自建）</a></li>
+            <li>
+                <a href="#%e5%9c%ba%e6%99%af-3%e6%b8%b8%e6%88%8f%e5%8a%a0%e9%80%9f" aria-label="场景 3：游戏加速">场景 3：游戏加速</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%b8%b8%e8%a7%81%e8%af%af%e5%8c%ba" aria-label="常见误区">常见误区</a><ul>
+                    
+            <li>
+                <a href="#-%e5%8a%a0%e5%af%86%e8%b6%8a%e5%bc%ba%e8%b6%8a%e5%ae%89%e5%85%a8" aria-label="❌ &ldquo;加密越强越安全&rdquo;">❌ &ldquo;加密越强越安全&rdquo;</a></li>
+            <li>
+                <a href="#-%e5%8d%8f%e8%ae%ae%e8%b6%8a%e5%a4%9a%e5%b1%82%e8%b6%8a%e5%ae%89%e5%85%a8" aria-label="❌ &ldquo;协议越多层越安全&rdquo;">❌ &ldquo;协议越多层越安全&rdquo;</a></li>
+            <li>
+                <a href="#-shadowsocks-%e8%bf%98%e8%83%bd%e5%86%8d%e7%94%a8-10-%e5%b9%b4" aria-label="❌ &ldquo;Shadowsocks 还能再用 10 年&rdquo;">❌ &ldquo;Shadowsocks 还能再用 10 年&rdquo;</a></li>
+            <li>
+                <a href="#-wireguard-%e5%9c%a8%e5%9b%bd%e5%86%85%e6%9c%80%e5%a5%bd%e7%94%a8" aria-label="❌ &ldquo;WireGuard 在国内最好用&rdquo;">❌ &ldquo;WireGuard 在国内最好用&rdquo;</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e5%8d%8f%e8%ae%ae%e5%8f%91%e5%b1%95%e7%ae%80%e5%8f%b2%e4%ba%86%e8%a7%a3%e6%9d%a5%e9%be%99%e5%8e%bb%e8%84%89" aria-label="协议发展简史（了解来龙去脉）">协议发展简史（了解来龙去脉）</a></li>
+            <li>
+                <a href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98" aria-label="常见问题">常见问题</a><ul>
+                    
+            <li>
+                <a href="#q%e7%94%a8%e9%94%99%e5%8d%8f%e8%ae%ae%e4%bc%9a%e8%a2%ab%e5%b0%81%e5%90%97" aria-label="Q：用错协议会被封吗？">Q：用错协议会被封吗？</a></li>
+            <li>
+                <a href="#q%e6%8d%a2%e4%ba%86%e5%8d%8f%e8%ae%ae%e9%80%9f%e5%ba%a6%e4%bc%9a%e6%9b%b4%e5%bf%ab%e5%90%97" aria-label="Q：换了协议速度会更快吗？">Q：换了协议速度会更快吗？</a></li>
+            <li>
+                <a href="#q%e6%88%91%e8%a6%81%e4%b8%8d%e8%a6%81%e4%bb%8e-ss-%e8%bf%81%e7%a7%bb%e5%88%b0-reality" aria-label="Q：我要不要从 SS 迁移到 Reality？">Q：我要不要从 SS 迁移到 Reality？</a></li>
+            <li>
+                <a href="#q%e6%89%80%e6%9c%89%e5%ae%a2%e6%88%b7%e7%ab%af%e9%83%bd%e6%94%af%e6%8c%81-reality-%e5%90%97" aria-label="Q：所有客户端都支持 Reality 吗？">Q：所有客户端都支持 Reality 吗？</a></li></ul>
+            </li>
+            <li>
+                <a href="#%e7%9b%b8%e5%85%b3%e9%98%85%e8%af%bb" aria-label="相关阅读">相关阅读</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><blockquote>
+<p>刚接触科学上网时，最懵的就是这一堆协议名——Shadowsocks、VMess、VLESS、Trojan、WireGuard……到底有什么区别？哪个最快？哪个最安全？这篇一次性帮你理清。</p></blockquote>
+<hr>
+<h2 id="先给结论2026年该怎么选">先给结论：2026年该怎么选？<a hidden class="anchor" aria-hidden="true" href="#先给结论2026年该怎么选">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">你的情况</th>
+          <th style="text-align: left">推荐的协议</th>
+          <th style="text-align: left">一句话理由</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">不想研究，买现成机场</td>
+          <td style="text-align: left">跟着机场走就行，<strong>机场配什么就用什么</strong></td>
+          <td style="text-align: left">大多数机场已做好最优配置</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">自己搭梯子（VPS自建）</td>
+          <td style="text-align: left"><strong>VLESS + Reality</strong></td>
+          <td style="text-align: left">目前最强的防封方案，DPI无法识别</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">用现成的机场订阅</td>
+          <td style="text-align: left"><strong>Trojan</strong> 或 <strong>VLESS + Reality</strong></td>
+          <td style="text-align: left">机场主流方案，兼容性和防封兼顾</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">在海外用，不需要翻墙</td>
+          <td style="text-align: left"><strong>WireGuard</strong></td>
+          <td style="text-align: left">延迟最低，速度最快，配置最简单</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">老设备/OpenWrt路由器</td>
+          <td style="text-align: left"><strong>Shadowsocks</strong></td>
+          <td style="text-align: left">兼容性最好，几乎所有设备都支持</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">追求最高速度</td>
+          <td style="text-align: left"><strong>VLESS + Reality</strong> 或 <strong>Trojan</strong></td>
+          <td style="text-align: left">加密开销小，配合XTLS性能极佳</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>一句话总结：2026年首选 VLESS + Reality，其次是 Trojan。SS 和 VMess 已过时，WireGuard 适合海外场景。</strong></p>
+<hr>
+<h2 id="协议对比总表">协议对比总表<a hidden class="anchor" aria-hidden="true" href="#协议对比总表">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">维度</th>
+          <th style="text-align: left">Shadowsocks (SS)</th>
+          <th style="text-align: left">VMess</th>
+          <th style="text-align: left">VLESS + Reality</th>
+          <th style="text-align: left">Trojan</th>
+          <th style="text-align: left">WireGuard</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>推出年份</strong></td>
+          <td style="text-align: left">2012</td>
+          <td style="text-align: left">2017</td>
+          <td style="text-align: left">2022</td>
+          <td style="text-align: left">2019</td>
+          <td style="text-align: left">2016</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>防封锁能力</strong></td>
+          <td style="text-align: left">⭐⭐ 弱</td>
+          <td style="text-align: left">⭐⭐ 弱</td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐ 最强</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 强</td>
+          <td style="text-align: left">⭐⭐ 弱</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>速度</strong></td>
+          <td style="text-align: left">⭐⭐⭐ 一般</td>
+          <td style="text-align: left">⭐⭐⭐ 一般</td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐ 最快</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 快</td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐ 最快</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>配置难度</strong></td>
+          <td style="text-align: left">⭐⭐ 简单</td>
+          <td style="text-align: left">⭐⭐⭐ 中等</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 较难</td>
+          <td style="text-align: left">⭐⭐ 简单</td>
+          <td style="text-align: left">⭐ 最简单</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>兼容性</strong></td>
+          <td style="text-align: left">⭐⭐⭐⭐⭐ 最好</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 好</td>
+          <td style="text-align: left">⭐⭐⭐ 中等</td>
+          <td style="text-align: left">⭐⭐⭐⭐ 好</td>
+          <td style="text-align: left">⭐⭐ 有限</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>加密开销</strong></td>
+          <td style="text-align: left">较大</td>
+          <td style="text-align: left">较大</td>
+          <td style="text-align: left"><strong>极小</strong></td>
+          <td style="text-align: left">小</td>
+          <td style="text-align: left">极小</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>当前状态</strong></td>
+          <td style="text-align: left">⏳ 逐渐淘汰</td>
+          <td style="text-align: left">⏳ 逐渐淘汰</td>
+          <td style="text-align: left">🔥 主流</td>
+          <td style="text-align: left">✅ 主流</td>
+          <td style="text-align: left">🟢 海外首选</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="逐个协议详解">逐个协议详解<a hidden class="anchor" aria-hidden="true" href="#逐个协议详解">#</a></h2>
+<h3 id="1-shadowsocksss-老前辈正在退场">1. Shadowsocks（SS）— 老前辈，正在退场<a hidden class="anchor" aria-hidden="true" href="#1-shadowsocksss-老前辈正在退场">#</a></h3>
+<p><strong>诞生时间：</strong> 2012年
+<strong>原理：</strong> 将流量加密成普通HTTPS流量的样子，绕过防火墙检测。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ <strong>兼容性最好</strong>：所有客户端都支持，OpenWrt、路由器等老设备首选</li>
+<li>✅ 配置简单，socks5 代理模式几乎不需要额外设置</li>
+<li>✅ 社区活跃，遇到问题容易搜索到解决方案</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ <strong>防封能力弱</strong>：防火墙（GFW）已经能准确识别 SS 流量特征</li>
+<li>❌ 协议特征明显，近年大规模封杀中首当其冲</li>
+<li>❌ 加密协商机制简单，安全余量低</li>
+</ul>
+<p><strong>还适合谁用：</strong></p>
+<ul>
+<li>路由器（OpenWrt）上跑代理，ss-redir 集成最方便</li>
+<li>纯浏览网页、不看视频的低强度使用</li>
+<li>作为备用方案，主力用更强的协议</li>
+</ul>
+<blockquote>
+<p><strong>要不要选？</strong> 2026年不推荐新用户用 SS。过去它是神，现在它已老。如果你在用，考虑逐步迁移到 VLESS+Reality 或 Trojan。</p></blockquote>
+<hr>
+<h3 id="2-vmess--v2ray-嫡长子也开始老了">2. VMess — V2Ray 嫡长子，也开始老了<a hidden class="anchor" aria-hidden="true" href="#2-vmess--v2ray-嫡长子也开始老了">#</a></h3>
+<p><strong>诞生时间：</strong> 2017年（随 V2Ray 项目推出）
+<strong>原理：</strong> 比 SS 多了元数据加密，理论防封更好，但实际效果有限。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ V2Ray 生态成熟，文档丰富</li>
+<li>✅ 支持多种传输方式（WebSocket、gRPC、HTTP/2 等）</li>
+<li>✅ 可与 CDN 配合使用（CDN 套娃方案）</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ <strong>已被 GFW 识别</strong>：VMess 特征在 2024-2026 年已纳入重点检测</li>
+<li>❌ 加密机制复杂但没有实质性增强安全性</li>
+<li>❌ 配置比 SS 复杂，但防封能力没有质的提升</li>
+</ul>
+<p><strong>还适合谁用：</strong></p>
+<ul>
+<li>配合 Cloudflare CDN 使用（CDN 套娃隐藏真实服务器 IP）</li>
+<li>已经在用且稳定不需要折腾的老用户</li>
+</ul>
+<blockquote>
+<p><strong>要不要选？</strong> 2026 年也不推荐新用 VMess。VLESS+Reality 是它的全面升级版。</p></blockquote>
+<hr>
+<h3 id="3-vless--reality-2026年首选">3. VLESS + Reality（🔥 2026年首选）<a hidden class="anchor" aria-hidden="true" href="#3-vless--reality-2026年首选">#</a></h3>
+<p><strong>什么是 VLESS？</strong>
+VLESS 是 VMess 的轻量版。去掉了 VMess 中多余的加密校验环节，减少 CPU 开销，提升速度。</p>
+<p><strong>什么是 Reality？</strong>
+Reality 是 XRay 核心的独家技术。核心思想：<strong>伪装成你访问一个正常网站</strong>。</p>
+<p>当你连接 Reality 服务器时，网络流量看起来完全是一个用户访问 <code>www.microsoft.com</code> 或 <code>www.bing.com</code> 这样的正常网站。防火墙看到的是 HTTPS 加密流量，无从判断这是访问真实网站还是代理。</p>
+<p><strong>为什么 Reality 是目前最强防封方案？</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">特性</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>流量伪装</strong></td>
+          <td style="text-align: left">数据包和正常 HTTPS 访问一模一样</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>无固定特征</strong></td>
+          <td style="text-align: left">防火墙无法提取指纹特征</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>无需证书</strong></td>
+          <td style="text-align: left">使用目标网站的 TLS 证书，不需要自己申请</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>抗主动探测</strong></td>
+          <td style="text-align: left">主动连接检测时返回正常网站内容</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>4 次握手</strong></td>
+          <td style="text-align: left">比 Trojan 的 3 次多一次，但对安全是正面作用</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ <strong>防封能力最强</strong>：GFW 目前无法有效识别</li>
+<li>✅ <strong>速度最快</strong>：加密开销极小，几乎不影响带宽</li>
+<li>✅ 不需要自己买域名和证书</li>
+<li>✅ XRay 核心持续更新，社区活跃</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ 配置相对复杂（虽然一键脚本已经很多）</li>
+<li>❌ 客户端支持不如 Trojan 广泛（多数主流客户端已支持）</li>
+<li>❌ 需要服务器端 XRay 版本较新</li>
+</ul>
+<p><strong>配置要点：</strong></p>
+<ul>
+<li>服务器需要安装 XRay（v1.8.0+）</li>
+<li>需要选择一个合适的域名作为伪装目标（推荐 <code>www.microsoft.com</code>、<code>www.bing.com</code>）</li>
+<li>建议使用 <code>vision</code> 流控 + <code>tcp + uTLS</code> 配置</li>
+<li>如果遇到&quot;无网络&quot;问题，检查 dst 端口和目标域名</li>
+</ul>
+<blockquote>
+<p><strong>要不要选？</strong> 如果你自建 VPS，<strong>首选 VLESS + Reality</strong>。目前自建方案的最优解，没有之一。</p></blockquote>
+<hr>
+<h3 id="4-trojan--成熟稳定的主流选择">4. Trojan — 成熟稳定的主流选择<a hidden class="anchor" aria-hidden="true" href="#4-trojan--成熟稳定的主流选择">#</a></h3>
+<p><strong>诞生时间：</strong> 2019年
+<strong>原理：</strong> 将代理流量伪装成 HTTPS 流量。和 Reality 思路类似，但需要自己持有域名和 TLS 证书。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ <strong>防封能力强</strong>：流量特征和普通 HTTPS 一致</li>
+<li>✅ <strong>配置简单</strong>：比 VLESS+Reality 容易上手，有现成的一键脚本</li>
+<li>✅ <strong>兼容性好</strong>：几乎所有客户端都支持 Trojan</li>
+<li>✅ 主流机场广泛使用，生态成熟</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ <strong>需要自己买域名和证书</strong>（虽然可以免费申请 Let&rsquo;s Encrypt）</li>
+<li>❌ 相比 Reality，多了证书管理的麻烦</li>
+<li>❌ 被检测到的风险略高于 Reality</li>
+</ul>
+<p><strong>适合场景：</strong></p>
+<ul>
+<li>自建 VPS 且已经持有域名</li>
+<li>机场用户——很多机场主力就是 Trojan</li>
+<li>不想折腾 Reality 配置的用户</li>
+</ul>
+<blockquote>
+<p><strong>要不要选？</strong> Trojan 是<strong>稳健之选</strong>。如果你已经有域名，配置 Trojan 是性价比很高的方案。防封能力足够满足 95% 的用户需求。</p></blockquote>
+<hr>
+<h3 id="5-wireguard--海外用户的神器">5. WireGuard — 海外用户的神器<a hidden class="anchor" aria-hidden="true" href="#5-wireguard--海外用户的神器">#</a></h3>
+<p><strong>诞生时间：</strong> 2016年（Linux 内核 5.6 原生支持）
+<strong>原理：</strong> 不到 4000 行代码的极简 VPN 协议，使用最新的加密算法。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>✅ <strong>速度最快</strong>：内核级实现，加密开销极小，跑满带宽</li>
+<li>✅ <strong>配置极简</strong>：只需要交换公钥即可建立连接</li>
+<li>✅ <strong>移动漫游</strong>：IP 地址变化自动切换，不掉线</li>
+<li>✅ 已被纳入 Linux 内核，系统级支持</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>❌ <strong>防封能力弱</strong>：流量特征明显，GFW 容易检测</li>
+<li>❌ UDP 协议容易被 QoS（限速）</li>
+<li>❌ 在中国大陆使用基本等于裸奔——防火墙很快会发现</li>
+</ul>
+<p><strong>适合场景：</strong></p>
+<ul>
+<li><strong>海外用户</strong>：不需要翻墙，只需要加密通信</li>
+<li><strong>自建内部网络</strong>：连接多个 VPS、办公室、家庭网络</li>
+<li><strong>作为辅助隧道</strong>：在已有代理基础上叠加 WireGuard 多层加密</li>
+</ul>
+<blockquote>
+<p><strong>要不要选？</strong> 在国内作为科学上网协议<strong>不推荐</strong>。但在海外连接回国、或者自建 VPS 之间的内网通信，WireGuard 是无可替代的最佳选择。</p></blockquote>
+<hr>
+<h2 id="按场景推荐协议">按场景推荐协议<a hidden class="anchor" aria-hidden="true" href="#按场景推荐协议">#</a></h2>
+<h3 id="场景-1买现成机场">场景 1：买现成机场<a hidden class="anchor" aria-hidden="true" href="#场景-1买现成机场">#</a></h3>
+<p><strong>不需要纠结协议。</strong> 机场已经配好了最优方案。</p>
+<ul>
+<li>如果机场提供 Trojan 或 VLESS+Reality 节点 → 优先用这些</li>
+<li>如果机场有 SS/VMess 节点 → 当作备用</li>
+<li>只需要把订阅链接导入客户端 → 一切交给机场</li>
+</ul>
+<p><strong>还没买机场？</strong> 推荐几家稳定靠谱的机场：</p>
+<table>
+  <thead>
+      <tr>
+          <th>机场</th>
+          <th>亮点</th>
+          <th>月费</th>
+          <th>链接</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>万达云</strong></td>
+          <td>IEPL专线+住宅IP，低延迟高稳定</td>
+          <td>¥16.8起</td>
+          <td><a href="https://link.wdyserver.com/register?code=6z6PNS5r">👉 访问官网</a></td>
+      </tr>
+      <tr>
+          <td><strong>龙猫云</strong></td>
+          <td>全IPLC专线无限速，原生IP</td>
+          <td>¥15起</td>
+          <td><a href="https://inv06.lmaff01.cc/register?aff=dqNRmvru">👉 访问官网</a></td>
+      </tr>
+      <tr>
+          <td><strong>瑶瑶领先</strong></td>
+          <td>性价比之选，新用户优惠多</td>
+          <td>¥10起</td>
+          <td><a href="https://yyssr.org/auth/register?code=d326dda059">👉 访问官网</a></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="场景-2自己搭-vps自建">场景 2：自己搭 VPS（自建）<a hidden class="anchor" aria-hidden="true" href="#场景-2自己搭-vps自建">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">优先级</th>
+          <th style="text-align: left">协议</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">🔥 首选</td>
+          <td style="text-align: left">VLESS + Reality</td>
+          <td style="text-align: left">防封最强，速度最快，无需域名</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">✅ 次选</td>
+          <td style="text-align: left">Trojan</td>
+          <td style="text-align: left">如果有域名，稳定可靠</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">⚠️ 备选</td>
+          <td style="text-align: left">SS + 插件</td>
+          <td style="text-align: left">老设备兼容</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>推荐流程：</strong></p>
+<pre tabindex="0"><code>1. 买一台 VPS（日本/香港/新加坡 &gt; 美国）
+2. 安装 XRay 一键脚本
+3. 配置 VLESS + Reality
+4. 导入客户端 → 完成
+</code></pre><h3 id="场景-3游戏加速">场景 3：游戏加速<a hidden class="anchor" aria-hidden="true" href="#场景-3游戏加速">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">需求</th>
+          <th style="text-align: left">推荐方案</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">降低延迟</td>
+          <td style="text-align: left">机场 + 香港/日本节点（物理距离近）</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">稳定不掉线</td>
+          <td style="text-align: left">IEPL/IPLC 专线机场</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">协议选择</td>
+          <td style="text-align: left">选择支持 UDP 转发的机场（Trojan 和 VLESS 都支持）</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="常见误区">常见误区<a hidden class="anchor" aria-hidden="true" href="#常见误区">#</a></h2>
+<h3 id="-加密越强越安全">❌ &ldquo;加密越强越安全&rdquo;<a hidden class="anchor" aria-hidden="true" href="#-加密越强越安全">#</a></h3>
+<p><strong>错。</strong> 科学上网的安全核心是<strong>隐身</strong>（不让防火墙认出你），不是<strong>加密强度</strong>（那是对抗监听者的）。</p>
+<ul>
+<li>Reality 的伪装思路 &gt; VMess 的复杂加密</li>
+<li>你在墙内用 AES-256 加密 VS 明文 HTTPS 流量→防火墙只看得出&quot;这是代理&quot;就封了</li>
+</ul>
+<h3 id="-协议越多层越安全">❌ &ldquo;协议越多层越安全&rdquo;<a hidden class="anchor" aria-hidden="true" href="#-协议越多层越安全">#</a></h3>
+<p><strong>错。</strong> 多层代理 = 多层延迟叠加。WS + TLS + CDN + VMess 的&quot;套娃&quot;方案在 2022 年流行，现在 Reality 一层就够。</p>
+<h3 id="-shadowsocks-还能再用-10-年">❌ &ldquo;Shadowsocks 还能再用 10 年&rdquo;<a hidden class="anchor" aria-hidden="true" href="#-shadowsocks-还能再用-10-年">#</a></h3>
+<p><strong>错。</strong> SS 已经被 GFW 精准识别了。2025-2026 年大量 SS 节点被封，不建议再用。</p>
+<h3 id="-wireguard-在国内最好用">❌ &ldquo;WireGuard 在国内最好用&rdquo;<a hidden class="anchor" aria-hidden="true" href="#-wireguard-在国内最好用">#</a></h3>
+<p><strong>错。</strong> WireGuard 速度最快没错，但它是<strong>UDP 明文特征</strong>，GFW 直接 QoS 甚至封锁。WireGuard 适合海外，不适合翻墙。</p>
+<hr>
+<h2 id="协议发展简史了解来龙去脉">协议发展简史（了解来龙去脉）<a hidden class="anchor" aria-hidden="true" href="#协议发展简史了解来龙去脉">#</a></h2>
+<pre tabindex="0"><code>2012 ─ Shadowsocks 诞生 ─ 取代 OpenVPN，成为主流
+2017 ─ V2Ray + VMess ─ Shadowsocks 的进化版
+2019 ─ Trojan ─ HTTPS 伪装思路成为主流
+2022 ─ VLESS + Reality ─ 无特征协议，当前最强方案
+2026 ─ Reality 及新变种持续进化 ─ 在防探测方面不断优化
+</code></pre><hr>
+<h2 id="常见问题">常见问题<a hidden class="anchor" aria-hidden="true" href="#常见问题">#</a></h2>
+<h3 id="q用错协议会被封吗">Q：用错协议会被封吗？<a hidden class="anchor" aria-hidden="true" href="#q用错协议会被封吗">#</a></h3>
+<p>不会。GFW 封的是<strong>服务器 IP</strong> 和<strong>流量特征</strong>，不是你的客户端配置。你选 SS 不会被封，但 SS 节点更容易被 GFW 识别并封锁。所以本质上，更好的协议在保护的是服务器的稳定性。</p>
+<h3 id="q换了协议速度会更快吗">Q：换了协议速度会更快吗？<a hidden class="anchor" aria-hidden="true" href="#q换了协议速度会更快吗">#</a></h3>
+<p>看情况。VLESS+Reality 比 SS 快大约 10-20%（加密开销小），但实际体验最大的决定因素还是：<strong>你的带宽、服务器线路质量、物理距离</strong>。</p>
+<h3 id="q我要不要从-ss-迁移到-reality">Q：我要不要从 SS 迁移到 Reality？<a hidden class="anchor" aria-hidden="true" href="#q我要不要从-ss-迁移到-reality">#</a></h3>
+<p>如果现在能用且稳定→可以不急着换。
+如果出现以下情况→建议迁移：</p>
+<ul>
+<li>❌ 节点频繁被墙</li>
+<li>❌ 速度越来越慢</li>
+<li>❌ 检测到明显限速</li>
+</ul>
+<p>迁移建议：保持 SS 作为备用，加一个 Reality 节点当主力，双保险。</p>
+<h3 id="q所有客户端都支持-reality-吗">Q：所有客户端都支持 Reality 吗？<a hidden class="anchor" aria-hidden="true" href="#q所有客户端都支持-reality-吗">#</a></h3>
+<p>目前主流的都支持了：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">客户端</th>
+          <th style="text-align: left">平台</th>
+          <th style="text-align: center">支持 Reality</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Clash Verge</td>
+          <td style="text-align: left">Windows/macOS/Linux</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Clash Meta / Mihomo</td>
+          <td style="text-align: left">多平台</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Shadowrocket</td>
+          <td style="text-align: left">iOS</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Surge</td>
+          <td style="text-align: left">iOS/macOS</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">v2rayN</td>
+          <td style="text-align: left">Windows</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Clash for Android</td>
+          <td style="text-align: left">Android</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<blockquote>
+<p>💡 <strong>最终建议：</strong> 2026 年自建用 VLESS+Reality，买机场跟着走就行。不用在协议选择上纠结——协议只是工具，稳定服务才是核心。</p></blockquote>
+<hr>
+<h2 id="相关阅读">相关阅读<a hidden class="anchor" aria-hidden="true" href="#相关阅读">#</a></h2>
+<ul>
+<li><a href="./what-is-vpn/">什么是机场/VPN？</a></li>
+<li><a href="./quick-start/">5分钟快速入门</a></li>
+<li><a href="./purchase-guide/">购买完整教程</a></li>
+</ul>
+<hr>
+<p><em>本文包含推广链接，如果您通过链接购买，我们会获得一定佣金。但这不影响我们的客观评测。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/">教程</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://huanghaiwan.com/posts/yaoyaolingxian-review/">
+    <span class="title">« Prev</span>
+    <span>瑶瑶领先 机场评测 | SS协议大流量套餐，¥9.9起用384G</span>
+  </a>
+  <a class="next" href="https://huanghaiwan.com/posts/longmaoyun-review/">
+    <span class="title">Next »</span>
+    <span>龙猫云 机场评测 | 全IPLC专线无限速，入门仅¥15/月</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on x"
+            href="https://x.com/intent/tweet/?text=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f&amp;hashtags=%e6%95%99%e7%a8%8b">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f&amp;title=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89&amp;summary=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89&amp;source=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f&title=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on whatsapp"
+            href="https://api.whatsapp.com/send?text=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89%20-%20https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on telegram"
+            href="https://telegram.me/share/url?text=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89&amp;url=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 科学上网协议指南：SS/VMess/VLESS&#43;Reality/Trojan/WireGuard怎么选 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91%e5%8d%8f%e8%ae%ae%e6%8c%87%e5%8d%97%ef%bc%9aSS%2fVMess%2fVLESS%2bReality%2fTrojan%2fWireGuard%e6%80%8e%e4%b9%88%e9%80%89&u=https%3a%2f%2fhuanghaiwan.com%2fposts%2fprotocol-guide%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://huanghaiwan.com/">海洋指南 - 机场评测 &amp; AI 工具指南</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

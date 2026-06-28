@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cyberguard on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/cyberguard/</link>
+    <description>Recent content in Cyberguard on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/cyberguard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyberguard 机场评测 | IEPL专线&#43;60&#43;节点，2026年还值得用吗？</title>
+      <link>https://huanghaiwan.com/posts/cyberguard-review/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/cyberguard-review/</guid>
+      <description>2020年老牌机场，IEPL专线&#43;BGP接入&#43;QUIC协议，60&#43;节点不限设备。深度评测优缺点，帮你判断Cyberguard适不适合你。</description>
+    </item>
+  </channel>
+</rss>

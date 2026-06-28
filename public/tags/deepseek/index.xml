@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DeepSeek on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/deepseek/</link>
+    <description>Recent content in DeepSeek on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 23 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/deepseek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek高阶组合技：2026年提升效率10倍的实战用法</title>
+      <link>https://huanghaiwan.com/ai/deepseek-advanced-combinations/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/deepseek-advanced-combinations/</guid>
+      <description>DeepSeek不是孤立的工具。把它和Cursor编程、Suno音乐、Midjourney生图等工具组合使用，才能发挥真正威力。本文分享10个我日常在用的高阶组合方案。</description>
+    </item>
+    <item>
+      <title>DeepSeek入门到精通：2026年最新使用指南（注册、提示词、API）</title>
+      <link>https://huanghaiwan.com/ai/deepseek-guide/</link>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/deepseek-guide/</guid>
+      <description>DeepSeek R1/V3全方位使用指南：从注册到高阶技巧，Web/App/API三种使用方式详解，提示词模板&#43;10个实用场景，帮你把这把国产AI利刃用到极致。</description>
+    </item>
+  </channel>
+</rss>
