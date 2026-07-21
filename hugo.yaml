@@ -12,7 +12,7 @@ pagination:
 params:
   env: production
   description: "海洋指南为您提供全面、可靠的机场评测与网络加速服务推荐，同时分享实用的AI工具使用指南与前沿科技教程，帮助您重塑高效的数字化工作流。"
-  keywords: [机场评测, 机场推荐, AI工具, 科学上网, V2Ray, 代理]
+  keywords: [网络优化, 跨境网络, AI工具, 国际网络加速, 效率工具]
   author: "海洋指南"
   mainSections: ["ai", "posts"]
 
@@ -32,7 +32,7 @@ params:
   homeInfoParams:
     Title: "🌊 海洋指南"
     Content: |
-      专注于 **机场评测** 与 **AI 工具指南**，帮你找到稳定高速的网络通道。
+      专注于 **跨境网络连接工具评测** 与 **AI 工具指南**，帮你提升全球化协同与跨境办公的访问效率。
 
       实用教程 · 客观评测 · 持续更新
 
