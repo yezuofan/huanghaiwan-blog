@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenAI on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/openai/</link>
+    <description>Recent content in OpenAI on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT Work 完全指南 2026：OpenAI 全新AI工作台，ChatGPT &#43; Codex 合体办公</title>
+      <link>https://huanghaiwan.com/ai/chatgpt-work-guide-2026/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/chatgpt-work-guide-2026/</guid>
+      <description>OpenAI ChatGPT Work 于 2026 年 7 月 9 日随 GPT-5.6 公测同步发布！整合 ChatGPT &#43; Codex 的企业级AI工作台，文档/表格/演示文稿/Web应用一键生成，免费用户也能用。详解功能、定价、vs Claude Cowork 对比与使用教程。</description>
+    </item>
+    <item>
+      <title>GPT-5.6 完全指南 2026：Sol/Terra/Luna 三模型能力解析 &#43; 使用教程</title>
+      <link>https://huanghaiwan.com/ai/gpt-5-6-guide-2026/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/gpt-5-6-guide-2026/</guid>
+      <description>OpenAI GPT-5.6 于 2026 年 7 月 9 日正式公测！独家解读 Sol/Terra/Luna 三大模型性能对比、TerminalBench 跑分、定价方案、以及中国用户 4 种使用方式。</description>
+    </item>
+  </channel>
+</rss>

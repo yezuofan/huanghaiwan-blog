@@ -6,34 +6,314 @@
     <description>Recent content in Tags on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://huanghaiwan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://huanghaiwan.com/tags/ai/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple</title>
+      <link>https://huanghaiwan.com/tags/apple/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/apple/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacOS</title>
+      <link>https://huanghaiwan.com/tags/macos/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Siri</title>
+      <link>https://huanghaiwan.com/tags/siri/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/siri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>写作工具</title>
+      <link>https://huanghaiwan.com/tags/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
     <item>
       <title>教程</title>
       <link>https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/tags/%E6%95%99%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>机场评测</title>
+      <link>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E8%AF%84%E6%B5%8B/</link>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E8%AF%84%E6%B5%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>翻新评测</title>
+      <link>https://huanghaiwan.com/tags/%E7%BF%BB%E6%96%B0%E8%AF%84%E6%B5%8B/</link>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E7%BF%BB%E6%96%B0%E8%AF%84%E6%B5%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>酷酷云</title>
+      <link>https://huanghaiwan.com/tags/%E9%85%B7%E9%85%B7%E4%BA%91/</link>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E9%85%B7%E9%85%B7%E4%BA%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kimi</title>
+      <link>https://huanghaiwan.com/tags/kimi/</link>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/kimi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moonshot</title>
+      <link>https://huanghaiwan.com/tags/moonshot/</link>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/moonshot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大语言模型</title>
+      <link>https://huanghaiwan.com/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>开源模型</title>
+      <link>https://huanghaiwan.com/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BGP专线</title>
+      <link>https://huanghaiwan.com/tags/bgp%E4%B8%93%E7%BA%BF/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/bgp%E4%B8%93%E7%BA%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>肥猫云</title>
+      <link>https://huanghaiwan.com/tags/%E8%82%A5%E7%8C%AB%E4%BA%91/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E8%82%A5%E7%8C%AB%E4%BA%91/</guid>
       <description></description>
     </item>
     <item>
       <title>新手入门</title>
       <link>https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/</guid>
       <description></description>
     </item>
     <item>
-      <title>AI</title>
-      <link>https://huanghaiwan.com/tags/ai/</link>
-      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/ai/</guid>
+      <title>避坑</title>
+      <link>https://huanghaiwan.com/tags/%E9%81%BF%E5%9D%91/</link>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E9%81%BF%E5%9D%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI聊天</title>
+      <link>https://huanghaiwan.com/tags/ai%E8%81%8A%E5%A4%A9/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/ai%E8%81%8A%E5%A4%A9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spotify</title>
+      <link>https://huanghaiwan.com/tags/spotify/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/spotify/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>音乐</title>
+      <link>https://huanghaiwan.com/tags/%E9%9F%B3%E4%B9%90/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E9%9F%B3%E4%B9%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IPLC专线</title>
+      <link>https://huanghaiwan.com/tags/iplc%E4%B8%93%E7%BA%BF/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/iplc%E4%B8%93%E7%BA%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>一枝红杏</title>
+      <link>https://huanghaiwan.com/tags/%E4%B8%80%E6%9E%9D%E7%BA%A2%E6%9D%8F/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E4%B8%80%E6%9E%9D%E7%BA%A2%E6%9D%8F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Instagram</title>
+      <link>https://huanghaiwan.com/tags/instagram/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/instagram/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meta</title>
+      <link>https://huanghaiwan.com/tags/meta/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/meta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Muse</title>
+      <link>https://huanghaiwan.com/tags/muse/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/muse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>图像生成</title>
+      <link>https://huanghaiwan.com/tags/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2026</title>
+      <link>https://huanghaiwan.com/tags/2026/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>学生党</title>
+      <link>https://huanghaiwan.com/tags/%E5%AD%A6%E7%94%9F%E5%85%9A/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%AD%A6%E7%94%9F%E5%85%9A/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>对比评测</title>
+      <link>https://huanghaiwan.com/tags/%E5%AF%B9%E6%AF%94%E8%AF%84%E6%B5%8B/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%AF%B9%E6%AF%94%E8%AF%84%E6%B5%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>暑假</title>
+      <link>https://huanghaiwan.com/tags/%E6%9A%91%E5%81%87/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E6%9A%91%E5%81%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>机场推荐</title>
+      <link>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>龙猫云</title>
+      <link>https://huanghaiwan.com/tags/%E9%BE%99%E7%8C%AB%E4%BA%91/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E9%BE%99%E7%8C%AB%E4%BA%91/</guid>
       <description></description>
     </item>
     <item>
       <title>ChatGPT</title>
       <link>https://huanghaiwan.com/tags/chatgpt/</link>
-      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Codex</title>
+      <link>https://huanghaiwan.com/tags/codex/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/codex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenAI</title>
+      <link>https://huanghaiwan.com/tags/openai/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/openai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>万达云</title>
+      <link>https://huanghaiwan.com/tags/%E4%B8%87%E8%BE%BE%E4%BA%91/</link>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E4%B8%87%E8%BE%BE%E4%BA%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>新手</title>
+      <link>https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E6%96%B0%E6%89%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>月报</title>
+      <link>https://huanghaiwan.com/tags/%E6%9C%88%E6%8A%A5/</link>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E6%9C%88%E6%8A%A5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MPTCP</title>
+      <link>https://huanghaiwan.com/tags/mptcp/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/mptcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自由猫</title>
+      <link>https://huanghaiwan.com/tags/%E8%87%AA%E7%94%B1%E7%8C%AB/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E8%87%AA%E7%94%B1%E7%8C%AB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>编程</title>
+      <link>https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>安全</title>
+      <link>https://huanghaiwan.com/tags/%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude</title>
+      <link>https://huanghaiwan.com/tags/claude/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>科普</title>
+      <link>https://huanghaiwan.com/tags/%E7%A7%91%E6%99%AE/</link>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/tags/%E7%A7%91%E6%99%AE/</guid>
       <description></description>
     </item>
     <item>
@@ -55,13 +335,6 @@
       <link>https://huanghaiwan.com/tags/%E7%9C%81%E9%92%B1/</link>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/tags/%E7%9C%81%E9%92%B1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>编程</title>
-      <link>https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
     </item>
     <item>
@@ -93,13 +366,6 @@
       <description></description>
     </item>
     <item>
-      <title>机场推荐</title>
-      <link>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/</link>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>低价</title>
       <link>https://huanghaiwan.com/tags/%E4%BD%8E%E4%BB%B7/</link>
       <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
@@ -118,13 +384,6 @@
       <link>https://huanghaiwan.com/tags/%E6%80%A7%E4%BB%B7%E6%AF%94/</link>
       <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/tags/%E6%80%A7%E4%BB%B7%E6%AF%94/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>机场评测</title>
-      <link>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E8%AF%84%E6%B5%8B/</link>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/%E6%9C%BA%E5%9C%BA%E8%AF%84%E6%B5%8B/</guid>
       <description></description>
     </item>
     <item>
@@ -268,20 +527,6 @@
       <description></description>
     </item>
     <item>
-      <title>自由猫</title>
-      <link>https://huanghaiwan.com/tags/%E8%87%AA%E7%94%B1%E7%8C%AB/</link>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/%E8%87%AA%E7%94%B1%E7%8C%AB/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude</title>
-      <link>https://huanghaiwan.com/tags/claude/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/claude/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>WgetCloud</title>
       <link>https://huanghaiwan.com/tags/wgetcloud/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
@@ -289,24 +534,10 @@
       <description></description>
     </item>
     <item>
-      <title>万达云</title>
-      <link>https://huanghaiwan.com/tags/%E4%B8%87%E8%BE%BE%E4%BA%91/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/%E4%B8%87%E8%BE%BE%E4%BA%91/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>瑶瑶领先</title>
       <link>https://huanghaiwan.com/tags/%E7%91%B6%E7%91%B6%E9%A2%86%E5%85%88/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/tags/%E7%91%B6%E7%91%B6%E9%A2%86%E5%85%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>龙猫云</title>
-      <link>https://huanghaiwan.com/tags/%E9%BE%99%E7%8C%AB%E4%BA%91/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://huanghaiwan.com/tags/%E9%BE%99%E7%8C%AB%E4%BA%91/</guid>
       <description></description>
     </item>
   </channel>

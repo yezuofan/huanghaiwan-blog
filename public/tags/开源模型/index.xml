@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>开源模型 on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</link>
+    <description>Recent content in 开源模型 on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kimi K3 完全指南 2026：2.8万亿参数开源模型出世，中国AI的&#39;重磅炸弹&#39;</title>
+      <link>https://huanghaiwan.com/ai/kimi-k3-guide-2026/</link>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/kimi-k3-guide-2026/</guid>
+      <description>Moonshot AI 于 2026 年 7 月 16 日发布 Kimi K3，2.8 万亿参数开源 MoE 模型，在多项基准测试中逼近甚至超越 Claude Fable 5 和 GPT-5.6 Sol，登顶 Arena.ai 前端开发排行榜。开源权重承诺 7 月 27 日发布。详解架构、能力、定价、使用教程与行业影响。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MPTCP on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/mptcp/</link>
+    <description>Recent content in MPTCP on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/mptcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自由猫 FreeCat 2026年中更新评测：MPTCP多路复用&#43;套餐全面升级，半年后还值得买吗？</title>
+      <link>https://huanghaiwan.com/posts/freecat-mid-2026-review/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/posts/freecat-mid-2026-review/</guid>
+      <description>&lt;h2 id=&#34;太长不看版&#34;&gt;太长不看版&lt;/h2&gt;
+&lt;p&gt;距离上一篇自由猫评测（2026年5月15日）已过去 &lt;strong&gt;52天&lt;/strong&gt;，期间自由猫的套餐结构发生了明显变化——&lt;strong&gt;加量不加价&lt;/strong&gt;，低中档套餐流量全部提升。同时，官网页面也做了改版，引入了设备限制（低档位）和速度分级。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;变化维度&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;5月旧版&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;7月新版&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;变化&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥9/月流量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;50GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;100GB&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;翻倍！限3设备&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥15/月流量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;150GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;200GB&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;+33%，限10设备&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥25/月流量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;300GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;400GB&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;+33%，限10设备&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥35/月档位&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 500GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;❌ 已下架&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;合并到¥45档&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;¥45/月流量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1000GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1000GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;不变，不限设备&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MPTCP技术&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 核心卖点&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ 持续优化&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;仍是最大差异化优势&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;节点数量&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100+&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100+&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;稳定，持续维护&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;流媒体解锁&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全面&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全面（含TikTok）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;持续有效&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;设备限制&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;全部不限&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;低档限3/10&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;新变化&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;核心结论：&lt;/strong&gt; 自由猫依然是目前市面上性价比最高的主力机场之一。¥9/月100GB的入门档从&amp;quot;试水体验&amp;quot;升级为&amp;quot;可日常用的轻量档&amp;quot;；¥25/月400GB是性价比巅峰。MPTCP技术至今仍是独家的差异化卖点——同价位无竞品能打。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://api.huanghaiwan.com/go/%E8%87%AA%E7%94%B1%E7%8C%AB&#34;&gt;👉 立即注册 Freecat 体验 MPTCP →&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

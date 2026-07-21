@@ -11,7 +11,7 @@ pagination:
 
 params:
   env: production
-  description: "可靠的机场评测与AI工具使用指南"
+  description: "海洋指南为您提供全面、可靠的机场评测与网络加速服务推荐，同时分享实用的AI工具使用指南与前沿科技教程，帮助您重塑高效的数字化工作流。"
   keywords: [机场评测, 机场推荐, AI工具, 科学上网, V2Ray, 代理]
   author: "海洋指南"
   mainSections: ["ai", "posts"]
