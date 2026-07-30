@@ -6,7 +6,7 @@ tags: ["机场评测"]
 description: 'NXO Earth（太极）机场评测：高端BGP中继+MPTCP多线程，2000Mbps理论速度，IEPL/IPLC专线支持SS/V2ray/Trojan多协议。适合对速度和线路质量有要求的用户。'
 ---
 
-# NXO Earth（太极）机场评测
+## NXO Earth（太极）机场评测
 
 > Xboard框架专线机场，IEPL/IPLC专线，支持SS/V2ray/Trojan多协议。GitHub上有详细测速记录。
 

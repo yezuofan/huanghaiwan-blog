@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AI on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <title>AI on 海洋指南 - 跨境网络加速 &amp; AI 工具指南</title>
     <link>https://huanghaiwan.com/tags/ai/</link>
-    <description>Recent content in AI on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <description>Recent content in AI on 海洋指南 - 跨境网络加速 &amp; AI 工具指南</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://huanghaiwan.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026年7月底AI圈大地震：Kimi K3开源、英伟达500亿投SSI、开源模型论战升级</title>
+      <link>https://huanghaiwan.com/ai/end-july-2026-ai-roundup/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/end-july-2026-ai-roundup/</guid>
+      <description>7月最后一周AI圈四大重磅：Kimi K3如期开源权重（2.8万亿参数·全球最大开源模型）；英伟达战略投资50亿美元给Ilya Sutskever的SSI；Anthropic CEO Dario发万字长文澄清不对开源模型持禁令立场；微软推出Project Perception用AI代理自动修复安全漏洞。一文快速掌握本周行业地震。</description>
+    </item>
+    <item>
+      <title>ChatGPT GPT-Live 语音模式指南 2026：全双工对话 &#43; 桌面语音操控，免费也能用</title>
+      <link>https://huanghaiwan.com/ai/chatgpt-gpt-live-voice-guide-2026/</link>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/chatgpt-gpt-live-voice-guide-2026/</guid>
+      <description>OpenAI 2026年7月发布 GPT-Live 全双工语音模型，桌面版已支持语音查日历、写邮件、准备会议。Free/Go/Plus/Pro 各版本功能详解与使用教程。</description>
+    </item>
+    <item>
+      <title>Google Gemini 2026年7月大更新：3.6 Flash新模型 &#43; 任务自动化正式上线</title>
+      <link>https://huanghaiwan.com/ai/gemini-july-2026-update-guide/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/gemini-july-2026-update-guide/</guid>
+      <description>Google Gemini在2026年7月迎来重磅更新：发布3.6 Flash、3.5 Flash-Lite、3.5 Flash Cyber三款新模型，同时Gemini Task Automation任务自动化正式上线覆盖40&#43;应用，月活用户突破9.5亿。一文看懂所有新功能。</description>
+    </item>
     <item>
       <title>macOS 27 Siri AI 写作工具完全指南：解锁 Golden Gate 隐藏的AI弹窗</title>
       <link>https://huanghaiwan.com/ai/macos-27-siri-ai-writing-guide-2026/</link>
@@ -300,7 +321,7 @@
       <link>https://huanghaiwan.com/ai/hailuo-ai-free-guide/</link>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
       <guid>https://huanghaiwan.com/ai/hailuo-ai-free-guide/</guid>
-      <description>&lt;h1 id=&#34;海螺ai免费使用指南国产ai视频生成实测&#34;&gt;海螺AI免费使用指南：国产AI视频生成实测&lt;/h1&gt;
+      <description>&lt;h2 id=&#34;海螺ai免费使用指南国产ai视频生成实测&#34;&gt;海螺AI免费使用指南：国产AI视频生成实测&lt;/h2&gt;
 &lt;p&gt;最近国产AI视频生成工具持续火爆，其中&lt;strong&gt;海螺AI&lt;/strong&gt;（即梦同款模型）吸引了不少用户关注。今天实测一下这个平台到底怎么用、效果如何。&lt;/p&gt;
 &lt;h2 id=&#34;海螺ai是什么&#34;&gt;海螺AI是什么&lt;/h2&gt;
 &lt;p&gt;海螺AI是字节跳动旗下的AI视频生成平台，接入了即梦（Jimi）同款的视频生成模型。目前每天赠送免费额度，新用户可以直接体验。&lt;/p&gt;

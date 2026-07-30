@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gemini on 海洋指南 - 跨境网络加速 &amp; AI 工具指南</title>
+    <link>https://huanghaiwan.com/tags/gemini/</link>
+    <description>Recent content in Gemini on 海洋指南 - 跨境网络加速 &amp; AI 工具指南</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huanghaiwan.com/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Gemini 2026年7月大更新：3.6 Flash新模型 &#43; 任务自动化正式上线</title>
+      <link>https://huanghaiwan.com/ai/gemini-july-2026-update-guide/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/gemini-july-2026-update-guide/</guid>
+      <description>Google Gemini在2026年7月迎来重磅更新：发布3.6 Flash、3.5 Flash-Lite、3.5 Flash Cyber三款新模型，同时Gemini Task Automation任务自动化正式上线覆盖40&#43;应用，月活用户突破9.5亿。一文看懂所有新功能。</description>
+    </item>
+  </channel>
+</rss>

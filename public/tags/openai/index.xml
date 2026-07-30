@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>OpenAI on 海洋指南 - 机场评测 &amp; AI 工具指南</title>
+    <title>OpenAI on 海洋指南 - 跨境网络加速 &amp; AI 工具指南</title>
     <link>https://huanghaiwan.com/tags/openai/</link>
-    <description>Recent content in OpenAI on 海洋指南 - 机场评测 &amp; AI 工具指南</description>
+    <description>Recent content in OpenAI on 海洋指南 - 跨境网络加速 &amp; AI 工具指南</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://huanghaiwan.com/tags/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT GPT-Live 语音模式指南 2026：全双工对话 &#43; 桌面语音操控，免费也能用</title>
+      <link>https://huanghaiwan.com/ai/chatgpt-gpt-live-voice-guide-2026/</link>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://huanghaiwan.com/ai/chatgpt-gpt-live-voice-guide-2026/</guid>
+      <description>OpenAI 2026年7月发布 GPT-Live 全双工语音模型，桌面版已支持语音查日历、写邮件、准备会议。Free/Go/Plus/Pro 各版本功能详解与使用教程。</description>
+    </item>
     <item>
       <title>ChatGPT Work 完全指南 2026：OpenAI 全新AI工作台，ChatGPT &#43; Codex 合体办公</title>
       <link>https://huanghaiwan.com/ai/chatgpt-work-guide-2026/</link>
