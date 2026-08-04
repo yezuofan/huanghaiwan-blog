@@ -1,6 +1,6 @@
 ---
 title: "MESL 2026 年中更新评测：登录入口升级、新增美元入门档，Premium IEPL 专线还值得入吗？"
-date: 2026-08-05
+date: 2026-08-05T00:00:00+08:00
 slug: mesl-mid-2026-review
 tags: ["网络加速", "评测"]
 description: "MESL 2026 年 8 月更新评测：登录入口升级为 getmesl.com 地址选择器，新增 $3.6 美元入门档与 3Gbps/5Gbps 峰值带宽，5 台设备限制明确。Premium IEPL 专线 + 阿里云 CEN 架构稳定性依旧，170+ 全球节点支持流媒体与 AI 工具解锁。附套餐对比、竞品分析和购买建议。"
